@@ -880,8 +880,8 @@ export default {
           { key: "B", thClass: "Red" },
           { key: "C", thClass: "Yelow" },
           { key: "D", thClass: "Green" },
-          "ENGLISH_PHRASE",
-          "TRADUCCION_ESPAÑOL",
+          {key:"ENGLISH_PHRASE", label:"ENGLISH"},
+          { key: "TRADUCCION_ESPAÑOL", label:"SPANISH"},
         ],
         items: [
           {
