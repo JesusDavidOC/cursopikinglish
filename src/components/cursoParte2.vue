@@ -26,6 +26,7 @@
     <div class="row">
       <h3 id="titulo">
         Chillar
+        pero la prueba
       </h3>
     </div>
   </div>
@@ -87,9 +88,6 @@ export default {
             // A virtual column that doesn't exist in items
             // A column that needs custom formatting
             { key: "Z", thClass: "noHead" },
-          ],
-          items: [
-            "Have",
             "Has",
             "Had",
             "Is",
