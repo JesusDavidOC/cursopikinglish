@@ -24,7 +24,9 @@
       </div>
     </div>
     <div class="row">
-
+      <h3 id="titulo">
+        Chillar
+      </h3>
     </div>
   </div>
 </template>
