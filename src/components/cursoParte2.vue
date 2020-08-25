@@ -26,7 +26,6 @@
     <div class="row">
       <h3 id="titulo">
         Chillar
-        pero la prueba
       </h3>
     </div>
   </div>
