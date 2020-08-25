@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="row">
-      <h3 id="titulo">
+      <h3 id="subTitulo">
         Chillar
       </h3>
     </div>
