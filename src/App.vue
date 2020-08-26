@@ -2,30 +2,31 @@
   <div id="app">    
     <div class="row" id="curso">            
       <div class="col-sm-12">
-        <cursoIntro />
-        <cursoParte1 />
-        <cursoParte2 />
+        <curso1Leccion1 />
+        <curso1Leccion2 />
+        <curso1Leccion3/>        
       </div>    
     </div>
   </div>
 </template>
 
 <script>
-import cursoIntro from "./components/cursoIntro.vue";
-import cursoParte1 from "./components/cursoParte1.vue";
-import cursoParte2 from "./components/cursoParte2.vue";
+import curso1Leccion1 from "./components/curso1Leccion1.vue";
+import curso1Leccion2 from "./components/curso1Leccion2.vue";
+import curso1Leccion3 from "./components/curso1Leccion3.vue";
 
 export default {
   name: "App",
   components: {
-    cursoIntro,
-    cursoParte1,
-    cursoParte2
+    curso1Leccion1,
+    curso1Leccion2,
+    curso1Leccion3,    
   },
 };
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

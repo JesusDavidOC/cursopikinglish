@@ -39,7 +39,7 @@ export default {
       } else {
         for (var r = 0; r < respuestas.length; r++) {
           if (respuestas[r] != rEsperadas[r]) {
-            this.mensaje = this.mensaje + (r + 1) + "\n";
+            this.mensaje = this.mensaje + (r + 1) + "-";
           }
         }
       }      
