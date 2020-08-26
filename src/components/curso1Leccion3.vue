@@ -17,7 +17,7 @@
       </div>
       <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP18 }}</b-modal>
       <div class="col-sm-1"></div>
-    </div>   
+    </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
@@ -90,17 +90,17 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-2">
-        <div class="col-sm-7" id="numeroMagico2" >2</div>
+        <div class="col-sm-7" id="numeroMagico2">2</div>
         <h3 style="margin-top:0.4em;">Types Of Verbs</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[0]" />
       </div>
       <div class="col-sm-2">
-        <div class="col-sm-7" id="numeroMagico4" >4</div>
+        <div class="col-sm-7" id="numeroMagico4">4</div>
         <h3 style="margin-top:0.4em;">Spelling Forms</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[1]" />
       </div>
       <div class="col-sm-2">
-        <div class="col-sm-7" id="numeroMagico5" >5</div>
+        <div class="col-sm-7" id="numeroMagico5">5</div>
         <h3 style="margin-top:0.4em;">Auxiliares</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[2]" />
       </div>
@@ -132,21 +132,36 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <h3 id="subTitulo">HALLAR LA LÓGICA DEL NÚMERO MÁGICO</h3>
+    </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <ul id="textoCompromiso">
           <dt v-for="(item, index) in $data.listadoP20">
             <i class="fa fa-diamond"></i>
-            <a v-html="item">{{ item }}</a>            
+            <a v-html="item">{{ item }}</a>
           </dt>
         </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-1"> </div>
-      <div class="col-sm-10">      
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
         <img src="/cursos/curso1/leccion3/imagenes/pag20.PNG" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h3 id="subTitulo">MEMORIZAR LA TRADUCCIÓN DE LOS VERBOS CON SUPER PODER</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <listaIndex :tabla="$data.tablaP21" />
       </div>
     </div>
   </div>
@@ -159,7 +174,7 @@ import opcionMultiple from "./opcionMultiple";
 import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
 export default {
-    methods: {
+  methods: {
     showModal(text) {
       this.$refs[text].show();
     },
@@ -172,11 +187,100 @@ export default {
   },
   data() {
     return {
-        listadoP20: [
+      tablaP21: {
+        bordered: true,
+        camposInput: false,
+        fields: [
+          { key: "verSP", label: "SUPER POWER VERBS", thClass: "Yelow" },
+          { key: "Translation", label: "TRANSLATION", thClass: "Yelow" },
+          { key: "Negation", label: "NEGATION", thClass: "Yelow" },
+          {
+            key: "Forma",
+            label: "Con que forma del verbo se usa",
+            thClass: "Yelow",
+          },
+        ],
+        items: [
+          {
+            verSP: "Have",
+            Translation: "He, has, hemos y han",
+            Negation: "Have not - haven´t",
+            Forma: "Participio",
+          },
+          {
+            verSP: "Has",
+            Translation: "Ha",
+            Negation: "Has not – hasn´t",
+            Forma: "Participio",
+          },
+          {
+            verSP: "Had",
+            Translation: "Había",
+            Negation: "Had not – hadn´t",
+            Forma: "Participio",
+          },
+          {
+            verSP: "Am",
+            Translation: "Soy-estoy",
+            Negation: "Am not",
+            Forma: "Participio",
+          },
+          {
+            verSP: "Is",
+            Translation: "Es-está",
+            Negation: "Is not – isn´t",
+            Forma: "Progresivo",
+          },
+          {
+            verSP: "Are",
+            Translation: "Eres-estás, somos-estamos, son-están",
+            Negation: "Are not – aren´t",
+            Forma: "Progresivo",
+          },
+          {
+            verSP: "Was",
+            Translation: "Estaba-era",
+            Negation: "Was not – wasn´t",
+            Forma: "Progresivo",
+          },
+          {
+            verSP: "Were",
+            Translation: "Eras-estabas, éramos -estábamos, eran-estaban",
+            Negation: "Were not - weren´t",
+            Forma: "Participio",
+          },
+          {
+            verSP: "Can",
+            Translation: "Poder",
+            Negation: "Can not – can´t",
+            Forma: "Presente",
+          },
+          {
+            verSP: "Could",
+            Translation: "Pude, podría",
+            Negation: "Could not – couldn´t",
+            Forma: "Presente",
+          },
+          {
+            verSP: "Should",
+            Translation: "Debería",
+            Negation: "Should not – shouldn´t",
+            Forma: "Presente",
+          },
+          {
+            verSP: "Must",
+            Translation: "Deber",
+            Negation: "Must not – mustn´t",
+            Forma: "Presente",
+          },
+        ],
+      },
+
+      listadoP20: [
         "La forma presente de un verbo se usa con los auxiliares o después de los verbos con poder CAN, COULD, SHOULD y MUST.",
         "Los verbos regulares en su forma pasada o participio se les agrega ED.",
         "La forma participio siempre se usa con HAVE-HAS Y HAD.",
-        "La forma progresiva de un verbo se usa después de IS, AM, ARE, WAS Y WERE",        
+        "La forma progresiva de un verbo se usa después de IS, AM, ARE, WAS Y WERE",
       ],
       tablasNumeroMagicoP19: [
         {
@@ -598,7 +702,7 @@ export default {
   margin-bottom: 1em;
   font-size: 1.5em;
 }
-/deep/.labelPregunta{
+/deep/.labelPregunta {
   font-weight: bold;
 }
 
@@ -677,7 +781,10 @@ img {
   font-size: 1.5em;
 }
 
-#numeroMagico2, #numeroMagico4,#numeroMagico5, #numeroMagico12 {
+#numeroMagico2,
+#numeroMagico4,
+#numeroMagico5,
+#numeroMagico12 {
   background-color: salmon;
   margin-right: auto;
   margin-left: auto;
@@ -692,18 +799,18 @@ img {
   font-weight: bold;
   margin-bottom: auto;
 }
-#numeroMagico2{
-    background: yellow;
+#numeroMagico2 {
+  background: yellow;
 }
 
-#numeroMagico4{
-    background: red;
+#numeroMagico4 {
+  background: red;
 }
-#numeroMagico5{
-    background: royalblue;
+#numeroMagico5 {
+  background: royalblue;
 }
-#numeroMagico12{
-    background:cadetblue
+#numeroMagico12 {
+  background: cadetblue;
 }
 
 #text,
