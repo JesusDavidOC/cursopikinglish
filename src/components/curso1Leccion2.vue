@@ -546,12 +546,12 @@
         />
       </div>
       <div class="col-sm-1"></div>
-      <b-modal ref="my-modal" hide-footer title="RESULTADO">{{mensajeRespuestasP17 }}</b-modal>
+      <b-modal ref="my-modal1" hide-footer title="RESULTADO">{{mensajeRespuestasP17 }}</b-modal>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modal1')">VERIFICAR PREGUNTAS</b-button>
       </div>
     </div>
     <div class="row">
@@ -625,76 +625,7 @@ export default {
   },
   data() {
     return {
-      tablasNumeroMagicoP14: [
-        {
-          bordered: false,
-          camposInput: false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "#", thClass: "noHead" },
-            { key: "Z", thClass: "noHead" },
-          ],
-          items: [{ Z: "Regulars" }, { Z: "Irregulars" }],
-        },
-        {
-          bordered: false,
-          camposInput: false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "#", thClass: "noHead" },
-            { key: "Z", thClass: "noHead" },
-          ],
-          items: [
-            { Z: "Present" },
-            { Z: "Past" },
-            { Z: "Participle" },
-            { Z: "Progessive" },
-          ],
-        },
-        {
-          bordered: false,
-          camposInput: false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "#", thClass: "noHead" },
-            { key: "Z", thClass: "noHead" },
-          ],
-          items: [
-            { Z: "Do" },
-            { Z: "Does" },
-            { Z: "Did" },
-            { Z: "Will" },
-            { Z: "Would" },
-          ],
-        },
-        {
-          bordered: false,
-          camposInput: false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "#", thClass: "noHead" },
-            { key: "Z", thClass: "noHead" },
-          ],
-          items: [
-            { Z: "Have" },
-            { Z: "Has" },
-            { Z: "Had" },
-            { Z: "Is" },
-            { Z: "Am" },
-            { Z: "Are" },
-            { Z: "Was" },
-            { Z: "Were" },
-            { Z: "Can" },
-            { Z: "Could" },
-            { Z: "Should" },
-            { Z: "Must" },
-          ],
-        },
-      ],
+      
       tablaPregunta8P17: [
         {
           bordered: false,
@@ -1190,6 +1121,76 @@ export default {
       ],
       respuestasCuestionarioP17: ["A", "B", "B", "B", "C", "C"],
       mensajeRespuestasP17: "",
+      tablasNumeroMagicoP14: [
+        {
+          bordered: false,
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "#", thClass: "noHead" },
+            { key: "Z", thClass: "noHead" },
+          ],
+          items: [{ Z: "Regulars" }, { Z: "Irregulars" }],
+        },
+        {
+          bordered: false,
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "#", thClass: "noHead" },
+            { key: "Z", thClass: "noHead" },
+          ],
+          items: [
+            { Z: "Present" },
+            { Z: "Past" },
+            { Z: "Participle" },
+            { Z: "Progessive" },
+          ],
+        },
+        {
+          bordered: false,
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "#", thClass: "noHead" },
+            { key: "Z", thClass: "noHead" },
+          ],
+          items: [
+            { Z: "Do" },
+            { Z: "Does" },
+            { Z: "Did" },
+            { Z: "Will" },
+            { Z: "Would" },
+          ],
+        },
+        {
+          bordered: false,
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "#", thClass: "noHead" },
+            { key: "Z", thClass: "noHead" },
+          ],
+          items: [
+            { Z: "Have" },
+            { Z: "Has" },
+            { Z: "Had" },
+            { Z: "Is" },
+            { Z: "Am" },
+            { Z: "Are" },
+            { Z: "Was" },
+            { Z: "Were" },
+            { Z: "Can" },
+            { Z: "Could" },
+            { Z: "Should" },
+            { Z: "Must" },
+          ],
+        },
+      ],
     };
   },
   methods: {
