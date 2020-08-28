@@ -54,7 +54,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTraduccionCodigos
+        <tablaTraduccionCodigos id="diiv" class="overflow-auto"
           :cuestionario="$data.cuestionario1"
           :inglesR="false"
           :espanolR="false"
@@ -705,7 +705,7 @@ export default {
           { key: "B", thClass: "Red" },
           { key: "C", thClass: "Yelow" },
           { key: "D", thClass: "Green" },
-          {key:"ENGLISH_PHRASE", label:"ENGLISH"},
+          {key:"complejo1", label:"ENGLISH"},
           { key: "TRADUCCION_ESPAÑOL", label:"SPANISH"},
         ],
         items: [
@@ -714,7 +714,7 @@ export default {
             B: 3,
             C: 3,
             D: 3,
-            ENGLISH_PHRASE: ["we want to work everyday"],
+            complejo1: {lista:["we want to work everyday"]},
             TRADUCCION_ESPAÑOL: ["queremos trabajar todos los días", "nosotros queremos trabajar todos los días"],
           },
           {
@@ -722,7 +722,7 @@ export default {
             B: 7,
             C: 8,
             D: 1,
-            ENGLISH_PHRASE: ["I have to eat something"],
+            complejo1: {lista:["I have to eat something"]},
             TRADUCCION_ESPAÑOL: ["tengo que comer algo", "yo tengo que comer algo"],
           },
           {
@@ -730,7 +730,7 @@ export default {
             B: 7,
             C: 8,
             D: 4,
-            ENGLISH_PHRASE: ["I have to eat very much"],
+            complejo1: {lista:["I have to eat very much"]},
             TRADUCCION_ESPAÑOL: ["tengo que comer mucho", "yo tengo que comer mucho"],
           },
         ],
@@ -1011,5 +1011,10 @@ img {
 #text,
 #inputText {
   text-align: left;
+}
+#diiv {
+  max-height: 300px;
+  margin-bottom: 2em;
+
 }
 </style>

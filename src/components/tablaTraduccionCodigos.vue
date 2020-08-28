@@ -1,5 +1,5 @@
 <template>
-  <div id="diiv" class="overflow-auto">
+  <div >
     <b-table
       id="cuestionario"
       small
@@ -8,8 +8,43 @@
       responsive="sm"
       :bordered="true"
     >
-      <template v-slot:cell(ENGLISH_PHRASE)="row" id="hola">
-        <inputChecked :resuelto="$props.inglesR" :esperado="row.item.ENGLISH_PHRASE" />
+      <template v-slot:cell(complejo1)="row" id="hola">
+        <inputChecked :style="'width:'+row.item.complejo1.tamano+'em;'"
+          :resuelto="$props.inglesR"
+          :esperado="row.item.complejo1.lista"
+          :conTexto="true"
+          :textoA="row.item.complejo1.textoA"
+          :textoD="row.item.complejo1.textoD"
+        />
+      </template>
+      <template v-slot:cell(complejo2)="row" id="hola">
+        <inputChecked :style="'width:'+row.item.complejo2.tamano+'em;'"
+          :resuelto="$props.inglesR"
+          :esperado="row.item.complejo2.lista"
+          :conTexto="true"
+          :textoA="row.item.complejo2.textoA"
+          :textoD="row.item.complejo2.textoD"
+        />
+      </template>
+
+      <template v-slot:cell(complejo3)="row" id="hola">
+        <inputChecked :style="'width:'+row.item.complejo3.tamano+'em;'"
+          :resuelto="$props.inglesR"
+          :esperado="row.item.complejo3.lista"
+          :conTexto="true"
+          :textoA="row.item.complejo3.textoA"
+          :textoD="row.item.complejo3.textoD"
+        />
+      </template>
+
+      <template v-slot:cell(complejo4)="row" id="hola">
+        <inputChecked :style="'width:'+row.item.complejo4.tamano+'em;'"
+          :resuelto="$props.inglesR"
+          :esperado="row.item.complejo4.lista"
+          :conTexto="true"
+          :textoA="row.item.complejo4.textoA"
+          :textoD="row.item.complejo4.textoD"
+        />
       </template>
 
       <template v-slot:cell(TRADUCCION_ESPAÑOL)="row">
@@ -38,8 +73,5 @@ export default {
 
 
 <style scoped>
-#diiv {
-  max-height: 300px;
-  margin-bottom: 2em;
-}
+
 </style>

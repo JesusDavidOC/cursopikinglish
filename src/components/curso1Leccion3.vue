@@ -164,6 +164,33 @@
         <listaIndex :tabla="$data.tablaP21" />
       </div>
     </div>
+
+    <div class="row">
+      <h3 id="subTitulo">PRACTICE</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4" id="text">
+        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <a id="textPractice">Escribe la traducción</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 row">
+        <div class="col-sm-12 row" v-for="n in 3">
+          <div v-for="(item, index) in practiceP21" :class="'col-sm-'+item.tamaño" style="margin-bottom:0.5em;">
+            <inputChecked
+              :esperado="item.esperado"
+              :resuelto="false"
+              :name="'P21-'+index"
+              :textoA="item.textoA"
+              :conTexto="true"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -187,6 +214,21 @@ export default {
   },
   data() {
     return {
+      practiceP21: [
+        { esperado: ["have"], textoA: "He-has-hemos-han", tamaño: 5, textoD:"" },
+        { esperado: ["am"], textoA: "Soy-estoy", tamaño: 4 },
+        { esperado: ["can"], textoA: "Poder", tamaño: 3 },
+        { esperado: ["should"], textoA: "Debería", tamaño: 4 },
+        { esperado: ["was"], textoA: "Estaba-era ", tamaño: 4 },
+        { esperado: ["must"], textoA: "Deber", tamaño: 3 },
+        { esperado: ["could"], textoA: "Pude-podría", tamaño: 4 },
+        { esperado: ["has"], textoA: "Ha", tamaño: 3 },
+        { esperado: ["is"], textoA: "Es-está", tamaño: 3 },
+        { esperado: ["had"], textoA: "Había", tamaño: 3 },
+        { esperado: ["are"], textoA: "Eres-estás-somos-estamos-son-están", tamaño: 8 },
+        { esperado: ["were"], textoA: "Eras-estabas-éramos-estábamos-eran-estaban", tamaño: 9 },   
+
+      ],
       tablaP21: {
         bordered: true,
         camposInput: false,
@@ -196,7 +238,7 @@ export default {
           { key: "Negation", label: "NEGATION", thClass: "Yelow" },
           {
             key: "Forma",
-            label: "Con que forma del verbo se usa",
+            label: "FORM",
             thClass: "Yelow",
           },
         ],

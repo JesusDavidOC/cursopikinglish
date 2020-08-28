@@ -71,8 +71,8 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <ul id="textoCompromiso">
-          <dt v-for="(item, index) in $data.listadoP14">
+        <ul>
+          <dt v-for="(item, index) in $data.listadoP14" id="textoCompromiso">
             <i class="fa fa-diamond"></i>
             <a v-html="item">{{ item }}</a>
             <div class="row" v-if="index== 3">
@@ -563,7 +563,7 @@
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
         >7. Escriba los verbos con súper poder</legend>
       </div>
-    </div>
+    </div>    
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
@@ -1201,6 +1201,15 @@ export default {
 </script>
 
 <style scoped>
+#textPractice {
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+/deep/.labelPregunta {
+  font-weight: bold;
+}
+
 /deep/ #tabla {
   padding-right: 0px;
   padding-left: 0px;
@@ -1209,6 +1218,7 @@ export default {
   width: 100%;
   margin: 0;
   margin-bottom: 1em;
+  padding: 0;
 }
 
 /deep/ #EnglishInput,
@@ -1232,6 +1242,12 @@ export default {
 /deep/ .noHead {
   border-width: 0;
   font-size: 0;
+}
+
+/deep/.colorLetraRojo {
+  color: red;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #cuadroTexto {
@@ -1259,14 +1275,13 @@ img {
 }
 
 #subTitulo {
+  padding: 0;
   margin-right: auto;
   color: darkcyan;
   margin-top: 1.5em;
-}
-
-#textoCompromiso {
   text-align: left;
-  margin-bottom: 1em;
+}
+.textList {
   font-size: 1.5em;
 }
 
@@ -1302,21 +1317,15 @@ img {
   background: cadetblue;
 }
 
-#campoTextoP11 {
-  margin: 0;
-  margin-right: 1em;
-  margin-top: 1.5em;
-  padding: 0;
-}
-
 #text,
 #inputText {
   text-align: left;
 }
-/deep/.colorLetraRojo {
-  color: red;
-  margin-left: 8px;
-  margin-right: 8px;
+
+#textoCompromiso {
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 1.5em;
 }
 #i {
   padding-right: 0;

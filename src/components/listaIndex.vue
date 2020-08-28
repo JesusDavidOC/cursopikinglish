@@ -12,7 +12,7 @@
         <!-- A virtual column -->
         <template v-slot:cell(#)="data">{{ data.index + 1 }}</template>
         <template v-slot:cell(html)="data">
-          <span v-html="data.value"></span>
+          <h3 v-html="data.value"></h3>
         </template>
 
         <!-- A custom formatted column -->
@@ -21,8 +21,7 @@
         </template>
       </b-table>
     </div>
-    <div v-if="$props.tabla.camposInput" class="overflow-auto" id="tablaInputs">
-     
+    <div v-if="tabla.camposInput" class="overflow-auto" id="tablaInputs">     
       <b-table
         small
         :fields="tabla.fields"  
@@ -31,12 +30,13 @@
         :bordered="tabla.bordered"
       >
          
-        <template v-if="$props.tabla.camposInput" v-slot:cell(Z)="row" id="hola">
-          <posiblesRespuestasTabla :refs="$props.tabla.refs" :listadoPalabrasEsperadas="$props.tabla.items" />
+        <template v-slot:cell(Z)="row" :id="tabla.refs">        
+          <posiblesRespuestasTabla :refs="$props.tabla.refs" :listadoPalabrasEsperadas="$props.tabla.items" :enlistada="tabla.enlistada" />
         </template>
-      </b-table>
+        
+      </b-table>      
       
-    </div>
+    </div>    
   </div>
 </template>
 
@@ -54,6 +54,8 @@ export default {
   props: {
     tabla: Object,
   },
+  mounted(){    
+  }
 };
 </script>
 

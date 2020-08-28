@@ -1,12 +1,24 @@
 <template>
-  <div class="row">
-    <div class="row" v-for="(item, index) in listadoPalabrasEsperadas">
+  <div class="row" style="margin:0em;">      
+    <div v-if="!enlistada" class="row" v-for="(item, index) in listadoPalabrasEsperadas" style="margin:0.2em;">        
       <inputChecked        
         :esperado="listadoPalabrasEsperadas"
         :resuelto="false"
         :name="refs+index+''"
         @output="dinamizadorPalabras(index)"
         :ref="$props.refs"
+      />
+    </div>
+    
+    <div v-if="enlistada" class="row" v-for="(item, index) in listadoPalabrasEsperadas" style="margin:0.2em;">          
+      <inputChecked      
+        :esperado="item.esperado"
+        :resuelto="false"
+        :name="refs+index+''"        
+        :ref="$props.refs"
+        :conTexto="item.conTexto"
+        :textoA="item.textoA"
+
       />
     </div>
   </div>
@@ -21,6 +33,7 @@ export default {
   props: {
     listadoPalabrasEsperadas: Array,
     refs: String,
+    enlistada: Boolean,    
   },
   data() {
     return {

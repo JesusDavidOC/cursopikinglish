@@ -1,11 +1,13 @@
 <template>
-  <div id="app">    
-    <div class="row" id="curso">            
+  <div id="app">
+    <div class="row" id="curso">
       <div class="col-sm-12">
         <curso1Leccion1 />
         <curso1Leccion2 />
-        <curso1Leccion3/>        
-      </div>    
+        <curso1Leccion3 />
+        <curso1Leccion4 />
+        <curso1Leccion5 />
+      </div>
     </div>
   </div>
 </template>
@@ -14,19 +16,22 @@
 import curso1Leccion1 from "./components/curso1Leccion1.vue";
 import curso1Leccion2 from "./components/curso1Leccion2.vue";
 import curso1Leccion3 from "./components/curso1Leccion3.vue";
+import curso1Leccion4 from "./components/curso1Leccion4.vue";
+import curso1Leccion5 from "./components/curso1Leccion5.vue";
 
 export default {
   name: "App",
   components: {
     curso1Leccion1,
     curso1Leccion2,
-    curso1Leccion3,    
+    curso1Leccion3,
+    curso1Leccion4,
+    curso1Leccion5,
   },
 };
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,10 +41,10 @@ export default {
   margin-top: 60px;
 }
 
-#curso{
+#curso {
   padding-left: 1em;
 }
- .row {
+.row {
   width: 100%;
   margin: 0;
 }
@@ -48,7 +53,7 @@ export default {
   margin-bottom: 1em;
   font-size: 1.5em;
 }
-/deep/.labelPregunta{
+/deep/.labelPregunta {
   font-weight: bold;
 }
 
@@ -155,6 +160,6 @@ img {
 }
 #i {
   padding-right: 0;
-  text-align: end;  
+  text-align: end;
 }
 </style>
