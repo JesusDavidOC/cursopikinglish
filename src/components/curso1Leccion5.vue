@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>Recuerde que un verbo se usa<span class="colorLetraRojo">forma presente lógicamente en presente </span> o después de un auxiliar y siempre tenga en cuenta que los auxiliares sirven para negar o preguntar.</h3>
+        <h3>Recuerde que un verbo se usa su<span class="colorLetraRojo">forma presente lógicamente en presente </span> o después de un auxiliar y siempre tenga en cuenta que los auxiliares sirven para negar o preguntar.</h3>
       </div>
       <div class="col-sm-2"></div>
     </div>
