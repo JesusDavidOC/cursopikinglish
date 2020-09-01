@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     completar() {
-      this.text = this.esperado1[0];
+      this.text = this.esperado[0];
     },
     quitarAcentos(cadena) {
       const acentos = {

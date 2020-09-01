@@ -3,7 +3,12 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>Recuerde que un verbo se usa su<span class="colorLetraRojo">forma presente lógicamente en presente </span> o después de un auxiliar y siempre tenga en cuenta que los auxiliares sirven para negar o preguntar.</h3>
+        <h3>
+          Recuerde que un verbo se usa su
+          <span
+            class="colorLetraRojo"
+          >forma presente lógicamente en presente</span> o después de un auxiliar y siempre tenga en cuenta que los auxiliares sirven para negar o preguntar.
+        </h3>
       </div>
       <div class="col-sm-2"></div>
     </div>
@@ -48,6 +53,136 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="cuadroTexto">
+        <h3>
+          Hay dos tipos de verbos
+          <span class="colorLetraRojo">Regulares</span>
+          e
+          <span class="colorLetraRojo">Irregulares</span>, y ambos tienen 4 formas; -
+          <span
+            class="colorLetraRojo"
+          >presente, pasado, participio y progresivo.</span>
+          existen
+          <span class="colorLetraRojo">cinco auxiliares.</span>
+        </h3>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="$data.cuestionario2P28"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10" id="text">
+        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <a id="textPractice">Escribe la forma del verbo debajo del grupo de verbos con poder.</a>
+      </div>
+    </div>
+    <div class="row" style="margin:0em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 row">
+        <div
+          class="col-sm-1"
+          v-for="(item, index) in palabrasListaP28.fields"
+          style="margin:0; padding:0;"
+        >
+          <listaIndex :tabla="{bordered:true, fields: [item]}" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:-1.5em;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 row">
+        <div class="col-sm-3" style="padding:0;">
+          <inputChecked :esperado="['participio']" :resuelto="false" />
+        </div>
+        <div class="col-sm-5" style="padding:0;">
+          <inputChecked :esperado="['progresivo']" :resuelto="false" />
+        </div>
+        <div class="col-sm-4" style="padding:0;">
+          <inputChecked :esperado="['presente']" :resuelto="false" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10" id="text">
+        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <a id="textPractice">Escribe la traducción en frente de cada frase en inglés.</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-9">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla1P29"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10" id="text">
+        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <a id="textPractice">Ahora niegue cada oración.</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-9">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla2P29"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+
+    <div class="row">
+      <h3 id="subTitulo">EXAMEN DE APROBACIÓN DE LA LÓGICA DEL INGLÉS</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6" style="text-align:left;">
+        <legend
+          id="5__BV_label_"
+          tabindex="-1"
+          class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
+        >1.    Ubique la forma del verbo “ir” en inglés en las siguientes oraciones:</legend>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-9">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla3P29"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
   </div>
 </template>
 
@@ -61,7 +196,197 @@ import tablaTC from "./tablaTraduccionCodigos";
 export default {
   data() {
     return {
-        cuestionario2P27: {
+      tabla3P29:{
+        fields: [
+          { key: "present", label: "Present", thClass: "Yelow" },
+          { key: "past", label: "Past", thClass: "Red" },
+          { key: "participle", label: "Participle", thClass: "Blue" },
+          { key: "progressive", label: "Progressive", thClass: "Green" },
+        ],
+        items: [
+          {
+            present: "3,1",
+            past: "3,2",
+            participle: "3,3",
+            progressive: "3,4",
+          },
+          {
+            present: "Go",
+            past: "Went",
+            participle: "Gone",
+            progressive: "Going",
+          }
+        ],
+      },
+      tabla2P29: {
+        fields: [
+          { key: "A", label: "A", thClass: "noHead" },
+          { key: "complejo1", label: "A", thClass: "noHead" },
+          { key: "B", label: "A", thClass: "noHead" },
+          { key: "complejo2", label: "A", thClass: "noHead" },
+        ],
+        items: [
+          {
+            A: "I eat",
+            complejo1: { lista: ["I don't eat", "I do not eat"], tamano: 18 },
+            B: "She eats",
+            complejo2: { lista: ["She doesn't eat", "She does not eat"], tamano: 18 },
+          },
+          {
+            A: "I ate",
+            complejo1: { lista: ["I didn´t eat", "I did not eat"], tamano: 18},
+            B: "I will eat",
+            complejo2: { lista: ["I won´t eat", "I will not eat"], tamano: 18 },
+          },
+          {
+            A: "I would eat",
+            complejo1: { lista: ["I wouldn´t eat", "I would not eat"], tamano: 18 },
+            B: "I could eat",
+            complejo2: { lista: ["I couldn´t eat", "I could not eat"], tamano: 18 },
+          },
+          {
+            A: "I can eat",
+            complejo1: { lista: ["I can´t eat", "I can not eat"], tamano: 18 },
+            B: "I should eat",
+            complejo2: { lista: ["I shouldn´t eat", "I should not eat"], tamano: 18 },
+          },
+          {
+            A: "I must eat",
+            complejo1: { lista: ["I mustn´t eat", "I must not eat"], tamano: 18 },
+            B: "I have eaten",
+            complejo2: { lista: ["I haven´t eaten", "I have not eaten"], tamano: 18 },
+          },
+          {
+            A: "She has eaten",
+            complejo1: { lista: ["She hasn´t eaten", "She has not eaten"], tamano: 18 },  
+            B: "I had eaten",
+            complejo2: { lista: ["I hadn´t eaten", "I had not eaten"], tamano: 18 },          
+          },    
+          {
+            A: "I am eating",
+            complejo1: { lista: ["I am not eating"], tamano: 18 },
+            B: "She is eating",
+            complejo2: { lista: ["She isn´t eating", "She is not eating"], tamano: 18 },
+          },
+          {
+            A: "You are eating",
+            complejo1: { lista: ["You aren´t eating", "You are not eating"], tamano: 18 },
+            B: "I was eating",
+            complejo2: { lista: ["I wasn´t eating", "I wasn´t eating"], tamano: 18 },
+          },
+          {
+            A: "We were eating",
+            complejo1: { lista: ["Yo estoy comiendo", "estoy comiendo"], tamano: 18 },
+            B: "",
+            complejo2: { lista: [""], tamano: 18 },
+          },                   
+        ],
+      },
+      tabla1P29: {
+        fields: [
+          { key: "A", label: "A", thClass: "noHead" },
+          { key: "complejo1", label: "A", thClass: "noHead" },
+          { key: "B", label: "A", thClass: "noHead" },
+          { key: "complejo2", label: "A", thClass: "noHead" },
+        ],
+        items: [
+          {
+            A: "I eat",
+            complejo1: { lista: ["Yo como", "como"], tamano: 18 },
+            B: "She eats",
+            complejo2: { lista: ["Ella come", "come"], tamano: 20 },
+          },
+          {
+            A: "Do you eat?",
+            complejo1: { lista: ["¿tú comes?", "¿comes?", "¿comes", "comes?", "¿tú comes", "tú comes?"], tamano: 18},
+            B: "Does she eat?",
+            complejo2: { lista: ["¿ella come?", "¿come?", "¿come", "come?", "¿ella come", "ella come?"], tamano: 20 },
+          },
+          {
+            A: "Did you eat?",
+            complejo1: { lista: ["¿tú comiste?", "¿comiste?", "¿comiste", "comiste?", "¿tú comiste", "tú comiste?"], tamano: 18 },
+            B: "Will you eat?",
+            complejo2: { lista: ["¿tú comerás?", "¿comerás?", "¿comerás", "comerás?", "¿tú comerás", "tú comerás?"], tamano: 20 },
+          },
+          {
+            A: "Would you eat?",
+            complejo1: { lista: ["¿tú comerías?", "¿comerías?", "¿comerías", "comerías?", "¿tú comerías", "tú comerías?"], tamano: 18 },
+            B: "I can eat",
+            complejo2: { lista: ["Yo puedo comer", "puedo comer"], tamano: 20 },
+          },
+          {
+            A: "I should eat",
+            complejo1: { lista: ["Yo debería comer", "debería comer"], tamano: 18 },
+            B: "I must eat",
+            complejo2: { lista: ["Yo debo comer", "debo comer"], tamano: 20 },
+          },
+          {
+            A: "I could eat",
+            complejo1: { lista: ["Yo pude comer", " pude comer"], tamano: 18 },  
+            B: "She is eating",
+            complejo2: { lista: ["Ella está comiendo", "está comiendo"], tamano: 20 },          
+          },    
+          {
+            A: "I ate",
+            complejo1: { lista: ["Yo comí", "comí"], tamano: 18 },
+            B: "I have eaten",
+            complejo2: { lista: ["Yo he comido", "he comido"], tamano: 20 },
+          },
+          {
+            A: "She has eaten",
+            complejo1: { lista: ["Ella ha comido", "ha comido"], tamano: 18 },
+            B: "I had eaten",
+            complejo2: { lista: ["Yo había comido", "había comido"], tamano: 20 },
+          },
+          {
+            A: "I am eating",
+            complejo1: { lista: ["Yo estoy comiendo", "estoy comiendo"], tamano: 18 },
+            B: "You are eating",
+            complejo2: { lista: ["Tú estás comiendo", "estás comiendo"], tamano: 20 },
+          },
+          {
+            A: "I was eating",
+            complejo1: { lista: ["Yo estaba comiendo", "estaba comiendo"], tamano: 18 },
+            B: "We were eating",
+            complejo2: { lista: ["Nosotros estábamos comiendo", "estábamos comiendo"], tamano: 22 },
+          },          
+        ],
+      },
+      palabrasListaP28: {
+        fields: [
+          "Have",
+          "Has",
+          "Had",
+          "Is",
+          "Are",
+          "Am",
+          "Was",
+          "Were",
+          "Can",
+          "Could",
+          "Should",
+          "Must",
+        ],
+      },
+      cuestionario2P28: {
+        fields: [
+          { key: "complejo1", label: "EN PRESENTE" },
+          { key: "complejo2", label: "EN PRESENTE CON HE-SHE-IT" },
+          { key: "complejo3", label: "EN PASADO" },
+          { key: "complejo4", label: "EN FUTURO" },
+          { key: "complejo5", label: "UN VERBO TERMINA EN RÍA" },
+        ],
+        items: [
+          {
+            complejo1: { lista: ["Do"], tamano: 11 },
+            complejo2: { lista: ["Does"], tamano: 15 },
+            complejo3: { lista: ["Did"], tamano: 10 },
+            complejo4: { lista: ["Will"], tamano: 11 },
+            complejo5: { lista: ["Would"], tamano: 15 },
+          },
+        ],
+      },
+      cuestionario2P27: {
         fields: [
           { key: "A", thClass: "Blue" },
           { key: "B", thClass: "Red" },
@@ -73,7 +398,7 @@ export default {
           {
             A: 1,
             B: 1,
-            C: 1,  
+            C: 1,
             complejo1: { lista: ["Do you go?"] },
             ESPANOL: "¿Tú vas?",
           },

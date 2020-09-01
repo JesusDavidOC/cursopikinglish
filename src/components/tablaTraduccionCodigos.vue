@@ -46,6 +46,16 @@
           :textoD="row.item.complejo4.textoD"
         />
       </template>
+      
+      <template v-slot:cell(complejo5)="row" id="hola">
+        <inputChecked :style="'width:'+row.item.complejo5.tamano+'em;'"
+          :resuelto="$props.inglesR"
+          :esperado="row.item.complejo5.lista"
+          :conTexto="true"
+          :textoA="row.item.complejo5.textoA"
+          :textoD="row.item.complejo5.textoD"
+        />
+      </template>
 
       <template v-slot:cell(TRADUCCION_ESPAÑOL)="row">
         <inputChecked :resuelto="$props.espanolR" :esperado="row.item.TRADUCCION_ESPAÑOL" />
