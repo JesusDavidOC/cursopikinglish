@@ -1,5 +1,5 @@
 {
-  "name": "cursopikinglish",
+  "name": "curso1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,16 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-vuex": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

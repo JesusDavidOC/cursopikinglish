@@ -1,4 +1,4 @@
-# cursopikinglish
+# curso1
 
 ## Project setup
 ```

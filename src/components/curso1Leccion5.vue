@@ -183,6 +183,33 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
+
+    <div class="row" v-for="(item, index) in preguntasCompletarP26.items">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div :class="'col-sm-'+item.tamaño">
+          <inputChecked
+            :esperado="item.esperado"
+            :name="preguntasCompletarP26.nombre+index"
+            :conTexto="true"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6" id="text">
+        <opcionMultiple
+          :options="$data.cuestionarioP18"
+          :rEsperadas="$data.respuestasCuestionarioP18"
+          @respuestas="$data.mensajeRespuestasP18 = $event"
+        />
+      </div>
+      <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP18 }}</b-modal>
+      <div class="col-sm-1"></div>
+    </div>
   </div>
 </template>
 
@@ -196,6 +223,214 @@ import tablaTC from "./tablaTraduccionCodigos";
 export default {
   data() {
     return {
+      cuestionarioP18: [
+        {
+          respuesta: "",
+          pregunta: "2.    ¿Por qué se les llama Super Power Verbs?",
+          options: [
+            {
+              text: "A) Necesitan auxiliares.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) No necesitan auxiliares.",
+              value: "B",
+              disabled: false,
+            },
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta:
+            "3.        ¿Cuántas clases de verbos hay en inglés y cuáles son?",
+          options: [
+            {
+              text: "A) Una clase, verbos en presente.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Dos clases, regulares e irregulares.",
+              value: "B",
+              disabled: false,
+            },
+            {
+              text: "C) Tres clases, presente, pasado y participio.",
+              value: "C",
+              disabled: false,
+            }
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta: "4.        ¿Cuáles son las formas de un verbo? ",
+          options: [
+            {
+              text: "A) Presente, Pasado, Participio Y Progresivo.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Do, Does, Did, Will Y Would.",
+              value: "B",
+              disabled: false,
+            },            
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta: "5.    ¿Cuándo se usa un verbo en su forma presente?",
+          options: [
+            {
+              text: "A) Por que usan auxiliares.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Porque se pueden negar solos.",
+              value: "B",
+              disabled: false,
+            },
+            {
+              text: "C) Tres clases, presente, pasado y participio.",
+              value: "C",
+              disabled: false,
+            }
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta:
+            "5. ¿Cuáles verbos con super poder se usan en la forma participio?",
+          options: [
+            {
+              text: "A) Can y could.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Have, has y had.",
+              value: "B",
+              disabled: false,
+            },
+            {
+              text: "C) Tres clases, presente, pasado y participio.",
+              value: "C",
+              disabled: false,
+            }
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta: "6. ¿En qué forma se usa el verbo si hay un auxiliar?",
+          options: [
+            {
+              text: "A) Presente.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Pasado.",
+              value: "B",
+              disabled: false,
+            },
+            {
+              text: "C) Tres clases, presente, pasado y participio.",
+              value: "C",
+              disabled: false,
+            }
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta:
+            "7. Para usar un verbo en su forma pasada la oración debe ser:",
+          options: [
+            {
+              text: "A) Negativa.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Afirmativa.",
+              value: "B",
+              disabled: false,
+            },
+          ],
+        },
+        {
+          respuesta: "",
+          pregunta:
+            "8. ¿En que termina un verbo después del auxiliar WOULD en español?",
+          options: [
+            {
+              text: "A) Ré.",
+              value: "A",
+              disabled: false,
+            },
+            {
+              text: "B) Ría.",
+              value: "B",
+              disabled: false,
+            },
+          ],
+        },
+        
+      ],
+      preguntasCompletarP26: {
+        nombre: "preguntasCompletarP24",
+        items: [
+          {
+            esperado: ["go"],
+            textoA: "a.    Where did you",
+            textoD: "? - "+"<strong> ¿Donde fuiste? </strong> ",
+            tamaño: 7,
+          },
+          {
+            esperado: ["went"],
+            textoA: "b.    Nobody",
+            textoD: "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
+            tamaño: 9,
+          },
+          {
+            esperado: ["go"],
+            textoA: "c.    I always",
+            textoD: "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
+            tamaño: 10,
+          },
+          {
+            esperado: ["gone"],
+            textoA: "d.    have you ",
+            textoD: "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
+            tamaño: 10,
+          },
+          {
+            esperado: ["go"],
+            textoA: "e.    She didn’t",
+            textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
+            tamaño: 7,
+          },
+          {
+            esperado: ["went"],
+            textoA: "f.     He",
+            textoD: "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
+            tamaño: 8,
+          },
+          {
+            esperado: ["gone"],
+            textoA: " g.    He has",
+            textoD: "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
+            tamaño: 12,
+          },    
+          {
+            esperado: ["going"],
+            textoA: " h.    Where are you",
+            textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
+            tamaño: 8,
+          },      
+        ],
+      },
       tabla3P29:{
         fields: [
           { key: "present", label: "Present", thClass: "Yelow" },

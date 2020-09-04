@@ -2,7 +2,7 @@
   <div>
     <div class="input-group">
       <div v-if="conTexto" style="margin-right:10px;">
-        <h5>{{textoA}}</h5>
+        <h5 v-html="textoA">{{textoA}}</h5>
       </div>
       <b-form-input
         :name="this.name"
@@ -18,7 +18,7 @@
         </button>
       </div>
       <div v-if="conTexto" style="margin-left:10px;">
-        <h5 id="inputText">{{textoD}}</h5>
+        <h5 id="inputText" v-html="textoD">{{textoD}}</h5>
       </div>
     </div>
   </div>
