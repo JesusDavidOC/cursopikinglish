@@ -60,7 +60,12 @@
       <template v-slot:cell(TRADUCCION_ESPAÑOL)="row">
         <inputChecked :resuelto="$props.espanolR" :esperado="row.item.TRADUCCION_ESPAÑOL" />
       </template>
+       <template v-slot:cell(html1)="row" id="hola">
+        <a v-html="row.item.html1"> {{ row.item.html1 }} </a>
+      </template>
     </b-table>
+    
+    
   </div>
 </template>
 
