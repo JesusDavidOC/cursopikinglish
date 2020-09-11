@@ -194,7 +194,7 @@
       <div class="col-sm-9">
         <tablaTC
           class="overflow-auto"
-          :cuestionario="tabla3P29"
+          :cuestionario="tabla3P30"
           :inglesR="false"
           :espanolR="false"
         />
@@ -224,7 +224,7 @@
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
         >8. Ubique al frente de la traducción en español el verbo con poder en inglés.</legend>
       </div>
-    </div>
+    </div>    
   </div>
 </template>
 
@@ -417,7 +417,7 @@ export default {
           ],
         },
       ],
-      tabla3P29: {
+      tabla3P30: {
         fields: [
           { key: "present", label: "Present", thClass: "Yelow" },
           { key: "past", label: "Past", thClass: "Red" },
@@ -913,7 +913,7 @@ export default {
   methods: {
     showModal(text) {
       this.$refs[text].show();
-    },
+    },    
   },
   components: {
     opcionMultiple,
@@ -1057,4 +1057,38 @@ img {
   padding-right: 0;
   text-align: end;
 }
+
+
+
+
+body {
+  background-color: purple;
+  padding: 50px;
+}
+.container {
+  padding: 40px 80px 15px 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.btn{
+  outline: none !important;
+}
+.btn.btn-primary {
+  background-color: purple;
+  border-color: purple;
+  outline: none;
+  
+}
+.btn-sm {
+  font-size: 22px;
+  padding: 2px 1px 2px 4px;
+  line-height: 12px;
+  margin-right: 10px;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+
 </style>

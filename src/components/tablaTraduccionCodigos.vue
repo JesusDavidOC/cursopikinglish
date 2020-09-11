@@ -15,6 +15,7 @@
           :conTexto="true"
           :textoA="row.item.complejo1.textoA"
           :textoD="row.item.complejo1.textoD"
+          :audio="row.item.complejo1.audio"
         />
       </template>
       <template v-slot:cell(complejo2)="row" id="hola">
@@ -24,6 +25,7 @@
           :conTexto="true"
           :textoA="row.item.complejo2.textoA"
           :textoD="row.item.complejo2.textoD"
+           :audio="row.item.complejo2.audio"
         />
       </template>
 
@@ -34,6 +36,7 @@
           :conTexto="true"
           :textoA="row.item.complejo3.textoA"
           :textoD="row.item.complejo3.textoD"
+           :audio="row.item.complejo3.audio"
         />
       </template>
 
@@ -44,6 +47,7 @@
           :conTexto="true"
           :textoA="row.item.complejo4.textoA"
           :textoD="row.item.complejo4.textoD"
+           :audio="row.item.complejo4.audio"
         />
       </template>
       
@@ -54,6 +58,7 @@
           :conTexto="true"
           :textoA="row.item.complejo5.textoA"
           :textoD="row.item.complejo5.textoD"
+           :audio="row.item.complejo5.audio"
         />
       </template>
 
