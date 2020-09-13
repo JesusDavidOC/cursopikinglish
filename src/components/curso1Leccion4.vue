@@ -138,11 +138,11 @@
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
-            :audio="item.audio"
           />
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -175,7 +175,6 @@ export default {
             textoA: "1.   I am",
             textoD: "(work-worked-worked-working) - Estoy trabajando.",
             tamaño: 9,
-            audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2026/AC1P25R1.mp3'
           },
           {
             esperado: ["go"],
@@ -718,7 +717,6 @@ export default {
               textoA: "It is",
               textoD: "",
               tamano: 15,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R1%20it%20is%20raining.mp3'
             },
           },
           {
@@ -732,7 +730,6 @@ export default {
               textoA: "He has",
               textoD: "to school",
               tamano: 20,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R2%20he%20has%20gone%20to%20school.mp3'
             },
           },
           {
@@ -746,7 +743,6 @@ export default {
               textoA: "What are you",
               textoD: "?",
               tamano: 20,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R3%20what%20are%20you%20eating.mp3'
             },
           },
           {
@@ -760,21 +756,6 @@ export default {
               textoA: "I can´t",
               textoD: "very well",
               tamano: 20,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R4%20i%20cant%20see%20very%20well.mp3'
-            }
-          },
-          {
-            SPANISH: "Ver",
-            PRESENT: "See",
-            PAST: "Saw",
-            PARTICIPLE: "Seen",
-            PROGRESSIVE: "Seeing",
-            complejo1: {
-              lista: ["seen"],
-              textoA: "I have never",
-              textoD: "that movie",
-              tamano: 23,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R5%20i%20have%20never%20seen%20that%20movie.mp3'
             },
           },
           {
@@ -788,7 +769,6 @@ export default {
               textoA: "I finally",
               textoD: "my wallet after 2 days",
               tamano: 28,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R6%20i%20finaly%20found%20my%20wallet%20after%202%20days.mp3'
             },
           },
           {
@@ -802,7 +782,6 @@ export default {
               textoA: "I am",
               textoD: "on top of the world",
               tamano: 25,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R7%20i%20am%20feeling%20on%20top%20of%20the%20world.mp3'
             },
           },
           {
@@ -816,7 +795,6 @@ export default {
               textoA: "I must",
               textoD: "a present for Britney",
               tamano: 25,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R8%20i%20must%20buy%20a%20present%20for%20britney.mp3'
             },
           },
           {
@@ -830,7 +808,6 @@ export default {
               textoA: "I had never",
               textoD: "a friend like you",
               tamano: 25,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R9%20i%20had%20never%20had%20a%20friend%20like%20you.mp3 '
             },
           },
           {
@@ -844,7 +821,6 @@ export default {
               textoA: "She didn´t",
               textoD: "me my wallet",
               tamano: 23,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R10%20she%20didnt%20give%20me%20my%20wallet.mp3'
             },
           },
           {
@@ -858,7 +834,6 @@ export default {
               textoA: "I have not",
               textoD: "you yet",
               tamano: 23,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R11%20i%20have%20not%20forgotten%20you%20yet.mp3'
             },
           },
           {
@@ -872,7 +847,6 @@ export default {
               textoA: "You should",
               textoD: "who to live with",
               tamano: 28,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R12%20you%20should%20decide%20who%20to%20live%20with.mp3'
             },
           },
           {
@@ -886,7 +860,6 @@ export default {
               textoA: "What time did you",
               textoD: "up today?",
               tamano: 28,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R13%20what%20time%20did%20you%20wake%20up%20today.mp3'
             },
           },
           {
@@ -900,7 +873,6 @@ export default {
               textoA: "I was",
               textoD: "about what you told me",
               tamano: 28,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R14%20i%20was%20thinking%20about%20what%20you%20told%20me.mp3'
             },
           },
           {
@@ -914,7 +886,6 @@ export default {
               textoA: "She has never",
               textoD: "a car",
               tamano: 23,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R15%20she%20has%20never%20driven%20a%20car.mp3'
             },
           },
           {
@@ -928,7 +899,6 @@ export default {
               textoA: "You need to",
               textoD: "the numbers in English",
               tamano: 30,
-              audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2023/AC1P22R16%20you%20need%20to%20learn%20the%20numbers%20in%20english.mp3'
             },
           },
         ],
