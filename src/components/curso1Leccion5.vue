@@ -194,7 +194,7 @@
       <div class="col-sm-9">
         <tablaTC
           class="overflow-auto"
-          :cuestionario="tabla3P30"
+          :cuestionario="tabla3P29"
           :inglesR="false"
           :espanolR="false"
         />
@@ -417,7 +417,7 @@ export default {
           ],
         },
       ],
-      tabla3P30: {
+      tabla3P29: {
         fields: [
           { key: "present", label: "Present", thClass: "Yelow" },
           { key: "past", label: "Past", thClass: "Red" },
@@ -531,7 +531,7 @@ export default {
           {
             A: "We were eating",
             complejo1: {
-              lista: ["Yo estoy comiendo", "estoy comiendo"],
+              lista: ["We weren't eating"],
               tamano: 18,
             },
             B: "",

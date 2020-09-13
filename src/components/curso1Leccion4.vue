@@ -138,6 +138,7 @@
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :audio="item.audio"
           />
         </div>
       </div>
@@ -174,6 +175,7 @@ export default {
             textoA: "1.   I am",
             textoD: "(work-worked-worked-working) - Estoy trabajando.",
             tamaño: 9,
+            audio: 'https://classroom.pikinglish.com/cursos/curso1/leccion4/audios/page%2026/AC1P25R1.mp3'
           },
           {
             esperado: ["go"],
