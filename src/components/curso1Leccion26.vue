@@ -184,7 +184,7 @@
     </div>
 
     <div class="row">
-      <h3 id="subTitulo">WRITE THE NUMBER</h3>
+      <h3 id="subTitulo">WRITE THE NUMBER|</h3>
     </div>
     <div class="row" v-for="(item, index) in preguntasCompletarP105A.items">
       <div class="col-sm-1"></div>
