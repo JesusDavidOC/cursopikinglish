@@ -159,41 +159,41 @@
     <div class="row">
       <h4 id="subTitulo">DESGLOSAR EL NÚMERO MÁGICO.</h4>
     </div>
-    <div class="row">
       <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico2">2</div>
-        <div class="col-sm-3" id="campoTextoP11">
-          <h2>Tipos de verbos:</h2>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico2">2</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <h2>Tipos de verbos:</h2>
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <h3 id="text">Regulares e Irregulares.</h3>
+          </div>
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <h3 id="text">Regulares e Irregulares.</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico4">4</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <h3>Formas de escribir un verbo:</h3>
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <h3 id="text">Presente, Pasado, Participio Y Progresivo.</h3>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico4">4</div>
-        <div class="col-sm-3" id="campoTextoP11">
-          <h3>Formas de escribir un verbo:</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico5">5</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <h2>Modificadores de tiempo:</h2>
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <h3 id="text">Do, Does, Did, Will y Would.</h3>
+          </div>
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <h3 id="text">Presente, Pasado, Participio Y Progresivo.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico5">5</div>
-        <div class="col-sm-3" id="campoTextoP11">
-          <h2>Modificadores de tiempo:</h2>
-        </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <h3 id="text">Do, Does, Did, Will y Would.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico12">12</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico12">12</div>
+          <div class="col-sm-3" id="campoTextoP11">
           <h2>Verbos con súper poder:</h2>
         </div>
         <div class="col-sm-6" id="campoTextoP11">
