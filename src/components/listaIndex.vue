@@ -14,6 +14,24 @@
         <template v-slot:cell(html)="data">
           <h3 v-html="data.value"></h3>
         </template>
+        
+        <template v-slot:cell(html1)="data">
+          <h3 v-html="data.value"></h3>
+        </template>
+        
+        <template v-slot:cell(html2)="data">
+          <h3 v-html="data.value"></h3>
+        </template>
+
+
+        <template v-slot:cell(html3)="data">
+          <h3 v-html="data.value"></h3>
+        </template>
+
+        <template v-slot:cell(html4)="data">
+          <h3 v-html="data.value"></h3>
+        </template>
+
 
         <!-- A custom formatted column -->
         <template v-if="$props.tabla.camposInput" v-slot:cell(items)="row" id="hola">
