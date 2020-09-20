@@ -327,6 +327,7 @@ export default {
                 textoA: "Do you",
                 textoD: "to school?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R1.mp3"
               },
               A: "Go",
               B: "Went",
@@ -339,6 +340,7 @@ export default {
                 textoA: "Did you",
                 textoD: "vegetables?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R2.mp3"
               },
               A: "Eat",
               B: "Ate",
@@ -351,6 +353,7 @@ export default {
                 textoA: "Would you",
                 textoD: "to live in Peru?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R3.mp3"
               },
               A: "Like",
               B: "Liked",
@@ -363,6 +366,7 @@ export default {
                 textoA: "What will you",
                 textoD: "tomorrow?",
                 tamano: 25,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R4.mp3"
               },
               A: "Do",
               B: "Did",
@@ -375,6 +379,7 @@ export default {
                 textoA: "Where does she",
                 textoD: "?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R5.mp3"
               },
               A: "Live",
               B: "Lived",
@@ -398,6 +403,7 @@ export default {
                 textoA: "I",
                 textoD: "a sandwich for lunch",
                 tamano: 23,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R6.mp3"
               },
               A: "Have",
               B: "Had",
@@ -410,6 +416,7 @@ export default {
                 textoA: "We ",
                 textoD: "to see a movie last night",
                 tamano: 26,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R7.mp3"
               },
               A: "Go",
               B: "Went",
@@ -422,6 +429,7 @@ export default {
                 textoA: "I",
                 textoD: "at this university.",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R8.mp3"
               },
               A: "Study",
               B: "Studied",
@@ -445,6 +453,7 @@ export default {
                 textoA: "How have you ",
                 textoD: "?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R9.mp3"
               },
               A: "Be",
               B: "Was",
@@ -457,6 +466,7 @@ export default {
                 textoA: "I had",
                 textoD: "the party before that happened",
                 tamano: 30,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R10.mp3"
               },
               A: "Leave",
               B: "Left",
@@ -469,6 +479,7 @@ export default {
                 textoA: "She hasn´t",
                 textoD: "yet",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R11.mp3"
               },
               A: "Eat",
               B: "Ate",
@@ -492,6 +503,7 @@ export default {
                 textoA: "What are you",
                 textoD: "about?",
                 tamano: 22,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R12.mp3"
               },
               A: "Think",
               B: "Thought",
@@ -504,6 +516,7 @@ export default {
                 textoA: "Where were you",
                 textoD: "?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R13.mp3"
               },
               A: "Go",
               B: "Went",
@@ -516,6 +529,7 @@ export default {
                 textoA: "I am",
                 textoD: "my bed",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R14.mp3"
               },
               A: "Make",
               B: "Made",
@@ -528,6 +542,7 @@ export default {
                 textoA: "Sorry! I was not",
                 textoD: "attention",
                 tamano: 25,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R15.mp3"
               },
               A: "Pay",
               B: "Paid",

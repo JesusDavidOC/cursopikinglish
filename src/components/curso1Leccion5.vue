@@ -239,7 +239,7 @@ export default {
   data() {
     return {
       preguntasCompletarP30: {
-        nombre: "preguntasCompletarP24",
+        nombre: "preguntasCompletarP30",
         items: [
           {
             esperado: ["go"],
