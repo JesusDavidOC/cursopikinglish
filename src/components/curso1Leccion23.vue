@@ -120,7 +120,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTC :cuestionario="tablaP93B" />
+        <listaIndex :tabla="tablaP93B" />
       </div>
     </div>
 
@@ -580,25 +580,26 @@ export default {
       },
       tablaP93B: {
         fields: [
-          { key: "español", label: "ESPAÑOL" },
-          { key: "incorrecto", label: "FORMA INCORRECTA" },
-          { key: "correcto", label: "FORMA CORRECTA" },
+          { key: "html", label: "ESPAÑOL" },
+          { key: "html2", label: "FORMA INCORRECTA" },
+          { key: "html3", label: "FORMA CORRECTA" },
         ],
+        bordered: true,
         items: [
           {
-            español: "YO (LA) AMO",
-            incorrecto: "I LOVE (SHE)",
-            correcto: "I LOVE (HER)"
+            html: "<h5>YO <span class='colorLetraRojo'>LA</span> AMO</h5>",
+            html2: "I LOVE SHE",
+            html3: "I LOVE HER"
           },
           {
-            español: "NOSOTROS (LOS) AMAMOS",
-            incorrecto: "WE LOVE (THEY)",
-            correcto: " WE LOVE (THEM)"
+            html: "<h5> NOSOTROS <span class='colorLetraRojo'>LOS</span> AMAMOS </h5>",
+            html2: "WE LOVE THEY",
+            html3: "WE LOVE THEM"
           },
           {
-            español: "ESTO ES PARA (ÉL)",
-            incorrecto: " PARA ÉL THIS IS FOR (HE)",
-            correcto: "THIS IS FOR (HIM)"
+            html: "<h5>ESTO ES PARA <span class='colorLetraRojo'>ÉL</span></h5>",
+            html2: "THIS IS FOR HER",
+            html3: "THIS IS FOR HIM"
           },
         ],
       },
@@ -630,9 +631,9 @@ export default {
       },
       tablaP91: {
         fields: [
-          { key: "spanish", label: "Spanish" },
-          { key: "english", label: "English" },
-          { key: "english2", label: "English" },
+          { key: "spanish", label: "Spanish", thClass:"Yelow" },
+          { key: "english", label: "English", thClass:"Blue" },
+          { key: "english2", label: "Example", thClass:"Blue2" },
         ],
         items: [
           {

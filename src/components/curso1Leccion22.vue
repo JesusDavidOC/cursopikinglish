@@ -610,7 +610,7 @@ export default {
               lista: ["in"],
               textoA: "What are you interested",
               textoD: "?",
-              tamano: 30,
+              tamano: 22,
             },
             html: "¿En qué estás interesado?",
           },
@@ -619,7 +619,7 @@ export default {
               lista: ["from"],
               textoA: "Where did you get that",
               textoD: "?",
-              tamano: 30,
+              tamano: 23,
             },
             html: "¿De dónde sacaste eso?",
           },
@@ -628,7 +628,7 @@ export default {
               lista: ["about"],
               textoA: "What are you talking",
               textoD: "?",
-              tamano: 30,
+              tamano: 22,
             },
             html: "¿Sobre qué estás hablando?",
           },
@@ -637,7 +637,7 @@ export default {
               lista: ["for"],
               textoA: "Who do you work",
               textoD: "?",
-              tamano: 30,
+              tamano: 19,
             },
             html: "¿Para quién trabajas?",
           },
@@ -646,7 +646,7 @@ export default {
               lista: ["of"],
               textoA: "What is this made",
               textoD: "?",
-              tamano: 30,
+              tamano: 19,
             },
             html: "¿De qué está hecho esto?",
           },
@@ -655,7 +655,7 @@ export default {
               lista: ["with"],
               textoA: "Who are you traveling",
               textoD: "?",
-              tamano: 25,
+              tamano: 22,
             },
             html: "¿Con quién estás viajando?",
           },
@@ -664,7 +664,7 @@ export default {
               lista: ["from"],
               textoA: "Where did you get that idea",
               textoD: "?",
-              tamano: 30,
+              tamano: 25,
             },
             html: "¿De dónde sacaste esa idea?",
           },
@@ -673,7 +673,7 @@ export default {
               lista: ["about"],
               textoA: "Who are you talking",
               textoD: "?",
-              tamano: 30,
+              tamano: 22,
             },
             html: "¿De quién estás hablando?",
           },
@@ -741,7 +741,7 @@ export default {
           { key: "D", thClass: "Green" },
           { key: "E", thClass: "Blue2" },
           { key: "complejo1", label: "ENGLISH" },
-          { key: "TRADUCCION_ESPAÑOL", label: "SPANISH" },
+          { key: "español", label: "SPANISH" },
         ],
         items: [
           {
@@ -751,7 +751,7 @@ export default {
             D: 8,
             E: "",
             complejo1: { lista: ["What are you doing?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué estás haciendo?"],
+            español: "¿Qué estás haciendo?",
           },
           {
             A: 3,
@@ -760,7 +760,7 @@ export default {
             D: 9,
             E: 8,
             complejo1: { lista: ["Where would you like to go?"] },
-            TRADUCCION_ESPAÑOL: ["¿Dónde te gustaría ir?"],
+            español: "¿Dónde te gustaría ir?",
           },
           {
             A: 1,
@@ -769,7 +769,7 @@ export default {
             D: "",
             E: 6,
             complejo1: { lista: ["What can I do for you?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué puedo hacer por ti?"],
+            español: "¿Qué puedo hacer por ti?",
           },
           {
             A: 4,
@@ -778,7 +778,7 @@ export default {
             D: "",
             E: 4,
             complejo1: { lista: ["How was your day?"] },
-            TRADUCCION_ESPAÑOL: ["¿Cómo estuvo tu día?"],
+            español: "¿Cómo estuvo tu día?",
           },
           {
             A: 1,
@@ -787,7 +787,7 @@ export default {
             D: 12,
             E: 1,
             complejo1: { lista: ["What are we going to do now?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué vamos a hacer ahora?"],
+            español: "¿Qué vamos a hacer ahora?",
           },
           {
             A: 5,
@@ -796,7 +796,7 @@ export default {
             D: 7,
             E: "",
             complejo1: { lista: ["When are you coming?"] },
-            TRADUCCION_ESPAÑOL: ["¿Cuándo vas a venir?"],
+            español: "¿Cuándo vas a venir?",
           },
           {
             A: 4,
@@ -805,7 +805,7 @@ export default {
             D: 8,
             E: "",
             complejo1: { lista: ["How are you doing?"] },
-            TRADUCCION_ESPAÑOL: ["¿Cómo te va?"],
+            español: "¿Cómo te va?",
           },
           {
             A: 1,
@@ -814,7 +814,7 @@ export default {
             D: 11,
             E: "",
             complejo1: { lista: ["What do you mean?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué quieres decir?"],
+            español: "¿Qué quieres decir?",
           },
           {
             A: "",
@@ -823,7 +823,7 @@ export default {
             D: 6,
             E: "",
             complejo1: { lista: ["Are you going?"] },
-            TRADUCCION_ESPAÑOL: ["¿Vas a ir?"],
+            español: "¿Vas a ir?",
           },
           {
             A: 4,
@@ -832,7 +832,7 @@ export default {
             D: 9,
             E: 7,
             complejo1: { lista: ["How do you like it?"] },
-            TRADUCCION_ESPAÑOL: ["¿Cómo te gusta?"],
+            español: "¿Cómo te gusta?",
           },
           {
             A: 6,
@@ -843,7 +843,7 @@ export default {
             complejo1: {
               lista: ["What time would you like something to drink?"],
             },
-            TRADUCCION_ESPAÑOL: ["¿A qué horas te gustaría algo de beber?"],
+            español: "¿A qué horas te gustaría algo de beber?",
           },
           {
             A: 6,
@@ -852,7 +852,7 @@ export default {
             D: 3,
             E: 7,
             complejo1: { lista: ["What time will she have it?"] },
-            TRADUCCION_ESPAÑOL: [" ¿A qué horas ella lo tendrá?"],
+            español: "¿A qué horas ella lo tendrá?",
           },
           {
             A: 1,
@@ -861,7 +861,7 @@ export default {
             D: 8,
             E: "",
             complejo1: { lista: ["What is she doing?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué está ella haciendo?"],
+            español: "¿Qué está ella haciendo?",
           },
           {
             A: 3,
@@ -870,7 +870,7 @@ export default {
             D: 6,
             E: "",
             complejo1: { lista: ["Where are you going?"] },
-            TRADUCCION_ESPAÑOL: ["¿Para dónde vas?"],
+            español: "¿Para dónde vas?",
           },
           {
             A: "",
@@ -879,7 +879,7 @@ export default {
             D: 3,
             E: 5,
             complejo1: { lista: ["Do you have any money?"] },
-            TRADUCCION_ESPAÑOL: ["¿Tú tienes algo de dinero?"],
+            español: "¿Tú tienes algo de dinero?",
           },
           {
             A: 1,
@@ -888,7 +888,7 @@ export default {
             D: 1,
             E: "",
             complejo1: { lista: ["What is your name?"] },
-            TRADUCCION_ESPAÑOL: [" ¿Cuál es tu nombre?"],
+            español: "¿Cuál es tu nombre?",
           },
           {
             A: 3,
@@ -897,7 +897,7 @@ export default {
             D: 2,
             E: "",
             complejo1: { lista: ["Where are you from?"] },
-            TRADUCCION_ESPAÑOL: [" ¿De dónde eres?"],
+            español: "¿De dónde eres?",
           },
           {
             A: 1,
@@ -906,7 +906,7 @@ export default {
             D: 12,
             E: 1,
             complejo1: { lista: ["What are you going to do now?"] },
-            TRADUCCION_ESPAÑOL: ["¿Qué vas a hacer ahora?"],
+            español: "¿Qué vas a hacer ahora?",
           },
           {
             A: "",
@@ -915,9 +915,7 @@ export default {
             D: 9,
             E: 3,
             complejo1: { lista: ["Would you like something to drink?"] },
-            TRADUCCION_ESPAÑOL: [
-              "¿Te gustaría algo de beber?¿Qué estás haciendo?",
-            ],
+            español: "¿Te gustaría algo de beber?",
           },
           {
             A: 4,
@@ -926,7 +924,7 @@ export default {
             D: "",
             E: 4,
             complejo1: { lista: ["How was your day?"] },
-            TRADUCCION_ESPAÑOL: [" ¿Cómo estuvo tu día?"],
+            español: "¿Cómo estuvo tu día?",
           },
           {
             A: 1,
@@ -935,7 +933,7 @@ export default {
             D: 11,
             E: "",
             complejo1: { lista: ["What do you mean?"] },
-            TRADUCCION_ESPAÑOL: [" ¿Qué quieres decir?"],
+            español: "¿Qué quieres decir?",
           },
           {
             A: 5,
@@ -944,7 +942,7 @@ export default {
             D: 3,
             E: 5,
             complejo1: { lista: ["When will you have any money?"] },
-            TRADUCCION_ESPAÑOL: ["¿Cuándo tendrás algo de dinero?"],
+            español: "¿Cuándo tendrás algo de dinero?",
           },
         ],
       },
@@ -956,7 +954,7 @@ export default {
           { key: "D", thClass: "Green" },
           { key: "E", thClass: "Blue2" },
           { key: "complejo1", label: "ENGLISH" },
-          { key: "TRADUCCION_ESPAÑOL", label: "SPANISH" },
+          { key: "español", label: "SPANISH" },
         ],
         items: [
           {
@@ -966,7 +964,7 @@ export default {
             D: 2,
             E: 6,
             complejo1: { lista: ["who should I go out with?"] },
-            TRADUCCION_ESPAÑOL: ["¿Con quién debería salir?"],
+            español: "¿Con quién debería salir?",
           },
           {
             A: 3,
@@ -975,7 +973,7 @@ export default {
             D: 10,
             E: 5,
             complejo1: { lista: ["Who will she work for?"] },
-            TRADUCCION_ESPAÑOL: ["¿Para quién ella trabajará?"],
+            español: "¿Para quién ella trabajará?",
           },
           {
             A: 4,
@@ -984,7 +982,7 @@ export default {
             D: 4,
             E: "",
             complejo1: { lista: ["Why did you come?"] },
-            TRADUCCION_ESPAÑOL: ["¿Por qué viniste?"],
+            español: "¿Por qué viniste?",
           },
           {
             A: 3,
@@ -993,7 +991,7 @@ export default {
             D: 9,
             E: 4,
             complejo1: { lista: ["Who are you thinking about?"] },
-            TRADUCCION_ESPAÑOL: ["¿En quién estás pensando?"],
+            español: "¿En quién estás pensando?",
           },
           {
             A: 1,
@@ -1002,7 +1000,7 @@ export default {
             D: "",
             E: 5,
             complejo1: { lista: ["What is it for?"] },
-            TRADUCCION_ESPAÑOL: ["¿Para qué es?"],
+            español: "¿Para qué es?",
           },
           {
             A: 1,
@@ -1010,8 +1008,8 @@ export default {
             C: 4,
             D: 9,
             E: 4,
-            complejo1: { lista: [" 9 4 What is she thinking about?"] },
-            TRADUCCION_ESPAÑOL: ["¿En qué esta ella pensando?"],
+            complejo1: { lista: ["What is she thinking about?"] },
+            español: "¿En qué esta ella pensando?",
           },
           {
             A: 2,
@@ -1020,7 +1018,7 @@ export default {
             D: 4,
             E: 1,
             complejo1: { lista: ["Where do you come from?"] },
-            TRADUCCION_ESPAÑOL: ["¿De dónde vienes?"],
+            español: "¿De dónde vienes?",
           },
           {
             A: 3,
@@ -1029,7 +1027,7 @@ export default {
             D: 6,
             E: 2,
             complejo1: { lista: ["Who would you live with?"] },
-            TRADUCCION_ESPAÑOL: ["¿Con quién vivirías?"],
+            español: "¿Con quién vivirías?",
           },
           {
             A: 3,
@@ -1038,7 +1036,7 @@ export default {
             D: 10,
             E: 5,
             complejo1: { lista: ["Who do you work for?"] },
-            TRADUCCION_ESPAÑOL: ["¿Para quién trabajas?"],
+            español: "¿Para quién trabajas?",
           },
           {
             A: 3,
@@ -1047,7 +1045,7 @@ export default {
             D: 1,
             E: 2,
             complejo1: { lista: ["Who did he eat with?"] },
-            TRADUCCION_ESPAÑOL: ["¿Con quién comió él?"],
+            español: "¿Con quién comió él?",
           },
           {
             A: 1,
@@ -1056,7 +1054,7 @@ export default {
             D: 9,
             E: 4,
             complejo1: { lista: ["What are you thinking about?"] },
-            TRADUCCION_ESPAÑOL: ["¿En qué estás pensando?"],
+            español: "¿En qué estás pensando?",
           },
         ],
       },
