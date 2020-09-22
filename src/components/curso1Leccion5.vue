@@ -224,7 +224,68 @@
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
         >8. Ubique al frente de la traducción en español el verbo con poder en inglés.</legend>
       </div>
-    </div>    
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla1P31"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6" style="text-align:left;">
+        <legend
+          id="5__BV_label_"
+          tabindex="-1"
+          class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
+        >9. Traduce las siguientes oraciones al inglés.</legend>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla2P31"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tabla3P31"
+          :inglesR="false"
+          :espanolR="false"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="cuadroTexto">
+        <h3>Después de cumplir el sueño de ser traductor del batallón Colombia No 3 en la península del Sinaí en Egipto, me di cuenta sobre la importancia de hablar inglés y al mismo tiempo analicé que el aprendizaje de este idioma se ha convertido en un obstáculo ya que los métodos de gramática individual y el bajo nivel de inglés de los docentes han frustrado a los interesados en aprenderlo, por lo tanto como resultado de la necesidad de aprender inglés fácil, rápido y sin esfuerzo, he puesto este método del número mágico a tu disposición para que logres en corto tiempo un dominio del inglés efectivo con solo aplicar el conocimiento de los números mágicos.</h3>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="cuadroTexto">
+        <h3 class="colorLetraRojo">TU PRIMER RETO DE APRENDER CON LOGICA HA SIDO APROBADO.</h3>
+        <h3 class="colorLetraRojo">
+          VEAMOS EN DETALLE CADA FORMA DEL VERBO, LOS MODIFICADORES Y
+          LOS VERBOS CON PODERES.
+        </h3>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
   </div>
 </template>
 
@@ -238,6 +299,142 @@ import tablaTC from "./tablaTraduccionCodigos";
 export default {
   data() {
     return {
+      tabla2P31: {
+        fields: [
+          { key: "espanol", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo1", label: "English", thClass: "Yelow" },
+          { key: "espanol1", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo2", label: "English", thClass: "Yelow" },
+          { key: "espanol2", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo3", label: "English", thClass: "Yelow" },
+        ],
+        items: [
+          {
+            complejo1: { lista: ["I eat"], tamano: 14 },
+            espanol: "Yo como",
+            complejo2: { lista: ["She eats", "hola"], tamano: 14 },
+            espanol1: "Ella come",
+            complejo3: { lista: ["Do you eat?"], tamano: 14 },
+            espanol2: "¿Tú comes?",
+          },
+          {
+            complejo1: { lista: ["Does she eat?"], tamano: 14 },
+            espanol: "¿Ella come?",
+            complejo2: { lista: ["Did you eat?"], tamano: 14 },
+            espanol1: "¿Tú comiste?",
+            complejo3: { lista: ["Will you eat?"], tamano: 14 },
+            espanol2: "¿Tu comerás?",
+          },
+          {
+            complejo1: { lista: ["Will you eat?"], tamano: 14 },
+            espanol: "¿Tu comerás?",
+            complejo2: { lista: ["Would you eat?"], tamano: 14 },
+            espanol1: "¿Tu comerías?",
+            complejo3: { lista: ["Would you eat?"], tamano: 14 },
+            espanol2: "Yo puedo comer",
+          },
+          {
+            complejo1: { lista: ["I should eat"], tamano: 14 },
+            espanol: "Yo debería comer",
+            complejo2: { lista: ["I must eat"], tamano: 14 },
+            espanol1: "Yo debo comer",
+            complejo3: { lista: ["I can eat"], tamano: 14 },
+            espanol2: "Yo pude comer",
+          },
+        ],
+      },
+      tabla3P31: {
+        fields: [
+          { key: "espanol", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo1", label: "English", thClass: "Yelow" },
+          { key: "espanol1", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo2", label: "English", thClass: "Yelow" },
+          { key: "espanol2", label: "Spanish", thClass: "Yelow" },
+          { key: "complejo3", label: "English", thClass: "Yelow" },
+        ],
+        items: [
+          {
+            complejo1: { lista: ["I ate"], tamano: 14 },
+            espanol: "Yo comí",
+            complejo2: { lista: ["I have eaten"], tamano: 14 },
+            espanol1: "Yo he comido",
+            complejo3: { lista: ["She has eaten"], tamano: 14 },
+            espanol2: "Ella ha comido",
+          },
+          {
+            complejo1: { lista: ["I had eaten"], tamano: 14 },
+            espanol: "Yo había comido",
+            complejo2: { lista: ["I am eating"], tamano: 14 },
+            espanol1: "Yo estoy comiendo",
+            complejo3: { lista: ["She is eating"], tamano: 14 },
+            espanol2: "Ella está comiendo",
+          },
+          {
+            complejo1: { lista: ["You are eating"], tamano: 14 },
+            espanol: "Tú estás comiendo",
+            complejo2: { lista: ["I was eating"], tamano: 14 },
+            espanol1: "Yo estaba comiendo",
+            complejo3: { lista: ["We were eating"], tamano: 14 },
+            espanol2: "Nosotros estábamos comiendo",
+          },
+        ],
+      },
+      tabla1P31: {
+        fields: [
+          { key: "complejo1", label: "English", thClass: "Yelow" },
+          { key: "espanol", label: "Spanish", thClass: "Yelow" },
+        ],
+        items: [
+          {
+            complejo1: { lista: ["Should"], tamano: 15 },
+            espanol: "Debería",
+          },
+          {
+            complejo1: { lista: ["Have"], tamano: 15 },
+            espanol: "He-has- hemos-han",
+          },
+          {
+            complejo1: { lista: ["Am"], tamano: 15 },
+            espanol: "Soy- estoy",
+          },
+          {
+            complejo1: { lista: ["Was"], tamano: 15 },
+            espanol: "Era-estaba",
+          },
+          {
+            complejo1: { lista: ["Can"], tamano: 15 },
+            espanol: "Poder",
+          },
+          {
+            complejo1: { lista: ["Must"], tamano: 15 },
+            espanol: "Deber",
+          },
+          {
+            complejo1: { lista: ["Is"], tamano: 15 },
+            espanol: "Es-esta",
+          },
+          {
+            complejo1: { lista: ["Are"], tamano: 15 },
+            espanol: "Eres, estás – somos, estamos – son, están",
+          },
+          {
+            complejo1: { lista: ["Has"], tamano: 15 },
+            espanol: "Ha",
+          },
+          {
+            complejo1: { lista: ["Had"], tamano: 15 },
+            espanol: "Había",
+          },
+          {
+            complejo1: { lista: ["Could"], tamano: 15 },
+            espanol: "Podría-pude-podía",
+          },
+          {
+            complejo1: { lista: ["Ere"], tamano: 15 },
+            espanol: "Eras, estabas - éramos, estábamos - eran, estaban",
+          },
+        ],
+      },
       preguntasCompletarP30: {
         nombre: "preguntasCompletarP30",
         items: [
@@ -246,6 +443,7 @@ export default {
             textoA: "a.    Where did you",
             textoD: "? - " + "<strong> ¿Donde fuiste? </strong> ",
             tamaño: 7,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
           },
           {
             esperado: ["went"],
@@ -253,6 +451,7 @@ export default {
             textoD:
               "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
             tamaño: 9,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
           },
           {
             esperado: ["go"],
@@ -260,6 +459,7 @@ export default {
             textoD:
               "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
             tamaño: 10,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
           },
           {
             esperado: ["gone"],
@@ -267,12 +467,14 @@ export default {
             textoD:
               "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
             tamaño: 10,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
           },
           {
             esperado: ["go"],
             textoA: "e.    She didn’t",
             textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
             tamaño: 7,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
           },
           {
             esperado: ["went"],
@@ -280,6 +482,7 @@ export default {
             textoD:
               "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
             tamaño: 8,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
           },
           {
             esperado: ["gone"],
@@ -287,12 +490,14 @@ export default {
             textoD:
               "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
             tamaño: 12,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
           },
           {
             esperado: ["going"],
             textoA: " h.    Where are you",
             textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
             tamaño: 8,
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
           },
         ],
       },
@@ -727,35 +932,50 @@ export default {
             A: 1,
             B: 1,
             C: 1,
-            complejo1: { lista: ["Do you go?"] },
+            complejo1: {
+              lista: ["Do you go?"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R6.mp3",
+            },
             ESPANOL: "¿Tú vas?",
           },
           {
             A: 2,
             B: 2,
             C: 1,
-            complejo1: { lista: ["Does she go?"] },
+            complejo1: {
+              lista: ["Does she go?"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R7.mp3",
+            },
             ESPANOL: "¿Ella va?",
           },
           {
             A: 3,
             B: 2,
             C: 1,
-            complejo1: { lista: ["Did she go?"] },
+            complejo1: {
+              lista: ["Did she go?"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R8.mp3",
+            },
             ESPANOL: "¿Ella fue?",
           },
           {
             A: 4,
             B: 1,
             C: 1,
-            complejo1: { lista: ["Will you go?"] },
+            complejo1: {
+              lista: ["Will you go?"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R9.mp3",
+            },
             ESPANOL: "¿Tú irás?",
           },
           {
             A: 5,
             B: 2,
             C: 1,
-            complejo1: { lista: ["Would she go?"] },
+            complejo1: {
+              lista: ["Would she go?"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R10.mp3",
+            },
             ESPANOL: "¿Ella iría?",
           },
         ],
@@ -817,7 +1037,10 @@ export default {
             B: 1,
             C: 1,
             D: 2,
-            complejo1: { lista: ["I don´t have a friend"] },
+            complejo1: {
+              lista: ["I don´t have a friend"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R1.mp3",
+            },
             ESPANOL: "Yo no tengo un amigo",
           },
           {
@@ -825,7 +1048,10 @@ export default {
             B: 2,
             C: 1,
             D: 1,
-            complejo1: { lista: ["She doesn´t have that"] },
+            complejo1: {
+              lista: ["She doesn´t have that"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R2.mp3",
+            },
             ESPANOL: "Ella no tiene eso",
           },
           {
@@ -833,7 +1059,10 @@ export default {
             B: 3,
             C: 2,
             D: 1,
-            complejo1: { lista: ["I didn´t do that"] },
+            complejo1: {
+              lista: ["I didn´t do that"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R3.mp3",
+            },
             ESPANOL: "Yo no hice eso",
           },
           {
@@ -841,7 +1070,10 @@ export default {
             B: 4,
             C: 2,
             D: 1,
-            complejo1: { lista: ["She won´t do that"] },
+            complejo1: {
+              lista: ["She won´t do that"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R4.mp3",
+            },
             ESPANOL: "Ella no hará eso",
           },
           {
@@ -849,7 +1081,10 @@ export default {
             B: 5,
             C: 2,
             D: 1,
-            complejo1: { lista: ["I wouldn´t do that"] },
+            complejo1: {
+              lista: ["I wouldn´t do that"],
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R5.mp3",
+            },
             ESPANOL: "Yo no haría eso",
           },
         ],
@@ -913,7 +1148,7 @@ export default {
   methods: {
     showModal(text) {
       this.$refs[text].show();
-    },    
+    },
   },
   components: {
     opcionMultiple,
@@ -1058,9 +1293,6 @@ img {
   text-align: end;
 }
 
-
-
-
 body {
   background-color: purple;
   padding: 50px;
@@ -1072,14 +1304,13 @@ body {
   max-width: 400px;
 }
 
-.btn{
+.btn {
   outline: none !important;
 }
 .btn.btn-primary {
   background-color: purple;
   border-color: purple;
   outline: none;
-  
 }
 .btn-sm {
   font-size: 22px;
@@ -1090,5 +1321,4 @@ body {
 .form-group {
   margin-bottom: 25px;
 }
-
 </style>
