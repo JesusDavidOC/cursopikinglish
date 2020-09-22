@@ -138,11 +138,11 @@
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :audio="item.audio"
           />
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -175,138 +175,161 @@ export default {
             textoA: "1.   I am",
             textoD: "(work-worked-worked-working) - Estoy trabajando.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R1.mp3'
           },
           {
             esperado: ["go"],
             textoA: "2.   I don’t",
             textoD: "anywhere (go-went-gone-going) - Yo no voy a ninguna parte.",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R2.mp3'
           },
           {
             esperado: ["have"],
             textoA: "3.   She can´t ",
             textoD: "a boyfriend now (have-has-had-having) - Ella no puede tener un novio ahora.",
             tamaño: 12,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R3.mp3'
           },
           {
             esperado: ["seen"],
             textoA: "4.   I haven’t ",
             textoD: "Victor today (see-saw-seen-seeing) - No he visto a Víctor hoy.",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R4.mp3'
           },
           {
             esperado: ["saw"],
             textoA: "5.   She",
             textoD: "Victor yesterday (see-saw-seen-seeing) - Ella vio a Víctor ayer.",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R5.mp3'
           },
           {
             esperado: ["had"],
             textoA: "6.   We",
             textoD: "an excellent class (have-has-had-having) - Tuvimos una excelente clase.?",
             tamaño: 11,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R6.mp3'
           },
           {
             esperado: ["been"],
             textoA: "7.   How have you",
             textoD: "? (be- was- been- being) - ¿Como has estado?",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R7.mp3'
           },
           {
             esperado: ["working"],
             textoA: "8.   She is",
             textoD: "(work-worked-worked-working) - Ella está trabajando.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R8.mp3'
           },
           {
             esperado: ["do"],
             textoA: "9.   What did you",
             textoD: "last night? (do-did-done-doing) - ¿Qué hiciste anoche?",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R9.mp3'
           },
           {
             esperado: ["ate"],
             textoA: "10. I",
             textoD: "breakfast early (eat-ate-eaten-eating) - Yo desayuné temprano.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R10.mp3'
           },
           {
             esperado: ["eat"],
             textoA: "11. I",
             textoD: "breakfast early (eat-ate-eaten-eating) - Yo desayuno temprano.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R11.mp3'
           },
           {
             esperado: ["doing"],
             textoA: "12. What were you",
             textoD: "last night? (do-did-done-doing) - ¿Qué estabas haciendo anoche?",
             tamaño: 11,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R12.mp3'
           },
           {
             esperado: ["done"],
             textoA: "13. Have you ever",
             textoD: "that? (do-did-done-doing) - ¿Alguna vez has hecho eso?",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R13.mp3'
           },
           {
             esperado: ["do"],
             textoA: "14. We shouldn’t",
             textoD: "that. (do-did-done-doing) - Nosotros no deberíamos hacer eso.",
             tamaño: 11,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R14.mp3'
           },
           {
             esperado: ["study"],
             textoA: "15. You must",
             textoD: "for the exam. (study-studied-studied-studying) - Tú debes estudiar para el examen.",
             tamaño: 12,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R15.mp3'
           },
           {
             esperado: ["raining"],
             textoA: "16. It is",
             textoD: "a lot. (rain-rained-rained-raining) - Está lloviendo mucho.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R16.mp3'
           },
           {
             esperado: ["like"],
             textoA: "17. What would you",
             textoD: "to do? (like-liked-liked-liking) - ¿Qué te gustaría hacer?",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R17.mp3'
           },
           {
             esperado: ["do"],
             textoA: "18. I",
             textoD: "sports once in a while. (do-did-done-doing) - Yo hago deportes de vez en cuando.",
             tamaño: 11,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R18.mp3'
           },
           {
             esperado: ["do"],
             textoA: "19. What does your father",
             textoD: "? (do-did-done-doing) - ¿Qué hace tu padre?",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R19.mp3'
           },
           {
             esperado: ["do"],
             textoA: "20. What can I",
             textoD: "for you? (do-did-done-doing) - ¿Qué puedo hacer por ti?",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R20.mp3'
           },
           {
             esperado: ["done"],
             textoA: "21. I haven’t ",
             textoD: "anything yet. (do-did-done-doing) - No he hecho nada aún.",
             tamaño: 10,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R21.mp3'
           },
           {
             esperado: ["did"],
             textoA: "22. You ",
             textoD: "a good job. (do-did-done-doing) Tú hiciste un buen trabajo.",
             tamaño: 9,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R22.mp3'
           },
           {
             esperado: ["worked"],
             textoA: "23. My father",
             textoD: "for a big company. (work-worked- working) Mi padre trabajó para una gran compañía. ",
             tamaño: 13,
+            audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R23.mp3'
           },
         ],
       },
@@ -326,6 +349,7 @@ export default {
                 textoA: "Do you",
                 textoD: "to school?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R1.mp3"
               },
               A: "Go",
               B: "Went",
@@ -338,6 +362,7 @@ export default {
                 textoA: "Did you",
                 textoD: "vegetables?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R2.mp3"
               },
               A: "Eat",
               B: "Ate",
@@ -350,6 +375,7 @@ export default {
                 textoA: "Would you",
                 textoD: "to live in Peru?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R3.mp3"
               },
               A: "Like",
               B: "Liked",
@@ -362,6 +388,7 @@ export default {
                 textoA: "What will you",
                 textoD: "tomorrow?",
                 tamano: 25,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R4.mp3"
               },
               A: "Do",
               B: "Did",
@@ -374,6 +401,7 @@ export default {
                 textoA: "Where does she",
                 textoD: "?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R5.mp3"
               },
               A: "Live",
               B: "Lived",
@@ -397,6 +425,7 @@ export default {
                 textoA: "I",
                 textoD: "a sandwich for lunch",
                 tamano: 23,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R6.mp3"
               },
               A: "Have",
               B: "Had",
@@ -409,6 +438,7 @@ export default {
                 textoA: "We ",
                 textoD: "to see a movie last night",
                 tamano: 26,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R7.mp3"
               },
               A: "Go",
               B: "Went",
@@ -421,6 +451,7 @@ export default {
                 textoA: "I",
                 textoD: "at this university.",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R8.mp3"
               },
               A: "Study",
               B: "Studied",
@@ -444,6 +475,7 @@ export default {
                 textoA: "How have you ",
                 textoD: "?",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R9.mp3"
               },
               A: "Be",
               B: "Was",
@@ -456,6 +488,7 @@ export default {
                 textoA: "I had",
                 textoD: "the party before that happened",
                 tamano: 30,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R10.mp3"
               },
               A: "Leave",
               B: "Left",
@@ -468,6 +501,7 @@ export default {
                 textoA: "She hasn´t",
                 textoD: "yet",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R11.mp3"
               },
               A: "Eat",
               B: "Ate",
@@ -491,6 +525,7 @@ export default {
                 textoA: "What are you",
                 textoD: "about?",
                 tamano: 22,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R12.mp3"
               },
               A: "Think",
               B: "Thought",
@@ -503,6 +538,7 @@ export default {
                 textoA: "Where were you",
                 textoD: "?",
                 tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R13.mp3"
               },
               A: "Go",
               B: "Went",
@@ -515,6 +551,7 @@ export default {
                 textoA: "I am",
                 textoD: "my bed",
                 tamano: 20,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R14.mp3"
               },
               A: "Make",
               B: "Made",
@@ -527,6 +564,7 @@ export default {
                 textoA: "Sorry! I was not",
                 textoD: "attention",
                 tamano: 25,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R15.mp3"
               },
               A: "Pay",
               B: "Paid",
@@ -717,6 +755,7 @@ export default {
               textoA: "It is",
               textoD: "",
               tamano: 15,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R.mp3'
             },
           },
           {
@@ -730,6 +769,7 @@ export default {
               textoA: "He has",
               textoD: "to school",
               tamano: 20,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R2.mp3'
             },
           },
           {
@@ -743,6 +783,7 @@ export default {
               textoA: "What are you",
               textoD: "?",
               tamano: 20,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R3.mp3'
             },
           },
           {
@@ -756,6 +797,21 @@ export default {
               textoA: "I can´t",
               textoD: "very well",
               tamano: 20,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R4.mp3'
+            }
+          },
+          {
+            SPANISH: "Ver",
+            PRESENT: "See",
+            PAST: "Saw",
+            PARTICIPLE: "Seen",
+            PROGRESSIVE: "Seeing",
+            complejo1: {
+              lista: ["seen"],
+              textoA: "I have never",
+              textoD: "that movie",
+              tamano: 23,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R5.mp3'
             },
           },
           {
@@ -769,6 +825,7 @@ export default {
               textoA: "I finally",
               textoD: "my wallet after 2 days",
               tamano: 28,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R6.mp3'
             },
           },
           {
@@ -782,6 +839,7 @@ export default {
               textoA: "I am",
               textoD: "on top of the world",
               tamano: 25,
+              audio: '/cursos/curso1/leccion4/audios/page23/AAC1P22R7.mp3'
             },
           },
           {
@@ -795,6 +853,7 @@ export default {
               textoA: "I must",
               textoD: "a present for Britney",
               tamano: 25,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R8.mp3'
             },
           },
           {
@@ -808,6 +867,7 @@ export default {
               textoA: "I had never",
               textoD: "a friend like you",
               tamano: 25,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R9.mp3 '
             },
           },
           {
@@ -821,6 +881,7 @@ export default {
               textoA: "She didn´t",
               textoD: "me my wallet",
               tamano: 23,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R10.mp3'
             },
           },
           {
@@ -834,6 +895,7 @@ export default {
               textoA: "I have not",
               textoD: "you yet",
               tamano: 23,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R10.mp3'
             },
           },
           {
@@ -847,6 +909,7 @@ export default {
               textoA: "You should",
               textoD: "who to live with",
               tamano: 28,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R12.mp3'
             },
           },
           {
@@ -860,6 +923,7 @@ export default {
               textoA: "What time did you",
               textoD: "up today?",
               tamano: 28,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R13.mp3'
             },
           },
           {
@@ -873,6 +937,7 @@ export default {
               textoA: "I was",
               textoD: "about what you told me",
               tamano: 28,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R14.mp3'
             },
           },
           {
@@ -886,6 +951,7 @@ export default {
               textoA: "She has never",
               textoD: "a car",
               tamano: 23,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R15.mp3'
             },
           },
           {
@@ -899,6 +965,7 @@ export default {
               textoA: "You need to",
               textoD: "the numbers in English",
               tamano: 30,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R16.mp3'
             },
           },
         ],
