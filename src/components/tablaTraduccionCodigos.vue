@@ -16,12 +16,7 @@
           :conTexto="true"
           :textoA="row.item.complejo1.textoA"
           :textoD="row.item.complejo1.textoD"
-<<<<<<< HEAD
-          
-          
-=======
           :audio="row.item.complejo1.audio"
->>>>>>> 0944ae4927047063fa344f475a585a99866687f6
         />
         </div>
       </template>

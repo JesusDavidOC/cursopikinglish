@@ -16,13 +16,6 @@
             <h3 v-html="data.value"></h3>
           
         </template>
-<<<<<<< HEAD
-          <!--<div></div>
-          <div v-if="href=data.value.name =='inputChecked'  ">
-            <inputChecked v-html="data.value" />
-          </div>
-          <div v-else> -->
-=======
         
         <template v-slot:cell(html1)="data">
           <h3 v-html="data.value"></h3>
@@ -43,7 +36,6 @@
         </template>
 
 
->>>>>>> 0944ae4927047063fa344f475a585a99866687f6
         <!-- A custom formatted column -->
         <template v-if="$props.tabla.camposInput" v-slot:cell(items)="row" id="hola">
           <inputChecked :resuelto="$props.inglesR" :esperado="row.item.ENGLISH_PHRASE" />

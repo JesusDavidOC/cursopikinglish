@@ -1,4 +1,4 @@
- <template>
+<template>
   <div>
     <div class="row">
       <div class="col-sm-1"></div>
@@ -14,7 +14,6 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-11 row">
         <div class="col-sm-2 parrafoBlack" id="tabla">
-
           <listaIndex :tabla="$data.tablaAPag38" />
         </div>
         <div class="col-sm-2 parrafoBlack" id="tabla">
@@ -41,94 +40,73 @@ import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import tablaTraduccionCodigosDos from "./tablaTraduccionCodigosDos";
 import tablaTC from "./tablaTraduccionCodigos";
 export default {
-    components:{
-        listaIndex,
-        inputChecked,
-        tablaTraduccionCodigos, 
-        tablaTraduccionCodigosDos, 
-        posiblesRespuestasTabla,
+  components: {
+    listaIndex,
+    inputChecked,
+    tablaTraduccionCodigos,
+    tablaTraduccionCodigosDos,
+    posiblesRespuestasTabla,
     tablaTC,
-    },
-    data(){
-        return{
-
-                
-
-                tablaAPag38: {
+  },
+  data() {
+    return {
+      tablaAPag38: {
         bordered: true,
-        
+
         fields: [
           // A virtual column that doesn't exist in items
-          
+
           // A column that needs custom formatting
-          { key: "A", thClass:"Yellow Subrayado", label:"PRESENT" },
+          { key: "A", thClass: "Yellow Subrayado", label: "PRESENT" },
         ],
-        
-        items: [
-         
-        ],
+
+        items: [],
       },
-      
-       tablaBPag38: {
+
+      tablaBPag38: {
         bordered: true,
-        
+
         fields: [
           // A virtual column that doesn't exist in items
-          
+
           // A column that needs custom formatting
           { key: "PAST", thClass: "Subrayado" },
         ],
-        items: [
-         
-        ],
+        items: [],
       },
-      
-       tablaCPag38: {
+
+      tablaCPag38: {
         bordered: true,
-        
+
         fields: [
           // A virtual column that doesn't exist in items
-          
+
           // A column that needs custom formatting
           { key: "PARTICIPE", thClass: " Subrayado" },
         ],
-        items: [
-         
-        ],
+        items: [],
       },
 
-
-       tablaDPag38: {
+      tablaDPag38: {
         bordered: true,
-        
+
         fields: [
           // A virtual column that doesn't exist in items
-          
+
           // A column that needs custom formatting
           { key: "PROGRESSIVE", thClass: " Subrayado" },
         ],
-        items: [
-         
-        ],
+        items: [],
       },
-
-
-
-        }
-        }
-        }
-
+    };
+  },
+};
 </script>
 <style scoped>
 .show-grid {
-  border:1px solid ;
+  border: 1px solid;
   color: black;
- 
-
 }
-
-
-
 
 #text,
 #inputText {
@@ -153,9 +131,7 @@ export default {
   font-size: 0;
 }
 
-
-
-inputChecked{
+inputChecked {
   display: inline-flex;
 }
 </style>
