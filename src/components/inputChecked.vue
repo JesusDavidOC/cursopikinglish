@@ -5,7 +5,7 @@
         <h5 v-html="textoA">{{textoA}}</h5>
       </div>
       <b-form-input
-        :name="this.name"
+        :name="inputChecked"
         :id="this.name+esperado[0]"
         v-model="text"
         :state="this.contiene()"

@@ -2,7 +2,7 @@
 <div>
     <div class="row">
          <div class="col-sm-1"></div>
-        <h3 class="titulo" >FORMA PRESENTE DEL VERBO</h3>
+        <h3 class="titulo" > FORMA PRESENTE DEL VERBO</h3>
 
     </div>
     <div class="row">
@@ -32,7 +32,7 @@
      <br>
          <div class="row">
              <div class="col-sm-1"></div>
-            <div class="col-sm-1" v-for="item in $data.tablaUnoPag32">
+            <div class="col-sm-2" v-for="item in $data.tablaUnoPag32">
 
         <listaIndex :tabla="item"/>
       </div>
@@ -66,14 +66,19 @@
       
         <p class="parrafoBlack marginn-left">  &nbsp;<b>Escribe la forma presente para terceras personas. </b> </p><br>
     </div>
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2" v-for="item in $data.tablaTresPag32">
+   
 
-        <listaIndex :tabla="item"/>
-        <br><br><br>
-        
+       <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTC
+          class="overflow-auto"
+          :cuestionario="tablaTresPag32"
+          :inglesR="false"
+          :espanolR="false"
+        />
       </div>
+      <div class="col-sm-1"></div>
     </div>
        <div class="row">
      
@@ -105,7 +110,7 @@
          <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTraduccionCodigos
+        <tablaTraduccionCodigosDos
           :cuestionario="$data.cuestionario1Pag33"
           :inglesR="false"
           :espanolR="true"
@@ -169,11 +174,22 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-2 show-grid" v-for="item in $data.tablaUnoPag35">
+      <div class="col-sm-3 show-grid" v-for="item in $data.tablaUnoPag35">
 
         <listaIndex :tabla="item"/>
-        <br><br><br>
         
+        
+      </div>
+      </div>
+
+    
+           <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTC
+          :cuestionario="$data.tablaDosPag35"
+          
+        />
       </div>
       </div>
             <div class="row">
@@ -186,40 +202,39 @@
       <div class="col-sm-1"></div>
       <font class="parrafoBlack ">Recuerda que la <font class="text-danger">S</font> , <font class="text-danger">ES</font> o <font class="text-danger">IES</font> se le agrega a un verbo en presente precedida de SHE, HE o IT</font>
       </div>
+      
+           <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <tablaTraduccionCodigosDos
+          :cuestionario="$data.cuestionario1Pag36"
+          :inglesR="false"
+          :espanolR="true"
+        />
+      </div>
+      </div>
+      <br><br><br>
 
-       <div class="col-sm-11 row" id="inputText">
-                    Un verbo se usa en forma
-                    <span
-                      class="colorLetraRojo"
-                      style="margin-left:4px; margin-right:4px;"
-                    >Pasado</span> solo en una
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado='["Afirmación"]'
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />; si es regular se agrega
-                    “
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado='["ed"]'
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />” y si es
-                    irregular se aprende.
-                  </div>
 </div>
  
         
       
 </template>
 <script>
+import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
 import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
+import tablaTraduccionCodigosDos from "./tablaTraduccionCodigosDos";
+import tablaTC from "./tablaTraduccionCodigos";
 export default {
     components:{
         listaIndex,
         inputChecked,
-        tablaTraduccionCodigos
+        tablaTraduccionCodigos, 
+        tablaTraduccionCodigosDos, 
+        posiblesRespuestasTabla,
+    tablaTC,
     },
     data(){
         return{
@@ -233,25 +248,25 @@ export default {
           ],
           items: [
             {
-              html: '<FONT class=" parrafoBlack">I</FONT>',
+              html: '<FONT class=" ">I</FONT>',
             },
              {
-              html: '<FONT class=" parrafoBlack">YOU</FONT>',
+              html: '<FONT class="">YOU</FONT>',
             },
              {
-              html: '<FONT class=" parrafoBlack">WE  </FONT>',
+              html: '<FONT class=" ">WE  </FONT>',
             },
              {
-              html: '<FONT class=" parrafoBlack">THEY</FONT>',
+              html: '<FONT class=" ">THEY</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack" ><strong>SHE</strong></FONT>',
+              html: '<FONT class=" " ><strong>SHE</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>IT</strong></FONT>',
+              html: '<FONT class=" "><strong>IT</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>HE</strong></FONT>',
+              html: '<FONT class=" "><strong>HE</strong></FONT>',
             },
 
           ],
@@ -266,25 +281,25 @@ export default {
           ],
           items: [
             {
-              html: '<FONT class=" parrafoBlack">SEE</FONT>',
+              html: '<FONT class=" ">SEE</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">SEE</FONT>',
+              html: '<FONT class="">SEE</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">SEE</FONT>',
+              html: '<FONT class=" ">SEE</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">SEE</FONT>',
+              html: '<FONT class=" ">SEE</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>SEES</strong></FONT>',
+              html: '<FONT class=" "><strong>SEES</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>SEES</strong></FONT>',
+              html: '<FONT class=" "><strong>SEES</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>SEES</strong></FONT>',
+              html: '<FONT class=" "><strong>SEES</strong></FONT>',
             },
           ],
         },
@@ -297,25 +312,25 @@ export default {
           ],
           items: [
             {
-              html: '<FONT class=" parrafoBlack">Yo veo</FONT>',
+              html: '<FONT class=" ">Yo veo</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">Tu ves</FONT>',
+              html: '<FONT class=" ">Tu ves</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">Nosotros vemos</FONT>',
+              html: '<FONT class="">Nosotros vemos</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack">Ellos ven</FONT>',
+              html: '<FONT class=" ">Ellos ven</FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>Ella ve</strong></FONT>',
+              html: '<FONT class=" "><strong>Ella ve</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>Ve</strong></FONT>',
+              html: '<FONT class=" "><strong>Ve</strong></FONT>',
             },
             {
-              html: '<FONT class=" parrafoBlack"><strong>El ve</strong></FONT>',
+              html: '<FONT class=" "><strong>El ve</strong></FONT>',
             },
           ],
         },
@@ -330,13 +345,13 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT class=" parrafoBlack"><strong>SHE______</strong></FONT>',
+                html:  '<FONT class=" "><strong>SHE______</strong></FONT>',
             },
              {
-                html:  '<FONT class=" parrafoBlack"><strong>HE______</strong></FONT>',
+                html:  '<FONT class=" "><strong>HE______</strong></FONT>',
             },
              {
-                html:  '<FONT class=" parrafoBlack"><strong>IT______</strong></FONT>',
+                html:  '<FONT class=""><strong>IT______</strong></FONT>',
             }
           ]
           },
@@ -349,13 +364,13 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT ><strong>Verbos terminados en<br><FONT class=" parrafoBlack text-danger"> o, x, s, sh, ch, z </FONT>se<br>le agrega</strong></FONT><br><br>',
+                html:  '<FONT ><strong>Verbos terminados en<br><FONT class=" text-danger"> o, x, s, sh, ch, z </FONT>se<br>le agrega</strong></FONT><br><br>',
 
 
             },
 
              {
-                html:  '<FONT  class=" parrafoBlack text-danger  p-2   bg-warning"><strong> EN </strong></FONT>',
+                html:  '<FONT  class="text-danger  p-2   bg-warning"><strong> ES </strong></FONT>',
             }
           ]
           },
@@ -368,13 +383,13 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT class=" parrafoBlack"><strong>Verbos terminados en <FONT class="text-danger">Y</FONT><br>precedida de consonante<br>se cambia la y por <FONT class="text-danger">i</FONT> más<br><FONT class="text-danger ">es</FONT><br></strong></FONT>',
+                html:  '<FONT class=" "><strong>Verbos terminados en <FONT class="text-danger">Y</FONT><br>precedida de consonante<br>se cambia la y por <FONT class="text-danger">i</FONT> más<br><FONT class="text-danger ">es</FONT><br></strong></FONT>',
 
 
             },
 
              {
-                html:  '<FONT class=" parrafoBlack text-danger  p-2   bg-warning"><strong> IES </strong></FONT>',
+                html:  '<FONT class="text-danger  p-2   bg-warning"><strong> IES </strong></FONT>',
             }
           ]
           },
@@ -387,13 +402,13 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT class=" parrafoBlack"><strong>Los demás<br>verbos se les<br>agrega la <br><FONT class="text-danger ">s</FONT><br></strong></FONT>',
+                html:  '<FONT class=""><strong>Los demás<br>verbos se les<br>agrega la <br><FONT class="text-danger ">s</FONT><br></strong></FONT>',
 
 
             },
 
              {
-                html:  '<FONT  class=" parrafoBlacktext-danger  p-2   bg-warning"><strong> S </strong></FONT>',
+                html:  '<FONT  class=" text-danger  p-2   bg-warning"><strong> S </strong></FONT>',
             }
           ]
           },
@@ -406,165 +421,95 @@ export default {
             ],
           items:[
             {
-                html:  '<FONT class=" parrafoBlack"><strong>Y “have” se<br>convierte en<br>“has”<br><br></strong></FONT>',
+                html:  '<FONT class=" "><strong>Y “have” se<br>convierte en<br>“has”<br><br></strong></FONT>',
 
 
             },
 
              {
-                html:  '<FONT class=" parrafoBlack" class="text-danger  p-2   bg-warning"><strong> HAS </strong></FONT>',
+                html:  '<FONT  class="text-danger  p-2   bg-warning"><strong> HAS </strong></FONT>',
             }
           ]
           }
           
       ],
-        tablaTresPag32: [
-        {
-          camposInput:false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "html", label: "" },
-          ],
-          items: [
-            {
-              html: '<FONT class=" parrafoBlack"><strong>I go</strong></FONT>',
-            },
-             {
-              html: '<FONT class=" parrafoBlack"><strong>We have</strong></FONT>',
-            },
-             {
-              html: '<FONT class=" parrafoBlack"><strong>They cry</strong></FONT>',
-            },
-             {
-              html: '<FONT class=" parrafoBlack"><strong>You play</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>I watch</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>We study</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>I do</strong></FONT>',
-            },
-
-          ],
           
-        },
-        {
-          camposInput:false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "html", label: "" },
-          ],
+        tablaTresPag32: {
+        
+          
+           fields: [
+          { key: "A", label: "A", thClass: "noHead" }, 
+          { key: "complejo1", label: "A", thClass: "noHead" },     
+  
+           ],
           items: [
+
              {
-              html: '<FONT class=" parrafoBlack"><strong>She</strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong> &nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>She</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>My sister</strong></FONT>',
-            },
-          ],
+            A: "I go",
+            complejo1: { 
+              textoA:"She",
+              lista: ["goes"], tamano: 15},
+          
+        
+          },
+               {
+           
+            A: "We have",
+           complejo1: { 
+             textoA:"Victor",
+             lista: ["has"], tamano: 15 },
+          
+        
+          },
+             {
+           
+            A: "They cry",
+             
+           complejo1: {
+             textoA:"She",
+             lista: ["cries"], tamano: 15 },
+            
+        
+          },
+             {
+           
+            A: "You play",
+            complejo1: { 
+              textoA:"He",
+              lista: ["plays"], tamano: 15 },
+            
+        
+          },
+             {
+           
+            A: "I watch",
+            complejo1: { 
+              textoA:"She",
+              lista: ["watches"], tamano: 15 },
+           
+        
+          },
+          {
+           
+            A: "We study",
+            complejo1: {
+              textoA:"The boy",
+              lista: ["studies"], tamano: 15 },
+           
+        
+          },
+          {
+           
+            A: "I do",
+            complejo1: { 
+              textoA:"My sister",
+              lista: ["does"], tamano: 15 },
+            
+        
+          },
+          ]
         },
-        {
-          camposInput:false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "html", label: "" },
-          ],
-          items: [
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>She</strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>The boy</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-          ],
-        },
-         {
-          camposInput:false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "html", label: "" },
-          ],
-          items: [
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp;</strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>He  </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp;</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-          ],
-        },
-                 {
-          camposInput:false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "html", label: "" },
-          ],
-          items: [
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>Victor </strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp;</strong></FONT>',
-            }, {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp;</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp;</strong></FONT>',
-            },
-            {
-              html: '<FONT class=" parrafoBlack"><strong>&nbsp; </strong></FONT>',
-            },
-          ],
-                 }
-        ],
+           
          tablaAPag33: {
         bordered: true,
         
@@ -572,7 +517,7 @@ export default {
           // A virtual column that doesn't exist in items
           
           // A column that needs custom formatting
-          { key: "A", thClass: "Blue  parrafoBlack" },
+          { key: "A", thClass: "Blue  " },
         ],
         
         items: [
@@ -593,7 +538,7 @@ export default {
           // A virtual column that doesn't exist in items
           
           // A column that needs custom formatting
-          { key: "B", thClass: "Red parrafoBlack" },
+          { key: "B", thClass: "Red " },
         ],
         items: [
           { B: "1. go/goes" },
@@ -614,7 +559,7 @@ export default {
           // A virtual column that doesn't exist in items
           
           // A column that needs custom formatting
-          { key: "C", thClass: "Yelow parrafoBlack" },
+          { key: "C", thClass: "Yelow " },
         ],
         
 
@@ -638,7 +583,7 @@ export default {
           
           
           // A column that needs custom formatting
-          { key: "D", thClass: "Green parrafoBlack" },
+          { key: "D", thClass: "Green " },
         ],
         
         items: [
@@ -788,10 +733,10 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT  class=" parrafoBlack p-2 bg-warning"><strong>Work</strong></FONT>',
+                html:  '<FONT  class="  p-2 bg-warning"><strong>Work</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Trabajar</strong></FONT>',
+                html:  '<FONT class=""><strong>Trabajar</strong></FONT>',
             },
              
           ]
@@ -805,10 +750,10 @@ export default {
           ],
           items:[
            {
-                html:  '<FONT  class=" parrafoBlack p-2 bg-warning"><strong>Live</strong></FONT>',
+                html:  '<FONT  class="  p-2 bg-warning"><strong>Live</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Vivir</strong></FONT>',
+                html:  '<FONT class=""><strong>Vivir</strong></FONT>',
             },
              
           ]
@@ -822,10 +767,10 @@ export default {
           ],
           items:[
             {
-                html:  '<FONT  class=" parrafoBlack p-2 bg-warning"><strong>Have</strong></FONT>',
+                html:  '<FONT  class="p-2 bg-warning"><strong>Have</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Tener</strong></FONT>',
+                html:  '<FONT class=""><strong>Tener</strong></FONT>',
             },
              
           ]
@@ -839,10 +784,10 @@ export default {
           ],
           items:[
           {
-                html:  '<FONT  class=" parrafoBlack p-2 bg-warning"><strong>Do</strong></FONT>',
+                html:  '<FONT  class="  p-2 bg-warning"><strong>Do</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Hacer</strong></FONT>',
+                html:  '<FONT class=""><strong>Hacer</strong></FONT>',
             },
              
           ]
@@ -856,10 +801,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT  class="p-2 bg-warning parrafoBlack"><strong>Go</strong></FONT>',
+                html:  '<FONT  class="p-2 bg-warning "><strong>Go</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Ir</strong></FONT>',
+                html:  '<FONT class=""><strong>Ir</strong></FONT>',
             },
              
           ]
@@ -873,10 +818,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT class="p-2 bg-warning parrafoBlack"><strong>Rain</strong></FONT>',
+                html:  '<FONT class="p-2 bg-warning "><strong>Rain</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Llover</strong></FONT>',
+                html:  '<FONT class=""><strong>Llover</strong></FONT>',
             },
              
           ]
@@ -890,10 +835,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT class="p-2 bg-warning parrafoBlack"><strong>Make Sense</strong></FONT>',
+                html:  '<FONT class="p-2 bg-warning "><strong>Make Sense</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Tener Sentido</strong></FONT>',
+                html:  '<FONT class=""><strong>Tener Sentido</strong></FONT>',
             },
              
           ]
@@ -907,10 +852,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT class="p-2 bg-warning parrafoBlack"><strong>Watch</strong></FONT>',
+                html:  '<FONT class="p-2 bg-warning "><strong>Watch</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Mirar</strong></FONT>',
+                html:  '<FONT class=""><strong>Mirar</strong></FONT>',
             },
              
           ]
@@ -924,10 +869,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT  class="p-2 bg-warning parrafoBlack"><strong>Cry</strong></FONT>',
+                html:  '<FONT  class="p-2 bg-warning "><strong>Cry</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Llorar</strong></FONT>',
+                html:  '<FONT class=""><strong>Llorar</strong></FONT>',
             },
              
           ]
@@ -941,10 +886,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT class="p-2 bg-warning parrafoBlack"><strong>Love</strong></FONT>',
+                html:  '<FONT class="p-2 bg-warning "><strong>Love</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Amar</strong></FONT>',
+                html:  '<FONT class=""><strong>Amar</strong></FONT>',
             },
              
           ]
@@ -957,10 +902,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT class="p-2 bg-warning parrafoBlack"><strong>Teach</strong></FONT>',
+                html:  '<FONT class="p-2 bg-warning"><strong>Teach</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Enseñar</strong></FONT>',
+                html:  '<FONT class=""><strong>Enseñar</strong></FONT>',
             },
              
           ]
@@ -973,10 +918,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT  class="p-2 bg-warning parrafoBlack"><strong>Smell</strong></FONT>',
+                html:  '<FONT  class="p-2 bg-warning "><strong>Smell</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Oler</strong></FONT>',
+                html:  '<FONT class=""><strong>Oler</strong></FONT>',
             },
              
           ]
@@ -989,10 +934,10 @@ export default {
             ],
           items:[
            {
-                html:  '<FONT  class="p-2 bg-warning parrafoBlack"><strong>Study</strong></FONT>',
+                html:  '<FONT  class="p-2 bg-warning"><strong>Study</strong></FONT>',
             },
              {
-                html:  '<FONT class="parrafoBlack"><strong>Estudiar</strong></FONT>',
+                html:  '<FONT class=""><strong>Estudiar</strong></FONT>',
             },
              
           ]
@@ -1005,68 +950,68 @@ export default {
           fields: [
             // A virtual column that doesn't exist in items
             // A column that needs custom formatting
-            { key: "html", label: "ORACIÓN EN PRESENTE  AFIRMATIVO (INGLÉS)", thClass:"parrafoBlack"  },
+            { key: "html", label: "ORACIÓN EN PRESENTE  AFIRMATIVO (INGLÉS)", thClass:""  },
           ],
           items: [
             {
-              html: '<FONT class="parrafoBlack"><strong>I walk everyday</strong></FONT>',
+              html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong> You cry a lot</strong></FONT>',
+              html: '<FONT class=""><strong> You cry a lot</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>They eat here </strong></FONT>',
+              html: '<FONT class=""><strong>They eat here </strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>I cough every now and then</strong></FONT>',
+              html: '<FONT class=""><strong>I cough every now and then</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack" ><strong>I watch TV once in a blue moon</strong></FONT>',
+              html: '<FONT class="" ><strong>I watch TV once in a blue moon</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>I go for a run every morning</strong></FONT>',
+              html: '<FONT class=""><strong>I go for a run every morning</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>We dance in the rain</strong></FONT>',
+              html: '<FONT class=""><strong>We dance in the rain</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>I brush my teeth twice a day </strong></FONT> <br><br>',
+              html: '<FONT class=""><strong>I brush my teeth twice a day </strong></FONT> <br><br>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>They speak English very slowly</strong></FONT>',
+              html: '<FONT class=""><strong>They speak English very slowly</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>I walk everyday </strong></FONT>',
+              html: '<FONT class=""><strong>I walk everyday </strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>You cry very much</strong></FONT>',
+              html: '<FONT class=""><strong>You cry very much</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>They eat here</strong></FONT>',
+              html: '<FONT class=""><strong>They eat here</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>You cough every now and then</strong></FONT>',
+              html: '<FONT class=""><strong>You cough every now and then</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>I watch TV once in a blue moon</strong></FONT>',
+              html: '<FONT class=""><strong>I watch TV once in a blue moon</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>We take the kids to the school</strong></FONT>',
+              html: '<FONT class=""><strong>We take the kids to the school</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>We dance in the rain</strong></FONT>',
+              html: '<FONT class=""><strong>We dance in the rain</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>I brush my teeth twice a day</strong></FONT>',
+              html: '<FONT class=""><strong>I brush my teeth twice a day</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>They speak english very slowly</strong></FONT>',
+              html: '<FONT class=""><strong>They speak english very slowly</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>I walk everyday</strong></FONT>',
+              html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>I love you</strong></FONT>',
+              html: '<FONT class=""><strong>I love you</strong></FONT>',
             },
 
           ],
@@ -1077,68 +1022,68 @@ export default {
           fields: [
             // A virtual column that doesn't exist in items
             // A column that needs custom formatting
-            { key: "html", label: "ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)", thClass:"parrafoBlack"  },
+            { key: "html", label: "ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)", thClass:""  },
           ],
           items: [
               {
-              html: '<FONT class="parrafoBlack"><strong>Yo camino todos los días</strong></FONT>',
+              html: '<FONT class=""><strong>Yo camino todos los días</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong> Tu lloras muchot</strong></FONT>',
+              html: '<FONT class=""><strong> Tu lloras muchot</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>Ellos comen aquí </strong></FONT>',
+              html: '<FONT class=""><strong>Ellos comen aquí </strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>Yo toso de vez en cuando</strong></FONT>',
+              html: '<FONT class=""><strong>Yo toso de vez en cuando</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack" ><strong>Yo veo televisión muy rara vez</strong></FONT>',
+              html: '<FONT class="" ><strong>Yo veo televisión muy rara vez</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>Yo voy a correr en la mañana</strong></FONT>',
+              html: '<FONT class=""><strong>Yo voy a correr en la mañana</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>Nosotros bailamos bajo la lluvia</strong></FONT>',
+              html: '<FONT class=""><strong>Nosotros bailamos bajo la lluvia</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>Me cepillo mis dientes dos veces al día </strong></FONT>',
+              html: '<FONT class=""><strong>Me cepillo mis dientes dos veces al día </strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>Ellos hablan inglés muy despacio</strong></FONT>',
+              html: '<FONT class=""><strong>Ellos hablan inglés muy despacio</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<inputChecked :esperado="["adsd"]" :resuelto="false"/>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>&nbsp;</strong></FONT>',
+              html: '<FONT class=""><strong>&nbsp;</strong></FONT>',
             },
           ],
         },
@@ -1147,76 +1092,299 @@ export default {
           fields: [
             // A virtual column that doesn't exist in items
             // A column that needs custom formatting
-            { key: "html", label: "Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies", thClass:"parrafoBlack" },
+            { key: "html", label: "Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies", thClass:"" },
           ],
           items: [
           {
-              html: '<FONT class="parrafoBlack"><strong>She walk<font class="text-danger">s </font>every day</strong></FONT>',
+              html: '<FONT class=""><strong>She walk<font class="text-danger">s </font>every day</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong> He cr<font class="text-danger">ies</font> a lot</strong></FONT>',
+              html: '<FONT class=""><strong> He cr<font class="text-danger">ies</font> a lot</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>The dog eat<font class="text-danger">s</font> here </strong></FONT>',
+              html: '<FONT class=""><strong>The dog eat<font class="text-danger">s</font> here </strong></FONT>',
             },
               {
-              html: '<FONT class="parrafoBlack"><strong>My mother cough<font class="text-danger">s</font> </strong></FONT>',
+              html: '<FONT class=""><strong>My mother cough<font class="text-danger">s</font> </strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>She watch<font class="text-danger">es</font> tv</strong></FONT>',
+              html: '<FONT class=""><strong>She watch<font class="text-danger">es</font> tv</strong></FONT>',
             },
             
             {
-              html: '<FONT class="parrafoBlack"><strong>Nobody go <font class="text-danger">es</font> for a run every morning</strong></FONT>',
+              html: '<FONT class=""><strong>Nobody go <font class="text-danger">es</font> for a run every morning</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>She danc<font class="text-danger">es</font> in the rain</strong></FONT>',
+              html: '<FONT class=""><strong>She danc<font class="text-danger">es</font> in the rain</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>He brush<font class="text-danger">es</font> his teeth twice a day</strong></FONT>',
+              html: '<FONT class=""><strong>He brush<font class="text-danger">es</font> his teeth twice a day</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>My teacher speak<font class="text-danger">s</font> </strong></FONT>',
+              html: '<FONT class=""><strong>My teacher speak<font class="text-danger">s</font> </strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>He______ everyday</strong></FONT>',
+              html: '<FONT class=""><strong>He______ everyday</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>She _______ vey much</strong></FONT>',
+              html: '<FONT class=""><strong>She _______ vey much</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>The chicken ________ here;</strong></FONT>',
+              html: '<FONT class=""><strong>The chicken ________ here;</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>The baby _________ every now and then</strong></FONT>',
+              html: '<FONT class=""><strong>The baby _________ every now and then</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>She ___________ tv once in a blue moon</strong></FONT>',
+              html: '<FONT class=""><strong>She ___________ tv once in a blue moon</strong></FONT>',
             },
             {
-              html: '<FONT class="parrafoBlack"><strong>He __________ the kids to the school</strong></FONT>',
+              html: '<FONT class=""><strong>He __________ the kids to the school</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>It ________ in the rain</strong></FONT>',
+              html: '<FONT class=""><strong>It ________ in the rain</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>She _________ her teeth twice a day</strong></FONT>',
+              html: '<FONT class=""><strong>She _________ her teeth twice a day</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>He _________ English very slowly</strong></FONT>',
+              html: '<FONT class=""><strong>He _________ English very slowly</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>The dog ________ everyday</strong></FONT>',
+              html: '<FONT class=""><strong>The dog ________ everyday</strong></FONT>',
             },
              {
-              html: '<FONT class="parrafoBlack"><strong>She_______ me</strong></FONT>',
+              html: '<FONT class=""><strong>She_______ me</strong></FONT>',
             },
           ],
         },
          
         ],
+         tablaDosPag35 : [        
+        {
+          fields: [
+            { key: "complejo1", label: "AUXILIARIES" },
+            { key: "A", label: "4.1" },
+            { key: "B", label: "4.2" },
+            { key: "C", label: "4.3" },
+            { key: "D", label: "4.4" },
+          ],
+          items: [
+            {
+              complejo1: {
+                lista: ["Go"],
+                textoA: "Do you",
+                textoD: "to school?",
+                tamano: 20,
+              },
+              A: "",
+               B: "Went",
+              C: "Gone",
+              D: "Going",
+            },
+          ],
+        },
+         ],
       
-        
+        cuestionario1Pag36: {
+        fields: [
+          { key: "A", thClass: "Yellow parrafoBlack" , label: "Verbo en presente"},  
+          {key:"ENGLISH_PHRASE", label:"En tercera persona"},
+          {key:"B", label:"Clase"},
+          {key: "C", label: "Past and participle"}
+          
+         
+        ],
+        items: [
+          {
+            A: "I *Eat* pizza",
+            B: "Irregular",
+            C: "Ate – eaten",
+           
+            ENGLISH_PHRASE: ['She eats pizza'],
+           
+          },
+          {
+            A: "I *Watch* tv",
+             B: "Irregular",
+            C: "Saw - Seen",
+           
+            ENGLISH_PHRASE: ["She watches"],
+          
+          },
+          {
+            A: "I *Smell* really good",
+             B: "Regular",
+            C: "Smelled - smelled",
+            
+            ENGLISH_PHRASE: ["She smells really good"],
+         
+          },
+           {
+            A:"I *Spit* on the floor",
+             B: "Irregular",
+            C: "Spat - spat",
+           
+            ENGLISH_PHRASE: ["She spits on the floor"],
+           
+          }, {
+            A: "I *Throw* the ball",
+             B: "Irregular",
+            C: "Threw - thrown",
+            ENGLISH_PHRASE: ["She throws the ball "],
+         
+          }, {
+            A: "I *Push* the door",
+             B: "Regular",
+            C:"Pushed - pushed",
+                        ENGLISH_PHRASE: ["She pushes the door"],
+           
+          }, {
+            A: "I *Walk* with a limp",
+            B: "Regular",
+            C:"Walked - walked",
+            ENGLISH_PHRASE: ["She walks with a limp"],
+            
+          }, {
+            A: "I *Think* of you",
+             B: "Irregular",
+            C:"Thought- thought",
+            ENGLISH_PHRASE: ["She thinks of you"],
+           
+          }, {
+            A:"I *Call* the police",
+            B: "Regular",
+            C: "Called - called",
+           
+            ENGLISH_PHRASE: ["She calls the police"],
+            
+          }, {
+            A:"I *Breathe* quickly",
+             B: "Regular",
+            C:"Breathed- breathed",
+            ENGLISH_PHRASE: ["She breathes quicly"],
+            
+          }, {
+            A: "I *Swallow* tablets",
+            B: "Irregular",
+            C:"Swallowed - swallowed",
+            ENGLISH_PHRASE: ["She swallows tablets"],
+            
+          }, {
+            A: "I *Hear* birds",
+            B: "Irregular",
+            C:"Heards - heards",
+            ENGLISH_PHRASE: ["She hears birds"],
+            TRADUCCION_ESPAÑOL: ["Ellos trabajan mucho todos los días"],
+          }, {
+            A: "I *Pry* to God",
+            B: "Regular",
+            C:"Prayed - prayed",
+
+            ENGLISH_PHRASE: ["She prays God"],
+            
+          },
+           {
+            A: "I *Swear* to God",
+            B: "Irregular",
+            C:"Swore - sworn",
+            ENGLISH_PHRASE: ["She swears to God"],
+            
+          },
+           {
+            A: "I *Scream* loudly",
+            B: "Regular",
+            C:"Screamed - screamed",
+            ENGLISH_PHRASE: ["She screams loudly"],
+            
+          },
+          {
+            A: "I *Cry* a lot",
+            B: "Regular",
+            C:"Cried - cried",
+            ENGLISH_PHRASE: ["She cries a lot"],
+            
+          },
+          {
+            A: "I *Swim* like a fish",
+            B: "Irregular",
+            C:"Swam - swum",
+            ENGLISH_PHRASE: ["She swims like a fish"],
+            
+          },
+          {
+            A: "I *Wake up* at 5:45 am",
+            B: "Irregular",
+            C:"Woke - woken",
+            ENGLISH_PHRASE: ["She wakes up at 5:45 am"],
+            
+          },
+          {
+            A: "I *Get up* at 6:00 am",
+            B: "Irregular",
+            C:"Got - gotten",
+            ENGLISH_PHRASE: ["She gets up at 6:00 am"],
+            
+          },
+          {
+            A: "I *Dream* about engels",
+            B: "Irregular",
+            C:"Dreamt - dreamt",
+            ENGLISH_PHRASE: ["She dreams about engels"],
+            
+          },
+          {
+            A: "I *Catch* the ball",
+            B: "Irregular",
+            C:"Caught - caught",
+            ENGLISH_PHRASE: ["She catches the ball"],
+            
+          },
+          {
+            A: "I *Drive* a car",
+            B: "Irregular",
+            C:"Drove - driven",
+            ENGLISH_PHRASE: ["She drives a car"],
+            
+          },
+          {
+            A: "I *Ride* a horse",
+            B: "Irregular",
+            C:"Rode - ridden",
+            ENGLISH_PHRASE: ["She rides a horse"],
+            
+          },
+          {
+            A: "I *Write* a poem",
+            B: "Irregular",
+            C:"Wrote - written",
+            ENGLISH_PHRASE: ["She writes a poem"],
+            
+          },
+          {
+            A: "I *Taste* the soup",
+            B: "Regular",
+            C:"Tasted - tasted",
+            ENGLISH_PHRASE: ["She tastes the soup"],
+            
+          },
+          {
+            A: "I *Touch* my nose",
+            B: "Regular",
+            C:"Touched - touched",
+            ENGLISH_PHRASE: ["She touches my nose"],
+            
+          },
+          {
+            A: "I *Pick up* the pencil",
+            B: "Regular",
+            C:"Picked - picked",
+            ENGLISH_PHRASE: ["She picks up the pencil"],
+            
+          },
+           
+        ],
+      },      
       
       
     }
