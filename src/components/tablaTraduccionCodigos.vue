@@ -54,6 +54,9 @@
         />
       </template>
       
+      
+
+
       <template v-slot:cell(complejo5)="row" id="hola">
         <inputChecked :style="'width:'+row.item.complejo5.tamano+'em;'"
           :resuelto="$props.inglesR"
@@ -65,12 +68,21 @@
         />
       </template>      
 
+      <template v-slot:cell(complejo21)="row" id="hola">
+        <inputCE :style="'width:'+row.item.complejo21.tamano+'em;'"
+          :object="row.item.complejo21"
+        />
+      </template>  
+
       <template v-slot:cell(TRADUCCION_ESPAÑOL)="row">
         <inputChecked :resuelto="$props.espanolR" :esperado="row.item.TRADUCCION_ESPAÑOL" />
       </template>
        <template v-slot:cell(html1)="row" id="hola">
         <a v-html="row.item.html1"> {{ row.item.html1 }} </a>
       </template>
+
+      
+
     </b-table>
     
     
@@ -80,10 +92,12 @@
 
 <script>
 import inputChecked from "./inputChecked";
+import inputCE from "./inputCEnriquecido";
 
 export default {
   components: {
     inputChecked,
+    inputCE
   },
   props: {
     cuestionario: Object,

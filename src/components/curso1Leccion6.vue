@@ -98,7 +98,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTraduccionCodigosDos
+        <tablaTCDos
           :cuestionario="$data.cuestionario1Pag33"
           :inglesR="false"
           :espanolR="true"
@@ -368,36 +368,53 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTraduccionCodigosDos
+        <tablaTCDos
           :cuestionario="$data.cuestionario1Pag36"
           :inglesR="false"
           :espanolR="true"
         />
       </div>
     </div>
-    <br />
-    <br />
-    <br />
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6">
+
+        <inputCE :object="prueba" />
+      
+      </div>
+    </div>
+
+
   </div>
 </template>
 <script>
 import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
 import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
-import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
-import tablaTraduccionCodigosDos from "./tablaTraduccionCodigosDos";
+import inputCE from "./inputCEnriquecido";
+import tablaTCDos from "./tablaTraduccionCodigosDos";
 import tablaTC from "./tablaTraduccionCodigos";
 export default {
   components: {
     listaIndex,
     inputChecked,
-    tablaTraduccionCodigos,
-    tablaTraduccionCodigosDos,
+    inputCE,
+    tablaTC,
+    tablaTCDos,
     posiblesRespuestasTabla,
     tablaTC,
   },
   data() {
     return {
+      prueba:{
+        lista1:["hola1"],
+        lista2:["que p2"],
+        textoA:"primero",
+        textoD:"segundo",
+        textoD2:"tercero",
+        name:"prueba"
+      },
       tablaUnoPag32: [
         {
           camposInput: false,
@@ -595,6 +612,7 @@ export default {
         fields: [
           { key: "A", label: "A", thClass: "noHead" },
           { key: "complejo1", label: "A", thClass: "noHead" },
+          { key: "complejo21", label: "A", thClass: "noHead" },
         ],
         items: [
           {
@@ -604,8 +622,17 @@ export default {
               lista: ["goes"],
               tamano: 15,
             },
+            complejo21: {
+              lista2:["to"],
+              textoA: "She",
+              lista1: ["goes"],
+              textoD: "probando",
+              textoD2: "probando2",
+              tamano: 35,
+              name:"tablaP32C21"
+            }
           },
-          {
+          /**{
             A: "We have",
             complejo1: {
               textoA: "Victor",
@@ -653,7 +680,7 @@ export default {
               lista: ["does"],
               tamano: 15,
             },
-          },
+          },*/
         ],
       },
 

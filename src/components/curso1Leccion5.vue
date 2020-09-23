@@ -286,12 +286,6 @@
       </div>
       <div class="col-sm-2"></div>
     </div>
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <inputChecked :esperado="inputChP45.lista" />
-      </div>
-    </div>
   </div>
 </template>
 
@@ -305,9 +299,6 @@ import tablaTC from "./tablaTraduccionCodigos";
 export default {
   data() {
     return {
-      inputChP45:{
-        lista:["Hola", "holaaaa"]
-      },
       tabla2P31: {
         fields: [
           { key: "espanol", label: "Spanish", thClass: "Yelow" },
@@ -321,7 +312,7 @@ export default {
           {
             complejo1: { lista: ["I eat"], tamano: 14 },
             espanol: "Yo como",
-            complejo2: { lista: ["She eats"], tamano: 14 },
+            complejo2: { lista: ["She eats", "hola"], tamano: 14 },
             espanol1: "Ella come",
             complejo3: { lista: ["Do you eat?"], tamano: 14 },
             espanol2: "¿Tú comes?",
@@ -452,7 +443,7 @@ export default {
             textoA: "a.    Where did you",
             textoD: "? - " + "<strong> ¿Donde fuiste? </strong> ",
             tamaño: 7,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
           },
           {
             esperado: ["went"],
@@ -460,7 +451,7 @@ export default {
             textoD:
               "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
             tamaño: 9,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
           },
           {
             esperado: ["go"],
@@ -468,7 +459,7 @@ export default {
             textoD:
               "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
             tamaño: 10,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
           },
           {
             esperado: ["gone"],
@@ -476,14 +467,14 @@ export default {
             textoD:
               "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
             tamaño: 10,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
           },
           {
             esperado: ["go"],
             textoA: "e.    She didn’t",
             textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
             tamaño: 7,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
           },
           {
             esperado: ["went"],
@@ -491,7 +482,7 @@ export default {
             textoD:
               "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
             tamaño: 8,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
           },
           {
             esperado: ["gone"],
@@ -499,14 +490,14 @@ export default {
             textoD:
               "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
             tamaño: 12,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
           },
           {
             esperado: ["going"],
             textoA: " h.    Where are you",
             textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
             tamaño: 8,
-            audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
+            audio: "cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
           },
         ],
       },
@@ -943,7 +934,7 @@ export default {
             C: 1,
             complejo1: {
               lista: ["Do you go?"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R6.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R6.mp3",
             },
             ESPANOL: "¿Tú vas?",
           },
@@ -953,7 +944,7 @@ export default {
             C: 1,
             complejo1: {
               lista: ["Does she go?"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R7.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R7.mp3",
             },
             ESPANOL: "¿Ella va?",
           },
@@ -963,7 +954,7 @@ export default {
             C: 1,
             complejo1: {
               lista: ["Did she go?"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R8.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R8.mp3",
             },
             ESPANOL: "¿Ella fue?",
           },
@@ -973,7 +964,7 @@ export default {
             C: 1,
             complejo1: {
               lista: ["Will you go?"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R9.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R9.mp3",
             },
             ESPANOL: "¿Tú irás?",
           },
@@ -983,7 +974,7 @@ export default {
             C: 1,
             complejo1: {
               lista: ["Would she go?"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R10.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R10.mp3",
             },
             ESPANOL: "¿Ella iría?",
           },
@@ -1048,7 +1039,7 @@ export default {
             D: 2,
             complejo1: {
               lista: ["I don´t have a friend"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R1.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R1.mp3",
             },
             ESPANOL: "Yo no tengo un amigo",
           },
@@ -1059,7 +1050,7 @@ export default {
             D: 1,
             complejo1: {
               lista: ["She doesn´t have that"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R2.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R2.mp3",
             },
             ESPANOL: "Ella no tiene eso",
           },
@@ -1070,7 +1061,7 @@ export default {
             D: 1,
             complejo1: {
               lista: ["I didn´t do that"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R3.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R3.mp3",
             },
             ESPANOL: "Yo no hice eso",
           },
@@ -1081,7 +1072,7 @@ export default {
             D: 1,
             complejo1: {
               lista: ["She won´t do that"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R4.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R4.mp3",
             },
             ESPANOL: "Ella no hará eso",
           },
@@ -1092,7 +1083,7 @@ export default {
             D: 1,
             complejo1: {
               lista: ["I wouldn´t do that"],
-              audio: "/cursos/curso1/leccion5/audios/page27/AC1P26R5.mp3",
+              audio: "cursos/curso1/leccion5/audios/page27/AC1P26R5.mp3",
             },
             ESPANOL: "Yo no haría eso",
           },
