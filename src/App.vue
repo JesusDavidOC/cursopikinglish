@@ -7,6 +7,11 @@
         <curso1Leccion3 />
         <curso1Leccion4 />        
         <curso1Leccion5 />
+        <curso1Leccion6 />
+        <curso1Leccion7 />
+        <curso1Leccion8 />
+        <curso1Leccion9 />
+
       </div>
     </div>
   </div>
@@ -18,7 +23,10 @@ import curso1Leccion2 from "./components/curso1Leccion2.vue";
 import curso1Leccion3 from "./components/curso1Leccion3.vue";
 import curso1Leccion4 from "./components/curso1Leccion4.vue";
 import curso1Leccion5 from "./components/curso1Leccion5.vue";
-
+import curso1Leccion6 from "./components/curso1Leccion6.vue";
+import curso1Leccion7 from "./components/curso1Leccion7.vue";
+import curso1Leccion8 from "./components/curso1Leccion8.vue";
+import curso1Leccion9 from "./components/curso1Leccion9.vue";
 export default {
   name: "App",
   components: {
@@ -27,6 +35,10 @@ export default {
     curso1Leccion3,
     curso1Leccion4,
     curso1Leccion5,
+    curso1Leccion6,
+    curso1Leccion7,
+    curso1Leccion8,
+    curso1Leccion9,
   },
 };
 </script>

@@ -12,7 +12,9 @@
         <!-- A virtual column -->
         <template v-slot:cell(#)="data">{{ data.index + 1 }}</template>
         <template v-slot:cell(html)="data">
-          <h3 v-html="data.value"></h3>
+          
+            <h3 v-html="data.value"></h3>
+          
         </template>
         
         <template v-slot:cell(html1)="data">
@@ -40,32 +42,36 @@
         </template>
       </b-table>
     </div>
-    <div v-if="tabla.camposInput" class="overflow-auto" id="tablaInputs">     
+    <div v-if="tabla.camposInput" class="overflow-auto" id="tablaInputs">
       <b-table
         small
-        :fields="tabla.fields"  
-        :items="['ey']"      
+        :fields="tabla.fields"
+        :items="['ey']"
         responsive="sm"
         :bordered="tabla.bordered"
       >
-         
-        <template v-slot:cell(Z)="row" :id="tabla.refs">        
-          <posiblesRespuestasTabla :refs="$props.tabla.refs" :listadoPalabrasEsperadas="$props.tabla.items" :enlistada="tabla.enlistada" />
+        <template v-slot:cell(Z)="row" :id="tabla.refs">
+          <posiblesRespuestasTabla
+            :refs="$props.tabla.refs"
+            :listadoPalabrasEsperadas="$props.tabla.items"
+            :enlistada="tabla.enlistada"
+          />
         </template>
-        
-      </b-table>      
-      
-    </div>    
+      </b-table>
+    </div>
   </div>
 </template>
 
 <script>
+function pri(imprimir) {
+  console.log(imprimir);
+}
 import inputChecked from "./inputChecked";
 import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
 export default {
   components: {
     inputChecked,
-    posiblesRespuestasTabla
+    posiblesRespuestasTabla,
   },
   data() {
     return {};
@@ -73,8 +79,7 @@ export default {
   props: {
     tabla: Object,
   },
-  mounted(){    
-  }
+  mounted() {},
 };
 </script>
 
