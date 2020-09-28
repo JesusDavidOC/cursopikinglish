@@ -50,7 +50,7 @@
             :name="preguntasCompletarP24.nombre+index"
             :conTexto="true"
             :textoA="item.textoA"
-            :textoD="item.textoD"
+            :textoD="item.textoD"            
           />
         </div>
       </div>
@@ -71,7 +71,7 @@
           id="text"
           :options="$data.cuestionarioP24"
           :rEsperadas="$data.respuestasCuestionarioP24"
-          @respuestas="$data.mensajeRespuestasP24 = $event"
+          @respuestas="$data.mensajeRespuestasP24 = $event"          
         />
       </div>
       <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP24 }}</b-modal>
@@ -589,6 +589,7 @@ export default {
         {
           respuesta: "",
           pregunta: "1. I don´t play soccer anymore.",
+          audio:"/cursos/curso1/leccion4/audios/page24/AC1P23R1.mp3",
           options: [
             {
               text: "A) Yo ya no jugué fútbol.",
@@ -605,6 +606,7 @@ export default {
         {
           respuesta: "",
           pregunta: "2. I didn´t understand what you said.",
+          audio:"/cursos/curso1/leccion4/audios/page24/AC1P23R2.mp3",
           options: [
             {
               text: "A) Yo no entendí lo que dijiste.",
@@ -621,6 +623,7 @@ export default {
         {
           respuesta: "",
           pregunta: "3. I wouldn´t like to work on Sundays.",
+          audio:"/cursos/curso1/leccion4/audios/page24/AC1P23R3.mp3",
           options: [
             {
               text: "A) No me gustaría trabajar los domingos .",
@@ -637,6 +640,7 @@ export default {
         {
           respuesta: "",
           pregunta: "4. She doesn´t eat meat",
+          audio:"/cursos/curso1/leccion4/audios/page24/AC1P23R4.mp3",
           options: [
             {
               text: "A) Ella no come carne.",
