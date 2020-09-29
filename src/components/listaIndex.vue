@@ -29,7 +29,7 @@
         responsive="sm"
         :bordered="tabla.bordered"
       >
-         
+      
         <template v-slot:cell(Z)="row" :id="tabla.refs">        
           <posiblesRespuestasTabla :refs="$props.tabla.refs" :listadoPalabrasEsperadas="$props.tabla.items" :enlistada="tabla.enlistada" />
         </template>

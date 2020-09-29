@@ -12,14 +12,31 @@
         aria-describedby="input-live-help input-live-feedback"
         trim
       ></b-form-input>
+
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" v-on:click="completar">
+
+        <button v-if="$props.audio == undefined" class="btn btn-outline-secondary" type="button" v-on:click="completar">
           <i class="fa fa-eye"></i>
         </button>
+
+        <button id="paraAudio" v-if="$props.audio != undefined" class="btn btn-outline-secondary" type="button" v-on:click="completar" style="border-radius: 0;">
+          <i class="fa fa-eye"></i>
+        </button>
+
+        <button id="paraAudio"
+          v-if="$props.audio != undefined"
+          class="btn btn-outline-secondary"
+          type="button"
+          @click.prevent="playSound(audio)"
+        >
+          <i class="fa fa-play"></i>
+        </button>
       </div>
+
       <div v-if="conTexto" style="margin-left:10px;">
         <h5 id="inputText">{{textoD}}</h5>
       </div>
+
     </div>
   </div>
 </template>
@@ -34,6 +51,7 @@ export default {
     conTexto: Boolean,
     textoA: String,
     textoD: String,
+    audio: '',
   },
   data() {
     return {
@@ -42,6 +60,12 @@ export default {
     };
   },
   methods: {
+        playSound (sound) {
+      if(sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    },
     completar() {
       this.text = this.esperado1[0];
     },
@@ -112,5 +136,10 @@ export default {
   > .input-group-text:not(:last-child) {
   border-top-right-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
+}
+#paraAudio {
+  width: 1.2em;
+  padding-right: 0;
+  padding-left: 0;
 }
 </style>

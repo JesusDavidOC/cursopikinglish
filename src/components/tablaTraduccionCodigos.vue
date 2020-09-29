@@ -15,8 +15,10 @@
           :conTexto="true"
           :textoA="row.item.complejo1.textoA"
           :textoD="row.item.complejo1.textoD"
+          :audio="row.item.complejo1.audio"
         />
       </template>
+      
       <template v-slot:cell(complejo2)="row" id="hola">
         <inputChecked :style="'width:'+row.item.complejo2.tamano+'em;'"
           :resuelto="$props.inglesR"
