@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br><br><br>
     <h3 class="titulo">FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
 
     <div class="row">
@@ -23,38 +24,32 @@
     <br />
 
     <div class="row">
-      <i class="fa fa-diamond marginn-left"></i>
+      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
       <p class="parrafoBlack marginn-left">
         &nbsp;
-        <b>Un verbo también se usa en su forma presente después de un auxiliar.</b>
+        <b
+          >Un verbo también se usa en su forma presente después de un
+          auxiliar.</b
+        >
       </p>
       <br />
     </div>
 
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-11 row">
-        <div class="col-sm-4 parrafoBlack" id="tabla">
-          <listaIndex :tabla="$data.tablaAPag33" />
-        </div>
-        <div class="col-sm-4 parrafoBlack" id="tabla">
-          <listaIndex :tabla="$data.tablaBPag33" />
-        </div>
-      </div>
-    </div>
     <img src="/cursos/curso1/leccion8/imagenes/tablaPag38.png" />
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="subTitulo parrafoBlack">Existen cinco maneras de preguntar y negar en inglés</div>
+      <div class="subTitulo parrafoBlack">
+        Existen cinco maneras de preguntar y negar en inglés
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-9">
         <tablaTC
           class="overflow-auto"
-          :cuestionario="tabla2P29"
+          :cuestionario="tabla1P38"
           :inglesR="false"
           :espanolR="false"
         />
@@ -63,7 +58,7 @@
     </div>
 
     <div class="row">
-      <i class="fa fa-diamond marginn-left"></i>
+      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
       <p class="parrafoBlack marginn-left Subrayado">
         &nbsp;
@@ -76,14 +71,14 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-8 row">
         <div
-          v-for="(item, index) in frases2PAg37"
-          :class=" ' row col-sm-'+item.tamano+4"
-          style="margin-bottom:0.5em;"
+          v-for="(item, index) in frases1Pag38"
+          :class="' row col-sm-' + item.tamano + 4"
+          style="margin-bottom: 0.5em"
         >
           <inputChecked
             :esperado="item.esperado"
             :resuelto="false"
-            :name="'P21-'+index"
+            :name="'P21-' + index"
             :textoA="item.textoA"
             :textoD="item.textoD"
             :conTexto="true"
@@ -91,6 +86,175 @@
         </div>
       </div>
     </div>
+      <br><br><br>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <h3 class="titulo">AUXILIARES NEGATIVOS</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <p class="parrafoBlack">
+        Recuerde que un verbo se usa en su forma presente por lógica en presente
+        o después de un auxiliar.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11 row">
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tablaAPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tablaBPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tablaCPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tablaDPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tablaEPag39" />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="row">
+      <div class="col-sm-1 row"></div>
+      <div class="col-sm-7">
+        <ul>
+          <li
+            v-for="item in frasesPag39"
+            v-html="item"
+            class="text-left parrafoBlack"
+          ></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11 row">
+        <div class="col-sm-1 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2APag39" />
+        </div>
+        <div class="col-sm-1 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2BPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2CPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2DPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2EPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2FPag39" />
+        </div>
+        <div class="col-sm-2 parrafoBlack" id="tabla">
+          <listaIndex :tabla="$data.tabla2GPag39" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <p class="parrafoBlack">
+        Los auxiliares se usan para preguntar y negar, así que lo más importante
+        es usar el correcto y recuerde que Does se usa para preguntar con she,
+        he, it en presente y doesn´t para negar.
+      </p>
+    </div>
+    <br /><br /><br />
+    <div class="row">
+      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+
+      <p class="parrafoBlack marginn-left">
+        &nbsp;
+        <b>Escribe el auxiliar negativo</b>
+      </p>
+      <br />
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-8 row">
+        <div
+          v-for="(item, index) in frases2Pag39"
+          :class="' row col-sm-' + item.tamano + 4"
+          style="margin-bottom: 0.5em"
+        >
+          <inputChecked
+            :esperado="item.esperado"
+            :resuelto="false"
+            :name="'P39-' + index"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+            :conTexto="true"
+          />
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+
+      <p class="parrafoBlack">
+        <b>DICTIONARY</b>
+        <br />
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-0.9" v-for="item in $data.tablaUnoPag40">
+        <listaIndex :tabla="item" />
+
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <p class="parrafoBlack Subrayado">
+        Write the corresponding letter in front of the Spanish phrase.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div :class="'col-sm-5'">
+        <div
+          v-for="(item, index) in frases1Pag40"
+          :class="''"
+          style="margin-bottom: 0.5em"
+        >
+          <inputChecked
+            :esperado="item.esperado"
+            :resuelto="false"
+            :name="'P40-' + index"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+            :conTexto="true"
+          />
+        </div>
+      </div>
+      <div :class="'col-sm-5'">
+        <p
+          v-for="item in frases2Pag40"
+          v-html="item"
+          class="text-left parrafoBlack ' '"
+        ></p>
+      </div>
+    </div>
+    <img src="/cursos/curso1/leccion8/imagenes/tablaPag40.png" />
+    <br><br><br>
+   
   </div>
 </template>
 
@@ -100,20 +264,22 @@ import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
 import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
-import tablaTraduccionCodigosDos from "./tablaTraduccionCodigosDos";
+import inputCE from "./inputCEnriquecido";
 import tablaTC from "./tablaTraduccionCodigos";
+
 export default {
   components: {
     listaIndex,
     inputChecked,
     tablaTraduccionCodigos,
-    tablaTraduccionCodigosDos,
+
     posiblesRespuestasTabla,
     tablaTC,
+    inputCE,
   },
   data() {
     return {
-      tablaAPag38: {
+        tablaAPag38: {
         bordered: true,
 
         fields: [
@@ -162,29 +328,7 @@ export default {
         items: [],
       },
 
-      cuestionario1Pag36: {
-        fields: [
-          {
-            key: "A",
-            thClass: "Yellow parrafoBlack",
-            label: "Verbo en presente",
-          },
-          { key: "ENGLISH_PHRASE", label: "En tercera persona" },
-          { key: "B", label: "Clase" },
-          { key: "C", label: "Past and participle" },
-        ],
-        items: [
-          {
-            A: "I *Eat* pizza",
-            B: "Irregular",
-            C: "Ate – eaten",
-
-            ENGLISH_PHRASE: ["She eats pizza"],
-          },
-        ],
-      },
-
-      tabla2P29: {
+      tabla1P38: {
         fields: [
           { key: "Z", label: "1.", thClass: "noHead" },
           { key: "A", label: "A", thClass: "noHead" },
@@ -230,7 +374,8 @@ export default {
           },
         ],
       },
-      frases2PAg37: [
+
+      frases1Pag38: [
         {
           esperado: ["didn't"],
           textoA: "1. I ",
@@ -263,6 +408,484 @@ export default {
           textoD: "say anything. (Ellos no dirán nada)",
         },
       ],
+      tablaAPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "A", thClass: "text-primary", label: "Don´t" },
+        ],
+
+        items: [],
+      },
+
+      tablaBPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "Doesn´t", thClass: "text-primary" },
+        ],
+        items: [],
+      },
+
+      tablaCPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "Didn´t", thClass: "text-primary" },
+        ],
+        items: [],
+      },
+
+      tablaDPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "Won´t", thClass: " text-primary" },
+        ],
+        items: [],
+      },
+
+      tablaEPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "Wouldn´t", thClass: " text-primary" },
+        ],
+        items: [],
+      },
+      frasesPag39: [
+        "El <FONT class='text-danger'> don’t </FONT>es el no para un verbo en presente",
+        "El <FONT class='text-danger'>doesn´t </FONT>es el no para un verbo en presente y solo se usa con she, he, it",
+        "El <FONT class='text-danger'>didn´t </FONT>es el no para un verbo en pasado",
+        "El <FONT class='text-danger'>won´t </FONT>es el no para un verbo en futuro",
+        " El <FONT class='text-danger'>wouldn´t </FONT>es el no para un verbo que termine en “ría”",
+      ],
+      tabla2APag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "A", thClass: "Yellow", label: "PRESENT" },
+        ],
+
+        items: [],
+      },
+
+      tabla2BPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "B", thClass: "", label: "I GO" },
+        ],
+        items: [],
+      },
+
+      tabla2CPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "C", thClass: "", label: "I don't go" },
+        ],
+        items: [{ C: "Yo no voy" }],
+      },
+
+      tabla2DPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "D", thClass: " ", label: "She doesn’t go" },
+        ],
+        items: [{ D: "Ella no va" }],
+      },
+
+      tabla2EPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "E", thClass: " ", label: "I didn´t go" },
+        ],
+        items: [{ E: "Yo no fui " }],
+      },
+      tabla2FPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "F", label: "I won´t go" },
+        ],
+        items: [{ F: "Yo no iré" }],
+      },
+      tabla2GPag39: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+
+          // A column that needs custom formatting
+          { key: "G", thClass: " ", label: "I wouldn´t go" },
+        ],
+        items: [{ G: "Yo no iría" }],
+      },
+      frases2Pag39: [
+        {
+          esperado: ["didn't"],
+          textoA: "1. I ",
+          tamano: 4,
+          textoD: "understand. (Yo no entendí)",
+        },
+
+        {
+          esperado: ["doesn't "],
+          textoA: "2. She",
+          tamano: 4,
+          textoD: "live here. (Ella no vive aquí)",
+        },
+        {
+          esperado: ["wouldn't"],
+          textoA: "3. You",
+          tamano: 4,
+          textoD: "understand. (Tú no entenderías)",
+        },
+        {
+          esperado: ["don't"],
+          textoA: "4. I",
+          tamano: 4,
+          textoD: " care. (No me importa)",
+        },
+        {
+          esperado: ["won't"],
+          textoA: "5. They",
+          tamano: 4,
+          textoD: "say anything. (Ellos no dirán nada)",
+        },
+        {
+          esperado: ["don't"],
+          textoA: "6. I",
+          tamano: 4,
+          textoD: "have any time. (No tengo nada de tiempo)",
+        },
+        {
+          esperado: ["wouldn't"],
+          textoA: "7. He",
+          tamano: 4,
+          textoD: "do that. (El no haría eso)",
+        },
+        {
+          esperado: ["won't"],
+          textoA: "8. We",
+          tamano: 4,
+          textoD: "say anything. (Nosotros no diremos nada)",
+        },
+        {
+          esperado: ["doesn't"],
+          textoA: "9. my father",
+          tamano: 4,
+          textoD: "speak english. (Mi padre no habla inglés)",
+        },
+        {
+          esperado: ["didn't"],
+          textoA: "10. I",
+          tamano: 4,
+          textoD: "understand what he said. (Yo no entendí lo que él dijo)",
+        },
+      ],
+
+      tablaUnoPag40: [
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT  class="  p-2 bg-warning"><strong>Understand</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Entender</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT  class="  p-2 bg-warning"><strong>Know</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Saber</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html: '<FONT  class="p-2 bg-warning"><strong>Say</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Decir</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT  class="  p-2 bg-warning"><strong>Live</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Vivir</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT  class="p-2 bg-warning "><strong>Have</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Tener</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html: '<FONT class="p-2 bg-warning "><strong>Do</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Hacer</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT class="p-2 bg-warning "><strong>Make Sense</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Tener Sentido</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT class="p-2 bg-warning "><strong>Work</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Trabajar</strong></FONT>',
+            },
+          ],
+        },
+        {
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            { key: "html", label: "" },
+          ],
+          items: [
+            {
+              html:
+                '<FONT  class="p-2 bg-warning "><strong>Cry</strong></FONT>',
+            },
+            {
+              html: '<FONT class=""><strong>Llorar</strong></FONT>',
+            },
+          ],
+        },
+      ],
+
+      frases1Pag40: [
+        {
+          esperado: ["c"],
+          textoA: "1. yo no entiendo nada ",
+          tamano: 4,
+          textoD: "",
+        },
+
+        {
+          esperado: ["d"],
+          textoA: "2. Ella no entendio nada",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["b"],
+          textoA: "3. Yo no entendí nada",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["e"],
+          textoA: "4. Yo no entendería nada",
+          tamano: 4,
+          textoD: " ",
+        },
+        {
+          esperado: ["a"],
+          textoA: "5. Yo no entenderé nada",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["g"],
+          textoA: "6. No tiene sentido",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["o"],
+          textoA: "7. Él no trabajó hoy",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["o"],
+          textoA: "8. El niño no lloró",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["m"],
+          textoA: "9. yo no lo haré",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["j"],
+          textoA: "10. Nosotros no tendríamos ningún problema",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["h"],
+          textoA: "11. Yo no dije nada",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["k"],
+          textoA: "12. Él no fue a ninguna parte",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["l"],
+          textoA: "13. Yo no haría nada",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["i"],
+          textoA: "14. Ella no vive acá",
+          tamano: 4,
+          textoD: "",
+        },
+        {
+          esperado: ["f"],
+          textoA: "15. Yo no sé nada",
+          tamano: 4,
+          textoD: "",
+        },
+      ],
+      frases2Pag40: [
+        "a. I <FONT class='bg-warning'> won´t</FONT> understand anything",
+        "b. I <FONT class='bg-warning'>didn´t</FONT> understand anything",
+        "c. I <FONT class='bg-warning'>don’t</FONT> understand anything",
+        "d. She <FONT class='bg-warning'>doesn’t</FONT> understand anything",
+        "e. I <FONT class='bg-warning'>wouldn’t</FONT> understand anything",
+        "f. I <FONT class='bg-warning'>don’t</FONT> know anything",
+        "g. It <FONT class='bg-warning'>doesn’t</FONT> make sense",
+        "h. I <FONT class='bg-warning'>didn’t</FONT> say anything",
+        "i. She <FONT class='bg-warning'>doesn’t</FONT> live here",
+        "j. We <FONT class='bg-warning'>wouldn’t</FONT> have any problem",
+        "k. He <FONT class='bg-warning'>didn’t</FONT> go anywhere",
+        "l. I <FONT class='bg-warning'>wouldn’t</FONT> do anything",
+        "m. I <FONT class='bg-warning'>won´t</FONT> do it",
+        "n. He <FONT class='bg-warning'>didn’t</FONT> work today",
+        "o. The boy <FONT class='bg-warning'>didn’t</FONT> cry",
+      ],
+      
     };
   },
 };
