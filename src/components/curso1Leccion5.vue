@@ -211,6 +211,7 @@
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :audio="item.audio"
           />
         </div>
       </div>
