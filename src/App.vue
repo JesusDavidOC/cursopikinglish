@@ -3,6 +3,7 @@
     <div class="row" id="curso">
         <div class="col-sm-12">
 
+            <curso1Leccion4 />
             <curso1Leccion5 />
 
         </div>
@@ -12,12 +13,15 @@
 
 <script>
 import curso1Leccion5 from "./components/curso1Leccion5.vue";
+import curso1Leccion4 from "./components/curso1Leccion4.vue";
+ 
 export default {
     name: "App",
     components: {
 
 
         curso1Leccion5,
+        curso1Leccion4
     },
 };
 </script>
