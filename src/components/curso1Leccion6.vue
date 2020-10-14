@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <h3 class="titulo">FORMA PRESENTE DEL VERBO</h3>
+      <h3 class="titulo">FORMA PRESENTE DEL VERBOS</h3>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
