@@ -1,5 +1,5 @@
 <template>
-<div>Tulua la chupa</div>
+<div></div>
 </template>
 
 <script>
