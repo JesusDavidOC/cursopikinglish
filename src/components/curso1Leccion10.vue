@@ -188,7 +188,7 @@ export default {
                 {
                     respuesta: "",
                     pregunta: "2. What do you teach?",
-                    audio: "",
+                    audio: "/cursos/curso1/leccion10/audios/page44/AC1P44R1.2.mp3",
                     options: [{
                             text: "A. ¿Qué enseñas?",
                             value: "A",
@@ -209,7 +209,7 @@ export default {
                 {
                     respuesta: "",
                     pregunta: "3. How does she feel?",
-                    audio: "",
+                    audio: "/cursos/curso1/leccion10/audios/page44/AC1P44R1.3.mp3",
                     options: [{
                             text: "A. ¿Cómo se siente ella?",
                             value: "A",
@@ -230,7 +230,7 @@ export default {
                 {
                     respuesta: "",
                     pregunta: "4. Why do you love me?",
-                    audio: "",
+                    audio:"/cursos/curso1/leccion10/audios/page44/AC1P44R1.4.mp3",
                     options: [{
                             text: "A. ¿Por qué me amabas? ",
                             value: "A",
@@ -251,7 +251,7 @@ export default {
                  {
                     respuesta: "",
                     pregunta: "5. When will you come? ",
-                    audio: "",
+                    audio: "/cursos/curso1/leccion10/audios/page44/AC1P44R1.5.mp3",
                     options: [{
                             text: "A. ¿Cuándo viniste? ",
                             value: "A",
@@ -272,7 +272,7 @@ export default {
                  {
                     respuesta: "",
                     pregunta: "6. What would we do? ",
-                    audio: "",
+                    audio: "/cursos/curso1/leccion10/audios/page44/AC1P44R1.6.mp3",
                     options: [{
                             text: "A. ¿Qué haríamos? ",
                             value: "A",
