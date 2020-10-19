@@ -164,7 +164,8 @@ export default {
             respuestasCuestionarioP44: ["B", "A", "A","C","B", "A"],
             cuestionarioP44: [{
                     respuesta: "",
-                    pregunta: "1. Where did you buy it?" ,
+                    pregunta: "1. Where did you buy it?",
+                    audio: "/cursos/curso1/leccion10/audios/page44/AC1P44R1.1.mp3",
                       options: [{
                             text: "A. ¿Dónde lo compras?",
                             value: "A",
