@@ -144,6 +144,19 @@
         <b-button variant="primary" @click="showModal('my-modalP109')">VERIFICAR PREGUNTAS</b-button>
       </div>
     </div>
+    <div class= "row">
+      <div class= "col-sm-1"></div>
+      <div class="col-sm-10">
+        <b-card> 
+        <h3 id="text-align: justify">
+          Has terminado todas las lecciones del primer nivel, ahora estás en las capacidades de presentar el examen, has click en el botón para resolverlo.
+        </h3>
+          <div>
+            <b-button style="margin: 10px;" size="lg" href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin=" variant="danger">HACER EXAMEN</b-button>
+          </div>
+        </b-card>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -2,55 +2,20 @@
   <div id="app">
     <div class="row" id="curso">
       <div class="col-sm-12">
-        <curso1Leccion1 />
-        <curso1Leccion2 />
-        <curso1Leccion3 />
-        <curso1Leccion4 />
-        <curso1Leccion5 />
-        <curso1Leccion20 />
-        <curso1Leccion21 />
-        <curso1Leccion22 />
-        <curso1Leccion23 />
-        <curso1Leccion24 />
-        <curso1Leccion25 />
-        <curso1Leccion26 />
         <curso1Leccion27 />
-        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import curso1Leccion1 from "./components/curso1Leccion1.vue";
-import curso1Leccion2 from "./components/curso1Leccion2.vue";
-import curso1Leccion3 from "./components/curso1Leccion3.vue";
-import curso1Leccion4 from "./components/curso1Leccion4.vue";
-import curso1Leccion5 from "./components/curso1Leccion5.vue";
-import curso1Leccion20 from "./components/curso1Leccion20.vue";
-import curso1Leccion21 from "./components/curso1Leccion21.vue";
-import curso1Leccion22 from "./components/curso1Leccion22.vue";
-import curso1Leccion23 from "./components/curso1Leccion23.vue";
-import curso1Leccion24 from "./components/curso1Leccion24.vue";
-import curso1Leccion25 from "./components/curso1Leccion25.vue";
-import curso1Leccion26 from "./components/curso1Leccion26.vue";
+
 import curso1Leccion27 from "./components/curso1Leccion27.vue";
 
 export default {
   name: "App",
   components: {
-    curso1Leccion1,
-    curso1Leccion2,
-    curso1Leccion3,
-    curso1Leccion4,
-    curso1Leccion5,
-    curso1Leccion20,
-    curso1Leccion21,
-    curso1Leccion22,
-    curso1Leccion23,
-    curso1Leccion24,
-    curso1Leccion25,
-    curso1Leccion26,
+    
     curso1Leccion27,
   },
 };
