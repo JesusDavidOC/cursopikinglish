@@ -10,72 +10,20 @@
       <br />
     </div>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-11 row">
-        <div class="col-sm-2" id="tabla">
-          <tablaTC :cuestionario="$data.tablaAPag44" />
+        <div class="col-sm-1"></div>
+        <div class="col-sm-6">
+            <opcionMultiple id="text" :options="$data.cuestionarioP44" :rEsperadas="$data.respuestasCuestionarioP44" @respuestas="$data.mensajeRespuestasP44 = $event" />
         </div>
-        <div class="col-sm-2" id="tabla">
-          <tablaTC :cuestionario="$data.tablaBPag44" />
-        </div>
-        <div class="col-sm-2" id="tabla">
-          <tablaTC :cuestionario="$data.tablaCPag44" />
-        </div>
-        <div class="col-sm-2" id="tabla">
-          <tablaTC :cuestionario="$data.tablaDPag44" />
-        </div>
-        <div class="col-sm-2">
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['B']"
-            :textoA="'1.'"
-            :conTexto="true"
-          />
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['A']"
-            :textoA="'2.'"
-            :conTexto="true"
-          />
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['A']"
-            :textoA="'3.'"
-            :conTexto="true"
-          />
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['C']"
-            :textoA="'4.'"
-            :conTexto="true"
-          />
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['B']"
-            :textoA="'5.'"
-            :conTexto="true"
-          />
-          <inputChecked
-            style="width: 70%; margin-left: 10px; margin-right: 10px"
-            :resuelto="false"
-            :esperado="['A']"
-            :textoA="'6.'"
-            :conTexto="true"
-          />
-        </div>
-      </div>
+        <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP24 }}</b-modal>
+        <div class="col-sm-1"></div>
     </div>
+   
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-9 ">
         <div
           v-for="(item, index) in frases1Pag44"
-          :class="' row col-sm-10'"
+          :class="' row col-sm-'+item.tamano"
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -140,7 +88,7 @@
       <div class="col-sm-10">
         <div
           v-for="(item, index) in frases1Pag46"
-          :class="'row col-sm-10'"
+          :class="'row col-sm-'+item.tamano"
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -186,13 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <p class="subTitulo marginn-left">
-        <i>
-          <b>PRACTICE</b>
-        </i>
-      </p>
-    </div>
+
 
    
     
@@ -205,6 +147,7 @@ import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
 import inputCE from "./inputCEnriquecido";
 import tablaTC from "./tablaTraduccionCodigos";
+import opcionMultiple from "./opcionMultiple"
 export default {
   components: {
     listaIndex,
@@ -212,89 +155,143 @@ export default {
     inputCE,
     posiblesRespuestasTabla,
     tablaTC,
+    opcionMultiple
   },
   data() {
     return {
-       tablaAPag44: {
-        bordered: true,
 
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "A", thClass: "", label: "" },
-        ],
-
-        items: [
-          { A: "1. Where did you buy it?" },
-          { A: "2. What do you teach?" },
-          { A: "3. How does she feel?" },
-          { A: "4. Why do you love me?" },
-          { A: "5. When will you come?" },
-          { A: "6. What would we do?" },
-        ],
-      },
-
-      tablaBPag44: {
-        bordered: true,
-
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "B", thClass: "", label: "" },
-        ],
-        items: [
-          { B: "A. ¿Dónde lo compras?" },
-          { B: "A. ¿Qué enseñas?" },
-          { B: "A. ¿Cómo se siente ella?" },
-          { B: "A. ¿Por qué me amabas?" },
-          { B: "A. ¿Cuándo viniste?" },
-          { B: "A. ¿Qué haríamos?" },
-        ],
-      },
-
-      tablaCPag44: {
-        bordered: true,
-
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "C", thClass: "", label: "" },
-        ],
-        items: [
-          { C: "B. ¿Dónde lo compraste?" },
-
-          { C: "B. ¿Qué enseñaste?" },
-
-          { C: "B. ¿Cómo se sintió ella?" },
-          { C: "B. ¿Qué amas?" },
-          { C: "B. ¿Cuándo vendrás?" },
-          { C: "B. ¿Qué hicimos?" },
-        ],
-      },
-
-      tablaDPag44: {
-        bordered: true,
-
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "C", thClass: "", label: "" },
-        ],
-        items: [
-          { C: "C. ¿Dónde lo comprarías?" },
-
-          { C: "C. ¿Qué enseñaras?" },
-          { C: "C. ¿Cómo está ella?" },
-          { C: "C. ¿Por qué me amas?" },
-          { C: "C. ¿Cuándo vendrías?" },
-          { C: " C. ¿Qué haremos?" },
-        ],
-      },
-
+       
+            respuestasCuestionarioP44: ["B", "A", "A","C","B", "A"],
+            cuestionarioP44: [{
+                    respuesta: "",
+                    pregunta: "1. Where did you buy it?" ,
+                      options: [{
+                            text: "A. ¿Dónde lo compras?",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Dónde lo compraste?",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Dónde lo comprarías?",
+                            value: "C",
+                            disabled: false,
+                        },
+                      ],
+                    
+                },
+                     
+                {
+                    respuesta: "",
+                    pregunta: "2. What do you teach?",
+                    audio: "",
+                    options: [{
+                            text: "A. ¿Qué enseñas?",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Qué enseñaste?",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Qué enseñaras?",
+                            value: "C",
+                            disabled: false,
+                        },
+                    ],
+                },
+                {
+                    respuesta: "",
+                    pregunta: "3. How does she feel?",
+                    audio: "",
+                    options: [{
+                            text: "A. ¿Cómo se siente ella?",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Cómo se sintió ella?",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Cómo está ella?",
+                            value: "C",
+                            disabled: false,
+                        },
+                    ],
+                },
+                {
+                    respuesta: "",
+                    pregunta: "4. Why do you love me?",
+                    audio: "",
+                    options: [{
+                            text: "A. ¿Por qué me amabas? ",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Qué amas?",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Por qué me amas?",
+                            value: "C",
+                            disabled: false,
+                        },
+                    ],
+                },
+                 {
+                    respuesta: "",
+                    pregunta: "5. When will you come? ",
+                    audio: "",
+                    options: [{
+                            text: "A. ¿Cuándo viniste? ",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Cuándo vendrás? ",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Cuándo vendrías?",
+                            value: "C",
+                            disabled: false,
+                        },
+                    ],
+                },
+                 {
+                    respuesta: "",
+                    pregunta: "6. What would we do? ",
+                    audio: "",
+                    options: [{
+                            text: "A. ¿Qué haríamos? ",
+                            value: "A",
+                            disabled: false,
+                        },
+                        {
+                            text: "B. ¿Qué hicimos? ",
+                            value: "B",
+                            disabled: false,
+                        },
+                         {
+                            text: "C. ¿Qué haremos?",
+                            value: "C",
+                            disabled: false,
+                        },
+                    ],
+                },
+             
+            ],
+      
       frases1Pag44: [
         {
           lista1: ["What did you eat"],
@@ -303,6 +300,7 @@ export default {
           textoD: "?",
 
           name: "ic",
+          tamano:10
         },
         {
           lista1: ["where would she go"],
@@ -311,6 +309,7 @@ export default {
           textoD: "?",
 
           name: "ic",
+          tamano:10
         },
         {
           lista1: ["How do you feel"],
@@ -319,6 +318,7 @@ export default {
 
           textoD: "?",
           name: "ic",
+          tamano:10
         },
         {
           lista1: ["did"],
@@ -327,6 +327,7 @@ export default {
           textoD: "it go?",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["does"],
@@ -335,6 +336,7 @@ export default {
 
           textoD: "she live?",
           name: "ic",
+          tamano:6
         },
         {
           lista1: ["will "],
@@ -343,6 +345,7 @@ export default {
 
           textoD: "you bring my car back?",
           name: "ic",
+          tamano:8
         },
         {
           lista1: ["do"],
@@ -351,6 +354,7 @@ export default {
 
           textoD: "you want from me?",
           name: "ic",
+          tamano:7
         },
         {
           lista1: ["would"],
@@ -359,6 +363,7 @@ export default {
 
           textoD: " you like to change of your life?",
           name: "ic",
+          tamano:9
         },
         {
           lista1: [" did"],
@@ -367,6 +372,7 @@ export default {
 
           textoD: "you arrive in Greece?",
           name: "ic",
+          tamano:8
         },
         {
           lista1: [" will "],
@@ -375,6 +381,7 @@ export default {
 
           textoD: " you go away to this summer?",
           name: "ic",
+          tamano:10
         },
         {
           lista1: [" did"],
@@ -383,6 +390,7 @@ export default {
 
           textoD: "you do it?",
           name: "ic",
+          tamano:6
         },
         {
           lista1: [" would "],
@@ -392,6 +400,7 @@ export default {
 
           textoD: "you like to stay with us?",
           name: "ic",
+          tamano:11
         },
         {
           lista1: ["does"],
@@ -400,6 +409,7 @@ export default {
 
           textoD: "she hate you?",
           name: "ic",
+          tamano:7
         },
         {
           lista1: [" did"],
@@ -408,6 +418,7 @@ export default {
 
           textoD: "you meet her?",
           name: "ic",
+          tamano:7
         },
         {
           lista1: [" do"],
@@ -416,6 +427,7 @@ export default {
 
           textoD: "you think?",
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["When"],
@@ -424,6 +436,7 @@ export default {
 
           textoD: " will it be?",
           name: "ic",
+          tamano:5
         },
       ],
       tablaUnoPag45: {
@@ -555,7 +568,7 @@ export default {
             C: "Saber-conocer ",
             complejo2: {
               lista: ["know "],
-              tamano: 20,
+              tamano: 26,
               textoA: "She doesn’t ",
               textoD: "anything about me ",
             },
@@ -566,7 +579,7 @@ export default {
             C: " Encontrarse con, conocer, presentar",
             complejo2: {
               lista: ["met "],
-              tamano: 18,
+              tamano: 26,
               textoA: "I  ",
               textoD: "a nice girl a couple days ago ",
             },
@@ -588,7 +601,7 @@ export default {
             C: " Decir",
             complejo2: {
               lista: ["said "],
-              tamano: 18,
+              tamano: 20,
               textoA: "I haven´t ",
               textoD: "anything ",
             },
@@ -610,7 +623,7 @@ export default {
             C: "Intentar, probar, hacer el esfuerzo ",
             complejo2: {
               lista: [" tried"],
-              tamano: 18,
+              tamano: 26,
               textoA: " She",
               textoD: "to fix the car this morning ",
             },
@@ -697,6 +710,7 @@ export default {
           textoD: "that I was under this mask?",
 
           name: "ic",
+          tamano:6
         },
         {
           lista1: ["sell"],
@@ -706,11 +720,12 @@ export default {
           textoD: "my car to pay bills",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["threw"],
           lista2: ["to"],
-          tamano: 18,
+          tamano:11,
           textoA:
             "3. I was driving my car along the street very slowly when a boy   ",
           textoD2: "broke my back-left window.",
@@ -722,7 +737,7 @@ export default {
 
           textoA: "4. It has been 5 years now since we ",
           textoD: ".– Happy anniversary.",
-
+          tamano:7,
           name: "ice",
         },
       ],
@@ -739,7 +754,7 @@ export default {
           textoA:
             "1. I worked for about 16 hours in a row to finish my project and the next day I ",
           textoD: "on working for another 2 hours. ",
-
+          tamano:11,
           name: "ic",
         },
         {
@@ -748,14 +763,14 @@ export default {
           textoA:
             "2. Look at that nice blue car over there! It is for sale. Let´s go and ask for the price and if it is not expensive I will",
           textoD: "it.",
-
+          tamano:11,
           name: "ic",
         },
         {
           lista1: ["say"],
 
           textoA: "3. I am so sorry! I wasn’t listening. What did you ?",
-
+          tamano:6,
           textoD: "",
           name: "ice",
         },
@@ -765,7 +780,7 @@ export default {
           textoA:
             "4. Where are you Matt? – I am outside of your house! – oh no! I ",
           textoD: " you were home. I am outside of your house too. ",
-
+          tamano:11,
           name: "ice",
         },
         {
@@ -773,7 +788,7 @@ export default {
 
           textoA: "5. Have you ever  ",
           textoD: " whisky? – no, I have never tried it and I don’t want to  ",
-
+          tamano:8,
           name: "ice",
         },
       ],
