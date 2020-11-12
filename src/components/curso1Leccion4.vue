@@ -129,16 +129,84 @@
 </template>
 
 <script>
-import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
-import opcionMultiple from "./opcionMultiple";
-import listaIndex from "./listaIndex";
-import inputChecked from "./inputChecked";
-import tablaTC from "./tablaTraduccionCodigos";
-export default {
-    methods: {
-        showModal(text) {
-            this.$refs[text].show();
-        },
+     },  fields: [
+            { key: "complejo1", label: "IS-AM-ARE-WAS-WERE" },
+            { key: "A", label: "4.1" },
+            { key: "B", label: "4.2" },
+            { key 
+          ],
+          items: [
+            {
+              complejo1: {
+                lista: ["Thinking"],
+                textoA: "What are you",
+                textoD: "about?",
+                tamano: 22,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R12.mp3"
+              },
+              A: "Think",
+              B: "Thought",
+              C: "Thought",
+              D: "Thinking",
+            },
+            {
+              complejo1: {
+                lista: ["Going"],
+                textoA: "Where were you",
+                textoD: "?",
+                tamano: 24,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R13.mp3"
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R14.mp3"
+              },
+              A: "Make",
+              B: "Made",
+              C:  
+            },   
+            {
+              complejo1: {
+                lista: ["Paying"],
+                textoA: "Sorry! I was not",
+                textoD: "attention",
+                tamano: 25,
+                audio: "/cursos/curso1/leccion4/page25/AC1P24R15.mp3"
+              },
+              A: "Pay",
+              B: "Paid",
+              C: "Paid",
+              D: "Paying",
+            },         
+          ],
+        }
+      ],
+      listaConclusionP25: [
+        "Siempre recuerda para que sirven los modificadores (auxiliares). para preguntar o negar.",
+        "Recuerda que un verbo se usa en pasado solo en afirmación.",
+        "Los verbos con poderes se niegan solos, ellos no necesitan auxiliares.",
+         PRESENT: "Drive",
+            PAST: "Drove",
+            PARTICIPLE: "Driven",
+            PROGRESSIVE: "Driving",
+            complejo1: {
+              lista: ["Driven"],
+              textoA: "She has never",
+              textoD: "a car",
+              tamano: 23,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R15.mp3'
+            },
+          },
+          {
+            SPANISH: "Aprender",
+            PRESENT: "Learn",
+            PAST: "Learned",
+            PARTICIPLE: "Learned",
+            PROGRESSIVE: "Learning",
+            complejo1: {
+              lista: ["Learn"],
+              textoA: "You need to",
+              textoD: "the numbers in English",
+              tamano: 30,
+              audio: '/cursos/curso1/leccion4/audios/page23/AC1P22R16.mp3'
+=======
     },
     components: {
         opcionMultiple,
@@ -154,371 +222,7 @@ export default {
                 items: [{
                         esperado: ["working"],
                         textoA: "1.   I am",
-                        textoD: "(work-worked-worked-working) - Estoy trabajando.",
-                        tamaño: 8,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R1.mp3'
-                    },
-                    {
-                        esperado: ["go"],
-                        textoA: "2.   I don’t",
-                        textoD: "anywhere (go-went-gone-going) - Yo no voy a ninguna parte.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R2.mp3'
-                    },
-                    {
-                        esperado: ["have"],
-                        textoA: "3.   She can´t ",
-                        textoD: "a boyfriend now (have-has-had-having) - Ella no puede tener un novio ahora.",
-                        tamaño: 11,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R3.mp3'
-                    },
-                    {
-                        esperado: ["seen"],
-                        textoA: "4.   I haven’t ",
-                        textoD: "Victor today (see-saw-seen-seeing) - No he visto a Víctor hoy.",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R4.mp3'
-                    },
-                    {
-                        esperado: ["saw"],
-                        textoA: "5.   She",
-                        textoD: "Victor yesterday (see-saw-seen-seeing) - Ella vio a Víctor ayer.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R5.mp3'
-                    },
-                    {
-                        esperado: ["had"],
-                        textoA: "6.   We",
-                        textoD: "an excellent class (have-has-had-having) - Tuvimos una excelente clase.?",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R6.mp3'
-                    },
-                    {
-                        esperado: ["been"],
-                        textoA: "7.   How have you",
-                        textoD: "? (be- was- been- being) - ¿Como has estado?",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R7.mp3'
-                    },
-                    {
-                        esperado: ["working"],
-                        textoA: "8.   She is",
-                        textoD: "(work-worked-worked-working) - Ella está trabajando.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R8.mp3'
-                    },
-                    {
-                        esperado: ["do"],
-                        textoA: "9.   What did you",
-                        textoD: "last night? (do-did-done-doing) - ¿Qué hiciste anoche?",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R9.mp3'
-                    },
-                    {
-                        esperado: ["ate"],
-                        textoA: "10. I",
-                        textoD: "breakfast early (eat-ate-eaten-eating) - Yo desayuné temprano.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R10.mp3'
-                    },
-                    {
-                        esperado: ["eat"],
-                        textoA: "11. I",
-                        textoD: "breakfast early (eat-ate-eaten-eating) - Yo desayuno temprano.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R11.mp3'
-                    },
-                    {
-                        esperado: ["doing"],
-                        textoA: "12. What were you",
-                        textoD: "last night? (do-did-done-doing) - ¿Qué estabas haciendo anoche?",
-                        tamaño: 11,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R12.mp3'
-                    },
-                    {
-                        esperado: ["done"],
-                        textoA: "13. Have you ever",
-                        textoD: "that? (do-did-done-doing) - ¿Alguna vez has hecho eso?",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R13.mp3'
-                    },
-                    {
-                        esperado: ["do"],
-                        textoA: "14. We shouldn’t",
-                        textoD: "that. (do-did-done-doing) - Nosotros no deberíamos hacer eso.",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R14.mp3'
-                    },
-                    {
-                        esperado: ["study"],
-                        textoA: "15. You must",
-                        textoD: "for the exam. (study-studied-studied-studying) - Tú debes estudiar para el examen.",
-                        tamaño: 12,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R15.mp3'
-                    },
-                    {
-                        esperado: ["raining"],
-                        textoA: "16. It is",
-                        textoD: "a lot. (rain-rained-rained-raining) - Está lloviendo mucho.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R16.mp3'
-                    },
-                    {
-                        esperado: ["like"],
-                        textoA: "17. What would you",
-                        textoD: "to do? (like-liked-liked-liking) - ¿Qué te gustaría hacer?",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R17.mp3'
-                    },
-                    {
-                        esperado: ["do"],
-                        textoA: "18. I",
-                        textoD: "sports once in a while. (do-did-done-doing) - Yo hago deportes de vez en cuando.",
-                        tamaño: 11,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R18.mp3'
-                    },
-                    {
-                        esperado: ["do"],
-                        textoA: "19. What does your father",
-                        textoD: "? (do-did-done-doing) - ¿Qué hace tu padre?",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R19.mp3'
-                    },
-                    {
-                        esperado: ["do"],
-                        textoA: "20. What can I",
-                        textoD: "for you? (do-did-done-doing) - ¿Qué puedo hacer por ti?",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R20.mp3'
-                    },
-                    {
-                        esperado: ["done"],
-                        textoA: "21. I haven’t ",
-                        textoD: "anything yet. (do-did-done-doing) - No he hecho nada aún.",
-                        tamaño: 10,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R21.mp3'
-                    },
-                    {
-                        esperado: ["did"],
-                        textoA: "22. You ",
-                        textoD: "a good job. (do-did-done-doing) Tú hiciste un buen trabajo.",
-                        tamaño: 9,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R22.mp3'
-                    },
-                    {
-                        esperado: ["worked"],
-                        textoA: "23. My father",
-                        textoD: "for a big company. (work-worked- working) Mi padre trabajó para una gran compañía. ",
-                        tamaño: 13,
-                        audio: '/cursos/curso1/leccion4/audios/page26/AC1P25R23.mp3'
-                    },
-                ],
-            },
-            tablasP25: [{
-                    fields: [{
-                            key: "complejo1",
-                            label: "AUXILIARIES"
-                        },
-                        {
-                            key: "A",
-                            label: "4.1"
-                        },
-                        {
-                            key: "B",
-                            label: "4.2"
-                        },
-                        {
-                            key: "C",
-                            label: "4.3"
-                        },
-                        {
-                            key: "D",
-                            label: "4.4"
-                        },
-                    ],
-                    items: [{
-                            complejo1: {
-                                lista: ["Go"],
-                                textoA: "Do you",
-                                textoD: "to school?",
-                                tamano: 18,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R1.mp3"
-                            },
-                            A: "Go",
-                            B: "Went",
-                            C: "Gone",
-                            D: "Going",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Eat"],
-                                textoA: "Did you",
-                                textoD: "vegetables?",
-                                tamano: 20,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R2.mp3"
-                            },
-                            A: "Eat",
-                            B: "Ate",
-                            C: "Eaten",
-                            D: "Eating",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Like"],
-                                textoA: "Would you",
-                                textoD: "to live in Peru?",
-                                tamano: 23,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R3.mp3"
-                            },
-                            A: "Like",
-                            B: "Liked",
-                            C: "Liked",
-                            D: "Liking",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["do"],
-                                textoA: "What will you",
-                                textoD: "tomorrow?",
-                                tamano: 22,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R4.mp3"
-                            },
-                            A: "Do",
-                            B: "Did",
-                            C: "Done",
-                            D: "Doing",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Live"],
-                                textoA: "Where does she",
-                                textoD: "?",
-                                tamano: 19,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R5.mp3"
-                            },
-                            A: "Live",
-                            B: "Lived",
-                            C: "Lived",
-                            D: "Living",
-                        },
-                    ],
-                },
-                {
-                    fields: [{
-                            key: "complejo1",
-                            label: "Past-affirmative"
-                        },
-                        {
-                            key: "A",
-                            label: "4.1"
-                        },
-                        {
-                            key: "B",
-                            label: "4.2"
-                        },
-                        {
-                            key: "C",
-                            label: "4.3"
-                        },
-                        {
-                            key: "D",
-                            label: "4.4"
-                        },
-                    ],
-                    items: [{
-                            complejo1: {
-                                lista: ["Had"],
-                                textoA: "I",
-                                textoD: "a sandwich for lunch",
-                                tamano: 21,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R6.mp3"
-                            },
-                            A: "Have",
-                            B: "Had",
-                            C: "Had",
-                            D: "Having",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Went"],
-                                textoA: "We ",
-                                textoD: "to see a movie last night",
-                                tamano: 25,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R7.mp3"
-                            },
-                            A: "Go",
-                            B: "Went",
-                            C: "Gone",
-                            D: "Going",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Studied"],
-                                textoA: "I",
-                                textoD: "at this university.",
-                                tamano: 20,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R8.mp3"
-                            },
-                            A: "Study",
-                            B: "Studied",
-                            C: "Studied",
-                            D: "Studying",
-                        },
-                    ],
-                },
-                {
-                    fields: [{
-                            key: "complejo1",
-                            label: "HAVE-HAS-HAD"
-                        },
-                        {
-                            key: "A",
-                            label: "4.1"
-                        },
-                        {
-                            key: "B",
-                            label: "4.2"
-                        },
-                        {
-                            key: "C",
-                            label: "4.3"
-                        },
-                        {
-                            key: "D",
-                            label: "4.4"
-                        },
-                    ],
-                    items: [{
-                            complejo1: {
-                                lista: ["Been"],
-                                textoA: "How have you ",
-                                textoD: "?",
-                                tamano: 18,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R9.mp3"
-                            },
-                            A: "Be",
-                            B: "Was",
-                            C: "Been",
-                            D: "Being",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Left"],
-                                textoA: "I had",
-                                textoD: "the party before that happened",
-                                tamano: 29,
-                                audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R10.mp3"
-                            },
-                            A: "Leave",
-                            B: "Left",
-                            C: "Left",
-                            D: "Leaving",
-                        },
-                        {
-                            complejo1: {
-                                lista: ["Eaten"],
-                                textoA: "She hasn´t",
-                                textoD: "yet",
+      cu                        textoD: "yet",
                                 tamano: 17,
                                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R11.mp3"
                             },
@@ -620,8 +324,7 @@ export default {
             cuestionarioP24: [{
                     respuesta: "",
                     pregunta: "1. I don´t play soccer anymore.",
-                    audio: "/cursos/curso1/leccion4/audios/page24/AC1P23R1.mp3",
-                    options: [{
+                  
                             text: "A) Yo ya no jugué fútbol.",
                             value: "A",
                             disabled: false,
@@ -1056,219 +759,5 @@ export default {
                         {
                             Z: "Must"
                         },
-                    ],
-                },
-                {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            label: "PAST",
-                            thClass: "colorLetraRojo"
-                        },
-                    ],
-                    items: [{
-                        Z: "Oraciones Afirmativas"
-                    }],
-                },
-                {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            label: "PARTICIPLE " + "'ado-ido'",
-                            thClass: "colorLetraRojo",
-                        },
-                    ],
-                    items: [{
-                        Z: "Have"
-                    }, {
-                        Z: "Has"
-                    }, {
-                        Z: "Had"
-                    }],
-                },
-                {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            label: "PROGRESSIVE \n 'ando-endo'",
-                            thClass: "colorLetraRojo",
-                        },
-                    ],
-                    items: [{
-                            Z: "Is"
-                        },
-                        {
-                            Z: "Am"
-                        },
-                        {
-                            Z: "Are"
-                        },
-                        {
-                            Z: "Was"
-                        },
-                        {
-                            Z: "Were"
-                        },
-                    ],
-                },
-            ],
-        };
-    },
-};
-</script>
-
-<style scoped>
-#textPractice {
-    text-align: left;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-
-/deep/.labelPregunta {
-    font-weight: bold;
-}
-
-/deep/ #tabla {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-/deep/ .row {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 1em;
-    padding: 0;
-}
-
-/deep/ #EnglishInput,
-#SpanishInput {
-    width: 100%;
-}
-
-/deep/ .Blue {
-    background-color: cornflowerblue;
-}
-
-/deep/ .Red {
-    background-color: crimson;
-}
-
-/deep/ .Yelow {
-    background-color: yellow;
-}
-
-/deep/ .Green {
-    background-color: chartreuse;
-}
-
-/deep/ .noHead {
-    border-width: 0;
-    font-size: 0;
-}
-
-/deep/.colorLetraRojo {
-    color: red;
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-#cuadroTexto {
-    margin-bottom: 1em;
-}
-
-img {
-    width: 100%;
-}
-
-/deep/ #textRequired {
-    width: 200px;
-}
-
-/deep/ #inputText {
-    margin: 0;
-    display: inline-flex;
-}
-
-#titulo {
-    color: red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5em;
-}
-
-#subTitulo {
-    padding: 0;
-    margin-right: auto;
-    color: darkcyan;
-    margin-top: 1.5em;
-    text-align: left;
-}
-
-.textList {
-    font-size: 1.5em;
-}
-
-#numeroMagico2,
-#numeroMagico4,
-#numeroMagico5,
-#numeroMagico12 {
-    background-color: salmon;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-style: solid;
-    border-radius: 1em;
-    border-color: black;
-    font-size: 2em;
-    color: black;
-    font-family: "PT Sans";
-    font-weight: bold;
-    margin-bottom: auto;
-}
-
-#numeroMagico2 {
-    background: yellow;
-}
-
-#numeroMagico4 {
-    background: red;
-}
-
-#numeroMagico5 {
-    background: royalblue;
-}
-
-#numeroMagico12 {
-    background: cadetblue;
-}
-
-#text,
-#inputText {
-    text-align: left;
-    margin-left: 1em;
-}
-
-#textoCompromiso {
-    text-align: left;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-
-#i {
-    padding-right: 0;
-    text-align: end;
-}
-</style>
+                 so
+#text

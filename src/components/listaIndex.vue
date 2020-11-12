@@ -13,26 +13,26 @@
         <template v-slot:cell(#)="data">{{ data.index + 1 }}</template>
         <template v-slot:cell(html)="data">
           
-            <h3 v-html="data.value"></h3>
+            <h6 v-html="data.value"></h6>
           
         </template>
         
         <template v-slot:cell(html1)="data">
-          <h3 v-html="data.value"></h3>
+          <h6 v-html="data.value"></h6>
         </template>
 
 
         <template v-slot:cell(html2)="data">
-          <h3 v-html="data.value"></h3>
+          <h6 v-html="data.value"></h6>
         </template>
 
 
         <template v-slot:cell(html3)="data">
-          <h3 v-html="data.value"></h3>
+          <h6 v-html="data.value"></h6>
         </template>
 
         <template v-slot:cell(html4)="data">
-          <h3 v-html="data.value"></h3>
+          <h6 v-html="data.value"></h6>
         </template>
 
 
