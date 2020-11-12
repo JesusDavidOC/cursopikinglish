@@ -19,7 +19,7 @@ margin-bottom: 2em;
     margin-bottom: 1.5em;
   }
 
-  .parrafoDiamond{
+  .fuenteDiamond{
      
     margin-bottom: 1em;
       text-indent: 1.5em;
@@ -29,19 +29,25 @@ margin-bottom: 2em;
       font-size:1.5em;
   }
 
-  .parrafoBlack{
+  .parrafo{
     margin-bottom: 1em;
     
     text-align: left;
     /*justificacion de parrafo*/
     text-align: justify;
-    font-size:1.5em;
+    font-size:1.7em;
+  }
+  .fuenteComponentes{
+    text-align: left;
+    /*justificacion de parrafo*/
+    text-align: justify;
+    font-size:1.4em;
   }
 
   .parrafoWhite{
     text-align: justify;
     color:white;
-    font-size:1.5em;
+    font-size:1.7em;
     margin-bottom: 1em;
   }
 
