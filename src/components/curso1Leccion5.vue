@@ -158,8 +158,8 @@
     <div class="row" v-for="(item, index) in preguntasCompletarP30.items">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
-            <div :class="'col-sm-'+item.tamaño">
-                <inputChecked :esperado="item.esperado" :name="preguntasCompletarP30.nombre+index" :conTexto="true" :textoA="item.textoA" :textoD="item.textoD" :audio="item.audio" />
+            <div class="col-sm-8">
+                <inputChecked :esperado="item.esperado" :name="preguntasCompletarP30.nombre+index" :conTexto="true" :textoA="item.textoA" :textoD="item.textoD" :audio="item.audio" :tamano="item.tamano" />
             </div>
         </div>
     </div>
@@ -212,12 +212,6 @@
         <div class="col-sm-2"></div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5">
-            <iframe width="780" height="440" src="https://www.youtube.com/embed/1S4sO3BOfWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
 </div>
 </template>
 
@@ -522,56 +516,56 @@ export default {
                         esperado: ["go"],
                         textoA: "a.    Where did you",
                         textoD: "? - " + "<strong> ¿Donde fuiste? </strong> ",
-                        tamaño: 7,
+                        tamano: 28,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
                     },
                     {
                         esperado: ["went"],
                         textoA: "b.    Nobody",
                         textoD: "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
-                        tamaño: 9,
+                        tamano: 44,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
                     },
                     {
                         esperado: ["go"],
                         textoA: "c.    I always",
                         textoD: "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
-                        tamaño: 10,
+                        tamano: 50,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
                     },
                     {
                         esperado: ["gone"],
                         textoA: "d.    have you ",
                         textoD: "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
-                        tamaño: 10,
+                        tamano: 20,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
                     },
                     {
                         esperado: ["go"],
                         textoA: "e.    She didn’t",
                         textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
-                        tamaño: 7,
+                        tamano: 27,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
                     },
                     {
                         esperado: ["went"],
                         textoA: "f.     He",
                         textoD: "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
-                        tamaño: 8,
+                        tamano: 28,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
                     },
                     {
                         esperado: ["gone"],
                         textoA: " g.    He has",
                         textoD: "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
-                        tamaño: 12,
+                        tamano: 22,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
                     },
                     {
                         esperado: ["going"],
                         textoA: " h.    Where are you",
                         textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
-                        tamaño: 8,
+                        tamano: 28,
                         audio: "cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
                     },
                 ],
@@ -947,56 +941,56 @@ export default {
                                     esperado: ["go"],
                                     textoA: "a.    Where did you",
                                     textoD: "? - " + "<strong> ¿Donde fuiste? </strong> ",
-                                    tamaño: 6,
+                                    tamano: 6,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
                                 },
                                 {
                                     esperado: ["went"],
                                     textoA: "b.    Nobody",
                                     textoD: "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
-                                    tamaño: 9,
+                                    tamano: 9,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
                                 },
                                 {
                                     esperado: ["go"],
                                     textoA: "c.    I always",
                                     textoD: "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
-                                    tamaño: 9,
+                                    tamano: 9,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
                                 },
                                 {
                                     esperado: ["gone"],
                                     textoA: "d.    have you ",
                                     textoD: "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
-                                    tamaño: 10,
+                                    tamano: 10,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
                                 },
                                 {
                                     esperado: ["go"],
                                     textoA: "e.    She didn’t",
                                     textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
-                                    tamaño: 7,
+                                    tamano: 7,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
                                 },
                                 {
                                     esperado: ["went"],
                                     textoA: "f.     He",
                                     textoD: "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
-                                    tamaño: 8,
+                                    tamano: 8,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
                                 },
                                 {
                                     esperado: ["gone"],
                                     textoA: " g.    He has",
                                     textoD: "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
-                                    tamaño: 12,
+                                    tamano: 12,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
                                 },
                                 {
                                     esperado: ["going"],
                                     textoA: " h.    Where are you",
                                     textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
-                                    tamaño: 7,
+                                    tamano: 7,
                                     audio: "/cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
                                 },
                             ],

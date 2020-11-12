@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="input-group">
+    <div class="input-group" :style="'width: '+tamano+'em;'">
         <div v-if="conTexto" style="margin-right:10px;">
             <h5 v-html="textoA">{{textoA}}</h5>
         </div>
@@ -35,7 +35,7 @@ export default {
         textoA: String,
         textoD: String,
         audio: '',
-        tamano: 1
+        tamano: Number
     },
     data() {
         return {
@@ -102,6 +102,10 @@ export default {
 <style scoped>
 .input-group-append {
     height: 100%;
+}
+
+.input-group {
+    font-size: ;
 }
 
 /deep/ .input-group>.form-control:not(:first-child),
