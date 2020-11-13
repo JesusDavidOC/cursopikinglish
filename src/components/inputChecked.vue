@@ -1,10 +1,10 @@
 <template>
-<div>
+<div style="display: inline-flex;">
     <div class="input-group" :style="'width: '+tamano+'em;'">
         <div v-if="conTexto" style="margin-right:10px;">
             <h5 v-html="textoA">{{textoA}}</h5>
         </div>
-        <b-form-input :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim></b-form-input>
+        <b-form-input :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim class="text"></b-form-input>
         <div class="input-group-append">
             <button v-if="$props.audio == undefined" class="btn btn-outline-secondary" type="button" v-on:click="completar">
                 <i class="fa fa-eye"></i>
@@ -104,14 +104,19 @@ export default {
     height: 100%;
 }
 
-.input-group {
-    font-size: ;
-}
-
 /deep/ .input-group>.form-control:not(:first-child),
 .input-group>.custom-select:not(:first-child) {
     border-top-left-radius: 0.4em;
     border-bottom-left-radius: 0.4em;
+}
+
+.text,
+.btn {
+    font-size: 1.4em;
+}
+
+.text {
+    padding-top: 0.1em;
 }
 
 .input-group>.input-group-prepend>.btn,

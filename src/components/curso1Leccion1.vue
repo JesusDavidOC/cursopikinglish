@@ -2,8 +2,8 @@
 <div>
     <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8" id="cuadroTexto">
-            <h3>
+        <div class="col-sm-8 parrafo" id="cuadroTexto">
+            <p>
                 Las tablas lógicas están diseñadas para crear oraciones en ingles de forma automática sin margen de error
                 gramatical con solo reemplazar y combinar los números.
                 Tal como una tabla de multiplicar estos ejercicios
@@ -12,11 +12,19 @@
                 Debajo del cuadro con las palabras en inglés aparecen unos números que deben reemplazarse por palabras
                 según la información de arriba y que corresponda a la columna. Debes entonces construir una oración y luego
                 traducirla.
-            </h3>
-            <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
+            </p>
         </div>
         <div class="col-sm-2"></div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+            <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
+        </div>
+    </div>
+
     <div class="row" id="tablas">
         <div class="col-sm-6 row">
             <div class="col-sm-3" id="tabla">
@@ -54,7 +62,7 @@
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
-            <tablaTraduccionCodigos id="diiv" class="overflow-auto" :cuestionario="$data.cuestionario1" :inglesR="false" :espanolR="false" />
+            <tablaTraduccionCodigos :cuestionario="$data.cuestionario1" :inglesR="false" :espanolR="false" />
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -197,16 +205,15 @@
         <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico2">2</div>
-            <div class="col-sm-3" id="campoTextoP11">
-                <h2 id="inputText">
-                    <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" />:
-                </h2>
+            <div class="col-sm-3" id="campoTextoP11 inputText">
+                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" :conTexto="true" textoD=":" /> :
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <h3 id="inputText">
+                <p class="parrafo">
                     Regulares e
-                    <inputChecked :resuelto="false" :esperado="['Irregulares']" style="width: 40%; margin-left:10px;" />
-                </h3>
+                    <inputChecked :resuelto="false" :esperado="['Irregulares']" style="width: 40%; margin-left:10px; font-size:0.6em;" />
+                </p>
+
             </div>
         </div>
         <div class="row" style="margin-top:2em;">
@@ -235,12 +242,12 @@
             </div>
             <div class="col-sm-6" id="campoTextoP11">
                 <div>
-                    <h3 id="inputText">
+                    <p id="inputText">
                         <inputChecked :resuelto="false" :esperado="['Do']" style="width: 25%; margin-left:10px;" />,
                         <inputChecked :resuelto="false" :esperado="['Does']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
                         <inputChecked :resuelto="false" :esperado="['Did']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
                         <inputChecked :resuelto="false" :esperado="['Will']" style="width: 25%; margin-left:10px; margin-right:10px;" />
-                    </h3>
+                    </p>
                 </div>
                 <div id="text">
                     <h3>y Would</h3>
@@ -462,13 +469,15 @@
 import listaIndex from "./listaIndex";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
-import inputChecked from "./inputChecked";
+import inputCE from "./inputChecked";
+import inputChecked from "./inputCEnriquecido";
 export default {
     components: {
         listaIndex,
         tablaTraduccionCodigos,
         opcionMultiple,
         inputChecked,
+        inputCE,
     },
     data() {
         return {
@@ -1188,11 +1197,5 @@ img {
 #text,
 #inputText {
     text-align: left;
-}
-
-#diiv {
-    max-height: 300px;
-    margin-bottom: 2em;
-
 }
 </style>
