@@ -77,6 +77,13 @@
     </div>
 
     <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/OqvyTnU4BpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row">
       <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
     </div>
     <div class="row">
@@ -413,6 +420,14 @@
     <div class="row">
       <h4 id="subTitulo">COMPRENDER TERMINOLOGÍA DEL NÚMERO MÁGICO.</h4>
     </div>
+  
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/NSdcXv2p0j8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -437,7 +452,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <h5 id="text">
-        <strong>Verbos iregulares:</strong> Son aquellos que se escriben diferente en pasado y participio y debes aprenderlos.
+        <strong>Verbos irregulares:</strong> Son aquellos que se escriben diferente en pasado y participio y debes aprenderlos.
       </h5>
     </div>
     <div class="row">
@@ -461,6 +476,7 @@
           <strong>Participio:</strong>
         </h4>
       </div>
+        
       <div class="col-sm-8" id="text">
         <h5>
           Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he camin<span
@@ -470,7 +486,15 @@
           Yo he comido, Ella ha llev<span style="color:red">ado</span> etc.
         </h5>
       </div>
-    </div>
+  
+      <div class="row">
+          <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <iframe width="100%" height="440" src="https://www.youtube.com/embed/fdmGdVGuqxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+  
     <div class="row" id="text">
       <div class="col-sm-1"></div>
       <div class="col-sm-2">
@@ -487,6 +511,15 @@
         </h5>
       </div>
     </div>
+
+    <div class="row">
+          <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <iframe width="100%" height="440" src="https://www.youtube.com/embed/ng4MrIzJSjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </div>
+   
+
     <div class="row" id="text">
       <div class="col-sm-1"></div>
 
@@ -505,6 +538,14 @@
         </h5>
       </div>
     </div>
+
+    <div class="row">
+          <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <iframe width="100%" height="440" src="https://www.youtube.com/embed/i7Zw531Ca20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </div>
+    
     <div class="row" id="text">
       <div class="col-sm-1"></div>
 
@@ -517,6 +558,21 @@
         <h5>Son los únicos verbos que pueden negarse solos, con solo poner la palabra “not” después de ellos y no necesitan modificadores.</h5>
       </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+           <div class="col-sm-8">
+             <iframe width="100%" height="440" src="https://www.youtube.com/embed/9h6doGUrlUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/EL_AEU5ZsEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-3">
