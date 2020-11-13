@@ -1,7 +1,7 @@
 <template>
 <div style="display: inline-flex;">
     <div class="input-group" :style="'width: '+tamano+'em;'">
-        <div v-if="conTexto" style="margin-right:10px;">
+        <div v-if="conTexto" style="margin-right:10px; padding-top:0.5em;">
             <h5 v-html="textoA">{{textoA}}</h5>
         </div>
         <b-form-input :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim class="text"></b-form-input>
@@ -18,7 +18,7 @@
                 <i class="fa fa-play"></i>
             </button>
         </div>
-        <div v-if="conTexto" style="margin-left:10px;">
+        <div v-if="conTexto" style="margin-left:10px; padding-top:0.5em;">
             <h5 id="inputText" v-html="textoD">{{textoD}}</h5>
         </div>
     </div>
@@ -112,7 +112,7 @@ export default {
 
 .text,
 .btn {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .text {
