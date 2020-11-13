@@ -2,29 +2,21 @@
 <div>
     <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8 parrafo" id="cuadroTexto">
-            <p>
-                Las tablas lógicas están diseñadas para crear oraciones en ingles de
-                forma automática sin margen de error gramatical con solo reemplazar y
-                combinar los números. Tal como una tabla de multiplicar estos
-                ejercicios contienen resultados exactos según las combinaciones de los
-                comandos A, B, C, D, E, F, G, H, I. de símbolos o de colores. Debajo
-                del cuadro con las palabras en inglés aparecen unos números que deben
-                reemplazarse por palabras según la información de arriba y que
-                corresponda a la columna. Debes entonces construir una oración y luego
+        <div class="col-sm-8" id="cuadroTexto">
+            <h3>
+                Las tablas lógicas están diseñadas para crear oraciones en ingles de forma automática sin margen de error
+                gramatical con solo reemplazar y combinar los números.
+                Tal como una tabla de multiplicar estos ejercicios
+                contienen resultados exactos según las combinaciones de los comandos A, B, C, D, E, F, G, H, I. de símbolos o
+                de colores.
+                Debajo del cuadro con las palabras en inglés aparecen unos números que deben reemplazarse por palabras
+                según la información de arriba y que corresponda a la columna. Debes entonces construir una oración y luego
                 traducirla.
-            </p>
+            </h3>
+            <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
         </div>
         <div class="col-sm-2"></div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
-        </div>
-    </div>
-
     <div class="row" id="tablas">
         <div class="col-sm-6 row">
             <div class="col-sm-3" id="tabla">
@@ -62,7 +54,7 @@
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
-            <tablaTraduccionCodigos :cuestionario="$data.cuestionario1" :inglesR="false" :espanolR="false" />
+            <tablaTraduccionCodigos id="diiv" class="overflow-auto" :cuestionario="$data.cuestionario1" :inglesR="false" :espanolR="false" />
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -81,17 +73,14 @@
     </div>
 
     <div class="row">
-        <<<<<<< HEAD <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
-            =======
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <iframe width="100%" height="440" src="https://www.youtube.com/embed/OqvyTnU4BpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/OqvyTnU4BpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="row">
         <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
-        >>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
@@ -103,16 +92,16 @@
         <div class="col-sm-1"></div>
 
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['2']" :tamano="8" />
+            <inputChecked :resuelto="false" :esperado="['2']" />
         </div>
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['4']" :tamano="8" />
+            <inputChecked :resuelto="false" :esperado="['4']" />
         </div>
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['5']" :tamano="8" />
+            <inputChecked :resuelto="false" :esperado="['5']" />
         </div>
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['12']" :tamano="8" />
+            <inputChecked :resuelto="false" :esperado="['12']" />
         </div>
     </div>
     <div class="row">
@@ -140,10 +129,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico4">4</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="[
-              'Formas de escribir un verbo',
-              'Formas de escribir verbos',
-            ]" />
+                <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" />
             </div>
         </div>
         <div class="row">
@@ -155,7 +141,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico5">5</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo']" />
+                <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" />
             </div>
         </div>
         <div class="row">
@@ -212,82 +198,60 @@
                 <h2>Verbos con súper poder:</h2>
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <h3 id="text">
-                    Have-Has-Had /Is-Am-Are-Was-Were/Can-Could-Should-Must
-                </h3>
+                <h3 id="text">Have-Has-Had /Is-Am-Are-Was-Were/Can-Could-Should-Must</h3>
             </div>
         </div>
-        <div class="row" style="margin-top: 2em">
+        <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico2">2</div>
-            <div class="col-sm-3" id="campoTextoP11 inputText" style="padding-top: 1.2em">
-                <p class="parrafo">
-                    <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" :conTexto="true" textoD=":" style="font-size: 0.7em" :tamano="17" />
-                </p>
-            </div>
+            <div class="col-sm-3" id="campoTextoP11">
 
-            <div class="col-sm-6" id="campoTextoP11" style="left: 2em">
-                <p class="parrafo">
-                    Regulares e
-                    <inputChecked :resuelto="false" :esperado="['Irregulares']" style="font-size: 0.7em" :tamano="13" />
-                </p>
-            </div>
-        </div>
+                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" />:
 
-        <div class="row" style="margin-top: 2em">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1" id="numeroMagico2">2</div>
-            <div class="col-sm-3 parrafo" id="inputText" style="padding-top: 1.2em">
-                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" :conTexto="true" textoD=":" />
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <p class="parrafo">
-                    Regulares e
-                    <inputChecked :resuelto="false" :esperado="['Irregulares']" style="font-size: 0.7em" :tamano="13" />
-                </p>
+                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:10px; " :conTexto="true" textoA="Regulares e " :tamano="20" />
             </div>
         </div>
-        <div class="row" style="margin-top: 2em">
+        <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico4">4</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="[
-              'Formas de escribir un verbo',
-              'Formas de escribir verbos',
-            ]" :conTexto="true" textoD=":" :tamano="18" />
+                <h2 id="inputText">
+                    <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" />:
+                </h2>
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <p id="parrafo">
-                    <inputCE :object="inputCEP11" />
-                </p>
+                <h3 id="inputText">
+                    Presente,
+                    <inputChecked :resuelto="false" :esperado="['Pasado']" style="width: 25%; margin-left:10px;" />,
+                    <inputChecked :resuelto="false" :esperado="['Participio']" style="width: 25%; margin-left:10px; margin-right:10px;" />y Progresivo
+                </h3>
             </div>
         </div>
-        <div class="row" style="margin-top: 2em">
+        <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico5">5</div>
             <div class="col-sm-3" id="campoTextoP11">
                 <h2 id="inputText">
-                    <inputChecked :resuelto="false" :esperado="[
-                'Modificadores del tiempo',
-                'Modificadores de tiempo',
-              ]" />:
+                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" />:
                 </h2>
             </div>
             <div class="col-sm-6" id="campoTextoP11">
                 <div>
-                    <p id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Do']" style="width: 25%; margin-left: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Does']" style="width: 25%; margin-left: 10px; margin-right: 10px" :tamano="10" />,
-                        <inputChecked :resuelto="false" :esperado="['Did']" style="width: 25%; margin-left: 10px; margin-right: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Will']" style="width: 25%; margin-left: 10px; margin-right: 10px" />
-                    </p>
+                    <h3 id="inputText">
+                        <inputChecked :resuelto="false" :esperado="['Do']" style="width: 25%; margin-left:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Does']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Did']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Will']" style="width: 25%; margin-left:10px; margin-right:10px;" />
+                    </h3>
                 </div>
                 <div id="text">
                     <h3>y Would</h3>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 2em">
+        <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico12">12</div>
             <div class="col-sm-3" id="campoTextoP11">
@@ -299,28 +263,23 @@
                 <div>
                     <h3 id="inputText">
                         Have,
-                        <inputChecked :resuelto="false" :esperado="['Has']" style="width: 100%; margin-left: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Had']" style="width: 100%; margin-left: 10px; margin-right: 10px" />/Is,
-                        <inputChecked :resuelto="false" :esperado="['Am']" style="width: 100%; margin-left: 10px; margin-right: 10px" />,
+                        <inputChecked :resuelto="false" :esperado="['Has']" style="width: 100%; margin-left:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Had']" style="width: 100%; margin-left:10px; margin-right:10px;" />/Is,
+                        <inputChecked :resuelto="false" :esperado="['Am']" style="width: 100%; margin-left:10px; margin-right:10px;" />,
                     </h3>
                 </div>
-                <div id="text" style="margin-bottom: 5px">
+                <div id="text" style="margin-bottom:5px;">
                     <h3 id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Are']" style="width: 100%; margin-left: 10px; margin-right: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Was']" style="width: 100%; margin-left: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Were']" style="width: 100%; margin-left: 10px; margin-right: 10px" />/Can,
+                        <inputChecked :resuelto="false" :esperado="['Are']" style="width: 100%; margin-left:10px; margin-right:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Was']" style="width: 100%; margin-left:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Were']" style="width: 100%; margin-left:10px; margin-right:10px;" />/Can,
                     </h3>
                 </div>
-                <div id="text" style="margin-bottom: 5px">
+                <div id="text" style="margin-bottom:5px;">
                     <h3 id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Could']" style="width: 30%; margin-left: 10px" />,
-                        <inputChecked :resuelto="false" :esperado="['Should']" style="width: 28%; margin-left: 10px; margin-right: 10px" />
-                        <inputChecked :resuelto="false" :esperado="['Must']" style="
-                  width: 28%;
-                  margin-left: 10px;
-                  margin-right: 10px;
-                  max-height: 4em;
-                " class="overflow-auto" />
+                        <inputChecked :resuelto="false" :esperado="['Could']" style="width: 30%; margin-left:10px;" />,
+                        <inputChecked :resuelto="false" :esperado="['Should']" style="width: 28%; margin-left:10px; margin-right:10px;" />
+                        <inputChecked :resuelto="false" :esperado="['Must']" style="width: 28%; margin-left:10px; margin-right:10px; max-height: 4em;" class="overflow-auto" />
                     </h3>
                 </div>
             </div>
@@ -330,25 +289,23 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico2">2</div>
-            <h3 style="margin-top: 0.4em">Types Of Verbs</h3>
-            <h4 style="margin-top: 0.4em">Regulars Irregulars</h4>
+            <h3 style="margin-top:0.4em;">Types Of Verbs</h3>
+            <h4 style="margin-top:0.4em;">Regulars Irregulars</h4>
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico4">4</div>
-            <h3 style="margin-top: 0.4em">Spelling Forms</h3>
-            <h4 style="margin-top: 0.4em">Present Past Participle Progessive</h4>
+            <h3 style="margin-top:0.4em;">Spelling Forms</h3>
+            <h4 style="margin-top:0.4em;">Present Past Participle Progessive</h4>
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico5">5</div>
-            <h3 style="margin-top: 0.4em">Tense Modifiers</h3>
-            <h4 style="margin-top: 0.4em">Do Does Did Will Would</h4>
+            <h3 style="margin-top:0.4em;">Tense Modifiers</h3>
+            <h4 style="margin-top:0.4em;">Do Does Did Will Would</h4>
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico12">12</div>
-            <h3 style="margin-top: 0.4em">Super Power Verbs</h3>
-            <h4 style="margin-top: 0.4em">
-                Have Has Had Is Am Are Was Were Can Could Should Must
-            </h4>
+            <h3 style="margin-top:0.4em;">Super Power Verbs</h3>
+            <h4 style="margin-top:0.4em;">Have Has Had Is Am Are Was Were Can Could Should Must</h4>
         </div>
     </div>
     <div class="row">
@@ -358,38 +315,27 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico2">2</div>
-            <h3 style="margin-top: 0.4em">Types Of Verbs</h3>
+            <h3 style="margin-top:0.4em;">Types Of Verbs</h3>
             <listaIndex :tabla="$data.tablasNumeroMagico[0]" />
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico4">4</div>
-            <h3 style="margin-top: 0.4em">Spelling Forms</h3>
+            <h3 style="margin-top:0.4em;">Spelling Forms</h3>
             <listaIndex :tabla="$data.tablasNumeroMagico[1]" />
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico5">5</div>
-            <h3 style="margin-top: 0.4em">Tense Modifiers</h3>
+            <h3 style="margin-top:0.4em;">Tense Modifiers</h3>
             <listaIndex :tabla="$data.tablasNumeroMagico[2]" />
         </div>
         <div class="col-sm-2">
             <div class="col-sm-7" id="numeroMagico12">12</div>
-            <h4 style="margin-top: 0.4em">Super Power Verbs</h4>
+            <h4 style="margin-top:0.4em;">Super Power Verbs</h4>
             <listaIndex :tabla="$data.tablasNumeroMagico[3]" />
         </div>
     </div>
     <div class="row">
         <h4 id="subTitulo">COMPRENDER TERMINOLOGÍA DEL NÚMERO MÁGICO.</h4>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-            <p id="text" class="parrafo">
-                <strong>Verbos regulares:</strong> Son aquellos que su escritura no
-                cambia en pasado ni participio y solo se le agrega “ed”
-            </p>
-        </div>
-
     </div>
 
     <div class="row">
@@ -400,12 +346,11 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <iframe width="100%" height="440" src="https://www.youtube.com/embed/1S4sO3BOfWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <div class="col-sm-1"></div>
+        <h5 id="text">
+            <strong>Verbos regulares:</strong> Son aquellos que su escritura no cambia en pasado ni participio y solo se le agrega “ed”
+        </h5>
     </div>
-
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
@@ -420,169 +365,138 @@
             </b-table>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <h5 id="text">
+            <strong>Verbos irregulares:</strong> Son aquellos que se escriben diferente en pasado y participio y debes aprenderlos.
+        </h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <b-table :items="tablaContenidoP12[1]" :bordered="true">
+                <template v-slot:cell(past)="data">
+                    <span v-html="data.value"></span>
+                </template>
+
+                <template v-slot:cell(participle)="data">
+                    <span v-html="data.value"></span>
+                </template>
+            </b-table>
+        </div>
+    </div>
+    <div class="row" id="text">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <h4>
+                <strong>Participio:</strong>
+            </h4>
+        </div>
+
+        <div class="col-sm-8" id="text">
+            <h5>
+                Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he camin<span style="color:red">ado</span>,
+                Yo he jug<span style="color:red">ado</span>,
+                Yo he comido, Ella ha llev<span style="color:red">ado</span> etc.
+            </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <iframe width="100%" height="440" src="https://www.youtube.com/embed/fdmGdVGuqxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="text">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <h4>
+                <strong>Progresivo:</strong>
+            </h4>
+        </div>
+        <div class="col-sm-8" id="text">
+            <h5>
+                Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span style="color:red">ando</span>, camin<span style="color:red">ando</span>, comi<span style="color:red">endo</span> etc.
+                En inglés se debe agregar al verbo normal la palabra “ING”. Ejemplo: Work (trabajar) Work<span style="color:red">ing</span> (trabajando)
+            </h5>
+        </div>
+    </div>
 
     <div class="row">
-        <<<<<<< HEAD <div class="col-sm-1">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/ng4MrIzJSjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-    <h5 id="text">
-        <strong>Verbos iregulares:</strong> Son aquellos que se escriben
-        diferente en pasado y participio y debes aprenderlos.
-    </h5>
-    =======
-    <div class="col-sm-1"></div>
-    <h5 id="text">
-        <strong>Verbos irregulares:</strong> Son aquellos que se escriben diferente en pasado y participio y debes aprenderlos.
-    </h5>
-    >>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
-</div>
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <b-table :items="tablaContenidoP12[1]" :bordered="true">
-            <template v-slot:cell(past)="data">
-                <span v-html="data.value"></span>
-            </template>
 
-            <template v-slot:cell(participle)="data">
-                <span v-html="data.value"></span>
-            </template>
-        </b-table>
-    </div>
-</div>
-<div class="row" id="text">
-    <<<<<<< HEAD <div class="col-sm-1">
-</div>
-<div class="col-sm-2">
-    <h4>
-        <strong>Participio:</strong>
-    </h4>
-</div>
-<div class="col-sm-8" id="text">
-    <h5>
-        Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
-        camin<span style="color: red">ado</span>, Yo he jug<span style="color: red">ado</span>, Yo he comido, Ella ha llev<span style="color: red">ado</span> etc.
-    </h5>
-</div>
-</div>
-=======
-<div class="col-sm-1"></div>
-<div class="col-sm-2">
-    <h4>
-        <strong>Participio:</strong>
-    </h4>
-</div>
+    <div class="row" id="text">
+        <div class="col-sm-1"></div>
 
-<div class="col-sm-8" id="text">
-    <h5>
-        Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he camin<span style="color:red">ado</span>,
-        Yo he jug<span style="color:red">ado</span>,
-        Yo he comido, Ella ha llev<span style="color:red">ado</span> etc.
-    </h5>
-</div>
+        <div class="col-sm-2">
+            <h4>
+                <strong>Modificadores:</strong>
+            </h4>
+        </div>
+        <div class="col-sm-8" id="text">
+            <h5>
+                Son palabras usadas en una pregunta o negación, pero no tienen traducción solo modifican
+                el tiempo del verbo y son más conocidos como auxiliares
+                <span style="color:red">DO-DOES-DID-WILL-WOULD</span>
+            </h5>
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <iframe width="100%" height="440" src="https://www.youtube.com/embed/fdmGdVGuqxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/i7Zw531Ca20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-</div>
-</div>
 
->>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
-<div class="row" id="text">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-2">
-        <h4>
-            <strong>Progresivo:</strong>
-        </h4>
-    </div>
-    <div class="col-sm-8" id="text">
-        <h5>
-            Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span style="color: red">ando</span>, camin<span style="color: red">ando</span>, comi<span style="color: red">endo</span>
-            etc. En inglés se debe agregar al verbo normal la palabra “ING”.
-            Ejemplo: Work (trabajar) Work<span style="color: red">ing</span>
-            (trabajando)
-        </h5>
-    </div>
-</div>
+    <div class="row" id="text">
+        <div class="col-sm-1"></div>
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <iframe width="100%" height="440" src="https://www.youtube.com/embed/ng4MrIzJSjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-sm-2">
+            <h4>
+                <strong>Verbos con súper poderes:</strong>
+            </h4>
+        </div>
+        <div class="col-sm-8" id="text">
+            <h5>Son los únicos verbos que pueden negarse solos, con solo poner la palabra “not” después de ellos y no necesitan modificadores.</h5>
+        </div>
     </div>
-</div>
 
-<div class="row" id="text">
-    <div class="col-sm-1"></div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/9h6doGUrlUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
-    <div class="col-sm-2">
-        <h4>
-            <strong>Modificadores:</strong>
-        </h4>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/EL_AEU5ZsEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="col-sm-8" id="text">
-        <h5>
-            Son palabras usadas en una pregunta o negación, pero no tienen
-            traducción solo modifican el tiempo del verbo y son más conocidos como
-            auxiliares
-            <span style="color: red">DO-DOES-DID-WILL-WOULD</span>
-        </h5>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <iframe width="100%" height="440" src="https://www.youtube.com/embed/i7Zw531Ca20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+            <h4 style="margin-top:0.4em;">PRIMER GRUPO</h4>
+            <listaIndex :tabla="$data.tablaContenidoP13.primerGrupo" />
+        </div>
+        <div class="col-sm-3">
+            <h4 style="margin-top:0.4em;">SEGUNDO GRUPO</h4>
+            <listaIndex :tabla="$data.tablaContenidoP13.segundoGrupo" />
+        </div>
+        <div class="col-sm-3">
+            <h4 style="margin-top:0.4em;">TERCER GRUPO</h4>
+            <listaIndex :tabla="$data.tablaContenidoP13.tercerGrupo" />
+        </div>
     </div>
-</div>
-
-<div class="row" id="text">
-    <div class="col-sm-1"></div>
-
-    <div class="col-sm-2">
-        <h4>
-            <strong>Verbos con súper poderes:</strong>
-        </h4>
-    </div>
-    <div class="col-sm-8" id="text">
-        <h5>
-            Son los únicos verbos que pueden negarse solos, con solo poner la
-            palabra “not” después de ellos y no necesitan modificadores.
-        </h5>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <iframe width="100%" height="440" src="https://www.youtube.com/embed/9h6doGUrlUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <iframe width="100%" height="440" src="https://www.youtube.com/embed/EL_AEU5ZsEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-3">
-        <h4 style="margin-top: 0.4em">PRIMER GRUPO</h4>
-        <listaIndex :tabla="$data.tablaContenidoP13.primerGrupo" />
-    </div>
-    <div class="col-sm-3">
-        <h4 style="margin-top: 0.4em">SEGUNDO GRUPO</h4>
-        <listaIndex :tabla="$data.tablaContenidoP13.segundoGrupo" />
-    </div>
-    <div class="col-sm-3">
-        <h4 style="margin-top: 0.4em">TERCER GRUPO</h4>
-        <listaIndex :tabla="$data.tablaContenidoP13.tercerGrupo" />
-    </div>
-</div>
 </div>
 </template>
 
@@ -591,14 +505,12 @@ import listaIndex from "./listaIndex";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
-import inputCE from "./inputCEnriquecido";
 export default {
     components: {
         listaIndex,
         tablaTraduccionCodigos,
         opcionMultiple,
         inputChecked,
-        inputCE,
     },
     data() {
         return {
@@ -611,31 +523,31 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "X",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "Y",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
                     items: [{
                             Z: "Have",
                             X: "Have not",
-                            Y: "Haven't",
+                            Y: "Haven't"
                         },
                         {
                             Z: "Has",
                             X: "Has not",
-                            Y: "Hasn't",
+                            Y: "Hasn't"
                         },
                         {
                             Z: "Had",
                             X: "Had not",
-                            Y: "Hadn't",
+                            Y: "Hadn't"
                         },
                     ],
                 },
@@ -647,41 +559,41 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "X",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "Y",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
                     items: [{
                             Z: "Is",
                             X: "Is not",
-                            Y: "Isn't",
+                            Y: "Isn't"
                         },
                         {
                             Z: "Am",
                             X: "Am not",
-                            Y: "-----",
+                            Y: "-----"
                         },
                         {
                             Z: "Are",
                             X: "Are not",
-                            Y: "Aren't",
+                            Y: "Aren't"
                         },
                         {
                             Z: "Was",
                             X: "Was not",
-                            Y: "Wasn't",
+                            Y: "Wasn't"
                         },
                         {
                             Z: "Were",
                             X: "Were not",
-                            Y: "Weren't",
+                            Y: "Weren't"
                         },
                     ],
                 },
@@ -693,36 +605,36 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "X",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                         {
                             key: "Y",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
                     items: [{
                             Z: "Can",
                             X: "Can not",
-                            Y: "Cannot, Can't",
+                            Y: "Cannot, Can't"
                         },
                         {
                             Z: "Could",
                             X: "Could not",
-                            Y: "Couldn't",
+                            Y: "Couldn't"
                         },
                         {
                             Z: "Should",
                             X: "Should not",
-                            Y: "Shouldn't",
+                            Y: "Shouldn't"
                         },
                         {
                             Z: "Must",
                             X: "Must not",
-                            Y: "Mustn't",
+                            Y: "Mustn't"
                         },
                     ],
                 },
@@ -748,7 +660,7 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
                     items: ["Regulars", "Irregulars"],
@@ -762,10 +674,15 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
-                    items: ["Present", "Past", "Participle", "Progessive"],
+                    items: [
+                        "Present",
+                        "Past",
+                        "Participle",
+                        "Progessive",
+                    ],
                 },
                 {
                     refs: "tablasNumeroMagicoc",
@@ -776,10 +693,16 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
-                    items: ["Do", "Does", "Did", "Will", "Would"],
+                    items: [
+                        "Do",
+                        "Does",
+                        "Did",
+                        "Will",
+                        "Would",
+                    ],
                 },
                 {
                     refs: "tablasNumeroMagicod",
@@ -790,7 +713,7 @@ export default {
                         // A column that needs custom formatting
                         {
                             key: "Z",
-                            thClass: "noHead",
+                            thClass: "noHead"
                         },
                     ],
                     items: [
@@ -809,18 +732,6 @@ export default {
                     ],
                 },
             ],
-
-            inputCEP11: {
-                tamano1: 20,
-                lista1: ["Pasado"],
-                lista2: ["Participio"],
-                tamano2: 21,
-                name: "inputCEP11",
-                textoA: "Presente, ",
-                textoD: ",",
-                textoD2: "y progresivo."
-            },
-
             listadoCompromiso: [
                 "Ver el video de la lógica dos veces.",
                 "Enfocarse en el número mágico y seguir las instrucciones.",
@@ -833,27 +744,27 @@ export default {
             cuestionario1: {
                 fields: [{
                         key: "A",
-                        thClass: "Blue",
+                        thClass: "Blue"
                     },
                     {
                         key: "B",
-                        thClass: "Red",
+                        thClass: "Red"
                     },
                     {
                         key: "C",
-                        thClass: "Yelow",
+                        thClass: "Yelow"
                     },
                     {
                         key: "D",
-                        thClass: "Green",
+                        thClass: "Green"
                     },
                     {
                         key: "complejo1",
-                        label: "ENGLISH",
+                        label: "ENGLISH"
                     },
                     {
                         key: "TRADUCCION_ESPAÑOL",
-                        label: "SPANISH",
+                        label: "SPANISH"
                     },
                 ],
                 items: [{
@@ -862,12 +773,9 @@ export default {
                         C: 3,
                         D: 3,
                         complejo1: {
-                            lista: ["we want to work everyday"],
+                            lista: ["we want to work everyday"]
                         },
-                        TRADUCCION_ESPAÑOL: [
-                            "queremos trabajar todos los días",
-                            "nosotros queremos trabajar todos los días",
-                        ],
+                        TRADUCCION_ESPAÑOL: ["queremos trabajar todos los días", "nosotros queremos trabajar todos los días"],
                     },
                     {
                         A: 2,
@@ -875,12 +783,9 @@ export default {
                         C: 8,
                         D: 1,
                         complejo1: {
-                            lista: ["I have to eat something"],
+                            lista: ["I have to eat something"]
                         },
-                        TRADUCCION_ESPAÑOL: [
-                            "tengo que comer algo",
-                            "yo tengo que comer algo",
-                        ],
+                        TRADUCCION_ESPAÑOL: ["tengo que comer algo", "yo tengo que comer algo"],
                     },
                     {
                         A: 2,
@@ -888,12 +793,9 @@ export default {
                         C: 8,
                         D: 4,
                         complejo1: {
-                            lista: ["I have to eat very much"],
+                            lista: ["I have to eat very much"]
                         },
-                        TRADUCCION_ESPAÑOL: [
-                            "tengo que comer mucho",
-                            "yo tengo que comer mucho",
-                        ],
+                        TRADUCCION_ESPAÑOL: ["tengo que comer mucho", "yo tengo que comer mucho"],
                     },
                 ],
             },
@@ -906,23 +808,23 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "A",
-                        thClass: "Blue",
+                        thClass: "Blue"
                     },
                 ],
                 items: [{
-                        A: "el gato",
+                        A: "el gato"
                     },
                     {
-                        A: "yo",
+                        A: "yo"
                     },
                     {
-                        A: "nosotros",
+                        A: "nosotros"
                     },
                     {
-                        A: "mi madre",
+                        A: "mi madre"
                     },
                     {
-                        A: "el ratón",
+                        A: "el ratón"
                     },
                 ],
             },
@@ -935,35 +837,35 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "B",
-                        thClass: "Red",
+                        thClass: "Red"
                     },
                 ],
                 items: [{
-                        B: "comer",
+                        B: "comer"
                     },
                     {
-                        B: "amar",
+                        B: "amar"
                     },
                     {
-                        B: "querer",
+                        B: "querer"
                     },
                     {
-                        B: "tener",
+                        B: "tener"
                     },
                     {
-                        B: "caminar, pasear",
+                        B: "caminar, pasear"
                     },
                     {
-                        B: "beber",
+                        B: "beber"
                     },
                     {
-                        B: "tener",
+                        B: "tener"
                     },
                     {
-                        B: "necesitar",
+                        B: "necesitar"
                     },
                     {
-                        B: "perseguir",
+                        B: "perseguir"
                     },
                 ],
             },
@@ -976,38 +878,38 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "C",
-                        thClass: "Yelow",
+                        thClass: "Yelow"
                     },
                 ],
                 items: [{
-                        C: "mi madre",
+                        C: "mi madre"
                     },
                     {
-                        C: "hacer",
+                        C: "hacer"
                     },
                     {
-                        C: "trabajar",
+                        C: "trabajar"
                     },
                     {
-                        C: "el perro",
+                        C: "el perro"
                     },
                     {
-                        C: "leche",
+                        C: "leche"
                     },
                     {
-                        C: "estudiar",
+                        C: "estudiar"
                     },
                     {
-                        C: "ratones",
+                        C: "ratones"
                     },
                     {
-                        C: "comer",
+                        C: "comer"
                     },
                     {
-                        C: "una mascota",
+                        C: "una mascota"
                     },
                     {
-                        C: "queso",
+                        C: "queso"
                     },
                 ],
             },
@@ -1020,32 +922,32 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "D",
-                        thClass: "Green",
+                        thClass: "Green"
                     },
                 ],
                 items: [{
-                        D: "algo",
+                        D: "algo"
                     },
                     {
-                        D: "mañana",
+                        D: "mañana"
                     },
                     {
-                        D: "todos los días",
+                        D: "todos los días"
                     },
                     {
-                        D: "muchisimo",
+                        D: "muchisimo"
                     },
                     {
-                        D: "para el examen",
+                        D: "para el examen"
                     },
                     {
-                        D: "en la noche",
+                        D: "en la noche"
                     },
                     {
-                        D: "llamado 'REX'",
+                        D: "llamado 'REX'"
                     },
                     {
-                        D: "en la cocina",
+                        D: "en la cocina"
                     },
                 ],
             },
@@ -1058,27 +960,26 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "A",
-                        thClass: "Blue",
+                        thClass: "Blue"
                     },
                 ],
                 items: [{
-                        A: "the cat",
+                        A: "the cat"
                     },
                     {
-                        A: "I",
+                        A: "I"
                     },
                     {
-                        A: "we",
+                        A: "we"
                     },
                     {
-                        A: "my mother",
+                        A: "my mother"
                     },
                     {
-                        A: "the mouse",
+                        A: "the mouse"
                     },
                 ],
             },
-
             tablaB: {
                 bordered: true,
                 camposInput: false,
@@ -1088,35 +989,35 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "B",
-                        thClass: "Red",
+                        thClass: "Red"
                     },
                 ],
                 items: [{
-                        B: "eats",
+                        B: "eats"
                     },
                     {
-                        B: "love",
+                        B: "love"
                     },
                     {
-                        B: "want",
+                        B: "want"
                     },
                     {
-                        B: "has",
+                        B: "has"
                     },
                     {
-                        B: "walk",
+                        B: "walk"
                     },
                     {
-                        B: "drinks",
+                        B: "drinks"
                     },
                     {
-                        B: "have",
+                        B: "have"
                     },
                     {
-                        B: "need",
+                        B: "need"
                     },
                     {
-                        B: "chases",
+                        B: "chases"
                     },
                 ],
             },
@@ -1129,38 +1030,38 @@ export default {
                     // A column that needs custom formatting
                     {
                         key: "C",
-                        thClass: "Yelow",
+                        thClass: "Yelow"
                     },
                 ],
                 items: [{
-                        C: "my mother",
+                        C: "my mother"
                     },
                     {
-                        C: "to do",
+                        C: "to do"
                     },
                     {
-                        C: "to work",
+                        C: "to work"
                     },
                     {
-                        C: "the dog",
+                        C: "the dog"
                     },
                     {
-                        C: "milk",
+                        C: "milk"
                     },
                     {
-                        C: "to study",
+                        C: "to study"
                     },
                     {
-                        C: "mice",
+                        C: "mice"
                     },
                     {
-                        C: "to eat",
+                        C: "to eat"
                     },
                     {
-                        C: "a pet",
+                        C: "a pet"
                     },
                     {
-                        C: "cheese",
+                        C: "cheese"
                     },
                 ],
             },
@@ -1170,37 +1071,37 @@ export default {
                 fields: [
                     // A virtual column that doesn't exist in items
                     {
-                        key: "#",
+                        key: "#"
                     }, ,
                     // A column that needs custom formatting
                     {
                         key: "D",
-                        thClass: "Green",
+                        thClass: "Green"
                     },
                 ],
                 items: [{
-                        D: "something",
+                        D: "something"
                     },
                     {
-                        D: "tomorrow",
+                        D: "tomorrow"
                     },
                     {
-                        D: "everyday",
+                        D: "everyday"
                     },
                     {
-                        D: "verymuch",
+                        D: "verymuch"
                     },
                     {
-                        D: "for the exam",
+                        D: "for the exam"
                     },
                     {
-                        D: "at night",
+                        D: "at night"
                     },
                     {
-                        D: "named 'REX'",
+                        D: "named 'REX'"
                     },
                     {
-                        D: "in the kitchen",
+                        D: "in the kitchen"
                     },
                 ],
             },
@@ -1315,18 +1216,24 @@ img {
 }
 
 #numeroMagico12 {
-    background: cadetblue;
+    background: cadetblue
 }
 
 #campoTextoP11 {
     margin: 0;
-    margin-right: 1.5em;
+    margin-right: 1em;
     margin-top: 1.5em;
     padding: 0;
+    text-align: left;
 }
 
 #text,
 #inputText {
     text-align: left;
+}
+
+#diiv {
+    max-height: 300px;
+    margin-bottom: 2em;
 }
 </style>

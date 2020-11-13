@@ -2,7 +2,7 @@
 <div style="display: inline-flex;">
     <div class="input-group" :style="'width: '+tamano+'em;'">
         <div v-if="conTexto" style="margin-right:10px; padding-top:0.5em;">
-            <h5 v-html="textoA">{{textoA}}</h5>
+            <p class="parrafo" v-html="textoA">{{textoA}}</p>
         </div>
         <b-form-input :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim class="text"></b-form-input>
         <div class="input-group-append">
@@ -19,7 +19,7 @@
             </button>
         </div>
         <div v-if="conTexto" style="margin-left:10px; padding-top:0.5em;">
-            <h5 id="inputText" v-html="textoD">{{textoD}}</h5>
+            <p class="parrafo" v-html="textoD">{{textoD}}</p>
         </div>
     </div>
 </div>
