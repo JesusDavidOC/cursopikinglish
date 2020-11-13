@@ -19,7 +19,6 @@ export default {
     name: "App",
     components: {
 
-
         curso1Leccion5,
         curso1Leccion4
     },
