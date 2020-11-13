@@ -81,18 +81,17 @@
     </div>
 
     <div class="row">
-<<<<<<< HEAD
-        <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
-=======
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <iframe width="100%" height="440" src="https://www.youtube.com/embed/OqvyTnU4BpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <<<<<<< HEAD <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
+            =======
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <iframe width="100%" height="440" src="https://www.youtube.com/embed/OqvyTnU4BpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
     </div>
 
     <div class="row">
-      <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
->>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
+        <h4 id="subTitulo">IDENTIFICAR EL NÚMERO MÁGICO.</h4>
+        >>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
@@ -392,7 +391,6 @@
         </div>
 
     </div>
-  
 
     <div class="row">
         <div class="col-sm-2"></div>
@@ -424,170 +422,167 @@
     </div>
 
     <div class="row">
-<<<<<<< HEAD
-        <div class="col-sm-1"></div>
-        <h5 id="text">
-            <strong>Verbos iregulares:</strong> Son aquellos que se escriben
-            diferente en pasado y participio y debes aprenderlos.
-        </h5>
-=======
-      <div class="col-sm-1"></div>
-      <h5 id="text">
+        <<<<<<< HEAD <div class="col-sm-1">
+    </div>
+    <h5 id="text">
+        <strong>Verbos iregulares:</strong> Son aquellos que se escriben
+        diferente en pasado y participio y debes aprenderlos.
+    </h5>
+    =======
+    <div class="col-sm-1"></div>
+    <h5 id="text">
         <strong>Verbos irregulares:</strong> Son aquellos que se escriben diferente en pasado y participio y debes aprenderlos.
-      </h5>
->>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
-    </div>
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <b-table :items="tablaContenidoP12[1]" :bordered="true">
-                <template v-slot:cell(past)="data">
-                    <span v-html="data.value"></span>
-                </template>
+    </h5>
+    >>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <b-table :items="tablaContenidoP12[1]" :bordered="true">
+            <template v-slot:cell(past)="data">
+                <span v-html="data.value"></span>
+            </template>
 
-                <template v-slot:cell(participle)="data">
-                    <span v-html="data.value"></span>
-                </template>
-            </b-table>
-        </div>
+            <template v-slot:cell(participle)="data">
+                <span v-html="data.value"></span>
+            </template>
+        </b-table>
     </div>
-    <div class="row" id="text">
-<<<<<<< HEAD
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2">
-            <h4>
-                <strong>Participio:</strong>
-            </h4>
-        </div>
-        <div class="col-sm-8" id="text">
-            <h5>
-                Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
-                camin<span style="color: red">ado</span>, Yo he jug<span style="color: red">ado</span>, Yo he comido, Ella ha llev<span style="color: red">ado</span> etc.
-            </h5>
-        </div>
-    </div>
+</div>
+<div class="row" id="text">
+    <<<<<<< HEAD <div class="col-sm-1">
+</div>
+<div class="col-sm-2">
+    <h4>
+        <strong>Participio:</strong>
+    </h4>
+</div>
+<div class="col-sm-8" id="text">
+    <h5>
+        Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
+        camin<span style="color: red">ado</span>, Yo he jug<span style="color: red">ado</span>, Yo he comido, Ella ha llev<span style="color: red">ado</span> etc.
+    </h5>
+</div>
+</div>
 =======
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <h4>
-          <strong>Participio:</strong>
-        </h4>
-      </div>
-        
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he camin<span
-            style="color:red"
-          >ado</span>,
-          Yo he jug<span style="color:red">ado</span>,
-          Yo he comido, Ella ha llev<span style="color:red">ado</span> etc.
-        </h5>
-      </div>
-  
-      <div class="row">
-          <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <iframe width="100%" height="440" src="https://www.youtube.com/embed/fdmGdVGuqxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-      </div>
-  
+<div class="col-sm-1"></div>
+<div class="col-sm-2">
+    <h4>
+        <strong>Participio:</strong>
+    </h4>
+</div>
+
+<div class="col-sm-8" id="text">
+    <h5>
+        Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he camin<span style="color:red">ado</span>,
+        Yo he jug<span style="color:red">ado</span>,
+        Yo he comido, Ella ha llev<span style="color:red">ado</span> etc.
+    </h5>
+</div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="440" src="https://www.youtube.com/embed/fdmGdVGuqxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
 >>>>>>> 2f11bac2ada98695370c7c734b2ff08ae4b24239
-    <div class="row" id="text">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2">
-            <h4>
-                <strong>Progresivo:</strong>
-            </h4>
-        </div>
-        <div class="col-sm-8" id="text">
-            <h5>
-                Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span style="color: red">ando</span>, camin<span style="color: red">ando</span>, comi<span style="color: red">endo</span>
-                etc. En inglés se debe agregar al verbo normal la palabra “ING”.
-                Ejemplo: Work (trabajar) Work<span style="color: red">ing</span>
-                (trabajando)
-            </h5>
-        </div>
+<div class="row" id="text">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+        <h4>
+            <strong>Progresivo:</strong>
+        </h4>
     </div>
-
-    <div class="row">
-          <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <iframe width="100%" height="440" src="https://www.youtube.com/embed/ng4MrIzJSjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+    <div class="col-sm-8" id="text">
+        <h5>
+            Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span style="color: red">ando</span>, camin<span style="color: red">ando</span>, comi<span style="color: red">endo</span>
+            etc. En inglés se debe agregar al verbo normal la palabra “ING”.
+            Ejemplo: Work (trabajar) Work<span style="color: red">ing</span>
+            (trabajando)
+        </h5>
     </div>
-   
+</div>
 
-    <div class="row" id="text">
-        <div class="col-sm-1"></div>
-
-        <div class="col-sm-2">
-            <h4>
-                <strong>Modificadores:</strong>
-            </h4>
-        </div>
-        <div class="col-sm-8" id="text">
-            <h5>
-                Son palabras usadas en una pregunta o negación, pero no tienen
-                traducción solo modifican el tiempo del verbo y son más conocidos como
-                auxiliares
-                <span style="color: red">DO-DOES-DID-WILL-WOULD</span>
-            </h5>
-        </div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="440" src="https://www.youtube.com/embed/ng4MrIzJSjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+</div>
 
-    <div class="row">
-          <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <iframe width="100%" height="440" src="https://www.youtube.com/embed/i7Zw531Ca20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-    </div>
-    
-    <div class="row" id="text">
-        <div class="col-sm-1"></div>
+<div class="row" id="text">
+    <div class="col-sm-1"></div>
 
-        <div class="col-sm-2">
-            <h4>
-                <strong>Verbos con súper poderes:</strong>
-            </h4>
-        </div>
-        <div class="col-sm-8" id="text">
-            <h5>
-                Son los únicos verbos que pueden negarse solos, con solo poner la
-                palabra “not” después de ellos y no necesitan modificadores.
-            </h5>
-        </div>
+    <div class="col-sm-2">
+        <h4>
+            <strong>Modificadores:</strong>
+        </h4>
     </div>
+    <div class="col-sm-8" id="text">
+        <h5>
+            Son palabras usadas en una pregunta o negación, pero no tienen
+            traducción solo modifican el tiempo del verbo y son más conocidos como
+            auxiliares
+            <span style="color: red">DO-DOES-DID-WILL-WOULD</span>
+        </h5>
+    </div>
+</div>
 
-    <div class="row">
-        <div class="col-sm-2"></div>
-           <div class="col-sm-8">
-             <iframe width="100%" height="440" src="https://www.youtube.com/embed/9h6doGUrlUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="440" src="https://www.youtube.com/embed/i7Zw531Ca20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-sm-2"></div>
-          <div class="col-sm-8">
-            <iframe width="100%" height="440" src="https://www.youtube.com/embed/EL_AEU5ZsEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
-    </div>
+<div class="row" id="text">
+    <div class="col-sm-1"></div>
 
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-3">
-            <h4 style="margin-top: 0.4em">PRIMER GRUPO</h4>
-            <listaIndex :tabla="$data.tablaContenidoP13.primerGrupo" />
-        </div>
-        <div class="col-sm-3">
-            <h4 style="margin-top: 0.4em">SEGUNDO GRUPO</h4>
-            <listaIndex :tabla="$data.tablaContenidoP13.segundoGrupo" />
-        </div>
-        <div class="col-sm-3">
-            <h4 style="margin-top: 0.4em">TERCER GRUPO</h4>
-            <listaIndex :tabla="$data.tablaContenidoP13.tercerGrupo" />
-        </div>
+    <div class="col-sm-2">
+        <h4>
+            <strong>Verbos con súper poderes:</strong>
+        </h4>
     </div>
+    <div class="col-sm-8" id="text">
+        <h5>
+            Son los únicos verbos que pueden negarse solos, con solo poner la
+            palabra “not” después de ellos y no necesitan modificadores.
+        </h5>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="440" src="https://www.youtube.com/embed/9h6doGUrlUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="440" src="https://www.youtube.com/embed/EL_AEU5ZsEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3">
+        <h4 style="margin-top: 0.4em">PRIMER GRUPO</h4>
+        <listaIndex :tabla="$data.tablaContenidoP13.primerGrupo" />
+    </div>
+    <div class="col-sm-3">
+        <h4 style="margin-top: 0.4em">SEGUNDO GRUPO</h4>
+        <listaIndex :tabla="$data.tablaContenidoP13.segundoGrupo" />
+    </div>
+    <div class="col-sm-3">
+        <h4 style="margin-top: 0.4em">TERCER GRUPO</h4>
+        <listaIndex :tabla="$data.tablaContenidoP13.tercerGrupo" />
+    </div>
+</div>
 </div>
 </template>
 
