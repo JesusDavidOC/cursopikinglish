@@ -36,6 +36,15 @@
   text-align: justify;
   font-size: 1.7em;
 }
+.parrafoIC {
+  margin-bottom: 0em;
+  padding-top: 0em;
+  line-height: 1em; 
+  text-align: left;
+  /*justificacion de parrafo*/
+  text-align: justify;
+  font-size: 1.7em;
+}
 
 /deep/ .fuenteComponentes {
   text-align: left;

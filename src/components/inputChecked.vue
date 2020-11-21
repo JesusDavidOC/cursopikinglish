@@ -1,10 +1,10 @@
 <template>
 <div style="display: inline-flex;">
-    <div class="input-group" :style="'width: '+tamano+'em;'">
+    <div class="input-group row" :style="'width: '+tamano+'em;'">
         <div v-if="conTexto" style="margin-right:10px; padding-top:0.5em;">
-            <p class="parrafo" v-html="textoA">{{textoA}}</p>
+            <p class="parrafoIC" v-html="textoA">{{textoA}}</p>
         </div>
-        <b-form-input :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim class="text"></b-form-input>
+        <b-form-input  style="padding-top:-0.5em;" :name="this.name+esperado[0]" :id="this.name+esperado[0]" v-model="text" :state="this.contiene()" aria-describedby="input-live-help input-live-feedback" trim class="text"></b-form-input>
         <div class="input-group-append">
             <button v-if="$props.audio == undefined" class="btn btn-outline-secondary" type="button" v-on:click="completar">
                 <i class="fa fa-eye"></i>
@@ -19,7 +19,7 @@
             </button>
         </div>
         <div v-if="conTexto" style="margin-left:10px; padding-top:0.5em;">
-            <p class="parrafo" v-html="textoD">{{textoD}}</p>
+            <p class="parrafoIC" v-html="textoD">{{textoD}}</p>
         </div>
     </div>
 </div>
@@ -110,14 +110,10 @@ export default {
     border-bottom-left-radius: 0.4em;
 }
 
-.text,
-.btn {
+.text {
     font-size: 1.3em;
 }
 
-.text {
-    padding-top: 0.1em;
-}
 
 .input-group>.input-group-prepend>.btn,
 .input-group>.input-group-prepend>.input-group-text,

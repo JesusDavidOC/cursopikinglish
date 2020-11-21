@@ -92,16 +92,16 @@
         <div class="col-sm-1"></div>
 
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['2']" />
+            <inputChecked :resuelto="false" :esperado="['2']" :tamano="7"/>
         </div>
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['4']" />
+            <inputChecked :resuelto="false" :esperado="['4']" :tamano="7"/>
         </div>
         <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['5']" />
+            <inputChecked :resuelto="false" :esperado="['5']"  :tamano="7"/>
         </div>
-        <div class="col-sm-1" id="campoTextoP11">
-            <inputChecked :resuelto="false" :esperado="['12']" />
+        <div class="col-sm-2" id="campoTextoP11">
+            <inputChecked :resuelto="false" :esperado="['12']" :tamano="8"/>
         </div>
     </div>
     <div class="row">
@@ -141,7 +141,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico5">5</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" />
+                <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]"/>
             </div>
         </div>
         <div class="row">
@@ -153,7 +153,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico12">12</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Verbos con super poder', 'Verbos con super poderes']" />
+                <inputChecked :resuelto="false" :esperado="['Verbos con super poder', 'Verbos con super poderes']"/>
             </div>
         </div>
     </div>
@@ -206,11 +206,11 @@
             <div class="col-sm-1" id="numeroMagico2">2</div>
             <div class="col-sm-3" id="campoTextoP11">
 
-                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" />:
+                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" :conTexto="true" textoD=":"/>
 
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:10px; " :conTexto="true" textoA="Regulares e " :tamano="20" />
+                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:10px; " :conTexto="true" textoA="Regulares e " :tamano="23" />
             </div>
         </div>
         <div class="row" style="margin-top:2em;">
