@@ -127,9 +127,9 @@
       </div>
 
       <div class="row">
-        <div v-for="(item, index) in preguntasCompletarP81P2.items">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10 row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+          <div v-for="(item, index) in preguntasCompletarP81P2.items">
             <inputChecked
               :esperado="item.esperado"
               :name="preguntasCompletarP81P2.nombre + index"
