@@ -69,21 +69,22 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10" id="text">
-        <p class="fa fa-diamond fuenteDiamond"></p>
+      <div class="col-sm-5">
+        <i class="fa fa-diamond fuenteDiamond"></i>
         <a id="textPractice">Escribe la traducción al frente</a>
       </div>
     </div>
 
-    <div class="row" v-for="(item, index) in preguntasCompletarP24.items">
+    <div class="row" v-for="(item, index) in preguntasCompletarP80.items">
       <div class="col-sm-1"></div>
-      <div :class="'parrafoIC' + item.tamano">
+      <div class="col-sm-5">
         <inputChecked
           :esperado="item.esperado"
-          :name="preguntasCompletarP24.nombre + index"
+          :name="preguntasCompletarP80.nombre + index"
           :conTexto="true"
           :textoA="item.textoA"
           :textoD="item.textoD"
+          :tamano="item.tamano"
         />
       </div>
     </div>
@@ -125,32 +126,34 @@
         <h3 calss="parrafo">{{ item }}</h3>
       </div>
 
-    <div class="row" v-for="(item, index) in preguntasCompletarP81P2.items">
-      <div class="col-sm-1"></div>
-      <div :class="'parrafoIC' + item.tamano">
-        <inputChecked
-          :esperado="item.esperado"
-          :name="preguntasCompletarP81P2.nombre + index"
-          :conTexto="true"
-          :textoA="item.textoA"
-          :textoD="item.textoD"
-        />
+      <div class="row">
+        <div v-for="(item, index) in preguntasCompletarP81P2.items">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10 row">
+            <inputChecked
+              :esperado="item.esperado"
+              :name="preguntasCompletarP81P2.nombre + index"
+              :conTexto="true"
+              :textoA="item.textoA"
+              :textoD="item.textoD"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <p class="parrafo">{{ item }}</p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 row parrafoIC">
-      <b-card>
-        <tablaTC :cuestionario="tablaP82" />
-      </b-card>
+    <div class="row">
+      <p class="parrafo">{{ item }}</p>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <b-card>
+          <tablaTC :cuestionario="tablaP82" />
+        </b-card>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -183,7 +186,7 @@ export default {
               lista: ["Don’t do that"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 18,
             },
             complejo2: {
               lista: ["Let´s do that"],
@@ -702,26 +705,26 @@ export default {
           },
         ],
       },
-      preguntasCompletarP24: {
-        nombre: "preguntasCompletarP24",
+      preguntasCompletarP80: {
+        nombre: "preguntasCompletarP80",
         items: [
           {
             esperado: ["Go"],
             textoA: "1. ve",
             textoD: "",
-            tamano: 1,
+            tamano: 12,
           },
           {
             esperado: ["dont go"],
             textoA: "2. no vayas ",
             textoD: "",
-            tamano: 4,
+            tamano: 19,
           },
           {
             esperado: ["let's go"],
             textoA: "3. vamos",
             textoD: "",
-            tamano: 4,
+            tamano: 20,
           },
           {
             esperado: ["let's not go"],
