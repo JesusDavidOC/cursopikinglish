@@ -103,18 +103,14 @@ export default {
 .input-group-append {
     height: 100%;
 }
-
 /deep/ .input-group>.form-control:not(:first-child),
 .input-group>.custom-select:not(:first-child) {
     border-top-left-radius: 0.4em;
     border-bottom-left-radius: 0.4em;
 }
-
 .text {
     font-size: 1.3em;
 }
-
-
 .input-group>.input-group-prepend>.btn,
 .input-group>.input-group-prepend>.input-group-text,
 .input-group>.input-group-append:not(:last-child)>.btn,
@@ -124,7 +120,6 @@ export default {
     border-top-right-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
 }
-
 #paraAudio {
     width: 1.2em;
     padding-right: 0;
