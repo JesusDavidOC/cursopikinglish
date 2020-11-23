@@ -75,17 +75,31 @@
       </div>
     </div>
 
-    <div class="row" v-for="(item, index) in preguntasCompletarP80.items">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
-        <inputChecked
-          :esperado="item.esperado"
-          :name="preguntasCompletarP80.nombre + index"
-          :conTexto="true"
-          :textoA="item.textoA"
-          :textoD="item.textoD"
-          :tamano="item.tamano"
-        />
+        <div v-for="(item, index) in preguntasCompletarP80.items1">
+          <inputChecked
+            :esperado="item.esperado"
+            :name="preguntasCompletarP80.nombre + index"
+            :conTexto="true"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+            :tamano="item.tamano"
+          />
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div v-for="(item, index) in preguntasCompletarP80.items2">
+          <inputChecked
+            :esperado="item.esperado"
+            :name="preguntasCompletarP80.nombre + index"
+            :conTexto="true"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+            :tamano="item.tamano"
+          />
+        </div>
       </div>
     </div>
 
@@ -102,17 +116,15 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-10">
         <div v-for="(item, index) in preguntasCompletarP81.items">
-          <div :class="'parrafoIC' + item.tamano">
-            <inputChecked
-              :esperado="item.esperado"
-              :name="preguntasCompletarP81.nombre + index"
-              :conTexto="true"
-              :textoA="item.textoA"
-              :textoD="item.textoD"
-            />
-          </div>
+          <inputChecked
+            :esperado="item.esperado"
+            :name="preguntasCompletarP81.nombre + index"
+            :conTexto="true"
+            :textoA="item.textoA"
+            :textoD="item.textoD"
+          />
         </div>
       </div>
     </div>
@@ -707,13 +719,55 @@ export default {
       },
       preguntasCompletarP80: {
         nombre: "preguntasCompletarP80",
-        items: [
+        items1: [
           {
             esperado: ["Go"],
             textoA: "1. ve",
             textoD: "",
             tamano: 12,
           },
+
+          {
+            esperado: ["let's go"],
+            textoA: "3. vamos",
+            textoD: "",
+            tamano: 14,
+          },
+
+          {
+            esperado: ["dont do it"],
+            textoA: "5. No lo hagas",
+            textoD: "",
+            tamano: 14,
+          },
+
+          {
+            esperado: ["let's do it"],
+            textoA: "7. Hagámoslo",
+            textoD: "",
+            tamano: 14,
+          },
+          {
+            esperado: ["dont call me"],
+            textoA: "9. No me llames",
+            textoD: "",
+            tamano: 15,
+          },
+          {
+            esperado: ["close the door"],
+            textoA: "11. cierra la puerta",
+            textoD: "",
+            tamano: 15,
+          },
+
+          {
+            esperado: ["listen to music"],
+            textoA: "13. Escucha la música",
+            textoD: "",
+            tamano: 30,
+          },
+        ],
+        items2: [
           {
             esperado: ["dont go"],
             textoA: "2. no vayas ",
@@ -721,76 +775,40 @@ export default {
             tamano: 19,
           },
           {
-            esperado: ["let's go"],
-            textoA: "3. vamos",
-            textoD: "",
-            tamano: 20,
-          },
-          {
             esperado: ["let's not go"],
             textoA: "4. No vayamos ",
             textoD: "",
-            tamano: 4,
-          },
-          {
-            esperado: ["dont do it"],
-            textoA: "5. No lo hagas",
-            textoD: "",
-            tamano: 4,
+            tamano: 14,
           },
           {
             esperado: ["do it"],
             textoA: "6. Hazlo",
             textoD: "",
-            tamano: 3,
-          },
-          {
-            esperado: ["let's do it"],
-            textoA: "7. Hagámoslo",
-            textoD: "",
-            tamano: 4,
+            tamano: 13,
           },
           {
             esperado: ["call me"],
             textoA: "8. Llámame",
             textoD: "",
-            tamano: 4,
-          },
-          {
-            esperado: ["dont call me"],
-            textoA: "9. No me llames",
-            textoD: "",
-            tamano: 5,
+            tamano: 14,
           },
           {
             esperado: ["let's call her"],
             textoA: "10. Llamémosla",
             textoD: "",
-            tamano: 5,
+            tamano: 20,
           },
           {
-            esperado: ["close the door"],
-            textoA: "11. cierra la puerta",
-            textoD: "",
-            tamano: 5,
-          },
-          {
-            esperado: ["dont close the door"],
+            esperado: ["don't close the door"],
             textoA: "12. No cierres la puerta",
             textoD: "",
-            tamano: 6,
+            tamano: 33,
           },
           {
-            esperado: ["listen to music"],
-            textoA: "13. Escucha la música",
-            textoD: "",
-            tamano: 6,
-          },
-          {
-            esperado: ["dont listen to me"],
+            esperado: ["don't listen to me"],
             textoA: "14 no me escuches",
             textoD: "",
-            tamano: 5,
+            tamano: 20,
           },
         ],
       },
