@@ -28,15 +28,17 @@
     <div class="row">
       <p class="subTitulo marginn-left">
         
-          <b>REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO</b>
+          REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO
         
       </p>
     </div>
 
-    <div class="row botTabla">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <div class="col-sm-2" v-for="item in $data.tablaDosPag32">
-        <listaIndex :tabla="item" />
+        <listaIndex :tabla="item"
+        class="botTabla"
+         />
 
         
       </div>
@@ -51,11 +53,11 @@
       </p>
     </div>
 
-    <div class="row botTabla">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
         <tablaTC
-          class="overflow-auto"
+          class="overflow-auto botTabla"
           :cuestionario="tablaTresPag32"
           :inglesR="false"
           :espanolR="false"
@@ -79,18 +81,18 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaAPag33" />
+          <listaIndex :tabla="$data.tablaAPag33" class="botTabla"/>
         </div>
         <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaBPag33" />
+          <listaIndex :tabla="$data.tablaBPag33" class="botTabla"/>
         </div>
 
         <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaCPag33" />
+          <listaIndex :tabla="$data.tablaCPag33" class="botTabla"/>
         </div>
 
         <div class="col-sm-3 " >
-          <listaIndex :tabla="$data.tablaDPag33" />
+          <listaIndex :tabla="$data.tablaDPag33" class="botTabla"/>
         </div>
       </div>
     </div>
@@ -130,14 +132,12 @@
       </h3>
     </div>
 
-    <div class="row  botTabla">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <div class="col-sm-0.9" v-for="item in $data.tablaUnoPag34">
-        <listaIndex :tabla="item" />
+        <listaIndex :tabla="item" class="botTabla"/>
 
-        <br />
-        <br />
-        <br />
+        
       </div>
     </div>
 

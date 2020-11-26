@@ -1,7 +1,11 @@
 <template>
   <div>
-    <br><br><br>
-    <h3 class="titulo">FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
+    <div class="row">
+      <div class="col-sm-1"> </div>
+        <h3 class="titulo">FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
+     
+    </div>
+    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -15,7 +19,7 @@
         <div class="col-sm-2 parrafoBlack" id="tabla">
           <listaIndex :tabla="$data.tablaCPag38" />
         </div>
-        <div class="col-sm-2 parrafoBlack" id="tabla">
+        <div class="col-sm-2 botTabla" id="tabla">
           <listaIndex :tabla="$data.tablaDPag38" />
         </div>
       </div>
@@ -23,24 +27,26 @@
 
     <br />
 
-    <div class="row parrafoBlack">
+    <div class="row">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p class=" ">
+      <p class=" fuenteDiamond">
         
-        <b
-          >Un verbo también se usa en su forma presente después de un
-          auxiliar.</b
-        >
+        Un verbo también se usa en su forma presente después de un
+          auxiliar.
       </p>
       <br />
     </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+       <img src="/cursos/curso1/leccion8/imagenes/tablaPag38.png" />
 
-    <img src="/cursos/curso1/leccion8/imagenes/tablaPag38.png" />
-
+    </div>
+   
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="subTitulo">
+      <div class="fuenteDiamond">
         Existen cinco maneras de preguntar y negar en inglés
       </div>
     </div>
@@ -48,7 +54,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-9">
         <tablaTC
-          class="overflow-auto"
+          class="overflow-auto botTabla"
           :cuestionario="tabla1P38"
           :inglesR="false"
           :espanolR="false"
@@ -58,13 +64,14 @@
     </div>
 
     <div class="row">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left Subrayado">
-        &nbsp;
-        <b>Ubique el auxiliar negativo en las siguientes oraciones.</b>
+      <p class="fuenteDiamond">
+       
+        Ubique el auxiliar negativo en las siguientes oraciones.
       </p>
-      <br />
+     
     </div>
 
     <div class="row">
@@ -93,7 +100,7 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <p class="parrafoBlack">
+      <p class="parrafo">
         Recuerde que un verbo se usa en su forma presente por lógica en presente
         o después de un auxiliar.
       </p>
@@ -101,7 +108,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-11 row">
-        <div class="col-sm-2 parrafoBlack" id="tabla">
+        <div class="col-sm-2 " id="tabla">
           <listaIndex :tabla="$data.tablaAPag39" />
         </div>
         <div class="col-sm-2 parrafoBlack" id="tabla">
@@ -113,7 +120,7 @@
         <div class="col-sm-2 parrafoBlack" id="tabla">
           <listaIndex :tabla="$data.tablaDPag39" />
         </div>
-        <div class="col-sm-2 parrafoBlack" id="tabla">
+        <div class="col-sm-2" id="tabla">
           <listaIndex :tabla="$data.tablaEPag39" />
         </div>
       </div>
@@ -122,12 +129,12 @@
     <br />
     <div class="row">
       <div class="col-sm-1 row"></div>
-      <div class="col-sm-7">
+      <div class="col-sm-8">
         <ul>
           <li
             v-for="item in frasesPag39"
             v-html="item"
-            class="text-left parrafoBlack"
+            class="text-left parrafo"
           ></li>
         </ul>
       </div>

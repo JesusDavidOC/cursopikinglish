@@ -1,13 +1,14 @@
 <template>
   <div>
 
-       <div class="row parrafoDiamond">
+       <div class="row ">
+         <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p class=" ">
+      <p class="fuenteDiamond">
         
-        <b>Escriba la traducción en ingles y completa las oraciones</b>
-        <br />
+        Escriba la traducción en ingles y completa las oraciones
+        
       </p>
     </div>
     <div class="row"  style="padding: 0%;">
@@ -15,41 +16,40 @@
       <div class="col-sm-3"  style="padding: 0%;" v-for="item in $data.tablaUnoPag35">
         <listaIndex :tabla="item" 
          style="padding: 0%;"
-        class="border border-dark"/>
+        class=""/>
       </div>
     </div>
 
-    <div class="row botTabla">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <div class="col-sm-3" style="padding: 0%;">
         <listaIndex :tabla="tablaDosAPag35" 
          style="padding: 0%;"
-        class="border border-dark"/>
+        class=""/>
         </div>
-      <div class="col-sm-3" style="padding: 0%;" v-for="item in $data.tablaDosPag35">
+      <div class="col-sm-3 " style="padding:0%;" v-for="item in $data.tablaDosPag35">
         <tablaTC
           :cuestionario="item"
-          class="overflow-auto border border-dark"
+          class="botTabla"
           :inglesR="false"
           :espanolR="false"
         />
       </div>
     </div>
-    <div class="row parrafoDiamond">
+    <div class="row ">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p >
+      <p class="fuenteDiamond">
        
-        <b
-          >Aquí hay una lista de los verbos más fáciles del inglés. Reescribe
-          las oraciones con “she”</b
-        >
+        Aquí hay una lista de los verbos más fáciles del inglés. Reescribe
+          las oraciones con “she”
        
       </p>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <font class="parrafoBlack">
+      <font class="parrafo">
         Recuerda que la
         <font class="text-danger">S</font> ,
         <font class="text-danger">ES</font> o
@@ -58,29 +58,35 @@
       </font>
     </div>
 
-    <div class="row overflow-auto botTabla">
+    <div class="row overflow-auto ">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag36"
           :inglesR="false"
           :espanolR="true"
+          class="botTabla"
         />
       </div>
     </div>
 
-    
-    <h3 class="titulo">LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
     <div class="row">
       <div class="col-sm-1"></div>
+      <h3 class="titulo">LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
+    </div>
+    
+    <div class="row ">
+      <div class="col-sm-1 "></div>
       <ul>
-        <li v-for="item in frasesPag37" class=" parrafoBlack">
+        <div class="botTabla">
+        <li v-for="item in frasesPag37" class="parrafo ">
           {{ item }}
         </li>
-      </ul>
+        </div>
+      </ul >
     </div>
 
-    <div class="row botTabla">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
         <h3 class="col-sm-12 bg-warning">Verbs</h3>
@@ -88,7 +94,7 @@
           <div class="col-sm-4">
             <h5 class="text-center show-grid">Present</h5>
             <h5 class="text-center BigCelda show-grid">Do-Does</h5>
-            <h5 class="text-center BigCelda show-grid">Have-Has</h5>
+            <h5 class="text-center BigCelda show-grid botTabla">Have-Has</h5>
           </div>
           <div class="col-sm-4">
             <h5 class="text-center show-grid">past</h5>
@@ -104,7 +110,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3 parrafoBlack" id="tabla">
+      <div class="col-sm-3 " id="tabla">
         <h3 class="col-sm-12 bg-danger">AUXILIARES</h3>
         <div class="row">
           <div class="col-sm-6">
@@ -126,7 +132,7 @@
         </div>
       </div>
 
-      <div class="col-sm-3 parrafoBlack" id="tabla">
+      <div class="col-sm-3 " id="tabla">
         <h3 class="col-sm-12 bg-primary">S.P.V</h3>
         <div class="col-sm-12">
           <h5 class="text-center BigCeldaDos show-grid">
@@ -148,168 +154,169 @@
       </div>
     </div>
    
-    <div class="row parrafoDiamond">
+    <div class="row ">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
-      <p class=" ">
+      <p class=" fuenteDiamond">
         
-        <b>Practica llenado la tabla de los verbos gemelos.</b>
+        Practica llenado la tabla de los verbos gemelos.
       </p>
       
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
-        <h3 class="col-sm-12 bg-warning">
+        <p class="col-sm-12 bg-warning">
           <inputChecked
-            style="width: 100%; "
+            style="width: 100%; padding: 0%;"
             :resuelto="false"
             :esperado="['Verbs']"
           />
-        </h3>
+        </p>
         <div class="row col-sm-12 parrafoBlack" id="tabla">
           <div class="col-sm-4"  style="padding: 0%;">
-            <h5 class="text-center" style="padding: 0%;">
+            <p class="text-center" style="padding: 0%;">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px; padding: 0%;"
                 :resuelto="false"
                 :esperado="['Present']"
               />
-            </h5>
-            <h5 class="text-center  "  style="padding: 0%;">
+            </p>
+            <p class="text-center  "  style="padding: 0%;">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Do-Does']"
               />
-            </h5>
-            <h5 class="text-center ">
+            </p>
+            <p class="text-center ">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Have-Has']"
               />
-            </h5>
+            </p>
           </div>
           <div class="col-sm-4"  style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['past']"
               />
-            </h5>
+            </p>
 
-            <h5 class="text-center ">
+            <p class="text-center ">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Did']"
               />
-            </h5>
+            </p>
 
-            <h5 class="text-center ">
+            <p class="text-center ">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Had']"
               />
-            </h5>
+            </p>
           </div>
           <div class="col-sm-4"  style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['participle']"
               />
-            </h5>
-            <h5 class="text-center ">
+            </p>
+            <p class="text-center ">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Done']"
               />
-            </h5>
-            <h5 class="text-center BigCelda">
+            </p>
+            <p class="text-center BigCelda">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Had']"
               />
-            </h5>
+            </p>
           </div>
         </div>
       </div>
       <div class="col-sm-3 parrafoBlack" id="tabla">
-        <h3 class="col-sm-12 bg-danger">
+        <p class="col-sm-12 bg-danger">
           <inputChecked
             style="width: 100%; margin-left: 10px; margin-right: 10px"
             :resuelto="false"
             :esperado="['AUXILIARES']"
           />
-        </h3>
+        </p>
         <div class="row">
           <div class="col-sm-6"  style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['?']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Do']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Does']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Did']"
               />
-            </h5>
+            </p>
           </div>
           <div class="col-sm-6"  style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['-']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Don´t']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Does´nt']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Didn´t']"
               />
-            </h5>
+            </p>
           </div>
-          <h5 class="BigCelda text-center col-sm-12">
+          <p class="BigCelda text-center col-sm-12">
             <inputChecked
               style="width: 100%; margin-left: 10px; margin-right: 10px"
               :resuelto="false"
@@ -317,116 +324,122 @@
                 'Recuerde que el participio se usa con have has y had',
               ]"
             />
-          </h5>
+          </p>
         </div>
       </div>
 
       <div class="col-sm-3 parrafoBlack " id="tabla" style="padding: 0%;">
-        <h3 class="col-sm-12 bg-primary">
+        <p class="col-sm-12 bg-primary">
           <inputChecked
             style="width: 100%; margin-left: 10px; margin-right: 10px"
             :resuelto="false"
             :esperado="['S.P.V']"
           />
-        </h3>
+        </p>
         <div class="col-sm-12 " >
-          <h5 class="text-center ">
+          <p class="text-center ">
             <inputChecked
               style="width: 100%; margin-left: 10px; margin-right: 10px"
               :resuelto="false"
               :esperado="['Los verbos con poder se pueden negar solos']"
             />
-          </h5>
+          </p>
         </div>
         <div class="row" style="items-aling: center">
           <div class="col-sm-6" style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Do']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Does']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Did']"
               />
-            </h5>
+            </p>
           </div>
           <div class="col-sm-6" style="padding: 0%;">
-            <h5 class="text-center">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Don´t']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Doesn´t']"
               />
-            </h5>
-            <h5 class="text-center">
+            </p>
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Didn´t']"
               />
-            </h5>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row parrafoDiamond ">
+    <div class="row  ">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"> </i>
 
-      <p class="">
-       <b
-          >Completa las siguientes oraciones con el verbo, auxiliar o verbo con
+      <p class="fuenteDiamond">
+       Completa las siguientes oraciones con el verbo, auxiliar o verbo con
           super poder.
-        </b>
+        
       </p>
      
     </div>
 
     
     <div class="row">
-      
-      <div class="col-sm-6 row parrafoBlack">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
         <div
           v-for="(item, index) in frases2Pag37"
-          :class='"col-sm-"+item.tamano'
+          
           style="margin-bottom: 1em;"
         >
-          <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
+          <div v-if="item.name == 'ice'"><inputCE :object="item"  /></div>
           <div v-else-if="item.name == 'ic'">
             <inputChecked
               :resuelto="false"
-              style="margin-right: 10px; display: inline-flex"
+            
               :esperado="item.lista1"
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
               :tamano="item.tamano"
+              
             />
           </div>
         </div>
       </div>
     </div>
 
-    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        
+      </div>
+    </div>
   </div>
 </template>
 
@@ -510,11 +523,14 @@ export default {
             // A column that needs custom formatting
             {
               key: "html",
-              label: "ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)",
-              thClass: "",
+              label: "",
+              thClass: "noHead",
             },
           ],
           items: [
+            {
+                html: '<FONT class=""><strong>ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)</strong></FONT>',
+            },
             {
               html:
                 '<FONT class=""><strong>Yo camino todos los días</strong></FONT>',
@@ -558,12 +574,15 @@ export default {
             // A column that needs custom formatting
             {
               key: "html",
-              label:
-                "Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies",
-              thClass: "",
+              label:"",
+              
+              thClass: "noHead",
             },
           ],
           items: [
+            {
+              html :'<FONT ><strong>Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies</strong></FONT>', 
+            },
             {
               html:
                 '<FONT class=""><strong>She walk<font class="text-danger">s </font>every day</strong></FONT>',
@@ -613,7 +632,7 @@ export default {
             {
               key: "html",
               
-              thClass: "noHead",
+              thClass: "noHead fuenteComponentes",
             },
           ],
           items: [
@@ -649,7 +668,7 @@ export default {
                html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
             },
              {
-               html: '<FONT class=""><strong>I love you</strong></FONT>',
+               html: '<FONT ><strong>I love you</strong></FONT>',
             },
             
               ],
@@ -851,10 +870,12 @@ export default {
         {
           lista1: ["has"],
           lista2: ["done"],
-          textoA: "He",
+          textoA: "He ",
           textoD: "never",
           textoD2: "that. Él nunca ha hecho eso",
-          tamano:11,
+          tamano1:15,
+          tamano2:27,
+          
           name: "ice",
         },
         {
@@ -862,7 +883,7 @@ export default {
 
           textoA: "She",
           textoD: "anything. Ella no hace nada.",
-          tamano:9,
+          tamano:29,
           name: "ic",
         },
         {
@@ -871,7 +892,8 @@ export default {
           textoA: "I",
           textoD: "already",
           textoD2: "that. Yo ya había hecho eso.",
-          tamano:11,
+          tamano1:15,
+          tamano2:27,
           name: "ice",
         },
         {
@@ -880,20 +902,20 @@ export default {
           textoA: "I",
 
           textoD: "that. Yo no hice eso.",
-          tamano:7,
+          tamano:25,
           name: "ic",
         },
         {
           lista1: ["did"],
 
           textoA: "I",
-          tamano:6,
+          tamano:20,
           textoD: "that. Yo hice eso.",
           name: "ic",
         },
         {
           lista1: ["does"],
-          tamano:8,
+          tamano:28,
           textoA: "She",
 
           textoD: "sports. Ella hace deporte.",
@@ -901,7 +923,7 @@ export default {
         },
         {
           lista1: ["didn't"],
-          tamano:10,
+          tamano:39,
           textoA: "I",
 
           textoD: "have to work today. Yo no tuve que trabajar hoy.",
