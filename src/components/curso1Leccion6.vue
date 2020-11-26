@@ -41,19 +41,19 @@
         
       </div>
     </div>
-    <div class="row fuenteDiamond">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="">
-        <b>Escribe la forma presente para terceras personas.</b>
-        <br />
+      <p class="fuenteDiamond">
+        Escribe la forma presente para terceras personas.
+        
       </p>
     </div>
 
     <div class="row botTabla">
       <div class="col-sm-1"></div>
-      <div class="col-sm-8">
+      <div class="col-sm-7">
         <tablaTC
           class="overflow-auto"
           :cuestionario="tablaTresPag32"
@@ -63,35 +63,33 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
-    <div class="row fuenteDiamond ">
+    <div class="row ">
       <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p class="">
+      <p class="fuenteDiamond">
         
-        <b
-          >Reemplaza los números por letras y utiliza el verbo en su forma
-          correcta.</b
-        >
-        <br />
+        
+          Reemplaza los números por letras y utiliza el verbo en su forma
+          correcta.
       </p>
     </div>
 
     <div class="row botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-2 parrafo" id="tabla">
+        <div class="col-sm-2 " >
           <listaIndex :tabla="$data.tablaAPag33" />
         </div>
-        <div class="col-sm-3 parrafo" id="tabla">
+        <div class="col-sm-2 " >
           <listaIndex :tabla="$data.tablaBPag33" />
         </div>
 
-        <div class="col-sm-3 parrafo" id="tabla">
+        <div class="col-sm-2 " >
           <listaIndex :tabla="$data.tablaCPag33" />
         </div>
 
-        <div class="col-sm-4 parrafo" id="tabla">
+        <div class="col-sm-3 " >
           <listaIndex :tabla="$data.tablaDPag33" />
         </div>
       </div>
@@ -112,14 +110,14 @@
     <br />
     <br />
     <br />
-    <div class="row fuenteDiamond ">
+    <div class="row ">
       <div class="col-sm-1"></div>
             <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="">
-        &nbsp;
-        <b>Add the S, ES or IES to the verb if necessary.</b>
-        <br />
+      <p class="fuenteDiamond ">
+        
+        Add the S, ES or IES to the verb if necessary.
+       
       </p>
     </div>
 
@@ -157,198 +155,258 @@
             textoA= "1. Ella trabaja muy duro todos los días: She"
             textoD= "very hard every day."
           />
-
           <br />
           <br />
+          
         </div>
         <div class="col-sm-11 ">
-          2. Yo vivo con mi Madre acá: I
+          
           <inputChecked
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+            
             :resuelto="false"
             :esperado="['live']"
-            :tamano= 6
-          />with my mother here.
+            :tamano="39"
+            :conTexto="true"
+            textoA="2. Yo vivo con mi Madre acá: I"
+            textoD="with my mother here."
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          3. Él tiene que trabajar mañana en la mañana: He
+          
           <inputChecked
             :resuelto="false"
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            :tamano="55"
             :esperado="['has']"
-          />to work tomorrow morning.
+            textoA="3. Él tiene que trabajar mañana en la mañana: He"
+            textoD="to work tomorrow morning."
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          4. Natalie hace deporte todos los días: Natalie
+          
           <inputChecked
+            :conTexto="true"
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            :tamano="47"
             :esperado="['does']"
-          />sports every day.
+            textoA="4. Natalie hace deporte todos los días: Natalie"
+            textoD="sports every day."
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          5. Yo voy a trabajar en bus: I
+         
           <inputChecked
+            :conTexto="true"
             :resuelto="false"
-            style="width: 11%; margin-left: 10px; margin-right: 10px"
+            :tamano="34"
+            textoA=" 5. Yo voy a trabajar en bus: I"
+            textoD="to work by bus."
             :esperado="['go']"
-          />to work by bus.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          6. Ella va al colegio a pie: She
+          
           <inputChecked
+            :conTexto="true"
+            :tamano="38"
+            textoA="6. Ella va al colegio a pie: She"
+            textoD="to school on foot."
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['goes']"
-          />to school on foot.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          7. Llueve mucho en New York: It
+          
           <inputChecked
+             :conTexto="true"
+             :tamano="39"
+              textoA="7. Llueve mucho en New York: It"
+              textoD="a lot in New York."
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            
             :esperado="['rains']"
-          />a lot in New York.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          8. Amar tiene sentido: Loving
+          
           <inputChecked
+            :conTexto="true"
+            :tamano="32"
+            textoA="8. Amar tiene sentido: Loving"
+            textoD="sense."
             :resuelto="false"
-            style="width: 14%; margin-left: 10px; margin-right: 10px"
             :esperado="['makes']"
-          />sense.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          9. Él tiene que trabajar mañana: He
+          
           <inputChecked
+            :tamano="41"
+            :conTexto="true"
             :resuelto="false"
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+            textoA="9. Él tiene que trabajar mañana: He"
+            textoD="to work tomorrow."
             :esperado="['has']"
-          />to work tomorrow.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          10. Mi novia mira televisión los sábados: My girlfriend
+          
           <inputChecked
+          textoA="10. Mi novia mira televisión los sábados: My girlfriend"
+          textoD="tv on Saturdays."
+          :tamano="53"
             :resuelto="false"
-            style="width: 15%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
             :esperado="['watches']"
-          />tv on Saturdays.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          11. Ella tiene un carro: She
+          
           <inputChecked
+            :conTexto="true"
             :resuelto="false"
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+            :tamano="29"
+            textoA="11. Ella tiene un carro: She"
             :esperado="['has']"
-          />a car.
+            textoD="a car."
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          12. Ella no tiene un carro: She doesn’t
+          
           <inputChecked
+            :conTexto="true"
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            :tamano="36"
+            textoA="12. Ella no tiene un carro: She doesn’t"
+            textoD="a car."
             :esperado="['have']"
-          />a car.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          13. Víctor llora todos los días: Victor
+          
           <inputChecked
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            :tamano="37"
+            textoA="13. Víctor llora todos los días: Victor"
+            textoD="everyday."
             :esperado="['cries']"
-          />everyday.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11">
-          14. El gato tiene cuatro patas: The cat
+          
           <inputChecked
+          :conTexto="true"
+          textoA="14. El gato tiene cuatro patas: The cat"
             :resuelto="false"
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+            textoD="four paws."
             :esperado="['has']"
-          />four paws.
+            :tamano="38"
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          15. Mi mamá me ama: My mother
+          
           <inputChecked
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            textoA="15. Mi mamá me ama: My mother"
+            textoD="me."
+           :tamano="32"
             :esperado="['loves']"
-          />me.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          16. El profesor enseña muy bien: The teacher
+          
           <inputChecked
             :resuelto="false"
-            style="width: 15%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            textoA="16. El profesor enseña muy bien: The teacher"
+            textoD="very well."
+            :tamano="44"
             :esperado="['teaches']"
-          />very well.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          17. Eso huele mal: That
+          
           <inputChecked
             :resuelto="false"
-            style="width: 14%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            textoA="17. Eso huele mal: That"
+            textoD="bad."
+            :tamano="28"
+            
             :esperado="['smells']"
-          />bad.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          18. Ese niño estudia inglés: That boy
+          
           <inputChecked
             :resuelto="false"
-            style="width: 15%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            textoA="18. Ese niño estudia inglés: That boy"
+            textoD="English."
+            :tamano="38"
+            
             :esperado="['studies']"
-          />English.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          19. Él ama el número mágico: He
+         
           <inputChecked
             :resuelto="false"
-            style="width: 13%; margin-left: 10px; margin-right: 10px"
+            :conTexto="true"
+            textoA=" 19. Él ama el número mágico: He"
+            textoD="the magic number."
+            :tamano="41"
             :esperado="['loves']"
-          />the magic number.
+          />
           <br />
           <br />
         </div>
         <div class="col-sm-11 ">
-          20. Él tiene que madrugar: He
+         
           <inputChecked
             :resuelto="false"
-            style="width: 12%; margin-left: 10px; margin-right: 10px"
+           :conTexto="true"
+           textoA=" 20. Él tiene que madrugar: He"
+           textoD="to wake up early."
+           :tamano="37"
             :esperado="['has']"
-          />to wake up early.
+          />
           <br />
           <br />
         </div>
@@ -584,7 +642,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["goes"],
-              tamano: 12,
+              tamano: 13,
             },
           },
 
@@ -593,7 +651,7 @@ export default {
             complejo1: {
               textoA: "Victor",
               lista: ["has"],
-              tamano: 12,
+              tamano: 13,
             },
           },
 
@@ -603,7 +661,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["cries"],
-              tamano: 12,
+              tamano: 13,
             },
           },
           {
@@ -611,7 +669,7 @@ export default {
             complejo1: {
               textoA: "He",
               lista: ["plays"],
-              tamano: 11,
+              tamano: 13,
             },
           },
           {
@@ -619,7 +677,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["watches"],
-              tamano: 13,
+              tamano: 15,
             },
           },
           {
@@ -627,7 +685,7 @@ export default {
             complejo1: {
               textoA: "The boy",
               lista: ["studies"],
-              tamano: 15,
+              tamano: 17,
             },
           },
           {
