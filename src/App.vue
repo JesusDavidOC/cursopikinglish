@@ -3,7 +3,7 @@
     <div class="row" id="curso">
         <div class="col-sm-12">
 
-            <curso1Leccion5 />
+            <curso1Leccion6 />
 
         </div>
     </div>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import curso1Leccion5 from "./components/curso1Leccion5.vue";
+
 import curso1Leccion6 from "./components/curso1Leccion6.vue";
 import curso1Leccion7 from "./components/curso1Leccion7.vue";
 import curso1Leccion8 from "./components/curso1Leccion8.vue";
@@ -21,7 +21,7 @@ export default {
     components: {
 
 
-        curso1Leccion5,
+        curso1Leccion6,
     },
 };
 </script>

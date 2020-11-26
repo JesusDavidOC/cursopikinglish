@@ -23,11 +23,11 @@
 
     <br />
 
-    <div class="row">
-      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+    <div class="row parrafoBlack">
+      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
-        &nbsp;
+      <p class=" ">
+        
         <b
           >Un verbo también se usa en su forma presente después de un
           auxiliar.</b
@@ -40,7 +40,7 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="subTitulo parrafoBlack">
+      <div class="subTitulo">
         Existen cinco maneras de preguntar y negar en inglés
       </div>
     </div>
@@ -69,10 +69,10 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-8 row">
+      <div class="col-sm-8 ">
         <div
           v-for="(item, index) in frases1Pag38"
-          :class="' row col-sm-' + item.tamano + 4"
+          :class="' row col-sm-' + item.tamano "
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -164,11 +164,12 @@
     <br />
     <div class="row">
       <div class="col-sm-1"></div>
-      <p class="parrafoBlack">
+      <div class="col-sm-11"> <p class="parrafoBlack">
         Los auxiliares se usan para preguntar y negar, así que lo más importante
         es usar el correcto y recuerde que Does se usa para preguntar con she,
         he, it en presente y doesn´t para negar.
-      </p>
+      </p></div>
+     
     </div>
     <br /><br /><br />
     <div class="row">
@@ -183,10 +184,10 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-8 row">
+      <div class="col-sm-8 ">
         <div
           v-for="(item, index) in frases2Pag39"
-          :class="' row col-sm-' + item.tamano + 4"
+          :class="' row col-sm-' + item.tamano"
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -231,7 +232,7 @@
       <div :class="'col-sm-5'">
         <div
           v-for="(item, index) in frases1Pag40"
-          :class="''"
+          :class="'col-sm-'+item.tamano"
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -379,32 +380,32 @@ export default {
         {
           esperado: ["didn't"],
           textoA: "1. I ",
-          tamano: 4,
+          tamano: 6,
           textoD: "understand. (Yo no entendí)",
         },
 
         {
           esperado: ["doesn't "],
           textoA: "2. She",
-          tamano: 4,
+          tamano: 6,
           textoD: "live here. (Ella no vive aquí)",
         },
         {
           esperado: ["wont't"],
           textoA: "3. You",
-          tamano: 4,
+          tamano: 7,
           textoD: "understand. (Tú no entenderías)",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
-          tamano: 4,
+          tamano: 5,
           textoD: " care. (No me importa)",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
-          tamano: 4,
+          tamano: 7,
           textoD: "say anything. (Ellos no dirán nada)",
         },
       ],
@@ -561,62 +562,62 @@ export default {
         {
           esperado: ["didn't"],
           textoA: "1. I ",
-          tamano: 4,
+          tamano: 6,
           textoD: "understand. (Yo no entendí)",
         },
 
         {
           esperado: ["doesn't "],
           textoA: "2. She",
-          tamano: 4,
+          tamano: 6,
           textoD: "live here. (Ella no vive aquí)",
         },
         {
           esperado: ["wouldn't"],
           textoA: "3. You",
-          tamano: 4,
+          tamano: 7,
           textoD: "understand. (Tú no entenderías)",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
-          tamano: 4,
+          tamano: 5,
           textoD: " care. (No me importa)",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
-          tamano: 4,
+          tamano: 7,
           textoD: "say anything. (Ellos no dirán nada)",
         },
         {
           esperado: ["don't"],
           textoA: "6. I",
-          tamano: 4,
+          tamano: 7,
           textoD: "have any time. (No tengo nada de tiempo)",
         },
         {
           esperado: ["wouldn't"],
           textoA: "7. He",
-          tamano: 4,
+          tamano: 6,
           textoD: "do that. (El no haría eso)",
         },
         {
           esperado: ["won't"],
           textoA: "8. We",
-          tamano: 4,
+          tamano: 8,
           textoD: "say anything. (Nosotros no diremos nada)",
         },
         {
           esperado: ["doesn't"],
           textoA: "9. my father",
-          tamano: 4,
+          tamano: 8,
           textoD: "speak english. (Mi padre no habla inglés)",
         },
         {
           esperado: ["didn't"],
           textoA: "10. I",
-          tamano: 4,
+          tamano: 9,
           textoD: "understand what he said. (Yo no entendí lo que él dijo)",
         },
       ],
@@ -779,92 +780,92 @@ export default {
         {
           esperado: ["c"],
           textoA: "1. yo no entiendo nada ",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
 
         {
           esperado: ["d"],
           textoA: "2. Ella no entendio nada",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
         {
           esperado: ["b"],
           textoA: "3. Yo no entendí nada",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
         {
           esperado: ["e"],
           textoA: "4. Yo no entendería nada",
-          tamano: 4,
+          tamano: 8,
           textoD: " ",
         },
         {
           esperado: ["a"],
           textoA: "5. Yo no entenderé nada",
-          tamano: 4,
+          tamano:7,
           textoD: "",
         },
         {
           esperado: ["g"],
           textoA: "6. No tiene sentido",
-          tamano: 4,
+          tamano: 6,
           textoD: "",
         },
         {
-          esperado: ["o"],
+          esperado: ["n"],
           textoA: "7. Él no trabajó hoy",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
         {
           esperado: ["o"],
           textoA: "8. El niño no lloró",
-          tamano: 4,
+          tamano: 6,
           textoD: "",
         },
         {
           esperado: ["m"],
           textoA: "9. yo no lo haré",
-          tamano: 4,
+          tamano: 6,
           textoD: "",
         },
         {
           esperado: ["j"],
           textoA: "10. Nosotros no tendríamos ningún problema",
-          tamano: 4,
+          tamano: 11,
           textoD: "",
         },
         {
           esperado: ["h"],
           textoA: "11. Yo no dije nada",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
         {
           esperado: ["k"],
           textoA: "12. Él no fue a ninguna parte",
-          tamano: 4,
+          tamano: 8,
           textoD: "",
         },
         {
           esperado: ["l"],
           textoA: "13. Yo no haría nada",
-          tamano: 4,
+          tamano: 7,
           textoD: "",
         },
         {
           esperado: ["i"],
           textoA: "14. Ella no vive acá",
-          tamano: 4,
+          tamano: 6,
           textoD: "",
         },
         {
           esperado: ["f"],
           textoA: "15. Yo no sé nada",
-          tamano: 4,
+          tamano: 6,
           textoD: "",
         },
       ],

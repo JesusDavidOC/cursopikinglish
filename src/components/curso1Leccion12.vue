@@ -47,7 +47,7 @@
       <div class="col-sm-10 row">
         <div
           v-for="(item, index) in frases1Pag51"
-          :class="'  col-sm-4'"
+          :class="'  col-sm-'+item.tamano"
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -87,7 +87,7 @@
       <div class="col-sm-10 row">
         <div
           v-for="(item, index) in frases1Pag52"
-          :class="' row col-sm-10'"
+          :class="' row col-sm-'+item.tamano"
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -140,6 +140,7 @@ export default {
           textoD: "you(see/saw)",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["bought"],
@@ -148,6 +149,7 @@ export default {
           textoD: "a new phone (Buy/bought)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["understood"],
@@ -156,6 +158,7 @@ export default {
           textoD: "a little bit more (Understand/understood)",
 
           name: "ic",
+          tamano:11
         },
         {
           lista1: ["sat"],
@@ -164,6 +167,7 @@ export default {
           textoD: "and talked (Sit/sat)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["brought"],
@@ -172,6 +176,7 @@ export default {
           textoD: " you something to eat (bring/brought)",
 
           name: "ic",
+          tamano:10
         },
         {
           lista1: ["lit"],
@@ -180,6 +185,7 @@ export default {
           textoD: "a candle (light/lit)",
 
           name: "ic",
+          tamano:7
         },
         {
           lista1: ["thought"],
@@ -188,6 +194,8 @@ export default {
           textoD: "of my mother (think/thought)",
 
           name: "ic",
+          tamano:9
+
         },
         {
           lista1: ["had"],
@@ -196,6 +204,8 @@ export default {
           textoD: "a good day (have/had)",
 
           name: "ic",
+          tamano:8
+
         },
         {
           lista1: ["gave"],
@@ -204,6 +214,7 @@ export default {
           textoD: "me this (give/gave)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["taught"],
@@ -212,6 +223,7 @@ export default {
           textoD: "me how to drive (teach/taught)",
 
           name: "ic",
+          tamano:12
         },
         {
           lista1: ["drove"],
@@ -220,6 +232,7 @@ export default {
           textoD: "me home (drive/drove)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["bit"],
@@ -228,6 +241,7 @@ export default {
           textoD: " my friend (bite/bit)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["took"],
@@ -236,6 +250,7 @@ export default {
           textoD: "a nap (take/took)",
 
           name: "ic",
+          tamano:7
         },
         {
           lista1: ["sold"],
@@ -244,6 +259,7 @@ export default {
           textoD: " his car (sell/sold)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["brought"],
@@ -252,6 +268,7 @@ export default {
           textoD: "you this (bring/brought)",
 
           name: "ic",
+          tamano:8
         },
         {
           lista1: ["forgot"],
@@ -260,6 +277,7 @@ export default {
           textoD: "to close the door (forget/forgot)",
 
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["spoke"],
@@ -268,6 +286,7 @@ export default {
           textoD: "to her in english (speak/spoke)",
 
           name: "ic",
+          tamano:10
         },
 
         {
@@ -277,6 +296,7 @@ export default {
           textoD: "a fish (catch/caught)",
 
           name: "ic",
+          tamano:8
         },
         {
           lista1: ["woke"],
@@ -285,6 +305,7 @@ export default {
           textoD: "up a little late (wake/woke)",
 
           name: "ic",
+          tamano:9
         },
       ],
        frases1Pag50: [
@@ -314,7 +335,7 @@ export default {
           {
             A: "1. Entendimos todo ayer ",
             complejo1: {
-              lista: [" We understood everything yesterday"],
+              lista: ["We understood everything yesterday"],
               textoA: "8 -",
             },
           },
@@ -327,7 +348,7 @@ export default {
           },
           {
             A: "3. Fui con ella ayer ",
-            complejo1: { lista: [" That dog bit me yesterday"], textoA: "5 -" },
+            complejo1: { lista: ["That dog bit me yesterday"], textoA: "5 -" },
           },
           {
             A: "4. Ese perro me mordió ayer ",
@@ -349,7 +370,7 @@ export default {
           },
           {
             A: "7. Hable con él ayer",
-            complejo1: { lista: [" I spoke to him yesterday"], textoA: "7 -" },
+            complejo1: { lista: ["I spoke to him yesterday"], textoA: "7 -" },
           },
           {
             A: "8. Yo te vi ayer ",
@@ -405,6 +426,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
         {
           lista1: ["Compré"],
@@ -413,6 +435,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Entendí"],
@@ -421,6 +444,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["Me senté"],
@@ -429,6 +453,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Yo compré"],
@@ -437,6 +462,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["Encendí"],
@@ -445,6 +471,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Lancé"],
@@ -453,6 +480,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Comí"],
@@ -461,6 +489,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
         {
           lista1: ["Me caí"],
@@ -469,6 +498,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Pensé"],
@@ -477,6 +507,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Envié"],
@@ -485,6 +516,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Nadé"],
@@ -493,6 +525,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Escribí"],
@@ -501,6 +534,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Encontré"],
@@ -509,6 +543,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Tuve"],
@@ -517,6 +552,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
         {
           lista1: ["Hice"],
@@ -525,6 +561,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
 
         {
@@ -534,6 +571,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Dí"],
@@ -542,6 +580,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
         {
           lista1: ["Perdoné"],
@@ -550,6 +589,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["Rompí"],
@@ -558,6 +598,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Sentí"],
@@ -566,6 +607,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Atrapé"],
@@ -574,6 +616,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Enseñé"],
@@ -582,6 +625,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Hablé"],
@@ -590,6 +634,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["vine"],
@@ -598,6 +643,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Sostuve"],
@@ -606,6 +652,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Robé"],
@@ -614,6 +661,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Llevé"],
@@ -622,6 +670,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Dije"],
@@ -630,6 +679,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
         {
           lista1: ["Me desperté"],
@@ -638,6 +688,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Conté"],
@@ -646,6 +697,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Bebí"],
@@ -654,6 +706,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:4
         },
         {
           lista1: ["Fui"],
@@ -662,6 +715,7 @@ export default {
           textoD: "",
 
           name: "ic",
+          tamano:3
         },
       ],
 

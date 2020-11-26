@@ -2,23 +2,23 @@
   <div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <h3 class="titulo">FORMA PRESENTE DEL VERBOS</h3>
+      <h3 class="titulo">FORMA PRESENTE DEL VERBO</h3>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
-        <img src="/cursos/curso1/leccion6/imagenes/tablaPag32.PNG" />
+        <img src="/cursos/curso1/leccion6/imagenes/tablaPag32.png" />
       </div>
     </div>
 
-    <div class="row">
+    <div class="row botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-2" v-for="item in $data.tablaUnoPag32">
         <listaIndex :tabla="item" />
       </div>
       <div class="col-sm-1"></div>
       <div class="col-sm-3" style="margin-top: auto; margin-bottom: auto">
-        <p class="parrafoBlack">
+        <p class="parrafo">
           Si el sujeto es HE, SHE O IT el verbo lleva la letra “s” al final o
           algunas veces lleva la “es” o la “ies”.
         </p>
@@ -27,34 +27,32 @@
 
     <div class="row">
       <p class="subTitulo marginn-left">
-        <i>
+        
           <b>REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO</b>
-        </i>
+        
       </p>
     </div>
 
-    <div class="row">
+    <div class="row botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-2" v-for="item in $data.tablaDosPag32">
         <listaIndex :tabla="item" />
 
-        <br />
-        <br />
-        <br />
+        
       </div>
     </div>
-    <div class="row">
+    <div class="row fuenteDiamond">
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
+      <p class="">
         <b>Escribe la forma presente para terceras personas.</b>
         <br />
       </p>
     </div>
 
-    <div class="row">
+    <div class="row botTabla">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-8">
         <tablaTC
           class="overflow-auto"
           :cuestionario="tablaTresPag32"
@@ -64,11 +62,11 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
-    <div class="row">
-      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+    <div class="row fuenteDiamond ">
+      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
-        &nbsp;
+      <p class="">
+        
         <b
           >Reemplaza los números por letras y utiliza el verbo en su forma
           correcta.</b
@@ -77,43 +75,45 @@
       </p>
     </div>
 
-    <div class="row">
+    <div class="row botTabla">
       <div class="col-sm-1"></div>
-      <div class="col-sm-8 row">
-        <div class="col-sm-2 parrafoBlack" id="tabla">
+      <div class="col-sm-10 row">
+        <div class="col-sm-2 parrafo" id="tabla">
           <listaIndex :tabla="$data.tablaAPag33" />
         </div>
-        <div class="col-sm-4 parrafoBlack" id="tabla">
+        <div class="col-sm-3 parrafo" id="tabla">
           <listaIndex :tabla="$data.tablaBPag33" />
         </div>
 
-        <div class="col-sm-3 parrafoBlack" id="tabla">
+        <div class="col-sm-3 parrafo" id="tabla">
           <listaIndex :tabla="$data.tablaCPag33" />
         </div>
 
-        <div class="col-sm-3 parrafoBlack" id="tabla">
+        <div class="col-sm-4 parrafo" id="tabla">
           <listaIndex :tabla="$data.tablaDPag33" />
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row  botTabla ">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag33"
           :inglesR="false"
           :espanolR="true"
+          style="padding: 0%;"
+          class=""
         />
       </div>
     </div>
     <br />
     <br />
     <br />
-    <div class="row">
+    <div class="row fuenteDiamond ">
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
+      <p class="">
         &nbsp;
         <b>Add the S, ES or IES to the verb if necessary.</b>
         <br />
@@ -121,15 +121,15 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
+      
 
-      <p class="parrafoBlack">
+      <p class="subTitulo">
         <b>DICTIONARY</b>
         <br />
       </p>
     </div>
 
-    <div class="row">
+    <div class="row  botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-0.9" v-for="item in $data.tablaUnoPag34">
         <listaIndex :tabla="item" />
@@ -142,11 +142,11 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <FONT class="text-left parrafoBlack">
+      <FONT class="text-left parrafo">
         <div class="col-sm-11 row" id>
           1. Ella trabaja muy duro todos los días: She
           <inputChecked
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 14%; margin-left: 10px; margin-right: 10px"
             :resuelto="false"
             :esperado="['works']"
           />very hard every day.
@@ -157,7 +157,7 @@
         <div class="col-sm-11 row">
           2. Yo vivo con mi Madre acá: I
           <inputChecked
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :resuelto="false"
             :esperado="['live']"
           />with my mother here.
@@ -168,7 +168,7 @@
           3. Él tiene que trabajar mañana en la mañana: He
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :esperado="['has']"
           />to work tomorrow morning.
           <br />
@@ -178,7 +178,7 @@
           4. Natalie hace deporte todos los días: Natalie
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['does']"
           />sports every day.
           <br />
@@ -188,7 +188,7 @@
           5. Yo voy a trabajar en bus: I
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 11%; margin-left: 10px; margin-right: 10px"
             :esperado="['go']"
           />to work by bus.
           <br />
@@ -198,7 +198,7 @@
           6. Ella va al colegio a pie: She
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['goes']"
           />to school on foot.
           <br />
@@ -208,7 +208,7 @@
           7. Llueve mucho en New York: It
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['rains']"
           />a lot in New York.
           <br />
@@ -218,7 +218,7 @@
           8. Amar tiene sentido: Loving
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 14%; margin-left: 10px; margin-right: 10px"
             :esperado="['makes']"
           />sense.
           <br />
@@ -228,7 +228,7 @@
           9. Él tiene que trabajar mañana: He
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :esperado="['has']"
           />to work tomorrow.
           <br />
@@ -238,7 +238,7 @@
           10. Mi novia mira televisión los sábados: My girlfriend
           <inputChecked
             :resuelto="false"
-            style="width: 25%; margin-left: 10px; margin-right: 10px"
+            style="width: 15%; margin-left: 10px; margin-right: 10px"
             :esperado="['watches']"
           />tv on Saturdays.
           <br />
@@ -248,7 +248,7 @@
           11. Ella tiene un carro: She
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :esperado="['has']"
           />a car.
           <br />
@@ -258,7 +258,7 @@
           12. Ella no tiene un carro: She doesn’t
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['have']"
           />a car.
           <br />
@@ -268,7 +268,7 @@
           13. Víctor llora todos los días: Victor
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['cries']"
           />everyday.
           <br />
@@ -278,7 +278,7 @@
           14. El gato tiene cuatro patas: The cat
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :esperado="['has']"
           />four paws.
           <br />
@@ -288,7 +288,7 @@
           15. Mi mamá me ama: My mother
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['loves']"
           />me.
           <br />
@@ -298,7 +298,7 @@
           16. El profesor enseña muy bien: The teacher
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 15%; margin-left: 10px; margin-right: 10px"
             :esperado="['teaches']"
           />very well.
           <br />
@@ -308,7 +308,7 @@
           17. Eso huele mal: That
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 14%; margin-left: 10px; margin-right: 10px"
             :esperado="['smells']"
           />bad.
           <br />
@@ -318,7 +318,7 @@
           18. Ese niño estudia inglés: That boy
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 15%; margin-left: 10px; margin-right: 10px"
             :esperado="['studies']"
           />English.
           <br />
@@ -328,7 +328,7 @@
           19. Él ama el número mágico: He
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 13%; margin-left: 10px; margin-right: 10px"
             :esperado="['loves']"
           />the magic number.
           <br />
@@ -338,7 +338,7 @@
           20. Él tiene que madrugar: He
           <inputChecked
             :resuelto="false"
-            style="width: 20%; margin-left: 10px; margin-right: 10px"
+            style="width: 12%; margin-left: 10px; margin-right: 10px"
             :esperado="['has']"
           />to wake up early.
           <br />
@@ -576,7 +576,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["goes"],
-              tamano: 15,
+              tamano: 12,
             },
           },
 
@@ -585,7 +585,7 @@ export default {
             complejo1: {
               textoA: "Victor",
               lista: ["has"],
-              tamano: 15,
+              tamano: 12,
             },
           },
 
@@ -595,7 +595,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["cries"],
-              tamano: 15,
+              tamano: 12,
             },
           },
           {
@@ -603,7 +603,7 @@ export default {
             complejo1: {
               textoA: "He",
               lista: ["plays"],
-              tamano: 15,
+              tamano: 11,
             },
           },
           {
@@ -611,7 +611,7 @@ export default {
             complejo1: {
               textoA: "She",
               lista: ["watches"],
-              tamano: 15,
+              tamano: 13,
             },
           },
           {
@@ -627,7 +627,7 @@ export default {
             complejo1: {
               textoA: "My sister",
               lista: ["does"],
-              tamano: 15,
+              tamano: 14,
             },
           },
         ],
@@ -720,11 +720,11 @@ export default {
       },
       cuestionario1Pag33: {
         fields: [
-          { key: "A", thClass: "Blue parrafoBlack" },
-          { key: "B", thClass: "Red parrafoBlack" },
-          { key: "C", thClass: "Yelow parrafoBlack" },
-          { key: "D", thClass: "Green parrafoBlack" },
-          { key: "complejo1", label: "ENGLISH" },
+          { key: "A", thClass: "Blue parrafo" },
+          { key: "B", thClass: "Red parrafo" },
+          { key: "C", thClass: "Yelow parrafo" },
+          { key: "D", thClass: "Green parrafo" },
+          { key: "complejo1", label: "ENGLISH", thClass:"" },
           { key: "E", label: "SPANISH" },
         ],
         items: [
@@ -750,7 +750,7 @@ export default {
             C: 6,
             D: 4,
             complejo1: { lista: ["We work here everyday"], tamano: 25 },
-            EL: "Nosotros trabajamos aquí todos los días",
+            E: "Nosotros trabajamos aquí todos los días",
           },
           {
             A: 1,
@@ -766,7 +766,7 @@ export default {
             C: 3,
             D: 6,
             complejo1: { lista: ["He watches movies at night "], tamano: 25 },
-            E: ["Él ve películas en la noche"],
+            E: "Él ve películas en la noche",
           },
           {
             A: 2,

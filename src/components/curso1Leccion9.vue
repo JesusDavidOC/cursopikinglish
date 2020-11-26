@@ -10,28 +10,37 @@
       </p>
       <br />
     </div>
-    <div class="row">
+        <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6">
-        <tablaTC
-          class="overflow-auto"
-          :cuestionario="tabla1P41"
-          :inglesR="false"
-          :espanolR="false"
-        />
-      </div>
-      <div class="col-sm-4">
-        <tablaTC
-          class="overflow-auto"
-          :cuestionario="tabla2P41"
-          :inglesR="false"
-          :espanolR="false"
-        />
+      <div class="col-sm-11 row">
+        <div class="col-sm-1 " id="tabla">
+          <listaIndex :tabla="$data.tablaAPag41" />
+        </div>
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaBPag41" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaCPag41" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaDPag41" />
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaEPag41" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaFPag41" />
+        </div>
       </div>
     </div>
+    
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag41"
           :inglesR="false"
@@ -67,7 +76,7 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-10 ">
         <div
           v-for="(item, index) in frases1Pag42"
           :class="' row col-sm-' + item.tamano"
@@ -92,7 +101,7 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag43"
           :inglesR="false"
@@ -125,104 +134,132 @@ export default {
   },
   data() {
     return {
-        tabla1P41: {
+        tablaAPag41: {
+        bordered: true,
+
         fields: [
-          { key: "A", label: "", thClass: "Yellow" },
-          { key: "B", label: "", thClass: "Red" },
-          { key: "C", label: "", thClass: "Blue" },
-          { key: "D", label: "", thClass: "Green" },
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Yellow noHead " },
         ],
+
         items: [
-          {
-            A: "1. I",
-            B: "1. Don't",
-            C: "1. Do",
-            D: "1. Anything",
-          },
-          {
-            A: "2. You",
-            B: "2. Doesn't",
-            C: "2. Have",
-            D: "2. Anywhere",
-          },
-          {
-            A: "3. She",
-            B: "3. Didn't",
-            C: "3. Say",
-            D: "3. Here",
-          },
-          {
-            A: "4. He",
-            B: "4. Won't",
-            C: "4. Live",
-            D: "4. There",
-          },
-          {
-            A: "5. It",
-            B: "5. Wouldn´t",
-            C: "5. Feel",
-            D: "5. That",
-          },
-          {
-            A: "6. They",
-            B: "",
-            C: "6. Work",
-            D: "6. Good",
-          },
-          {
-            A: "7. We",
-            B: "",
-            C: "7. Go",
-            D: "7. Yesterday",
-          },
-          {
-            A: "8. Sam",
-            B: "",
-            C: "8. Hate",
-            D: "8. Anyone",
-          },
+          { A: " I" },
+          { A: " You " },
+          { A: " She" },
+          { A: " He" },
+          { A: " It" },
+          { A: " They" },
+          { A: "We " },
+          { A: " Sam" },
         ],
       },
-      tabla2P41: {
+
+      tablaBPag41: {
+        bordered: true,
+
         fields: [
-          { key: "C", label: "", thClass: "Blue" },
-          { key: "D", label: "", thClass: "Green" },
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "B", thClass: "Red noHead" },
         ],
         items: [
-          {
-            C: "1. Hacer",
-            D: "1. Nada",
-          },
-          {
-            C: "2. Tener",
-            D: "2. Ninguna parte",
-          },
-          {
-            C: "3. Decir",
-            D: "3. Aqui",
-          },
-          {
-            C: "4. Vivir",
-            D: "4. Allá",
-          },
-          {
-            C: "5. Sentir",
-            D: "5. Eso",
-          },
-          {
-            C: "6. Trabajar",
-            D: "6. Bien",
-          },
-          {
-            C: "7. Ir",
-            D: "7. Ayer",
-          },
-          {
-            C: "8. Odiar",
-            D: "8. Nadie",
-          },
+          { B: " Don't" },
+          { B: " Doesn't" },
+          { B: " Didn't" },
+          { B: "  Won't" },
+          { B: " Wouldn´t" },
+        
         ],
       },
+      tablaCPag41: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "C", thClass: "Blue noHead" },
+        ],
+
+        items: [
+          { C: " Do" },
+          { C: " Have" },
+          { C: " Say" },
+          { C: " Live" },
+          { C: " Feel" },
+          { C: " Work" },
+          { C: " Go" },
+          { C: " Hate" },
+        ],
+      },
+        tablaDPag41: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Green noHead " },
+        ],
+
+        items: [
+          { A: " Anything" },
+          { A: " Anywhere " },
+          { A: "  Here" },
+          { A: " There" },
+          { A: "That" },
+          { A: "Good" },
+          { A: " Yesterday" },
+          {A:"Anyone"}
+        ],
+      },
+
+      tablaEPag41: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "B", thClass: "Blue noHead " },
+        ],
+        items: [
+          { B: " Hacer" },
+          { B: " Tener" },
+          { B: " Decir" },
+          { B: " Vivir" },
+          { B: " Sentir" },
+          { B: " Trabajar" },
+          { B: " Ir" },
+          { B: " Odiar" },
+          
+        ],
+      },
+      tablaFPag41: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "C", thClass: "Green noHead " },
+        ],
+
+        items: [
+          { C: " Nada" },
+          { C: " Ninguna parte" },
+          { C: " Aqui" },
+          { C: " Allá" },
+          { C: " Eso" },
+          { C: " Bien" },
+          { C: " Ayer" },
+          { C: "Nadie" },
+        ],
+      },
+        
       cuestionario1Pag41: {
         fields: [
           { key: "A", thClass: "Blue parrafoBlack" },
@@ -230,7 +267,7 @@ export default {
           { key: "C", thClass: "Yellow parrafoBlack" },
           { key: "D", thClass: "Green parrafoBlack" },
           { key: "complejo1", label: "ENGLISH" },
-          { key: "E", label: "SPANISH" },
+          { key: "E", label: "SPANISH", thClass: "text-left"},
         ],
         items: [
           {
@@ -513,6 +550,7 @@ export default {
           textoD: "talk",
           textoD2: "you. (No quiero hablar contigo)",
           name: "ice",
+          tamano:7
         },
         {
           lista1: ["to"],
@@ -521,6 +559,7 @@ export default {
           textoD: "one. (Falta un cuarto para la una)",
 
           name: "ic",
+           tamano:6
         },
         {
           lista1: ["to"],
@@ -529,6 +568,7 @@ export default {
 
           textoD: "do? (Qué vas a hacer?)",
           name: "ic",
+           tamano:6
         },
         {
           lista1: ["to"],
@@ -537,6 +577,7 @@ export default {
           textoD: "the traffic light and give this",
           textoD2: "Victor. (Ve hasta el semáforo y dale esto a Víctor)",
           name: "ice",
+           tamano:10
         },
         {
           lista1: ["to"],
@@ -546,6 +587,7 @@ export default {
           textoD:
             "the top of the hill. (Quiero correr hasta la cima de la colina)",
           name: "ic",
+           tamano:8
         },
         {
           lista1: ["to"],
@@ -554,6 +596,7 @@ export default {
 
           textoD: "do! (Por favor, no me digas qué hacer)",
           name: "ic",
+           tamano:7
         },
         {
           lista1: ["to"],
@@ -562,6 +605,7 @@ export default {
 
           textoD: "her. (He comprador este regalo para dárselo a ella)",
           name: "ic",
+           tamano:9
         },
         {
           lista1: ["to"],
@@ -570,6 +614,7 @@ export default {
 
           textoD: "the desert. (Me encantaría conducir hasta el ",
           name: "ic",
+           tamano:7
         },
         {
           lista1: ["to"],
@@ -579,6 +624,7 @@ export default {
           textoD:
             "help people in need. (Estoy haciendo esto para ayudar a las personas en necesidad)",
           name: "ic",
+           tamano:10
         },
       ],
 
