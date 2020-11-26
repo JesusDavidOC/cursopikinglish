@@ -21,8 +21,9 @@
           class="text-left parrafoBlack"
         ></p>
       </div>
-      <div :class="'col-sm-5'">
+        <div :class="'col-sm-5'">
         <div v-for="(item, index) in frases2Pag47" style="margin-bottom: 0.7em">
+          <div :class="'col-sm-'+item.tamano">
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
           <div v-else-if="item.name == 'ic'">
             <inputChecked
@@ -33,6 +34,7 @@
               :textoA="item.textoA"
               :textoD="item.textoD"
             />
+          </div>
           </div>
         </div>
       </div>
@@ -47,24 +49,40 @@
       </p>
       <br />
     </div>
-    <div class="row">
+      <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6">
-        <tablaTC
-          class="overflow-auto"
-          :cuestionario="tabla1P48"
-          :inglesR="false"
-          :espanolR="false"
-        />
+      <div class="col-sm-11 row">
+        <div class="col-sm-1 " id="tabla">
+          <listaIndex :tabla="$data.tablaAPag48" />
+        </div>
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaBPag48" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaCPag48" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaDPag48" />
+        </div>
+        
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaEPag48" />
+        </div>
+
+      
       </div>
     </div>
+   
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-8">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag48"
           :inglesR="false"
           :espanolR="true"
+         
         />
       </div>
     </div>
@@ -99,7 +117,7 @@
     <br /><br /><br />
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-10 ">
         <div
           v-for="(item, index) in frases1Pag49"
           :class="' row col-sm-' + item.tamano"
@@ -178,6 +196,7 @@ export default {
           textoD: "you ",
           textoD2: "utilities?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["did"],
@@ -186,6 +205,7 @@ export default {
           textoD: "you ",
           textoD2: "?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["Did"],
@@ -194,6 +214,7 @@ export default {
           textoD: "you ",
           textoD2: "what she said?",
           name: "ice",
+          tamano:11
         },
         {
           lista1: ["did"],
@@ -202,6 +223,7 @@ export default {
           textoD: "you ",
           textoD2: "about what I told you?",
           name: "ice",
+          tamano:12
         },
         {
           lista1: ["did"],
@@ -210,6 +232,7 @@ export default {
           textoD: "you ",
           textoD2: " that car? ",
           name: "ice",
+          tamano:10
         },
         {
           lista1: ["Did"],
@@ -218,6 +241,7 @@ export default {
           textoD: "she ",
           textoD2: "you?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["Does"],
@@ -226,6 +250,7 @@ export default {
           textoD: "Marcos ",
           textoD2: "Well?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["Do"],
@@ -234,6 +259,7 @@ export default {
           textoD: "you ",
           textoD2: "to God?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["did"],
@@ -242,6 +268,7 @@ export default {
           textoD: "you not ",
           textoD2: "it?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["did"],
@@ -250,6 +277,7 @@ export default {
           textoD: "you ",
           textoD2: "?",
           name: "ice",
+          tamano:8
         },
         {
           lista1: ["did "],
@@ -258,6 +286,7 @@ export default {
           textoD: "you ",
           textoD2: "your car?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["do"],
@@ -266,6 +295,7 @@ export default {
           textoD: "you ",
           textoD2: "?",
           name: "ice",
+          tamano:8
         },
         {
           lista1: [" did "],
@@ -274,6 +304,7 @@ export default {
           textoD: "you ",
           textoD2: "",
           name: "ice",
+          tamano:8
         },
         {
           lista1: ["would"],
@@ -282,6 +313,7 @@ export default {
           textoD: "you ",
           textoD2: "it?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["Do"],
@@ -290,6 +322,7 @@ export default {
           textoD: "you ",
           textoD2: "me?",
           name: "ice",
+          tamano:8
         },
         {
           lista1: ["did"],
@@ -298,6 +331,7 @@ export default {
           textoD: "you ",
           textoD2: " me?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["will"],
@@ -306,6 +340,7 @@ export default {
           textoD: "you ",
           textoD2: "?",
           name: "ice",
+          tamano:8
         },
         {
           lista1: ["Would "],
@@ -314,6 +349,7 @@ export default {
           textoD: "you ",
           textoD2: "speaking to him?",
           name: "ice",
+          tamano:11
         },
         {
           lista1: ["How"],
@@ -322,6 +358,7 @@ export default {
           textoD: "did you",
           textoD2: "?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["Where"],
@@ -330,6 +367,7 @@ export default {
           textoD: "you ",
           textoD2: "it?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["do"],
@@ -338,6 +376,7 @@ export default {
           textoD: "you ",
           textoD2: "with?",
           name: "ice",
+          tamano:9
         },
         {
           lista1: ["do"],
@@ -346,97 +385,122 @@ export default {
           textoD: "you ",
           textoD2: "?",
           name: "ice",
+          tamano:8
         },
       ],
 
-          tabla1P48: {
+            tablaAPag48: {
+        bordered: true,
+
         fields: [
-          { key: "A", label: "", thClass: "Yellow" },
-          { key: "B", label: "", thClass: "Red" },
-          { key: "C", label: "", thClass: "Blue" },
-          { key: "D", label: "", thClass: "Green" },
-          { key: "E", label: "", thClass: "Green" },
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Yellow noHead " },
         ],
+
         items: [
-          {
-            A: "1. WHAT  ",
-            B: "1. DO",
-            C: "1. I",
-            D: "1. EAT",
-            E: "12.NEED",
-          },
-          {
-            A: "2. WHERE     ",
-            B: "2. DOES",
-            C: "2. YOU ",
-            D: "2. FEEL",
-            E: "13. CALL ME",
-          },
-          {
-            A: "3. WHY    ",
-            B: "3. DID",
-            C: "3. SHE",
-            D: " 3. LOVE",
-            E: "14. GROW UP",
-          },
-          {
-            A: "4. WHEN    ",
-            B: "4. WILL",
-            C: "4. HE",
-            D: "4. COME",
-            E: "15. DO ",
-          },
-          {
-            A: "5. HOW     ",
-            B: "5. WOULD",
-            C: "5. IT",
-            D: " 5. STUDY",
-            E: "16. SLEEP",
-          },
-          {
-            A: "6. WHO    ",
-            B: "",
-            C: "6. WE",
-            D: " 6. LIVE",
-            E: "17. BUY",
-          },
-          {
-            A: "7. WHAT TIME  ",
-            B: " ",
-            C: "7. THEY ",
-            D: "7. GO",
-            E: "18. WAKE UP",
-          },
-          {
-            A: "  ",
-            B: "",
-            C: "",
-            D: "8. SAY ",
-            E: "19. WRITE",
-          },
-          {
-            A: "",
-            B: "",
-            C: "",
-            D: "9. STEAL",
-            E: " 20. HEAR",
-          },
-          {
-            A: "",
-            B: "",
-            C: "",
-            D: "10. SEE ",
-            E: "21. ARRIVE",
-          },
-          {
-            A: "",
-            B: "",
-            C: "",
-            D: "11. WANT ",
-            E: "22. WORK",
-          },
+          { A: " WHAT" },
+          { A: " WHERE " },
+          { A: " WHY" },
+          { A: " WHEN" },
+          { A: " HOW" },
+          { A: " WHO" },
+          { A: "WHAT TIME " },
+          
         ],
       },
+
+      tablaBPag48: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "B", thClass: "Red noHead" },
+        ],
+        items: [
+          { B: " DO" },
+          { B: " DOES" },
+          { B: " DID" },
+          { B: "  WILL" },
+          { B: " WOULD" },
+        
+        ],
+      },
+      tablaCPag48: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "C", thClass: "Blue noHead" },
+        ],
+
+        items: [
+          { C: " I" },
+          { C: " YOU" },
+          { C: "SHE" },
+          { C: "HE" },
+          { C: "IT" },
+          { C: " WE" },
+          { C: "THEY" },
+         
+        ],
+      },
+        tablaDPag48: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Green noHead " },
+        ],
+
+        items: [
+          { A: " EAT" },
+          { A: " FEEL " },
+          { A: "   LOVE" },
+          { A: "COME" },
+          { A: " STUDY" },
+          { A: "LIVE" },
+          { A: " GO" },
+          {A:"SAY"},
+          {A:"STEAL"},
+          {A:"SEE"},
+          {A:"WANT"}
+        ],
+      },
+
+      tablaEPag48: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          
+          // A column that needs custom formatting
+          { key: "B", thClass: "Blue  " },
+        ],
+        items: [
+          { B: "12.NEED" },
+          { B: "13. CALL ME" },
+          { B: "14. GROW UP" },
+          { B: "15. DO" },
+          { B: "16. SLEEP" },
+          { B: "17. BUY" },
+          { B: "18. WAKE UP" },
+          { B: "19. WRITE " },
+          { B: "20. HEAR " },
+          { B: " 21. ARRIVE" },
+          { B: "22. WORK " },
+        
+          
+        ],
+      },
+        
 
       cuestionario1Pag48: {
         fields: [
@@ -654,7 +718,7 @@ export default {
 
           textoA: "1. Ella vio a su madre: She ",
           textoD: "her mother (see/saw)",
-
+          tamano:6,
           name: "ic",
         },
         {
@@ -664,6 +728,7 @@ export default {
           textoD: "very much (eat/ate)",
 
           name: "ic",
+          tamano:5
         },
         {
           lista1: ["fell"],
@@ -672,6 +737,7 @@ export default {
 
           textoD: "off the bed (fall/fell)",
           name: "ic",
+          tamano:7
         },
         {
           lista1: ["did"],
@@ -680,6 +746,7 @@ export default {
           textoD: "sport yesterday (do/did) (UK)",
 
           name: "ic",
+          tamano:7
         },
         {
           lista1: ["went"],
@@ -688,6 +755,7 @@ export default {
 
           textoD: "to work this morning (go/ went)",
           name: "ic",
+          tamano:8
         },
         {
           lista1: ["bought "],
@@ -696,6 +764,7 @@ export default {
 
           textoD: "a car (buy/bought)",
           name: "ic",
+          tamano:6
         },
         {
           lista1: ["thought"],
@@ -704,6 +773,7 @@ export default {
 
           textoD: "of my mother (think/ thought)",
           name: "ic",
+          tamano:9
         },
         {
           lista1: ["had"],
@@ -712,6 +782,7 @@ export default {
 
           textoD: "a good day (have/ had)",
           name: "ic",
+          tamano:8
         },
         {
           lista1: ["gave"],
@@ -720,6 +791,7 @@ export default {
 
           textoD: "me this (give/gave)",
           name: "ic",
+          tamano:9
         },
         {
           lista1: [" taught "],
@@ -728,6 +800,7 @@ export default {
 
           textoD: " us very well (teach/taught)",
           name: "ic",
+          tamano:11
         },
       ],
       

@@ -1,21 +1,31 @@
 <template>
     <div>
-
-                <div class="row">
+       <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6">
-        <tablaTC
-          class="overflow-auto"
-          :cuestionario="tabla1P53"
-          :inglesR="false"
-          :espanolR="false"
-        />
+      <div class="col-sm-11 row">
+        <div class="col-sm-1 " id="tabla">
+          <listaIndex :tabla="$data.tablaAPag53" />
+        </div>
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaBPag53" />
+        </div>
+
+        <div class="col-sm-2 " id="tabla">
+          <listaIndex :tabla="$data.tablaCPag53" />
+        </div>
+
+        <div class="col-sm-3 " id="tabla">
+          <listaIndex :tabla="$data.tablaDPag53" />
+        </div>
+       
       </div>
     </div>
 
+         
+
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag54"
           :inglesR="false"
@@ -40,7 +50,7 @@
         <p
           v-for="item in dialogoPag55"
           v-html="item"
-          class="text-left parrafoBlack"
+          class=" parrafoBlack"
         ></p>
       </div>
     </div>
@@ -67,285 +77,195 @@ export default {
   },
   data() {
     return {
+        tablaAPag53: {
+        bordered: true,
 
-            tabla1P53: {
         fields: [
-          { key: "A", label: "D ", thClass: "Yellow" },
-          { key: "B", label: "Present", thClass: "Red" },
-          { key: "C", label: "F (Past)", thClass: "Blue" },
-          { key: "D", label: "C", thClass: "Green" },
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Yellow ", label:"D"},
+        ],
+
+        items: [
+          { A: " I" },
+          { A: " You " },
+          { A: " She" },
+          { A: " He" },
+          { A: " It" },
+          { A: " They" },
+          { A: "We " },
+          
+        ],
+      },
+
+      tablaBPag53: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "B", thClass: "Red ", label:"Present" },
         ],
         items: [
-          {
-            A: " 1. I   ",
-            B: "1. Go",
-            C: "1. went",
-            D: "1. To work",
-          },
-          {
-            A: "2. You    ",
-            B: "2. See",
-            C: "2. Saw",
-            D: "2. You",
-          },
-          {
-            A: " 3. She   ",
-            B: "3. Have",
-            C: "3. Had",
-            D: "3. A good day",
-          },
-          {
-            A: "4. He  ",
-            B: "4. Say",
-            C: " 4. Said",
-            D: "4. That ",
-          },
-          {
-            A: "5. It  ",
-            B: "5. Tell",
-            C: " 5. Told",
-            D: " 5. A taxi",
-          },
-          {
-            A: "6. We   ",
-            B: "6. Take",
-            C: " 6. Took",
-            D: "6. Breakfast late",
-          },
-          {
-            A: "7. They   ",
-            B: "7. Eat ",
-            C: "7. Ate",
-            D: "7. Lunch today",
-          },
-          {
-            A: " ",
-            B: "8. Steal ",
-            C: "8. Stole",
-            D: " 8. Dinner at midnight",
-          },
-          {
-            A: " ",
-            B: "9. Give",
-            C: " 9. Gave ",
-            D: "9. Her a gift",
-          },
-          {
-            A: " ",
-            B: "10. Buy  ",
-            C: "10. Bought",
-            D: "10. A lot of things",
-          },
-          {
-            A: " ",
-            B: "11. Sell  ",
-            C: "11. Sold",
-            D: "11. My car",
-          },
-          {
-            A: " ",
-            B: "12. Swim  ",
-            C: "12. Swam",
-            D: "12. Until I got tired",
-          },
-          {
-            A: " ",
-            B: "13. Feel  ",
-            C: "13. Felt",
-            D: "13. Good",
-          },
-          {
-            A: " ",
-            B: "14. Fall  ",
-            C: "14. Fell",
-            D: "14. You didn’t love me",
-          },
-          {
-            A: " ",
-            B: "",
-            C: "",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "15. Think  ",
-            C: "15. Thought",
-            D: "15. It well",
-          },
-          {
-            A: " ",
-            B: "16. Do  ",
-            C: "16. Did",
-            D: "16. My son good manners",
-          },
-          {
-            A: " ",
-            B: "17. Teach  ",
-            C: "17. Taught",
-            D: "17. Me",
-          },
-          {
-            A: " ",
-            B: "18. Forgive  ",
-            C: "18. Forgave",
-            D: "18. Into the river",
-          },
-          {
-            A: " ",
-            B: "19. Drink  ",
-            C: "19. Drank",
-            D: "19. Something",
-          },
-          {
-            A: " ",
-            B: "20. Understand  ",
-            C: "20. Understood",
-            D: "20. Everything",
-          },
-          {
-            A: " ",
-            B: "21. Find  ",
-            C: "21. Found",
-            D: "21. The ball",
-          },
-          {
-            A: " ",
-            B: "22. Catch ",
-            C: "22. Caught",
-            D: " 22. On the floor",
-          },
-          {
-            A: " ",
-            B: "23. Sleep  ",
-            C: "23. Slept",
-            D: "23. My arm",
-          },
-          {
-            A: " ",
-            B: "24. Bite ",
-            C: "24. Bit",
-            D: " 24. Up early this morning",
-          },
-          {
-            A: " ",
-            B: "25. Wake  ",
-            C: "25. Woke",
-            D: "25. It",
-          },
-          {
-            A: " ",
-            B: "26. Get  ",
-            C: "26. Got",
-            D: "26. The house of my dream",
-          },
-          {
-            A: " ",
-            B: "27. Break ",
-            C: "27. Broke",
-            D: " 27. To tell you",
-          },
-          {
-            A: " ",
-            B: "28. Begin  ",
-            C: "28. Began",
-            D: "28. This to you",
-          },
-          {
-            A: " ",
-            B: "29. Build  ",
-            C: "29. Built",
-            D: "29. A pair of old shoes",
-          },
-          {
-            A: " ",
-            B: "30. Forget ",
-            C: "30. Forgot",
-            D: " 30. A big house",
-          },
-          {
-            A: " ",
-            B: "31. Write ",
-            C: "31. Wrote ",
-            D: "31. The keys under the bed",
-          },
-          {
-            A: " ",
-            B: "32. Throw  ",
-            C: "32. Threw",
-            D: "32. My shirt",
-          },
-          {
-            A: " ",
-            B: "33. Wear  ",
-            C: "33. Wore",
-            D: "33. To God",
-          },
-          {
-            A: " ",
-            B: "34. Dig  ",
-            C: "34. Dug",
-            D: "34. Angry with her",
-          },
-          {
-            A: " ",
-            B: "35. Hide ",
-            C: "35. Hid",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "36. Tear ",
-            C: "36. Tore",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "37. Swear ",
-            C: "37. Swore",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "38. Send ",
-            C: "38. Sent",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "",
-            C: "",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "39. Lend ",
-            C: "39. Lent",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "40. Become ",
-            C: "40. Became",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "41. Come",
-            C: " 41. Came",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "42. Shoot ",
-            C: "42. Shot",
-            D: "",
-          },
-          {
-            A: " ",
-            B: "43. Know ",
-            C: "43. Knew",
-            D: "",
-          },
+          { B: " GO" },
+          { B: " See" },
+          { B: " Have" },
+          { B: "  Say" },
+          { B: "Tell" },
+          { B: "Take" },
+          { B: "Eat" },
+          { B: "Steal" },
+          { B: "Give" },
+          { B: "Buy" },
+          { B: "Sell" },
+          { B: "Swim" },
+          { B: "Feel" },
+          { B: "Fall" },
+          { B: "Think" },
+          { B: "Do" },
+          { B: "Teach" },
+          { B: "Forgive" },
+          { B: "Drink" },
+          { B: "Understand" },
+          { B: "Find" },
+
+          { B: "Catch" },
+          { B: "Sleep" },
+          { B: "Bite" },
+          { B: "Wake" },
+          
+          { B: "Get" },
+          { B: "Break" },
+          { B: "Begin" },
+          { B: "Build" },
+          { B: "Forget" },
+          { B: "Write" },
+          { B: "Throw" },
+          { B: "Wear" },
+          { B: "Dig" },
+          { B: "Hide" },
+          { B: "Tear" },
+          { B: "Swear" },
+          { B: "Send" },
+          { B: "Lend" },
+          { B: "Become" },
+          { B: "Come" },
+          { B: "Shoot" },
+          { B: "Know" },
+
+
+        
+        ],
+      },
+      tablaCPag53: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "C", thClass: "Blue ", label:"F (Past)" },
+        ],
+
+        items: [
+          { C: "Went" },
+          { C: "Saw" },
+          { C: "Had" },
+          { C: " Said" },
+          { C: "Told" },
+          { C: " Took" },
+          { C: " Ate" },
+          { C: "Stole " },
+          { C: "Gave " },
+          { C: " Bought" },
+          { C: " Sold" },
+          { C: " Swam" },
+
+          { C: "Felt " },
+          { C: "Fell " },
+          { C: " Thought" },
+          { C: " Did" },
+          { C: "Taught " },
+          { C: " Forgave" },
+          { C: " Drank" },
+          { C: "Understood " },
+          { C: " Found" },
+          { C: " Caught" },
+          { C: " Slept" },
+          { C: " Bit" },
+          { C: " Woke" },
+          { C: " Got" },
+          { C: " Broke" },
+          { C: "Began " },
+          { C: "Built " },
+          { C: "Forgot " },
+          { C: "wrote " },
+          { C: "Threw " },
+          { C: "Wore " },
+          { C: " Dug" },
+          { C: " Hid" },
+          { C: " Tore" },
+          { C: "Swore " },
+          { C: "Sent " },
+          { C: " Lent" },
+          { C: "Became " },
+          { C: "Came" },
+          { C: "Shot" },
+          { C: " Knew" },
+
+        ],
+      },
+        tablaDPag53: {
+        bordered: true,
+
+        fields: [
+          // A virtual column that doesn't exist in items
+          "#",
+          // A column that needs custom formatting
+          { key: "A", thClass: "Green  ", label:"C" },
+        ],
+
+        items: [
+        
+          {A:"To work"},
+          {A:"You"},
+          {A:" A good day"},
+          {A:"That"},
+          {A:"A taxi"},
+          {A:"Breakfast late"},
+          {A:" Lunch today"},
+          {A:"Dinner at midnight"},
+          {A:"Her a gift"},
+          {A:"A lot of things"},
+          {A:"My car"},
+          {A:"Until I got tired"},
+          {A:" Good"},
+          {A:"You didn’t love me"},
+          {A:"It well"},
+          {A:" My son good manners"},
+          {A:"Me"},
+          {A:"Into the river"},
+          {A:"Something"},
+          {A:"Everything"},
+
+          {A:" The ball"},
+          {A:"On the floor"},
+          {A:" My arm"},
+          {A:" Up early this morning"},
+          {A:" It"},
+          {A:" The house of my dream"},
+          {A:"To tell you"},
+          {A:"This to you"},
+          {A:" A pair of old shoes"},
+          {A:"A big house"},
+          {A:"The keys under the bed"},
+          {A:"My shirt"},
+          {A:"To God"},
+          {A:"Angry with her"},
+
+
         ],
       },
 

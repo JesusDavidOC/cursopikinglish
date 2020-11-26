@@ -1,5 +1,5 @@
 <template>
-<div>Yisus</div>
+<div>prueba</div>
 </template>
 
 <script>
