@@ -1,7 +1,7 @@
 <template>
-  <div style="display: inline-flex">
-    <div class="row">
-      <div>
+  <b-container fluid>
+    <b-row>
+      <b-col>
         <inputChecked
           :esperado="object.lista1"
           :resuelto="false"
@@ -11,20 +11,20 @@
           :textoD="object.textoD"
           :tamano="object.tamano1"
         />
-      </div>
-    </div>
-    <div>
-      <inputChecked
-        :esperado="object.lista2"
-        :resuelto="false"
-        :name="object.name + '2'"
-        :conTexto="true"
-        textoA=""
-        :textoD="object.textoD2"
-        :tamano="object.tamano2"
-      />
-    </div>
-  </div>
+      </b-col>
+      <b-col>
+        <inputChecked
+          :esperado="object.lista2"
+          :resuelto="false"
+          :name="object.name + '2'"
+          :conTexto="true"
+          textoA=""
+          :textoD="object.textoD2"
+          :tamano="object.tamano2"
+        />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
