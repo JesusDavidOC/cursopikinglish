@@ -42,6 +42,7 @@
       </div>
     </div>
     <div class="row fuenteDiamond">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
       <p class="">
@@ -63,6 +64,7 @@
       <div class="col-sm-1"></div>
     </div>
     <div class="row fuenteDiamond ">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond " style="font-size: 1.5em"></i>
 
       <p class="">
@@ -111,7 +113,8 @@
     <br />
     <br />
     <div class="row fuenteDiamond ">
-      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+      <div class="col-sm-1"></div>
+            <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
       <p class="">
         &nbsp;
@@ -123,10 +126,10 @@
     <div class="row">
       
 
-      <p class="subTitulo">
-        <b>DICTIONARY</b>
-        <br />
-      </p>
+      <h3 class="subTitulo">
+        DICTIONARY
+        
+      </h3>
     </div>
 
     <div class="row  botTabla">
@@ -142,29 +145,34 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <FONT class="text-left parrafo">
-        <div class="col-sm-11 row" id>
-          1. Ella trabaja muy duro todos los días: She
-          <inputChecked
-            style="width: 14%; margin-left: 10px; margin-right: 10px"
+      <FONT class="">
+        <div class="col-sm-11 " id>
+          
+          <inputChecked 
+            
             :resuelto="false"
             :esperado="['works']"
-          />very hard every day.
+            :tamano="48" 
+            :conTexto="true"
+            textoA= "1. Ella trabaja muy duro todos los días: She"
+            textoD= "very hard every day."
+          />
 
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           2. Yo vivo con mi Madre acá: I
           <inputChecked
             style="width: 12%; margin-left: 10px; margin-right: 10px"
             :resuelto="false"
             :esperado="['live']"
+            :tamano= 6
           />with my mother here.
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           3. Él tiene que trabajar mañana en la mañana: He
           <inputChecked
             :resuelto="false"
@@ -174,7 +182,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           4. Natalie hace deporte todos los días: Natalie
           <inputChecked
             :resuelto="false"
@@ -184,7 +192,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           5. Yo voy a trabajar en bus: I
           <inputChecked
             :resuelto="false"
@@ -194,7 +202,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           6. Ella va al colegio a pie: She
           <inputChecked
             :resuelto="false"
@@ -204,7 +212,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           7. Llueve mucho en New York: It
           <inputChecked
             :resuelto="false"
@@ -214,7 +222,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           8. Amar tiene sentido: Loving
           <inputChecked
             :resuelto="false"
@@ -224,7 +232,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           9. Él tiene que trabajar mañana: He
           <inputChecked
             :resuelto="false"
@@ -234,7 +242,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           10. Mi novia mira televisión los sábados: My girlfriend
           <inputChecked
             :resuelto="false"
@@ -244,7 +252,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           11. Ella tiene un carro: She
           <inputChecked
             :resuelto="false"
@@ -254,7 +262,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           12. Ella no tiene un carro: She doesn’t
           <inputChecked
             :resuelto="false"
@@ -264,7 +272,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           13. Víctor llora todos los días: Victor
           <inputChecked
             :resuelto="false"
@@ -274,7 +282,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11">
           14. El gato tiene cuatro patas: The cat
           <inputChecked
             :resuelto="false"
@@ -284,7 +292,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           15. Mi mamá me ama: My mother
           <inputChecked
             :resuelto="false"
@@ -294,7 +302,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           16. El profesor enseña muy bien: The teacher
           <inputChecked
             :resuelto="false"
@@ -304,7 +312,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           17. Eso huele mal: That
           <inputChecked
             :resuelto="false"
@@ -314,7 +322,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           18. Ese niño estudia inglés: That boy
           <inputChecked
             :resuelto="false"
@@ -324,7 +332,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           19. Él ama el número mágico: He
           <inputChecked
             :resuelto="false"
@@ -334,7 +342,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 row">
+        <div class="col-sm-11 ">
           20. Él tiene que madrugar: He
           <inputChecked
             :resuelto="false"

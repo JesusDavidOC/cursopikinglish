@@ -1,4 +1,4 @@
-# curso1
+# cscursopickinglish
 
 ## Project setup
 ```

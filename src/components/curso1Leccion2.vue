@@ -31,6 +31,14 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <iframe width="100%" height="440" src="https://www.youtube.com/embed/YvkfIwFzXVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-2" id="subTitulo">
         <h3>PRACTICE</h3>

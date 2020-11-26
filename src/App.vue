@@ -11,7 +11,7 @@
 </template>
 
 <script>
-
+import app from  "./assets/app.css";
 import curso1Leccion6 from "./components/curso1Leccion6.vue";
 import curso1Leccion7 from "./components/curso1Leccion7.vue";
 import curso1Leccion8 from "./components/curso1Leccion8.vue";
@@ -19,7 +19,6 @@ import curso1Leccion9 from "./components/curso1Leccion9.vue";
 export default {
     name: "App",
     components: {
-
 
         curso1Leccion6,
     },
