@@ -128,9 +128,9 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Tipos de verbos</h2>
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico2">2</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        
+        <div class="col-sm-1" id="numeroMagico2" >2</div>
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" />
         </div>
       </div>
@@ -140,9 +140,8 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h3>Formas de escribir un verbo</h3>
         </div>
-        <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico4">4</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="[
@@ -152,15 +151,14 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-1"></div>
+      <div class="row">   
+      <div class="col-sm-1"></div>     
         <div class="col-sm-1" id="numeroMagico5">5</div>
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Modificadores del tiempo</h2>
-        </div>
-        <div class="col-sm-1"></div>
+        </div>         
         <div class="col-sm-1" id="numeroMagico5">5</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="['Modificadores del tiempo', 'Modificadores de tiempo']"
@@ -173,9 +171,8 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Verbos con super poder</h2>
         </div>
-        <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico12">12</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="['Verbos con super poder', 'Verbos con super poderes']"
@@ -267,7 +264,7 @@
           />
         </div>
 
-        <div class="col-sm-6" id="campoTextoP11" style="padding-left: 40px">
+        <div class="col-sm-6" id="campoTextoP11" style="padding-left: 55px">
           <inputCEnriquecido :object="inputCEP11" />
         </div>
       </div>
@@ -284,7 +281,7 @@
             :tamano="23"
           />
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
+        <div class="col-sm-6" id="campoTextoP11" style="padding-left:1em;">
           <div class="row">
             <div class="col-sm-8">
               <inputCEnriquecido :object="inputCEP11N2" />
@@ -989,14 +986,14 @@ export default {
       ],
 
       inputCEP11: {
-        lista1: ["Pasado"],
-        lista2: ["futuro"],
+        lista1: ["pasado"],
+        lista2: ["participio"],
         name: "inputCEP11",
         textoA: "Presente, ",
         textoD: ",",
-        textoD2: "y participio.",
+        textoD2: "y progresivo.",
         tamano1: 18,
-        tamano2: 18,
+        tamano2: 19,
       },
 
       inputCEP11N2: {
