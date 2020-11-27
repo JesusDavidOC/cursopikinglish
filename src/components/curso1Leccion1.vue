@@ -288,7 +288,7 @@
           </div>
           <div class="col-sm-6" id="campoTextoP11">
             <div class="row">
-              <div class="col-sm-12" style="width:20em">
+              <div class="col-sm-12">
                 <inputCEnriquecido :object="inputCEP11N2" />
                 <inputChecked :esperado="inputCEP11N3.lista1" :conTexto="true" :textoA="inputCEP11N3.textoA" :textoD="inputCEP11N3.textoD" :tamano="12" :name="inputCEP11N3.name" />
               </div>
