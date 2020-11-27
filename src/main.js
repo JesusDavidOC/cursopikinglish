@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue';
-import  './assets/app.css'
 
 // Import the styles directly. (Or you could add them via script tags.)
 import 'bootstrap/dist/css/bootstrap.css';

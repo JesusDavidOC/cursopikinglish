@@ -21,11 +21,9 @@
 
 .fuenteDiamond {
   margin-bottom: 1em;
-  text-indent: 1.5em;
   text-align: left;
   /*justificacion de parrafo*/
-  text-align: justify;
-  font-size: 1.5em;
+  font-size: 1.5em
 }
 
 .parrafo {
@@ -39,11 +37,11 @@
 .parrafoIC {
   margin-bottom: 0em;
   padding-top: 0em;
-  line-height: 1em; 
+  line-height: 1.2em; 
   text-align: left;
   /*justificacion de parrafo*/
   text-align: justify;
-  font-size: 1.7em;
+  font-size: 1.3em;
 }
 
 /deep/ .fuenteComponentes {
@@ -61,6 +59,9 @@
 }
 
 .maxh {
-  max-height: 200px;
+  max-height: 30em;
   overflow: auto;
+}
+.row{
+  text-align: start;
 }
