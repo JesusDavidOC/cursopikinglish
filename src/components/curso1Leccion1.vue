@@ -228,76 +228,151 @@
             Have-Has-Had /Is-Am-Are-Was-Were/Can-Could-Should-Must
           </h3>
         </div>
-        <div class="row" style="margin-top:2em;">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1" id="numeroMagico2">2</div>
-            <div class="col-sm-3" id="campoTextoP11">
-
-                <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" :conTexto="true" textoD=":"/>
-
-            </div>
-            <div class="col-sm-6" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:0px; " :conTexto="true" textoA="Regulares e " :tamano="23" />
-            </div>
+        <div class="row" style="margin-top: 2em">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico2">2</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <inputChecked
+              :resuelto="false"
+              :esperado="['Tipos de verbos']"
+              :conTexto="true"
+              textoD=":"
+            />
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <inputChecked
+              :resuelto="false"
+              :esperado="['Irregulares']"
+              style="margin-left: 0px"
+              :conTexto="true"
+              textoA="Regulares e "
+              :tamano="23"
+            />
+          </div>
         </div>
-        <div class="row" style="margin-top:2em;">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1" id="numeroMagico4">4</div>
-            <div class="col-sm-3" id="campoTextoP11">
-                    <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" :conTexto="true" textoD=":" :tamano="24" />
-            </div> 
-        
-            <div class="col-sm-6" id="campoTextoP11" style="padding-left:10px;"> 
-                    <inputCEnriquecido :object="inputCEP11" />
-            </div>
+        <div class="row" style="margin-top: 2em">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico4">4</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <inputChecked
+              :resuelto="false"
+              :esperado="[
+                'Formas de escribir un verbo',
+                'Formas de escribir verbos',
+              ]"
+              :conTexto="true"
+              textoD=":"
+              :tamano="24"
+            />
+          </div>
+
+          <div class="col-sm-6" id="campoTextoP11" style="padding-left: 30px">
+            <inputCEnriquecido :object="inputCEP11" />
+          </div>
         </div>
 
-        <div class="row" style="margin-top:2em;">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1" id="numeroMagico5">5</div>
-            <div class="col-sm-3" id="campoTextoP11">
-                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" :conTexto="true" textoD=":" :tamano="23" />
+        <div class="row" style="margin-top: 2em">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico5">5</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <inputChecked
+              :resuelto="false"
+              :esperado="[
+                'Modificadores del tiempo',
+                'Modificadores de tiempo',
+              ]"
+              :conTexto="true"
+              textoD=":"
+              :tamano="23"
+            />
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <div class="row">
+              <div class="col-sm-12" style="width:20em">
+                <inputCEnriquecido :object="inputCEP11N2" />
+                <inputChecked :esperado="inputCEP11N3.lista1" :conTexto="true" :textoA="inputCEP11N3.textoA" :textoD="inputCEP11N3.textoD" :tamano="12" :name="inputCEP11N3.name" />
+              </div>
             </div>
-            <div class="col-sm-6" id="campoTextoP11">
-                <div class="row">
-                        <inputCEnriquecido :object="inputCEP11N2" />
-                        <inputCEnriquecido :object="inputCEP11N3" />
-                </div>
-                        
-            </div>
+          </div>
         </div>
-        <div class="row" style="margin-top:2em;">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1" id="numeroMagico12">12</div>
-            <div class="col-sm-3" id="campoTextoP11">
-                
-                    <inputChecked :resuelto="false" :esperado="['Verbos con super poder', 'Verbos con super poderes']" :conTexto="true" textoD=":" :tamano="22"/>:
-                
+        <div class="row" style="margin-top: 2em">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1" id="numeroMagico12">12</div>
+          <div class="col-sm-3" id="campoTextoP11">
+            <inputChecked
+              :resuelto="false"
+              :esperado="['Verbos con super poder', 'Verbos con super poderes']"
+              :conTexto="true"
+              textoD=":"
+              :tamano="22"
+            />:
+          </div>
+          <div class="col-sm-6" id="campoTextoP11">
+            <div>
+              <h3 id="inputText">
+                Have,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Has']"
+                  style="width: 100%; margin-left: 10px"
+                />,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Had']"
+                  style="width: 100%; margin-left: 10px; margin-right: 10px"
+                />/Is,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Am']"
+                  style="width: 100%; margin-left: 10px; margin-right: 10px"
+                />,
+              </h3>
             </div>
-            <div class="col-sm-6" id="campoTextoP11">
-                <div>
-                    <h3 id="inputText">
-                        Have,
-                        <inputChecked :resuelto="false" :esperado="['Has']" style="width: 100%; margin-left:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Had']" style="width: 100%; margin-left:10px; margin-right:10px;" />/Is,
-                        <inputChecked :resuelto="false" :esperado="['Am']" style="width: 100%; margin-left:10px; margin-right:10px;" />,
-                    </h3>
-                </div>
-                <div id="text" style="margin-bottom:5px;">
-                    <h3 id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Are']" style="width: 100%; margin-left:10px; margin-right:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Was']" style="width: 100%; margin-left:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Were']" style="width: 100%; margin-left:10px; margin-right:10px;" />/Can,
-                    </h3>
-                </div>
-                <div id="text" style="margin-bottom:5px;">
-                    <h3 id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Could']" style="width: 30%; margin-left:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Should']" style="width: 28%; margin-left:10px; margin-right:10px;" />
-                        <inputChecked :resuelto="false" :esperado="['Must']" style="width: 28%; margin-left:10px; margin-right:10px; max-height: 4em;" class="overflow-auto" />
-                    </h3>
-                </div>
+            <div id="text" style="margin-bottom: 5px">
+              <h3 id="inputText">
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Are']"
+                  style="width: 100%; margin-left: 10px; margin-right: 10px"
+                />,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Was']"
+                  style="width: 100%; margin-left: 10px"
+                />,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Were']"
+                  style="width: 100%; margin-left: 10px; margin-right: 10px"
+                />/Can,
+              </h3>
             </div>
+            <div id="text" style="margin-bottom: 5px">
+              <h3 id="inputText">
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Could']"
+                  style="width: 30%; margin-left: 10px"
+                />,
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Should']"
+                  style="width: 28%; margin-left: 10px; margin-right: 10px"
+                />
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Must']"
+                  style="
+                    width: 28%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    max-height: 4em;
+                  "
+                  class="overflow-auto"
+                />
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row" style="margin-top: 2em">
@@ -493,10 +568,11 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-1"></div>
-        <p id="text" clas="parrafo">
-            <strong>Verbos regulares:</strong> Son aquellos que su escritura no cambia en pasado ni participio y solo se le agrega “ed”
-        </p>
+      <div class="col-sm-1"></div>
+      <p id="text" clas="parrafo">
+        <strong>Verbos regulares:</strong> Son aquellos que su escritura no
+        cambia en pasado ni participio y solo se le agrega “ed”
+      </p>
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
@@ -930,42 +1006,37 @@ export default {
           ],
         },
       ],
-      
-      inputCEP11:{
 
-          lista1:["Pasado"],
-          lista2:["Participio"],
-          name:"inputCEP11",
-          textoA:"Presente, ",
-          textoD:",",
-          textoD2:"y participio.",
-          tamano1:18,
-          tamano2:20,
+      inputCEP11: {
+        lista1: ["Pasado"],
+        lista2: ["Participio"],
+        name: "inputCEP11",
+        textoA: "Presente, ",
+        textoD: ",",
+        textoD2: "y participio.",
+        tamano1: 18,
+        tamano2: 20,
       },
 
-      inputCEP11N2:{
-
-          lista1:["Do"],
-          lista2:["Does"],
-          name:"inputCEP11N2",
-          textoA:"",
-          textoD:",",
-          textoD2:",",
-          tamano1:10,
-          tamano2:11,
-
+      inputCEP11N2: {
+        lista1: ["Do"],
+        lista2: ["Does"],
+        name: "inputCEP11N2",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 10,
+        tamano2: 11,
       },
-       inputCEP11N3:{
-
-          lista1:["Did"],
-          lista2:["Will"],
-          name:"inputCEP11N3",
-          textoA:"",
-          textoD:",",
-          textoD2:"y would",
-          tamano1:10,
-          tamano2:11,
-
+      inputCEP11N3: {
+        lista1: ["Did"],
+        lista2: ["Will"],
+        name: "inputCEP11N3",
+        textoA: "",
+        textoD: ",",
+        textoD2: "y would",
+        tamano1: 10,
+        tamano2: 11,
       },
       listadoCompromiso: [
         "Ver el video de la lógica dos veces.",
