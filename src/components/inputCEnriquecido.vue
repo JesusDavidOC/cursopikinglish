@@ -1,7 +1,7 @@
 <template>
   <b-container fluid>
     <b-row class="justify-content-md-center">
-      <b-col md="auto">
+      <b-col md="auto" style="padding:0;">
         <inputChecked
           :esperado="object.lista1"
           :resuelto="false"
@@ -12,7 +12,7 @@
           :tamano="object.tamano1"
         />
       </b-col>
-      <b-col>
+      <b-col md="auto" style="padding:0;">
         <inputChecked
           :esperado="object.lista2"
           :resuelto="false"

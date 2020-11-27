@@ -247,30 +247,23 @@
                     <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" :conTexto="true" textoD=":" :tamano="24" />
             </div> 
         
-            <div class="col-sm-6" id="campoTextoP11">
-                <p id="parrafo"> 
-                    <inputCEnriquecido :object="inputCEP11" style="margin-left:48px; "/>
-                </p>
+            <div class="col-sm-6" id="campoTextoP11" style="padding-left:10px;"> 
+                    <inputCEnriquecido :object="inputCEP11" />
             </div>
         </div>
+
         <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico5">5</div>
             <div class="col-sm-3" id="campoTextoP11">
-                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" :conTexto="true" textoD=":" :tamano="23" />:
+                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" :conTexto="true" textoD=":" :tamano="23" />
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <div>
-                    <h3 id="inputText">
-                        <inputChecked :resuelto="false" :esperado="['Do']" style="width: 25%; margin-left:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Does']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Did']" style="width: 25%; margin-left:10px; margin-right:10px;" />,
-                        <inputChecked :resuelto="false" :esperado="['Will']" style="width: 25%; margin-left:10px; margin-right:10px;" />
-                    </h3>
+                <div class="row">
+                        <inputCEnriquecido :object="inputCEP11N2" />
+                        <inputCEnriquecido :object="inputCEP11N3" />
                 </div>
-                <div id="text">
-                    <h3>y Would</h3>
-                </div>
+                        
             </div>
         </div>
         <div class="row" style="margin-top:2em;">
@@ -711,317 +704,45 @@ import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
 import inputCEnriquecido from "./inputCEnriquecido";
 export default {
-    components: {
-        listaIndex,
-        tablaTraduccionCodigos,
-        opcionMultiple,
-        inputChecked,
-        inputCEnriquecido,
-    },
-    data() {
-        return {
-            tablaContenidoP13: {
-                primerGrupo: {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "X",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "Y",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [{
-                            Z: "Have",
-                            X: "Have not",
-                            Y: "Haven't"
-                        },
-                        {
-                            Z: "Has",
-                            X: "Has not",
-                            Y: "Hasn't"
-                        },
-                        {
-                            Z: "Had",
-                            X: "Had not",
-                            Y: "Hadn't"
-                        },
-                    ],
-                },
-                segundoGrupo: {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "X",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "Y",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [{
-                            Z: "Is",
-                            X: "Is not",
-                            Y: "Isn't"
-                        },
-                        {
-                            Z: "Am",
-                            X: "Am not",
-                            Y: "-----"
-                        },
-                        {
-                            Z: "Are",
-                            X: "Are not",
-                            Y: "Aren't"
-                        },
-                        {
-                            Z: "Was",
-                            X: "Was not",
-                            Y: "Wasn't"
-                        },
-                        {
-                            Z: "Were",
-                            X: "Were not",
-                            Y: "Weren't"
-                        },
-                    ],
-                },
-                tercerGrupo: {
-                    bordered: false,
-                    camposInput: false,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "X",
-                            thClass: "noHead"
-                        },
-                        {
-                            key: "Y",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [{
-                            Z: "Can",
-                            X: "Can not",
-                            Y: "Cannot, Can't"
-                        },
-                        {
-                            Z: "Could",
-                            X: "Could not",
-                            Y: "Couldn't"
-                        },
-                        {
-                            Z: "Should",
-                            X: "Should not",
-                            Y: "Shouldn't"
-                        },
-                        {
-                            Z: "Must",
-                            X: "Must not",
-                            Y: "Mustn't"
-                        },
-                    ],
-                },
+  components: {
+    listaIndex,
+    tablaTraduccionCodigos,
+    opcionMultiple,
+    inputChecked,
+    inputCEnriquecido,
+  },
+  data() {
+    return {
+      tablaContenidoP13: {
+        primerGrupo: {
+          bordered: false,
+          camposInput: false,
+          fields: [
+            // A virtual column that doesn't exist in items
+            // A column that needs custom formatting
+            {
+              key: "Z",
+              thClass: "noHead",
             },
-            tablaContenidoP12: [
-                [{
-                    present: "I work: yo trabajo.",
-                    past: 'I work<span style="color:red">ed</span>: yo trabajé.',
-                    participle: 'I <span style="color:red">have</span> work<span style="color:red">ed</span>: yo he trabajado',
-                }, ],
-                [{
-                    present: "I go: yo voy",
-                    past: 'I <span style="color:red">went</span>: yo fui.',
-                    participle: 'I <span style="color:red">have gone</span>: yo he ido.',
-                }, ],
-            ],
-            tablasNumeroMagico: [{
-                    refs: "tablasNumeroMagicoa",
-                    bordered: false,
-                    camposInput: true,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: ["Regulars", "Irregulars"],
-                },
-                {
-                    refs: "tablasNumeroMagicob",
-                    bordered: false,
-                    camposInput: true,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [
-                        "Present",
-                        "Past",
-                        "Participle",
-                        "Progessive",
-                    ],
-                },
-                {
-                    refs: "tablasNumeroMagicoc",
-                    bordered: false,
-                    camposInput: true,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [
-                        "Do",
-                        "Does",
-                        "Did",
-                        "Will",
-                        "Would",
-                    ],
-                },
-                {
-                    refs: "tablasNumeroMagicod",
-                    bordered: false,
-                    camposInput: true,
-                    fields: [
-                        // A virtual column that doesn't exist in items
-                        // A column that needs custom formatting
-                        {
-                            key: "Z",
-                            thClass: "noHead"
-                        },
-                    ],
-                    items: [
-                        "Have",
-                        "Has",
-                        "Had",
-                        "Is",
-                        "Am",
-                        "Are",
-                        "Was",
-                        "Were",
-                        "Can",
-                        "Could",
-                        "Should",
-                        "Must",
-                    ],
-                },
-            ],
-
-            inputCEP11:[
-
-                {
-                    lista1:["Pasado"],
-                    lista2:["Participio"],
-                    textoA:"Presente, ",
-                    textoD:",",
-                    textoD2: "y progresivo.",
-                    tamano1:12,
-                    tamano2:12,
-                    name:"inputCEP11",
-
-                },
-
-
-            ],
-
-            listadoCompromiso: [
-                "Ver el video de la lógica dos veces.",
-                "Enfocarse en el número mágico y seguir las instrucciones.",
-                "Evitar hacer preguntas sobre el verbo TO BE.",
-                "Aprobar cada proceso de la lógica.",
-                "Exponer a alguien más el credo de la lógica.",
-                "Aprenderse el vocabulario del número mágico.",
-                "Recuerda siempre que no existe otra manera de aprender la gramática del inglés que no sea a través del número mágico.",
-            ],
-            cuestionario1: {
-                fields: [{
-                        key: "A",
-                        thClass: "Blue"
-                    },
-                    {
-                        key: "B",
-                        thClass: "Red"
-                    },
-                    {
-                        key: "C",
-                        thClass: "Yelow"
-                    },
-                    {
-                        key: "D",
-                        thClass: "Green"
-                    },
-                    {
-                        key: "complejo1",
-                        label: "ENGLISH"
-                    },
-                    {
-                        key: "TRADUCCION_ESPAÑOL",
-                        label: "SPANISH"
-                    },
-                ],
-                items: [{
-                        A: 3,
-                        B: 3,
-                        C: 3,
-                        D: 3,
-                        complejo1: {
-                            lista: ["we want to work everyday"]
-                        },
-                        TRADUCCION_ESPAÑOL: ["queremos trabajar todos los días", "nosotros queremos trabajar todos los días"],
-                    },
-                    {
-                        A: 2,
-                        B: 7,
-                        C: 8,
-                        D: 1,
-                        complejo1: {
-                            lista: ["I have to eat something"]
-                        },
-                        TRADUCCION_ESPAÑOL: ["tengo que comer algo", "yo tengo que comer algo"],
-                    },
-                    {
-                        A: 2,
-                        B: 7,
-                        C: 8,
-                        D: 4,
-                        complejo1: {
-                            lista: ["I have to eat very much"]
-                        },
-                        TRADUCCION_ESPAÑOL: ["tengo que comer mucho", "yo tengo que comer mucho"],
-                    },
-                ],
+            {
+              key: "X",
+              thClass: "noHead",
+            },
+            {
+              key: "Y",
+              thClass: "noHead",
+            },
+          ],
+          items: [
+            {
+              Z: "Have",
+              X: "Have not",
+              Y: "Haven't",
+            },
+            {
+              Z: "Has",
+              X: "Has not",
+              Y: "Hasn't",
             },
             {
               Z: "Had",
@@ -1209,6 +930,43 @@ export default {
           ],
         },
       ],
+      
+      inputCEP11:{
+
+          lista1:["Pasado"],
+          lista2:["Participio"],
+          name:"inputCEP11",
+          textoA:"Presente, ",
+          textoD:",",
+          textoD2:"y participio.",
+          tamano1:18,
+          tamano2:20,
+      },
+
+      inputCEP11N2:{
+
+          lista1:["Do"],
+          lista2:["Does"],
+          name:"inputCEP11N2",
+          textoA:"",
+          textoD:",",
+          textoD2:",",
+          tamano1:10,
+          tamano2:11,
+
+      },
+       inputCEP11N3:{
+
+          lista1:["Did"],
+          lista2:["Will"],
+          name:"inputCEP11N3",
+          textoA:"",
+          textoD:",",
+          textoD2:"y would",
+          tamano1:10,
+          tamano2:11,
+
+      },
       listadoCompromiso: [
         "Ver el video de la lógica dos veces.",
         "Enfocarse en el número mágico y seguir las instrucciones.",
@@ -1218,6 +976,7 @@ export default {
         "Aprenderse el vocabulario del número mágico.",
         "Recuerda siempre que no existe otra manera de aprender la gramática del inglés que no sea a través del número mágico.",
       ],
+
       cuestionario1: {
         fields: [
           {
@@ -1698,6 +1457,7 @@ img {
   font-family: "PT Sans";
   font-weight: bold;
   margin-bottom: auto;
+  text-align: center;
 }
 
 #numeroMagico2 {
