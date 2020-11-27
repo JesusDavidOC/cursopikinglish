@@ -1,5 +1,5 @@
 <template>
-  <b-container style="display: inline-flex" fluid>
+  <b-container fluid>
     <b-row>
       <b-col md="auto" style="padding: 0">
         <inputChecked
