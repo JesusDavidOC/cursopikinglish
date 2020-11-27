@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <b-row class="justify-content-md-center">
+    <b-row>
       <b-col md="auto" style="padding:0;">
         <inputChecked
           :esperado="object.lista1"
