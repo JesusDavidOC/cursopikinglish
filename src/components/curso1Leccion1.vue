@@ -210,32 +210,27 @@
 
             </div>
             <div class="col-sm-6" id="campoTextoP11">
-                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:10px; " :conTexto="true" textoA="Regulares e " :tamano="23" />
+                <inputChecked :resuelto="false" :esperado="['Irregulares']" style="margin-left:0px; " :conTexto="true" textoA="Regulares e " :tamano="23" />
             </div>
         </div>
         <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico4">4</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <h2 id="inputText">
-                    <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" />:
-                </h2>
-            </div>
+                    <inputChecked :resuelto="false" :esperado="['Formas de escribir un verbo', 'Formas de escribir verbos']" :conTexto="true" textoD=":" :tamano="24" />
+            </div> 
+        
             <div class="col-sm-6" id="campoTextoP11">
-                <h3 id="inputText">
-                    Presente,
-                    <inputChecked :resuelto="false" :esperado="['Pasado']" style="width: 25%; margin-left:10px;" />,
-                    <inputChecked :resuelto="false" :esperado="['Participio']" style="width: 25%; margin-left:10px; margin-right:10px;" />y Progresivo
-                </h3>
+                <p id="parrafo"> 
+                    <inputCEnriquecido :object="inputCEP11" style="margin-left:48px; "/>
+                </p>
             </div>
         </div>
         <div class="row" style="margin-top:2em;">
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico5">5</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <h2 id="inputText">
-                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" />:
-                </h2>
+                    <inputChecked :resuelto="false" :esperado="['Modificadores del tiempo', 'Modificadores de tiempo' ]" :conTexto="true" textoD=":" :tamano="23" />:
             </div>
             <div class="col-sm-6" id="campoTextoP11">
                 <div>
@@ -255,9 +250,9 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-1" id="numeroMagico12">12</div>
             <div class="col-sm-3" id="campoTextoP11">
-                <h2 id="inputText">
-                    <inputChecked :resuelto="false" :esperado="['Verbos con super poder', 'Verbos con super poderes']" />:
-                </h2>
+                
+                    <inputChecked :resuelto="false" :esperado="['Verbos con super poder', 'Verbos con super poderes']" :conTexto="true" textoD=":" :tamano="22"/>:
+                
             </div>
             <div class="col-sm-6" id="campoTextoP11">
                 <div>
@@ -347,9 +342,9 @@
 
     <div class="row">
         <div class="col-sm-1"></div>
-        <h5 id="text">
+        <p id="text" clas="parrafo">
             <strong>Verbos regulares:</strong> Son aquellos que su escritura no cambia en pasado ni participio y solo se le agrega “ed”
-        </h5>
+        </p>
     </div>
     <div class="row">
         <div class="col-sm-2"></div>
@@ -505,12 +500,14 @@ import listaIndex from "./listaIndex";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
+import inputCEnriquecido from "./inputCEnriquecido";
 export default {
     components: {
         listaIndex,
         tablaTraduccionCodigos,
         opcionMultiple,
         inputChecked,
+        inputCEnriquecido,
     },
     data() {
         return {
@@ -732,6 +729,24 @@ export default {
                     ],
                 },
             ],
+
+            inputCEP11:[
+
+                {
+                    lista1:["Pasado"],
+                    lista2:["Participio"],
+                    textoA:"Presente, ",
+                    textoD:",",
+                    textoD2: "y progresivo.",
+                    tamano1:12,
+                    tamano2:12,
+                    name:"inputCEP11",
+
+                },
+
+
+            ],
+
             listadoCompromiso: [
                 "Ver el video de la lógica dos veces.",
                 "Enfocarse en el número mágico y seguir las instrucciones.",
