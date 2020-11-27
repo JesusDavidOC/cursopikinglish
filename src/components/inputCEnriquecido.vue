@@ -1,7 +1,7 @@
 <template>
   <b-container fluid>
-    <b-row>
-      <b-col>
+    <b-row class="justify-content-md-center">
+      <b-col md="auto">
         <inputChecked
           :esperado="object.lista1"
           :resuelto="false"
@@ -42,6 +42,8 @@ export default {
   components: {
     inputChecked,
   },
+  methods:{    
+  }
 };
 </script>>
 
