@@ -569,10 +569,12 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <p id="text" clas="parrafo">
-        <strong>Verbos regulares:</strong> Son aquellos que su escritura no
-        cambia en pasado ni participio y solo se le agrega “ed”
-      </p>
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Verbos regulares:</strong> Son aquellos que su escritura no
+            cambia en pasado ni participio y solo se le agrega “ed”.
+         </p>
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
@@ -590,11 +592,14 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <h5 id="text">
-        <strong>Verbos irregulares:</strong> Son aquellos que se escriben
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Verbos irregulares:</strong> Son aquellos que se escriben
         diferente en pasado y participio y debes aprenderlos.
-      </h5>
+         </p>
+      </div>
     </div>
+
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8">
@@ -609,23 +614,20 @@
         </b-table>
       </div>
     </div>
-    <div class="row" id="text">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <h4>
-          <strong>Participio:</strong>
-        </h4>
-      </div>
 
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Participio:</strong> Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
           camin<span style="color: red">ado</span>, Yo he jug<span
             style="color: red"
             >ado</span
           >, Yo he comido, Ella ha llev<span style="color: red">ado</span> etc.
-        </h5>
+         </p>
       </div>
+    </div>
+
 
       <div class="row">
         <div class="col-sm-2"></div>
@@ -640,18 +642,12 @@
           ></iframe>
         </div>
       </div>
-    </div>
-
-    <div class="row" id="text">
+    
+    <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <h4>
-          <strong>Progresivo:</strong>
-        </h4>
-      </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Progresivo:</strong> Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span
             style="color: red"
             >ando</span
           >, camin<span style="color: red">ando</span>, comi<span
@@ -660,8 +656,8 @@
           >
           etc. En inglés se debe agregar al verbo normal la palabra “ING”.
           Ejemplo: Work (trabajar) Work<span style="color: red">ing</span>
-          (trabajando)
-        </h5>
+          (trabajando).
+         </p>
       </div>
     </div>
 
@@ -679,21 +675,15 @@
       </div>
     </div>
 
-    <div class="row" id="text">
+    <div class="row">
       <div class="col-sm-1"></div>
-
-      <div class="col-sm-2">
-        <h4>
-          <strong>Modificadores:</strong>
-        </h4>
-      </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son palabras usadas en una pregunta o negación, pero no tienen
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Modificadores:</strong>Son palabras usadas en una pregunta o negación, pero no tienen
           traducción solo modifican el tiempo del verbo y son más conocidos como
           auxiliares
-          <span style="color: red">DO-DOES-DID-WILL-WOULD</span>
-        </h5>
+          <span style="color: red">DO-DOES-DID-WILL-WOULD</span>.
+         </p>
       </div>
     </div>
 
@@ -711,19 +701,13 @@
       </div>
     </div>
 
-    <div class="row" id="text">
+    <div class="row">
       <div class="col-sm-1"></div>
-
-      <div class="col-sm-2">
-        <h4>
-          <strong>Verbos con súper poderes:</strong>
-        </h4>
-      </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son los únicos verbos que pueden negarse solos, con solo poner la
+      <div class="col-sm-10">
+         <p class="parrafo">
+            <strong>Verbos con súper poderes:</strong>Son los únicos verbos que pueden negarse solos, con solo poner la
           palabra “not” después de ellos y no necesitan modificadores.
-        </h5>
+         </p>
       </div>
     </div>
 
