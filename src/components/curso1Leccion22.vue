@@ -8,11 +8,13 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div
-          class="col-sm-2"
+          class="col-sm-3"
           v-for="item in $data.tablasTiempoP87"
-          style="margin:0; padding:0; text-align: left"
+          style="margin: 0; padding: 0; text-align: left"
         >
-          <listaIndex :tabla="item" />
+          <b-card>
+            <listaIndex :tabla="item" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -20,13 +22,15 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTC
-          id="diiv"
-          class="overflow-auto"
-          :cuestionario="$data.cuestionario1"
-          :inglesR="false"
-          :espanolR="false"
-        />
+        <b-card>
+          <tablaTC
+            id="diiv"
+            class="overflow-auto"
+            :cuestionario="$data.cuestionario1"
+            :inglesR="false"
+            :espanolR="false"
+          />
+        </b-card>
       </div>
     </div>
 
@@ -36,19 +40,20 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
-          Son preguntas del español que inician con las siguientes
-          palabras
+        <p class="parrafo">
+          Son preguntas del español que inician con las siguientes palabras
           <strong>En, para, sobre, de, con, hacia, etc.</strong> En inglés estás
           palabras van después del verbo.
-        </h5>
+        </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="tablaP79P2" />
+        <b-card>
+          <listaIndex :tabla="tablaP79P2" />
+        </b-card>
       </div>
     </div>
 
@@ -62,9 +67,11 @@
         <div
           class="col-sm-2"
           v-for="item in $data.tablasTiempoP88"
-          style="margin:0; padding:0; text-align: left"
+          style="margin: 0; padding: 0; text-align: left"
         >
-          <listaIndex :tabla="item" />
+          <b-card>
+            <listaIndex :tabla="item" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -72,23 +79,25 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <tablaTC
-          id="diiv"
-          class="overflow-auto"
-          :cuestionario="$data.cuestionario2"
-          :inglesR="false"
-          :espanolR="false"
-        />
+        <b-card>
+          <tablaTC
+            id="diiv"
+            class="overflow-auto"
+            :cuestionario="$data.cuestionario2"
+            :inglesR="false"
+            :espanolR="false"
+          />
+        </b-card>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
+        <p class="parrafo">
           Complete las preguntas con la preposición correcta.
           Of-With-About-In-From-For
-        </h5>
+        </p>
       </div>
     </div>
 
@@ -107,18 +116,22 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
-          Son palabras para determinar la posición, o tiempo o manera de un objeto o persona y además para
-          acompañar a un verbo.
-        </h5>
+        <p class="parrafo">
+          Son palabras para determinar la posición, o tiempo o manera de un
+          objeto o persona y además para acompañar a un verbo.
+        </p>
       </div>
     </div>
 
     <div class="row">
+      <div class="col-sm-2"></div>
+      <b-card>
+        <listaIndex :tabla="$data.tablaA" />
+      </b-card>
       <div class="col-sm-1"></div>
-      <listaIndex :tabla="$data.tablaA" />
-      <div class="col-sm-1"></div>
-      <listaIndex :tabla="$data.tablaB" />
+      <b-card>
+        <listaIndex :tabla="$data.tablaB" />
+      </b-card>
     </div>
 
     <div class="row">
@@ -127,31 +140,34 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
+        <p class="parrafo">
           Completar la oración con la preposición correcta
-        </h5>
+        </p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-6" id="text">
+      <div class="col-sm-1 "></div>
+      <div class="col-sm-6" style="text-align: justify;">
         <opcionMultiple
           :options="$data.cuestionarioP90"
           :rEsperadas="$data.respuestasCuestionarioP90"
           @respuestas="$data.mensajeRespuestasP90 = $event"
         />
       </div>
-      <b-modal ref="my-modalP90" hide-footer title="RESULTADO">{{mensajeRespuestasP90 }}</b-modal>
+      <b-modal ref="my-modalP90" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP90
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP90')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP90')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
-
   </div>
 </template>
 
@@ -219,8 +235,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "2. I live ____ my parents",
+          pregunta: "2. I live ____ my parents",
           options: [
             {
               text: "A) in",
@@ -283,8 +298,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "5. I swam ____ the river yesterday",
+          pregunta: "5. I swam ____ the river yesterday",
           options: [
             {
               text: "A) in",
@@ -326,8 +340,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "7. I put the broom ______ the door",
+          pregunta: "7. I put the broom ______ the door",
           options: [
             {
               text: "A) in",
@@ -348,8 +361,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "8. I wrote a book _______ learning English",
+          pregunta: "8. I wrote a book _______ learning English",
           options: [
             {
               text: "A) about",
@@ -391,8 +403,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "10. Show me what you are made _____",
+          pregunta: "10. Show me what you are made _____",
           options: [
             {
               text: "A) In",
@@ -413,8 +424,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "11. . Please go ______ stairs to answer the door",
+          pregunta: "11. . Please go ______ stairs to answer the door",
           options: [
             {
               text: "A) down",
@@ -435,8 +445,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "12. The sun comes ____ in the morning",
+          pregunta: "12. The sun comes ____ in the morning",
           options: [
             {
               text: "A) along",
@@ -457,8 +466,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "13. Get _____ of the car",
+          pregunta: "13. Get _____ of the car",
           options: [
             {
               text: "A) for",
@@ -479,8 +487,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "14. I work 5 days a week, ______ Monday to Friday",
+          pregunta: "14. I work 5 days a week, ______ Monday to Friday",
           options: [
             {
               text: "A) from",
@@ -501,8 +508,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "15. She kicked the ball ______ the field",
+          pregunta: "15. She kicked the ball ______ the field",
           options: [
             {
               text: "A) of",
@@ -523,8 +529,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "I called her ______ she arrived",
+          pregunta: "I called her ______ she arrived",
           options: [
             {
               text: "A) before",
@@ -601,7 +606,7 @@ export default {
               lista: ["with"],
               textoA: "Who are you living",
               textoD: "?",
-              tamano: 20,
+              tamano: 22,
             },
             html: "¿Con quién estás viviendo?",
           },
@@ -610,7 +615,7 @@ export default {
               lista: ["in"],
               textoA: "What are you interested",
               textoD: "?",
-              tamano: 22,
+              tamano: 24,
             },
             html: "¿En qué estás interesado?",
           },
@@ -619,7 +624,7 @@ export default {
               lista: ["from"],
               textoA: "Where did you get that",
               textoD: "?",
-              tamano: 23,
+              tamano: 24,
             },
             html: "¿De dónde sacaste eso?",
           },
@@ -628,7 +633,7 @@ export default {
               lista: ["about"],
               textoA: "What are you talking",
               textoD: "?",
-              tamano: 22,
+              tamano: 24,
             },
             html: "¿Sobre qué estás hablando?",
           },
@@ -637,7 +642,7 @@ export default {
               lista: ["for"],
               textoA: "Who do you work",
               textoD: "?",
-              tamano: 19,
+              tamano: 20,
             },
             html: "¿Para quién trabajas?",
           },
@@ -646,7 +651,7 @@ export default {
               lista: ["of"],
               textoA: "What is this made",
               textoD: "?",
-              tamano: 19,
+              tamano: 20,
             },
             html: "¿De qué está hecho esto?",
           },
@@ -655,7 +660,7 @@ export default {
               lista: ["with"],
               textoA: "Who are you traveling",
               textoD: "?",
-              tamano: 22,
+              tamano: 23,
             },
             html: "¿Con quién estás viajando?",
           },
@@ -664,7 +669,7 @@ export default {
               lista: ["from"],
               textoA: "Where did you get that idea",
               textoD: "?",
-              tamano: 25,
+              tamano: 27,
             },
             html: "¿De dónde sacaste esa idea?",
           },
@@ -673,13 +678,13 @@ export default {
               lista: ["about"],
               textoA: "Who are you talking",
               textoD: "?",
-              tamano: 22,
+              tamano: 23,
             },
             html: "¿De quién estás hablando?",
           },
         ],
       },
-      
+
       tablaP79P2: {
         fields: [
           { key: "html", label: "SPANISH", thClass: "Yelow" },

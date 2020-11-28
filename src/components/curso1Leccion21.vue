@@ -12,7 +12,7 @@
     </div>
     <div class="row" v-for="item in palabrasP83">
       <div class="col-sm-1"></div>
-      <h4 class="parrafo">{{ item }}</h4>
+      <p class="parrafo">{{ item }}</p>
     </div>
 
     <div class="row">
@@ -22,7 +22,9 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-      <listaIndex :tabla="$data.tablaP84" />
+        <b-card>
+          <listaIndex :tabla="$data.tablaP84" />
+        </b-card>
       </div>
     </div>
 
@@ -33,7 +35,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10" id="text">
-        <p class="fa fa-diamond fuenteDiamon" ></p>
+        <p class="fa fa-diamond fuenteDiamon"></p>
         <a id="textPractice"
           >Ubica la forma correspondiente del verbo en las siguientes
           oraciones.</a
@@ -45,7 +47,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div class="col-sm-12">
-          <tablaTC :cuestionario="tablaP84P2" />
+          <b-card>
+            <tablaTC :cuestionario="tablaP84P2" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -67,7 +71,7 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" id="text">
+      <div class="col-sm-6 parrafo">
         <opcionMultiple
           :options="$data.cuestionarioP85"
           :rEsperadas="$data.respuestasCuestionarioP85"
@@ -116,8 +120,10 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-12" style="text-align: left">
-          <tablaTC :cuestionario="tablaP86" />
+        <div class="col-sm-12 parrafo">
+          <b-card>
+            <tablaTC :cuestionario="tablaP86" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -459,7 +465,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["fast"],
               textoA: "How",
               textoD: "do you run?",
-              tamano: 18,
+              tamano: 19,
             },
             html: "I run fast",
           },
@@ -468,7 +474,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["old"],
               textoA: "How",
               textoD: "is the baby?",
-              tamano: 18,
+              tamano: 19,
             },
             html: "The baby is 6 months old",
           },
@@ -477,7 +483,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["many"],
               textoA: "How",
               textoD: "brothers do you have?",
-              tamano: 25,
+              tamano: 27,
             },
             html: "I have 2 brothers",
           },
@@ -486,7 +492,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["often"],
               textoA: "How",
               textoD: "do you play?",
-              tamano: 19,
+              tamano: 21,
             },
             html: "I play once in a blue moon",
           },
@@ -495,7 +501,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["about"],
               textoA: "How",
               textoD: "watching a movie tonight?",
-              tamano: 27,
+              tamano: 29,
             },
             html: "I don’t know what to do",
           },
@@ -504,7 +510,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["long"],
               textoA: "How",
               textoD: "were you in the office?",
-              tamano: 24,
+              tamano: 26,
             },
             html: "I was in the office until 3:00 am",
           },
@@ -513,7 +519,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["easy"],
               textoA: "How",
               textoD: "is that?",
-              tamano: 16,
+              tamano: 17,
             },
             html: "That is very easy",
           },
@@ -522,7 +528,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["far"],
               textoA: "How",
               textoD: "do you live from here?",
-              tamano: 23,
+              tamano: 25,
             },
             html: "My house is up there in the hill. It is 2-hour walk",
           },
@@ -531,7 +537,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["much"],
               textoA: "How",
               textoD: "do you love me?",
-              tamano: 21,
+              tamano: 23,
             },
             html: "I love you very much",
           },
@@ -540,7 +546,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["long"],
               textoA: "How",
               textoD: "do you work a day?",
-              tamano: 23,
+              tamano: 24,
             },
             html: "I work for 10 hours a day",
           },
@@ -549,7 +555,7 @@ with the 40 kg dog at the neighbor's house."`,
               lista: ["fast"],
               textoA: "How",
               textoD: "do you run?",
-              tamano: 18,
+              tamano: 19,
             },
             html: "I felt very good last night",
           },

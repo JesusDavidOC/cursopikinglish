@@ -7,35 +7,39 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
+        <p class="parrafo">
           The abbreviation for ordinal numbers from the fourth is formed with the addition of "th" to the number. The dozens and units are separated by a hyphen from 20, e.g. 21
           st = twenty-first.
-        </h3>
+        </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
+      <b-card>
         <listaIndex :tabla="$data.tablaP106" />
+      </b-card>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
+        <p class="parrafo">
           Dates are expressed differently between America and other English-speaking countries. In America, they say
           the month first then the date (May 24 th). In the other English-speaking countries, they say the date first then the month (24
           th of May). Notice all other countries say “of”. The 24 th of May
-        </h3>
+        </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
+      <b-card>
         <listaIndex :tabla="$data.tablaP106A" />
+      </b-card>
       </div>
     </div>
 
@@ -46,20 +50,22 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5>Escribe la fecha de otro modo</h5>
+        <p class="parrafo">Escribe la fecha de otro modo</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
+      <b-card>
         <tablaTC
-          id="diiv"
+
           class="overflow-auto"
           :cuestionario="$data.cuestionario1"
           :inglesR="false"
           :espanolR="false"
         />
+        </b-card>
       </div>
     </div>
 
@@ -69,20 +75,20 @@
     <div class="row" v-for="(item, index) in preguntasCompletarP107.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+       
           <inputChecked
             :esperado="item.esperado"
             :name="preguntasCompletarP107.nombre+index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
-        </div>
       </div>
     </div>
 
     <div class="row">
-      <h3>MY SUPERMARKET MISADVENTURES</h3>
+      <p class="parrafo">MY SUPERMARKET MISADVENTURES</p>
       <div class="col-sm-1">
         <h3>
           <strong>Vocabulary</strong>
@@ -100,7 +106,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
+        <p class="parrafo">
           Today I had to go to the supermarket, to buy some things for my family. My mum had given me $15 to buy
           the weeks groceries. Included in the list was a half dozen apples, a dozen bananas, 750g of carrots, 500g of
           rice, six eggs, 3 litres of milk and a kilogram of chicken. I also had to buy a few other things to keep the
@@ -119,7 +125,7 @@
           tv… I think she’s going to ground me for the next three years! Hopefully we can pay the money back in $50
           weekly payments over the next few months, but she will still be very angry either way.
           I need to go back to the supermarket, find the angry manager and pay for the groceries too… What a day!
-        </h3>
+        </p>
       </div>
     </div>
     <div class="row">
@@ -148,11 +154,11 @@
       <div class= "col-sm-1"></div>
       <div class="col-sm-10">
         <b-card> 
-        <h3 id="text-align: justify">
+        <p class="parrafo">
           Has terminado todas las lecciones del primer nivel, ahora estás en las capacidades de presentar el examen, has click en el botón para resolverlo.
-        </h3>
+        </p>
           <div>
-            <b-button style="margin: 10px;" size="lg" href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin=" variant="danger">HACER EXAMEN</b-button>
+            <b-button  size="lg" href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin=" variant="danger">HACER EXAMEN</b-button>
           </div>
         </b-card>
       </div>
@@ -218,7 +224,7 @@ export default {
         {
           respuesta: "",
           pregunta:
-            "2. The author bought _______ eggs _______ apples",
+            "2. The author bought ___ eggs ___ apples",
           options: [
             {
               text: "A) The same amount of, as",
@@ -417,61 +423,61 @@ export default {
             esperado: ["one hundred"],
             textoA: "1. School begins on",
             textoD: ".",
-            tamaño: 5,
+            tamano: 27,
           },
           {
             esperado: ["ten"],
             textoA: "2. My sister will travel to France on",
             textoD: ".",
-            tamaño: 8,
+            tamano: 30,
           },
           {
             esperado: ["ten"],
             textoA: "3. We will take the test on",
             textoD: ".",
-            tamaño: 7,
+            tamano: 25,
           },
           {
             esperado: ["twelve"],
             textoA: "4. On",
             textoD: ", the store will have a big sale",
-            tamaño: 8,
+            tamano: 32,
           },
           {
             esperado: ["Three hundred sixty four"],
             textoA: "5. Can you send me an email by",
             textoD: "?.",
-            tamaño: 4,
+            tamano: 42,
           },
           {
             esperado: ["twenty four"],
             textoA: "6. You need to turn in your homework by",
             textoD: ".",
-            tamaño: 5,
+            tamano: 38,
           },
           {
             esperado: ["one thousand four hundred forty"],
             textoA: "7. What time will your mom come on",
             textoD: "?.",
-            tamaño: 6,
+            tamano: 48,
           },
           {
             esperado: ["sixty"],
             textoA: "8. The new students arrived on",
             textoD: ".",
-            tamaño: 6,
+            tamano: 29,
           },
           {
             esperado: ["three thousand six hundred"],
             textoA: "9. My girlfriend and I went out for the first time on",
             textoD: ".",
-            tamaño: 8,
+            tamano: 52,
           },
           {
             esperado: ["one thousand six hundred nine"],
             textoA: "10. I will return to my country on",
             textoD: ".",
-            tamaño: 7,
+            tamano: 45,
           },
         ],
       },
@@ -479,7 +485,7 @@ export default {
         fields: [
           { key: "english", label: "AMERICAN DATE", thClass: "Yelow" },
           {
-            key: "TRADUCCION_ESPAÑOL",
+            key: "complejo1",
             label: "BRITISH DATE",
             thClass: "Yelow",
           },
@@ -487,11 +493,11 @@ export default {
         items: [
           {
             english: "On December 21 st 2012",
-            TRADUCCION_ESPAÑOL: ["On the 21st of December, 2012"],
+            complejo1:{lista:["On the 21st of December, 2012"],tamano:26},
           },
           {
             english: "On July ninth 1984",
-            TRADUCCION_ESPAÑOL: ["On the ninth of July 1984"],
+            complejo1: {lista:["On the ninth of July 1984"],tamano:22},
           },
         ],
       },

@@ -70,20 +70,21 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10" id="text">
-        <p class="fa fa-diamond fuenteDiamond"></p>
+        <i class="fa fa-diamond fuenteDiamond"></i>
         <a id="textPractice">Escribe la traducción al frente</a>
       </div>
     </div>
 
     <div class="row" v-for="(item, index) in preguntasCompletarP24.items">
       <div class="col-sm-1"></div>
-      <div :class="'parrafoIC' + item.tamano">
+      <div class="col-sm-">
         <inputChecked
           :esperado="item.esperado"
           :name="preguntasCompletarP24.nombre + index"
           :conTexto="true"
           :textoA="item.textoA"
           :textoD="item.textoD"
+          :tamano="item.tamano"
         />
       </div>
     </div>
@@ -101,18 +102,18 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-5">
         <div v-for="(item, index) in preguntasCompletarP81.items">
-          <div :class="'parrafoIC' + item.tamano">
             <inputChecked
               :esperado="item.esperado"
               :name="preguntasCompletarP81.nombre + index"
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
+              
             />
           </div>
-        </div>
       </div>
     </div>
 
@@ -127,13 +128,14 @@
 
     <div class="row" v-for="(item, index) in preguntasCompletarP81P2.items">
       <div class="col-sm-1"></div>
-      <div :class="'parrafoIC' + item.tamano">
+      <div class="col-sm-">
         <inputChecked
           :esperado="item.esperado"
           :name="preguntasCompletarP81P2.nombre + index"
           :conTexto="true"
           :textoA="item.textoA"
           :textoD="item.textoD"
+          :tamano="item.tamano"
         />
       </div>
     </div>
@@ -145,7 +147,7 @@
 
   <div class="row">
     <div class="col-sm-1"></div>
-    <div class="col-sm-10 row parrafoIC">
+    <div class="col-sm-10">
       <b-card>
         <tablaTC :cuestionario="tablaP82" />
       </b-card>
@@ -183,13 +185,13 @@ export default {
               lista: ["Don’t do that"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 15,
             },
             complejo2: {
               lista: ["Let´s do that"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 15,
             },
           },
           {
@@ -199,13 +201,13 @@ export default {
               lista: ["Don’t stay there"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s stay there"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
           },
           {
@@ -215,13 +217,13 @@ export default {
               lista: ["Don’t turn right"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s turn right"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 16,
             },
           },
           {
@@ -231,13 +233,13 @@ export default {
               lista: ["Don’t turn left"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s turn left"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 16,
             },
           },
           {
@@ -247,13 +249,13 @@ export default {
               lista: ["Don’t go straight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s go straight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
           },
           {
@@ -263,13 +265,13 @@ export default {
               lista: ["Don’t push the button"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 20,
             },
             complejo2: {
               lista: ["Let’s push the button"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 20,
             },
           },
           {
@@ -279,13 +281,13 @@ export default {
               lista: ["Don’t lock the door"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
             complejo2: {
               lista: ["Please lock the door"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 20,
             },
           },
           {
@@ -295,13 +297,13 @@ export default {
               lista: ["Don’t insert the coin"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
             complejo2: {
               lista: ["Please insert the coin"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 20,
             },
           },
           {
@@ -311,13 +313,13 @@ export default {
               lista: ["Don’t pay the bill"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Please pay the bill"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 18,
             },
           },
           {
@@ -327,13 +329,13 @@ export default {
               lista: ["Don’t take out the garbage"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
             complejo2: {
               lista: ["Let’s take out the garbage"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
           },
           {
@@ -343,13 +345,13 @@ export default {
               lista: ["Don’t take off the socks"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 21,
             },
             complejo2: {
               lista: ["Please take off the socks"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 22,
             },
           },
           {
@@ -359,13 +361,13 @@ export default {
               lista: ["Don’t put on the glasses"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 22,
             },
             complejo2: {
               lista: ["Let’s put on the glasses"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 22,
             },
           },
           {
@@ -375,13 +377,13 @@ export default {
               lista: ["Don’t withdraw the money"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
             complejo2: {
               lista: ["Let’s withdraw the money"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 22,
             },
           },
           {
@@ -391,13 +393,13 @@ export default {
               lista: ["Don’t call the police"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
             complejo2: {
               lista: ["Let’s call the police"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
           },
           {
@@ -407,13 +409,13 @@ export default {
               lista: ["Don’t park the car here"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 21,
             },
             complejo2: {
               lista: [" Let’s park the car here"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 21,
             },
           },
           {
@@ -423,13 +425,13 @@ export default {
               lista: ["Don’t get on the bus"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
             complejo2: {
               lista: ["Let’s get on the bus"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
           },
           {
@@ -439,13 +441,13 @@ export default {
               lista: ["Don’t get in the car"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 19,
             },
             complejo2: {
               lista: ["Let’s get in the car"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 18,
             },
           },
           {
@@ -455,13 +457,13 @@ export default {
               lista: ["Don’t fasten your seat belt"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
             complejo2: {
               lista: ["Let’s fasten your seat belt"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
           },
           {
@@ -471,13 +473,13 @@ export default {
               lista: ["Don’t hold tight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: [" Let’s hold tight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
           },
           {
@@ -487,13 +489,13 @@ export default {
               lista: ["Don’t keep still"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 16,
             },
             complejo2: {
               lista: ["Let’s keep still"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 16,
             },
           },
           {
@@ -503,13 +505,13 @@ export default {
               lista: ["Don’t sleep tight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s sleep tight"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
           },
           {
@@ -519,13 +521,13 @@ export default {
               lista: ["Don’t straighten your collar"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
             complejo2: {
               lista: ["Let’s straighten your collar"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 23,
             },
           },
           {
@@ -535,13 +537,13 @@ export default {
               lista: ["Don’t make sure to do it"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
             complejo2: {
               lista: ["Let’s make sure to do it"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 17,
             },
           },
           {
@@ -551,13 +553,13 @@ export default {
               lista: ["Don't Enjoy it"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 15,
             },
             complejo2: {
               lista: ["Let’s Enjoy it"],
               textoA: "",
               textoD: "",
-              tamano: 30,
+              tamano: 15,
             },
           },
         ],
@@ -709,85 +711,85 @@ export default {
             esperado: ["Go"],
             textoA: "1. ve",
             textoD: "",
-            tamano: 1,
+            tamano: 12,
           },
           {
-            esperado: ["dont go"],
+            esperado: ["don't go"],
             textoA: "2. no vayas ",
             textoD: "",
-            tamano: 4,
+            tamano: 20,
           },
           {
             esperado: ["let's go"],
             textoA: "3. vamos",
             textoD: "",
-            tamano: 4,
+            tamano: 17,
           },
           {
             esperado: ["let's not go"],
             textoA: "4. No vayamos ",
             textoD: "",
-            tamano: 4,
+            tamano: 23,
           },
           {
-            esperado: ["dont do it"],
+            esperado: ["don't do it"],
             textoA: "5. No lo hagas",
             textoD: "",
-            tamano: 4,
+            tamano: 23,
           },
           {
             esperado: ["do it"],
             textoA: "6. Hazlo",
             textoD: "",
-            tamano: 3,
+            tamano: 15,
           },
           {
             esperado: ["let's do it"],
             textoA: "7. Hagámoslo",
             textoD: "",
-            tamano: 4,
+            tamano: 21,
           },
           {
             esperado: ["call me"],
             textoA: "8. Llámame",
             textoD: "",
-            tamano: 4,
+            tamano: 19,
           },
           {
-            esperado: ["dont call me"],
+            esperado: ["don't call me"],
             textoA: "9. No me llames",
             textoD: "",
-            tamano: 5,
+            tamano: 25,
           },
           {
             esperado: ["let's call her"],
             textoA: "10. Llamémosla",
             textoD: "",
-            tamano: 5,
+            tamano: 24,
           },
           {
             esperado: ["close the door"],
             textoA: "11. cierra la puerta",
             textoD: "",
-            tamano: 5,
+            tamano: 27,
           },
           {
-            esperado: ["dont close the door"],
+            esperado: ["don't close the door"],
             textoA: "12. No cierres la puerta",
             textoD: "",
-            tamano: 6,
+            tamano: 33,
           },
           {
             esperado: ["listen to music"],
             textoA: "13. Escucha la música",
             textoD: "",
-            tamano: 6,
+            tamano: 29,
           },
           {
-            esperado: ["dont listen to me"],
+            esperado: ["don't listen to me"],
             textoA: "14 no me escuches",
             textoD: "",
-            tamano: 5,
+            tamano: 29,
           },
         ],
       },
@@ -798,50 +800,49 @@ export default {
             esperado: ["stop"],
             textoA: "1. Hey",
             textoD: ", please! - Hola detente por favor",
-            tamano: 6,
+            tamano: 33,
           },
           {
             esperado: ["play"],
             textoA: "2. let's",
             textoD: "cards to night! -   Juguemos cartas esta noche",
-            tamano: 7,
+            tamano: 40,
           },
           {
             esperado: ["eat"],
             textoA: "3. don't",
             textoD: "that, it´s expired! -  No te comas eso, está vencido",
-            tamano: 8,
+            tamano: 42,
           },
           {
             esperado: ["sleep"],
             textoA: "4. ",
-            textoD:
-              "well; tomorrow it will be a long day! - Duerme bien, manana será un largo día",
-            tamano: 10,
+            textoD:"well; tomorrow it will be a long day! - Duerme bien, manana será un largo día",
+            tamano: 56,
           },
           {
             esperado: ["study"],
             textoA: "5. let's",
             textoD: "for the test! - Estudiemos para el examen",
-            tamano: 8,
+            tamano: 38,
           },
           {
             esperado: ["sing"],
             textoA: "6. Please, don't",
             textoD: "out loud - no cantes tan alto",
-            tamano: 8,
+            tamano: 35,
           },
           {
             esperado: ["think of"],
             textoA: "7. ",
             textoD: "me honey! - Piensa en mi carino",
-            tamano: 8,
+            tamano: 30,
           },
           {
             esperado: ["talk to"],
             textoA: "8. don't",
             textoD: "her - No hables con ella",
-            tamano: 8,
+            tamano: 29,
           },
         ],
       },
@@ -852,61 +853,61 @@ export default {
             esperado: ["go quickly"],
             textoA: "1. Ve rápido",
             textoD: "",
-            tamano: 1,
+            tamano: 21,
           },
           {
             esperado: ["don't say that"],
             textoA: "2. No digas eso",
             textoD: "",
-            tamano: 5,
+            tamano: 25,
           },
           {
             esperado: ["let's go"],
             textoA: "3. Vamos",
             textoD: "",
-            tamano: 4,
+            tamano: 17,
           },
           {
             esperado: ["let's go for a walk"],
             textoA: "4. Vamos a dar un paseo",
             textoD: "",
-            tamano: 6,
+            tamano: 32,
           },
           {
             esperado: ["don't write"],
             textoA: "5. No escribas",
             textoD: "",
-            tamano: 4,
+            tamano: 22,
           },
           {
             esperado: ["read"],
             textoA: "6. Lee",
             textoD: "",
-            tamano: 3,
+            tamano: 14,
           },
           {
             esperado: ["don't smoke in here"],
             textoA: "7. No fumes aquí adentro",
             textoD: "",
-            tamano: 6,
+            tamano: 34,
           },
           {
             esperado: ["call me back tomorrow morning"],
-            textoA: "8. Devuélveme la llamada manana en la manana",
+            textoA: "8. Devuélveme la llamada mañana en la mañana",
             textoD: "",
-            tamano: 10,
+            tamano: 40,
           },
           {
             esperado: ["calm down"],
             textoA: "9. Cálmate",
             textoD: "",
-            tamano: 4,
+            tamano: 20,
           },
           {
             esperado: ["don’t put off for tomorrow what you can do today"],
-            textoA: "9. No dejes para manana lo que puedas hacer hoy",
+            textoA: "10. No dejes para manana lo que puedas hacer hoy",
             textoD: "",
-            tamano: 11,
+            tamano: 65,
           },
         ],
       },

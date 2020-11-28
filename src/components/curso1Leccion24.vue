@@ -1,29 +1,36 @@
 <template>
   <div>
     <div class="row">
-      <h3 id="subTitulo">OTROS SUJETOS EN INGLÉS CONSIDERADOS TERCERA PERSONA (SHE- HE-IT)</h3>
+      <h3 id="subTitulo">
+        OTROS SUJETOS EN INGLÉS CONSIDERADOS TERCERA PERSONA (SHE- HE-IT)
+      </h3>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5
-          style="text-align: justify"
-        >Todo subjeto singular que se refiera a una persona, cosa o animal es considerado como SHE, HE o It.</h5>
+        <p class="parrafo">
+          Todo subjeto singular que se refiera a una persona, cosa o animal es
+          considerado como SHE, HE o It.
+        </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="$data.tablaP94" />
+        <b-card>
+          <listaIndex :tabla="$data.tablaP94" />
+        </b-card>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="$data.tablaP94P2" />
+        <b-card>
+          <listaIndex :tabla="$data.tablaP94P2" />
+        </b-card>
       </div>
     </div>
 
@@ -47,9 +54,9 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5
-          style="text-align: justify"
-        >Completa las siguientes oraciones con alguno de estos nombres:</h5>
+        <h5 style="text-align: justify">
+          Completa las siguientes oraciones con alguno de estos nombres:
+        </h5>
       </div>
     </div>
 
@@ -69,13 +76,17 @@
           @respuestas="$data.mensajeRespuestasP95 = $event"
         />
       </div>
-      <b-modal ref="my-modalP95" hide-footer title="RESULTADO">{{mensajeRespuestasP95 }}</b-modal>
+      <b-modal ref="my-modalP95" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP95
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP95')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP95')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
 
@@ -86,51 +97,53 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
-          En ingles la palabra “one” que literalmente significa “uno” como número puede ser usada en
-          varios contextos. - Cuando se refiere al género del sujeto puede ser masculino, femenino o neutro:
-        </h3>
+        <p class="parrafo">
+          En ingles la palabra “one” que literalmente significa “uno” como
+          número puede ser usada en varios contextos. - Cuando se refiere al
+          género del sujeto puede ser masculino, femenino o neutro:
+        </p>
         <h3 class="colorLetraAzul">Un,una, o uno</h3>
         <ul>
           <li>
-            <h3 style="text-align:left">
+            <p class="parrafo">
               I have
               <span class="colorLetraRojo">one</span> brother
-            </h3>
+            </p>
           </li>
           <li>
-            <h3 style="text-align:left">
+            <p class="parrafo">
               I have
               <span class="colorLetraRojo">one</span> sister
-            </h3>
+            </p>
           </li>
           <li>
-            <h3 style="text-align:left">
+            <p class="parrafo">
               He is
               <span class="colorLetraRojo">one</span> of my brothers
-            </h3>
+            </p>
           </li>
         </ul>
-        <h3 style="text-align: justify">
-          Además, en inglés la palabra ONE sirve para reemplazar un sujeto del que ya hemos
-          mencionado para no repetir la palabra. Veamos un ejemplo:
-        </h3>
+        <p class="parrafo">
+          Además, en inglés la palabra ONE sirve para reemplazar un sujeto del
+          que ya hemos mencionado para no repetir la palabra. Veamos un ejemplo:
+        </p>
         <ul>
           <li>
-            <h3 style="text-align: justify">
+            <p class="parrafo">
               Esta
-              <span class="colorLetraRojo">casa</span> cuesta $ 200.000 dólares, pero esta
-              <span class="colorLetraRojo">casa</span> cuesta $ 250.000 dólares. this
-              <span class="colorLetraRojo">house</span> costs $200.000 dollars but that
-              <span class="colorLetraRojo">one</span> costs $250.000 dollars
-            </h3>
+              <span class="colorLetraRojo">casa</span> cuesta $ 200.000 dólares,
+              pero esta <span class="colorLetraRojo">casa</span> cuesta $
+              250.000 dólares. this
+              <span class="colorLetraRojo">house</span> costs $200.000 dollars
+              but that <span class="colorLetraRojo">one</span> costs $250.000
+              dollars
+            </p>
             <h3>
-              en este caso ONE significa “casa” porque es
-              de lo estamos hablando
+              en este caso ONE significa “casa” porque es de lo estamos hablando
             </h3>
           </li>
         </ul>
-        <h3 style="text-align: justify">
+        <p class="parrafo">
           En inglés también podemos usar la palabra
           <strong class="colorLetraAzul">a</strong> que se refiere a
           <span class="colorLetraAzul">Un- Una</span>
@@ -139,21 +152,18 @@
               <h3>
                 He is
                 <span class="colorLetraRojo">a</span> teacher
+                <li>
+                  She is
+                  <span class="colorLetraRojo">a</span> teacher
+                </li>
               </h3>
             </li>
-            <li>
-              <h5>
-                She is
-                <span class="colorLetraRojo">a</span> teacher
-              </h5>
-            </li>
+        
           </ul>
-        </h3>
-        <h3 style="text-align: justify">
+        </p>
+        <p class="parrafo">
           Cuando la palabra empieza por vocal o suena como vocal usamos
-          <span
-            class="colorLetraAzul"
-          >an</span>
+          <span class="colorLetraAzul">an</span>
           <ul>
             <li>
               <h3>
@@ -168,17 +178,18 @@
               </h3>
             </li>
           </ul>
-        </h3>
-        <h3 style="text-align: justify">
+        </p>
+        <p class="parrafo">
           Cuando se refiere al sujeto reflexivo es decir a
           <ul>
             <li>
               <h3>
-                <span class="colorLetraRojo">One</span> never knows: uno nunca sabe
+                <span class="colorLetraRojo">One</span> never knows: uno nunca
+                sabe
               </h3>
             </li>
           </ul>
-        </h3>
+        </p>
       </div>
     </div>
 
@@ -189,26 +200,27 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
+        <p class="parrafo">
           Complete con
           <strong>one (1), a o an.</strong> En algunas oraciones
           <strong>a</strong>
           o
           <strong>one (1)</strong> es posible
-        </h3>
+        </p>
       </div>
     </div>
 
     <div class="row" v-for="(item, index) in preguntasCompletarP93.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-1">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP93.nombre+index"
+            :name="preguntasCompletarP93.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -244,43 +256,44 @@ export default {
             esperado: ["one"],
             textoA: "1. When I was a kid, I could count the numbers from",
             textoD: "to ten.",
-            tamaño: 8,
+            tamano: 44,
           },
           {
             esperado: ["One"],
             textoA: "2. ",
             textoD: "shouldn’t criticize someone we don’t know very well.",
-            tamaño: 8,
+            tamano: 42,
           },
           {
             esperado: ["an"],
             textoA: "3. I always eat",
             textoD: "apple for my breakfast.",
-            tamaño: 6,
+            tamano: 31,
           },
           {
             esperado: ["one"],
             textoA: "4. There is",
             textoD: "thing I don’t like about traveling for so long.",
-            tamaño: 5,
+            tamano: 41,
           },
           {
             esperado: ["one"],
             textoA: "5. I didn’t buy the red car. I bought the blue",
             textoD: ".",
-            tamaño: 8,
+            tamano: 35,
           },
           {
             esperado: ["one"],
             textoA: "6. ",
-            textoD: "of my favorite songs is “the man in the mirror” by Michael Jackson.",
-            tamaño: 10,
+            textoD:
+              "of my favorite songs is “the man in the mirror” by Michael Jackson.",
+            tamano: 49,
           },
           {
             esperado: ["one"],
             textoA: "7. The probability to survive in the ocean is",
             textoD: "in a million.",
-            tamaño: 8,
+            tamano: 41,
           },
         ],
       },
@@ -530,7 +543,7 @@ export default {
             B: 3,
             C: 2,
             complejo1: { lista: ["Somebody needs you"] },
-            español:"Alguien te necesita",
+            español: "Alguien te necesita",
           },
           {
             A: 1,
@@ -565,7 +578,7 @@ export default {
             B: 1,
             C: 6,
             complejo1: { lista: ["A friend of mine is going to come"] },
-            español:"Un amigo mío va a venir",
+            español: "Un amigo mío va a venir",
           },
           {
             A: 1,
@@ -631,13 +644,15 @@ export default {
           {
             ingles: "Nobody",
             trad1: "Nadie",
-            html: "<h5>Nobody know<span class='colorLetraRojo2'>s</span> me</h5>",
+            html:
+              "<h5>Nobody know<span class='colorLetraRojo2'>s</span> me</h5>",
             trad2: "Nadie me conoce",
           },
           {
             ingles: "Somebody",
             trad1: "Alguien",
-            html: "<h5>Somebody need<span class='colorLetraRojo2'>s</span> you</h5>",
+            html:
+              "<h5>Somebody need<span class='colorLetraRojo2'>s</span> you</h5>",
             trad2: "Alguien te necesita",
           },
           {
@@ -649,13 +664,15 @@ export default {
           {
             ingles: "Everyone",
             trad1: "Todo el mundo",
-            html: "<h5>Everyone speak<span class='colorLetraRojo2'>s</span> English</h5>",
+            html:
+              "<h5>Everyone speak<span class='colorLetraRojo2'>s</span> English</h5>",
             trad2: "Todo el mundo habla ingles",
           },
           {
             ingles: "Nothing",
             trad1: "Nada",
-            html: "<h5>Nothing impress<span class='colorLetraRojo2'>es</span> me more than that</h5>",
+            html:
+              "<h5>Nothing impress<span class='colorLetraRojo2'>es</span> me more than that</h5>",
             trad2: "Nada me impresiona más que eso",
           },
           {
@@ -673,7 +690,8 @@ export default {
           {
             ingles: "This one",
             trad1: "Este",
-            html: "<h5>This one look<span class='colorLetraRojo2'>s</span> better</h5>",
+            html:
+              "<h5>This one look<span class='colorLetraRojo2'>s</span> better</h5>",
             trad2: "Este luce mejor",
           },
           {

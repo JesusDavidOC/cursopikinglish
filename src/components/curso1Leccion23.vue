@@ -7,9 +7,10 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5
-          style="text-align: justify"
-        >Aunque en español, no tenga sentido la traducción debemos aprenderlos de este modo.</h5>
+        <p class="parrafo">
+          Aunque en español, no tenga sentido la traducción debemos aprenderlos
+          de este modo.
+        </p>
       </div>
     </div>
 
@@ -17,7 +18,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div class="col-sm-12">
-          <tablaTC :cuestionario="tablaP91" />
+          <b-card>
+            <tablaTC :cuestionario="tablaP91" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -29,7 +32,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">Completa con la preposición correcta</h5>
+        <p class="parrafo">Completa con la preposición correcta</p>
       </div>
     </div>
 
@@ -42,13 +45,17 @@
           @respuestas="$data.mensajeRespuestasP92 = $event"
         />
       </div>
-      <b-modal ref="my-modalP92" hide-footer title="RESULTADO">{{mensajeRespuestasP92 }}</b-modal>
+      <b-modal ref="my-modalP92" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP92
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP92')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP92')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
 
@@ -59,12 +66,12 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
-          Los sujetos tienen objetos y estos siempre van después del verbo, aunque algunas
-          veces signifiquen lo mismo. Después de un verbo no se usan los sujetos. Veamos
-          algunos errores comunes:
-        </h5>
-        <h5 style="text-align: left">
+        <p class="parrafo">
+          Los sujetos tienen objetos y estos siempre van después del verbo,
+          aunque algunas veces signifiquen lo mismo. Después de un verbo no se
+          usan los sujetos. Veamos algunos errores comunes:
+        </p>
+        <h5 class="parrafo">
           <p>
             - I love
             <span class="colorLetraRojo">
@@ -87,11 +94,11 @@
             </span>
           </p>
         </h5>
-        <h5 style="text-align: justify">
-          Nota: Los tres anteriores ejemplos son incorrectos porque después de un verbo
-          no se usan sujetos. En ingles cada sujeto tiene un objecto que es usado después
-          de los verbos. Sobre quien recae la acción.
-        </h5>
+        <p class="parrafo">
+          Nota: Los tres anteriores ejemplos son incorrectos porque después de
+          un verbo no se usan sujetos. En ingles cada sujeto tiene un objecto
+          que es usado después de los verbos. Sobre quien recae la acción.
+        </p>
       </div>
     </div>
 
@@ -99,13 +106,17 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div class="col-sm-4">
-          <tablaTC :cuestionario="tablaP93" />
+          <b-card>
+            <tablaTC :cuestionario="tablaP93" />
+          </b-card>
         </div>
         <div class="col-sm-4">
           <h3 class="colorLetraRojo">Siempre después del verbo →</h3>
         </div>
         <div class="col-sm-4">
-          <tablaTC :cuestionario="tablaP93P2" />
+          <b-card>
+            <tablaTC :cuestionario="tablaP93P2" />
+          </b-card>
         </div>
       </div>
     </div>
@@ -113,14 +124,16 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">ESTUDIEMOS ESTOS EJEMPLOS</h5>
+        <p class="parrafo">ESTUDIEMOS ESTOS EJEMPLOS</p>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="tablaP93B" />
+        <b-card>
+          <listaIndex :tabla="tablaP93B" />
+        </b-card>
       </div>
     </div>
 
@@ -131,27 +144,27 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5
-          style="text-align: justify"
-        >Completa con el objeto o sujeto de acuerdo a la oración.</h5>
+        <p class="parrafo">
+          Completa con el objeto o sujeto de acuerdo a la oración.
+        </p>
       </div>
     </div>
 
     <div class="row" v-for="(item, index) in preguntasCompletarP93.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-1">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP93.nombre+index"
+            :name="preguntasCompletarP93.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -182,43 +195,43 @@ export default {
             esperado: ["them"],
             textoA: "1.   My life depends on",
             textoD: "(them-they)",
-            tamaño: 6,
+            tamano: 30,
           },
           {
             esperado: ["her"],
             textoA: "2. I don´t know",
             textoD: "(her-she)",
-            tamaño: 4,
+            tamano: 23,
           },
           {
             esperado: ["they"],
             textoA: "3. What are",
             textoD: "going to do? (them-they)",
-            tamaño: 6,
+            tamano: 31,
           },
           {
             esperado: ["him"],
             textoA: "4. You shouldn´t look at",
             textoD: "(him-he)",
-            tamaño: 6,
+            tamano: 28,
           },
           {
             esperado: ["me"],
             textoA: "5. You don´t know",
             textoD: "(I-me)",
-            tamaño: 5,
+            tamano: 23,
           },
           {
             esperado: ["us"],
             textoA: "6. They need ",
             textoD: "(we-us)",
-            tamaño: 4,
+            tamano: 21,
           },
           {
             esperado: ["her"],
             textoA: "7. I saw",
             textoD: "(she-her)",
-            tamaño: 4,
+            tamano: 19,
           },
         ],
       },
@@ -589,17 +602,19 @@ export default {
           {
             html: "<h5>YO <span class='colorLetraRojo'>LA</span> AMO</h5>",
             html2: "I LOVE SHE",
-            html3: "I LOVE HER"
+            html3: "I LOVE HER",
           },
           {
-            html: "<h5> NOSOTROS <span class='colorLetraRojo'>LOS</span> AMAMOS </h5>",
+            html:
+              "<h5> NOSOTROS <span class='colorLetraRojo'>LOS</span> AMAMOS </h5>",
             html2: "WE LOVE THEY",
-            html3: "WE LOVE THEM"
+            html3: "WE LOVE THEM",
           },
           {
-            html: "<h5>ESTO ES PARA <span class='colorLetraRojo'>ÉL</span></h5>",
+            html:
+              "<h5>ESTO ES PARA <span class='colorLetraRojo'>ÉL</span></h5>",
             html2: "THIS IS FOR HER",
-            html3: "THIS IS FOR HIM"
+            html3: "THIS IS FOR HIM",
           },
         ],
       },
@@ -631,9 +646,9 @@ export default {
       },
       tablaP91: {
         fields: [
-          { key: "spanish", label: "Spanish", thClass:"Yelow" },
-          { key: "english", label: "English", thClass:"Blue" },
-          { key: "english2", label: "Example", thClass:"Blue2" },
+          { key: "spanish", label: "Spanish", thClass: "Yelow" },
+          { key: "english", label: "English", thClass: "Blue" },
+          { key: "english2", label: "Example", thClass: "Blue2" },
         ],
         items: [
           {

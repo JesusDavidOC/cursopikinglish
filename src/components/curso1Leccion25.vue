@@ -1,16 +1,19 @@
 <template>
   <div>
     <div class="row">
-      <h3 id="titulo">PROCESO COMPLETADO CON ÉXITO SOBRE LA LÓGICA DEL INGLÉS</h3>
+      <h3 id="titulo">
+        PROCESO COMPLETADO CON ÉXITO SOBRE LA LÓGICA DEL INGLÉS
+      </h3>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: justify">
-          El número mágico parte 1 es una recopilación de la gramática vista desde el punto lógico para diseñar
-          oraciones y entender lecturas básicas.
-        </h3>
+        <p class="parrafo">
+          El número mágico parte 1 es una recopilación de la gramática vista
+          desde el punto lógico para diseñar oraciones y entender lecturas
+          básicas.
+        </p>
       </div>
     </div>
 
@@ -51,7 +54,9 @@
         <h2>Verbos con súper poder:</h2>
       </div>
       <div class="col-sm-6" id="campoTextoP11">
-        <h3 id="text">Have-Has-Had /Is-Am-Are-Was-Were/Can-Could-Should-Must</h3>
+        <h3 id="text">
+          Have-Has-Had /Is-Am-Are-Was-Were/Can-Could-Should-Must
+        </h3>
       </div>
     </div>
 
@@ -62,11 +67,12 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3
-          style="text-align: justify"
-        >En esta última sección del libro podrás practicar vocabulario con explicaciones lógicas.</h3>
-        <h3>
-          <ul style="text-align: left">
+        <p class="parrafo">
+          En esta última sección del libro podrás practicar vocabulario con
+          explicaciones lógicas.
+        </p>
+        <h3 class="parrafo">
+          <ul>
             <li>FAMILY MEMBERS</li>
             <li>MONTHS OF THE YEAR</li>
             <li>CARDINAL NUMBERS</li>
@@ -84,7 +90,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">ROLES</h3>
-        <listaIndex :tabla="$data.tablaP94" />
+        <b-card>
+          <listaIndex :tabla="$data.tablaP94" />
+        </b-card>
       </div>
     </div>
 
@@ -92,7 +100,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">IN-LAW</h3>
-        <listaIndex :tabla="$data.tablaP94A" />
+        <b-card>
+          <listaIndex :tabla="$data.tablaP94A" />
+        </b-card>
       </div>
     </div>
 
@@ -100,7 +110,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">STEP</h3>
+        <b-card>
         <listaIndex :tabla="$data.tablaP94B" />
+        </b-card>
       </div>
     </div>
 
@@ -108,7 +120,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">GRAND</h3>
+        <b-card>
         <listaIndex :tabla="$data.tablaP94C" />
+        </b-card>
       </div>
     </div>
 
@@ -116,40 +130,48 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <h5 class="colorLetraAzul">GOD</h5>
+        <b-card>
         <listaIndex :tabla="$data.tablaP94D" />
+        </b-card>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 style="text-align: left">MY FAMILY TREE</h3>
-        <h3 style="text-align: justify">
-          My name is Victor Hugo Sierra, I have two brothers, one daughter and one godson; my brothers are Oscar and
-          Julian and my daughter´s name is Karen, she is 14 and Elkin is my godson. My parents’ names are Alba and
-          Hugo. Oscar, my second oldest brother has four sons; Cristian, Pablo, Julian and Samuel. Cristian and Pablo´s
-          mother is Maryori and Julian and Samuel´s mother is Idaly. My grandparents on my mother’s side were Victor
-          and Lucidia and on my father’s side were Fabio and Alicia. My mother Alba has two brothers and four sisters;
-          Frederman, Alex, Mirian, Angela, Judith and Maria. My dad has five brothers and three sisters; Edgar, Fabio, Pedro, Orlando, Gentil, Fany, Farides and Fabiola. My uncles, Frederman and Gentil are dead. My mother’s
-          siblings all have children. My aunt Mirian and Hermes have three sons and one daughter; Diego, Harol, Anderson and Lorena.
-        </h3>
-        <h3
-          class="colorLetraAzul"
-          style="font-style: italic; text-align: left"
-        >Complete the following sentences according to the information above.</h3>
+        <p class="parrafo">MY FAMILY TREE</p>
+       <p class="parrafo">
+          My name is Victor Hugo Sierra, I have two brothers, one daughter and
+          one godson; my brothers are Oscar and Julian and my daughter´s name is
+          Karen, she is 14 and Elkin is my godson. My parents’ names are Alba
+          and Hugo. Oscar, my second oldest brother has four sons; Cristian,
+          Pablo, Julian and Samuel. Cristian and Pablo´s mother is Maryori and
+          Julian and Samuel´s mother is Idaly. My grandparents on my mother’s
+          side were Victor and Lucidia and on my father’s side were Fabio and
+          Alicia. My mother Alba has two brothers and four sisters; Frederman,
+          Alex, Mirian, Angela, Judith and Maria. My dad has five brothers and
+          three sisters; Edgar, Fabio, Pedro, Orlando, Gentil, Fany, Farides and
+          Fabiola. My uncles, Frederman and Gentil are dead. My mother’s
+          siblings all have children. My aunt Mirian and Hermes have three sons
+          and one daughter; Diego, Harol, Anderson and Lorena.
+        </p>
+        <p class="colorLetraAzul parrafo" >
+          Complete the following sentences according to the information above.
+        </p>
       </div>
     </div>
     <div class="row" v-for="(item, index) in preguntasCompletarP100.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-1">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP100.nombre+index"
+            :name="preguntasCompletarP100.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
             :audio="item.audio"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -160,26 +182,33 @@
       <div class="col-sm-10">
         <h5 style="text-align: left">MY BIG COMPLICATED FAMILY</h5>
         <h5 style="text-align: justify">
-          My name is Stephen and when I was a baby I was adopted by Mr and Mrs smith. The Smiths already had 1
-          biological child named Laura and 2 adopted children, Melanie and Fred. Mr Smith has 2 brothers-Uncle Todd
-          and Uncle Jack and 1 sister Aunty Meredith. Mrs Smith has 1 sister- Aunty Georgia. I love my adopted family
-          very much and I consider them my real family. Until I was 19-years-old I didn’t know anything about my
-          biological family or why I had been adopted. However, due to some surprising events I learned about my
-          biological family sooner than I had expected. It all started when I was in my local bar and I locked eyes with a
-          beautiful older woman. She was around 50-years-old with long, wavy red hair and a curvaceous body.
-          Immediately, I felt a connection with her. That night we spent the whole night drinking beers and talking about
-          life. She was the one! I went home to tell my family. Uncle Todd, my Dad and my Mum were all in the kitchen
-          when I arrived home and I announced that I was in love with Miss Dorothy Perkins. There was silence in the
-          kitchen. Dorothy Perkins was my biological father´s sister meaning she was my Aunty!!! Now, I had found and
-          lost the love of my life in one day and I had met someone in my biological family. In the following days I met
-          my biological Mum and Dad, Sara and Damien. They had 2 children years after I was adopted and so I met
-          them too, by brothers David and Matthew. I´m 23 now and while I still have not found love I am thankful for
-          my big and complicated family.
+          My name is Stephen and when I was a baby I was adopted by Mr and Mrs
+          smith. The Smiths already had 1 biological child named Laura and 2
+          adopted children, Melanie and Fred. Mr Smith has 2 brothers-Uncle Todd
+          and Uncle Jack and 1 sister Aunty Meredith. Mrs Smith has 1 sister-
+          Aunty Georgia. I love my adopted family very much and I consider them
+          my real family. Until I was 19-years-old I didn’t know anything about
+          my biological family or why I had been adopted. However, due to some
+          surprising events I learned about my biological family sooner than I
+          had expected. It all started when I was in my local bar and I locked
+          eyes with a beautiful older woman. She was around 50-years-old with
+          long, wavy red hair and a curvaceous body. Immediately, I felt a
+          connection with her. That night we spent the whole night drinking
+          beers and talking about life. She was the one! I went home to tell my
+          family. Uncle Todd, my Dad and my Mum were all in the kitchen when I
+          arrived home and I announced that I was in love with Miss Dorothy
+          Perkins. There was silence in the kitchen. Dorothy Perkins was my
+          biological father´s sister meaning she was my Aunty!!! Now, I had
+          found and lost the love of my life in one day and I had met someone in
+          my biological family. In the following days I met my biological Mum
+          and Dad, Sara and Damien. They had 2 children years after I was
+          adopted and so I met them too, by brothers David and Matthew. I´m 23
+          now and while I still have not found love I am thankful for my big and
+          complicated family.
         </h5>
-        <h5
-          class="colorLetraAzul"
-          style="font-style: italic; text-align: left"
-        >Complete the following sentences according to the information above.</h5>
+        <h5 class="colorLetraAzul" style="font-style: italic; text-align: left">
+          Complete the following sentences according to the information above.
+        </h5>
       </div>
     </div>
 
@@ -192,13 +221,17 @@
           @respuestas="$data.mensajeRespuestasP101 = $event"
         />
       </div>
-      <b-modal ref="my-modalP101" hide-footer title="RESULTADO">{{mensajeRespuestasP101 }}</b-modal>
+      <b-modal ref="my-modalP101" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP101
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP101')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP101')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
   </div>
@@ -482,7 +515,7 @@ export default {
             esperado: ["two"],
             textoA: "1.  Victor has",
             textoD: "brothers.",
-            tamaño: 4,
+            tamano: 22,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R2q1.mp3",
           },
@@ -490,7 +523,7 @@ export default {
             esperado: ["sister"],
             textoA: "2. Mirian is Alba´s ",
             textoD: "",
-            tamaño: 4,
+            tamano: 21,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R3q2.mp3",
           },
@@ -498,7 +531,7 @@ export default {
             esperado: ["niece"],
             textoA: "3. Karen is Oscar´s",
             textoD: "",
-            tamaño: 4,
+            tamano: 22,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R4q3.mp3",
           },
@@ -506,7 +539,7 @@ export default {
             esperado: ["parents in law"],
             textoA: "4. Alba´s",
             textoD: "are Fabio and Alicia",
-            tamaño: 5,
+            tamano: 32,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R5q4.mp3",
           },
@@ -514,7 +547,7 @@ export default {
             esperado: ["uncle"],
             textoA: "5. Oscar is Karen´s",
             textoD: "",
-            tamaño: 4,
+            tamano: 22,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R6q5.mp3",
           },
@@ -522,7 +555,7 @@ export default {
             esperado: ["three sons"],
             textoA: "6. Mirian has",
             textoD: "and one daughter",
-            tamaño: 6,
+            tamano: 31,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R7q6.mp3",
           },
@@ -530,7 +563,7 @@ export default {
             esperado: ["grandmother"],
             textoA: "7. Alba is Christian´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 27,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R8q7.mp3",
           },
@@ -538,7 +571,7 @@ export default {
             esperado: ["brother"],
             textoA: "8. Oscar is Victor´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 23,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R9q8.mp3",
           },
@@ -546,7 +579,7 @@ export default {
             esperado: ["daughter"],
             textoA: "9. Karen is Victor´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 24,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R10q9.mp3",
           },
@@ -554,7 +587,7 @@ export default {
             esperado: ["cousin"],
             textoA: "10. Lorena is Victor´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 24,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R11q10.mp3",
           },
@@ -562,7 +595,7 @@ export default {
             esperado: ["sister in law"],
             textoA: "11. Idaly is Victor´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 25,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R12q11.mp3",
           },
@@ -570,7 +603,7 @@ export default {
             esperado: ["husband"],
             textoA: "12. Hermes is Mirian´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 25,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R13q12.mp3",
           },
@@ -578,7 +611,7 @@ export default {
             esperado: ["godfather"],
             textoA: "13. Victor is Elkin´s",
             textoD: "",
-            tamaño: 5,
+            tamano: 24,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R14q13.mp3",
           },
@@ -586,7 +619,7 @@ export default {
             esperado: ["grandparents"],
             textoA: "13. Fabio and Alicia are Victor´s",
             textoD: "",
-            tamaño: 6,
+            tamano: 34,
             audio:
               "https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/page%20100/AC1P100R15q14.mp3",
           },
