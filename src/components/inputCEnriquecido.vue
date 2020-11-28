@@ -1,19 +1,17 @@
 <template>
-  <div style="display: inline-flex">
-    <div class="row">
-      <div>
-        <inputChecked
-          :esperado="object.lista1"
-          :resuelto="false"
-          :name="object.name"
-          :conTexto="true"
-          :textoA="object.textoA"
-          :textoD="object.textoD"
-          :tamano="object.tamano1"
-        />
-      </div>
-    </div>
-    <div>
+  <b-row>
+    <b-col md="auto" style="padding: 0">
+      <inputChecked
+        :esperado="object.lista1"
+        :resuelto="false"
+        :name="object.name"
+        :conTexto="true"
+        :textoA="object.textoA"
+        :textoD="object.textoD"
+        :tamano="object.tamano1"
+      />
+    </b-col>
+    <b-col md="auto" style="padding: 0">
       <inputChecked
         :esperado="object.lista2"
         :resuelto="false"
@@ -23,8 +21,8 @@
         :textoD="object.textoD2"
         :tamano="object.tamano2"
       />
-    </div>
-  </div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -42,11 +40,9 @@ export default {
   components: {
     inputChecked,
   },
+  methods: {},
 };
 </script>>
 
 <style scoped>
-#here {
-  padding: 0;
-}
 </style>

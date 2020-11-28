@@ -48,8 +48,7 @@ export default {
 
       for (let j = 0; j < this.$refs[this.refs].length; j++) {
         estan.push(this.$refs[this.refs][j].$data.text);
-      }
-      
+      }      
       var nuevo = this.listadoPalabrasEsperadas;
       for (let i = 0; i < estan.length; i++) {
         if (estan[i] != "") {
@@ -69,6 +68,7 @@ export default {
             this.$refs[this.refs][t].$data.disab = false;     
           } else {
             this.$refs[this.refs][t].$data.esperado1 = nuevo;
+            this.$refs[this.refs][t].$props.esperado = nuevo;
           }
         }
       }
@@ -82,7 +82,7 @@ export default {
           nuevo.push(element);
         }
       }
-      // funcionaaaaaa si imprime a nuevo
+      // funcionaaaaaa si imprime a nuevo      
       return nuevo;
     },
     quitarAcentos(cadena) {

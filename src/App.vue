@@ -3,7 +3,11 @@
     <div class="row" id="curso">
         <div class="col-sm-12">
 
+<<<<<<< HEAD
             <curso1Leccion26/> 
+=======
+            <curso1Leccion1/>
+>>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
 
         </div>
     </div>
@@ -12,13 +16,21 @@
 
 <script>
 import app from  "./assets/app.css";
+<<<<<<< HEAD
 import curso1Leccion26 from "./components/curso1Leccion26.vue";
+=======
+import curso1Leccion1 from "./components/curso1Leccion1.vue";
+>>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
 
 export default {
   name: "App",
   components: {
     
+<<<<<<< HEAD
     curso1Leccion26,
+=======
+    curso1Leccion1,
+>>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
   },
 };
 </script>
