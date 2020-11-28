@@ -361,7 +361,7 @@ export default {
             textoA: "1. There are",
             textoD: "months in a year.",
             tamaño: 5,
-            audio: ''
+            audio: 'aaa'
           },
           {
             esperado: ["december"],
