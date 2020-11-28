@@ -180,8 +180,8 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: left">MY BIG COMPLICATED FAMILY</h5>
-        <h5 style="text-align: justify">
+        <p class="parrafo">MY BIG COMPLICATED FAMILY</p>
+        <p class="parrafo">
           My name is Stephen and when I was a baby I was adopted by Mr and Mrs
           smith. The Smiths already had 1 biological child named Laura and 2
           adopted children, Melanie and Fred. Mr Smith has 2 brothers-Uncle Todd
@@ -202,12 +202,13 @@
           found and lost the love of my life in one day and I had met someone in
           my biological family. In the following days I met my biological Mum
           and Dad, Sara and Damien. They had 2 children years after I was
-          adopted and so I met them too, by brothers David and Matthew. I´m 23
+          adopted and so I met them too, by brothers David and Matthew.I'm 23
           now and while I still have not found love I am thankful for my big and
           complicated family.
-        </h5>
-        <h5 class="colorLetraAzul" style="font-style: italic; text-align: left">
+        </p>
+        <p class="colorLetraAzul parrafo">
           Complete the following sentences according to the information above.
+        </p>
         </h5>
       </div>
     </div>

@@ -69,19 +69,14 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-<<<<<<< HEAD
       <div class="col-sm-10" id="text">
-=======
-      <div class="col-sm-5">
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
         <i class="fa fa-diamond fuenteDiamond"></i>
         <a id="textPractice">Escribe la traducción al frente</a>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" v-for="(item, index) in preguntasCompletarP24.items">
       <div class="col-sm-1"></div>
-<<<<<<< HEAD
       <div class="col-sm-">
         <inputChecked
           :esperado="item.esperado"
@@ -91,31 +86,6 @@
           :textoD="item.textoD"
           :tamano="item.tamano"
         />
-=======
-      <div class="col-sm-5">
-        <div v-for="(item, index) in preguntasCompletarP80.items1">
-          <inputChecked
-            :esperado="item.esperado"
-            :name="preguntasCompletarP80.nombre + index"
-            :conTexto="true"
-            :textoA="item.textoA"
-            :textoD="item.textoD"
-            :tamano="item.tamano"
-          />
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <div v-for="(item, index) in preguntasCompletarP80.items2">
-          <inputChecked
-            :esperado="item.esperado"
-            :name="preguntasCompletarP80.nombre + index"
-            :conTexto="true"
-            :textoA="item.textoA"
-            :textoD="item.textoD"
-            :tamano="item.tamano"
-          />
-        </div>
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
       </div>
     </div>
 
@@ -132,7 +102,6 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-<<<<<<< HEAD
       <div class="col-sm-5">
         <div v-for="(item, index) in preguntasCompletarP81.items">
             <inputChecked
@@ -145,18 +114,6 @@
               
             />
           </div>
-=======
-      <div class="col-sm-10">
-        <div v-for="(item, index) in preguntasCompletarP81.items">
-          <inputChecked
-            :esperado="item.esperado"
-            :name="preguntasCompletarP81.nombre + index"
-            :conTexto="true"
-            :textoA="item.textoA"
-            :textoD="item.textoD"
-          />
-        </div>
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
       </div>
     </div>
 
@@ -169,7 +126,6 @@
         <h3 calss="parrafo">{{ item }}</h3>
       </div>
 
-<<<<<<< HEAD
     <div class="row" v-for="(item, index) in preguntasCompletarP81P2.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-">
@@ -181,45 +137,22 @@
           :textoD="item.textoD"
           :tamano="item.tamano"
         />
-=======
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-          <div v-for="(item, index) in preguntasCompletarP81P2.items">
-            <inputChecked
-              :esperado="item.esperado"
-              :name="preguntasCompletarP81P2.nombre + index"
-              :conTexto="true"
-              :textoA="item.textoA"
-              :textoD="item.textoD"
-            />
-          </div>
-        </div>
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <p class="parrafo">{{ item }}</p>
-    </div>
+  <div class="row">
+    <p class="parrafo">{{ item }}</p>
+  </div>
 
-<<<<<<< HEAD
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <b-card>
         <tablaTC :cuestionario="tablaP82" />
       </b-card>
-=======
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <b-card>
-          <tablaTC :cuestionario="tablaP82" />
-        </b-card>
-      </div>
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
     </div>
+  </div>
   </div>
 </template>
 
@@ -252,11 +185,7 @@ export default {
               lista: ["Don’t do that"],
               textoA: "",
               textoD: "",
-<<<<<<< HEAD
               tamano: 15,
-=======
-              tamano: 18,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
             },
             complejo2: {
               lista: ["Let´s do that"],
@@ -566,12 +495,12 @@ export default {
               lista: ["Let’s keep still"],
               textoA: "",
               textoD: "",
-              tamano: 16,
+              tamano: 17,
             },
           },
           {
             AFIRMATIVA: "Sleep tight",
-            TRADUCCIÓN: "Que suenes con los angelitos",
+            TRADUCCIÓN: "Que sueñes con los angelitos",
             complejo1: {
               lista: ["Don’t sleep tight"],
               textoA: "",
@@ -608,13 +537,13 @@ export default {
               lista: ["Don’t make sure to do it"],
               textoA: "",
               textoD: "",
-              tamano: 17,
+              tamano: 22,
             },
             complejo2: {
               lista: ["Let’s make sure to do it"],
               textoA: "",
               textoD: "",
-              tamano: 17,
+              tamano: 21,
             },
           },
           {
@@ -624,13 +553,13 @@ export default {
               lista: ["Don't Enjoy it"],
               textoA: "",
               textoD: "",
-              tamano: 15,
+              tamano: 16,
             },
             complejo2: {
               lista: ["Let’s Enjoy it"],
               textoA: "",
               textoD: "",
-              tamano: 15,
+              tamano: 16,
             },
           },
         ],
@@ -775,46 +704,31 @@ export default {
           },
         ],
       },
-      preguntasCompletarP80: {
-        nombre: "preguntasCompletarP80",
-        items1: [
+      preguntasCompletarP24: {
+        nombre: "preguntasCompletarP24",
+        items: [
           {
             esperado: ["Go"],
             textoA: "1. ve",
             textoD: "",
             tamano: 12,
           },
-
           {
-<<<<<<< HEAD
             esperado: ["don't go"],
             textoA: "2. no vayas ",
             textoD: "",
             tamano: 20,
-=======
+          },
+          {
             esperado: ["let's go"],
             textoA: "3. vamos",
             textoD: "",
-            tamano: 14,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
-          },
-
-          {
-            esperado: ["dont do it"],
-            textoA: "5. No lo hagas",
-            textoD: "",
-<<<<<<< HEAD
             tamano: 17,
-=======
-            tamano: 14,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
           },
-
           {
-            esperado: ["let's do it"],
-            textoA: "7. Hagámoslo",
+            esperado: ["let's not go"],
+            textoA: "4. No vayamos ",
             textoD: "",
-<<<<<<< HEAD
             tamano: 23,
           },
           {
@@ -822,69 +736,41 @@ export default {
             textoA: "5. No lo hagas",
             textoD: "",
             tamano: 23,
-=======
-            tamano: 14,
-          },
-          {
-            esperado: ["dont call me"],
-            textoA: "9. No me llames",
-            textoD: "",
-            tamano: 15,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
-          },
-          {
-            esperado: ["close the door"],
-            textoA: "11. cierra la puerta",
-            textoD: "",
-            tamano: 15,
-          },
-
-          {
-            esperado: ["listen to music"],
-            textoA: "13. Escucha la música",
-            textoD: "",
-<<<<<<< HEAD
-            tamano: 21,
-=======
-            tamano: 30,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
-          },
-        ],
-        items2: [
-          {
-            esperado: ["dont go"],
-            textoA: "2. no vayas ",
-            textoD: "",
-            tamano: 19,
-          },
-          {
-<<<<<<< HEAD
-            esperado: ["don't call me"],
-            textoA: "9. No me llames",
-            textoD: "",
-            tamano: 25,
-=======
-            esperado: ["let's not go"],
-            textoA: "4. No vayamos ",
-            textoD: "",
-            tamano: 14,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
           },
           {
             esperado: ["do it"],
             textoA: "6. Hazlo",
             textoD: "",
-<<<<<<< HEAD
-            tamano: 24,
-=======
-            tamano: 13,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
+            tamano: 15,
+          },
+          {
+            esperado: ["let's do it"],
+            textoA: "7. Hagámoslo",
+            textoD: "",
+            tamano: 21,
           },
           {
             esperado: ["call me"],
             textoA: "8. Llámame",
             textoD: "",
-<<<<<<< HEAD
+            tamano: 19,
+          },
+          {
+            esperado: ["don't call me"],
+            textoA: "9. No me llames",
+            textoD: "",
+            tamano: 25,
+          },
+          {
+            esperado: ["let's call her"],
+            textoA: "10. Llamémosla",
+            textoD: "",
+            tamano: 24,
+          },
+          {
+            esperado: ["close the door"],
+            textoA: "11. cierra la puerta",
+            textoD: "",
             tamano: 27,
           },
           {
@@ -892,35 +778,18 @@ export default {
             textoA: "12. No cierres la puerta",
             textoD: "",
             tamano: 33,
-=======
-            tamano: 14,
           },
           {
-            esperado: ["let's call her"],
-            textoA: "10. Llamémosla",
+            esperado: ["listen to music"],
+            textoA: "13. Escucha la música",
             textoD: "",
-            tamano: 20,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
-          },
-          {
-            esperado: ["don't close the door"],
-            textoA: "12. No cierres la puerta",
-            textoD: "",
-<<<<<<< HEAD
             tamano: 29,
-=======
-            tamano: 33,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
           },
           {
             esperado: ["don't listen to me"],
             textoA: "14 no me escuches",
             textoD: "",
-<<<<<<< HEAD
             tamano: 29,
-=======
-            tamano: 20,
->>>>>>> 1262b6fa206dbf3aab4f270a591595f25f104c2c
           },
         ],
       },
