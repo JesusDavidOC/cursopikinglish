@@ -110,6 +110,14 @@
       <div class="col-sm-8" id="subTitulo">
         <h3>PRACTICE</h3>
       </div>
+      <div class="row">
+        <div id="i" class="col-sm-1">
+              <i class="fa fa-diamond"></i>
+        </div>
+        <div >
+              <inputCEnriquecido :object="inputCEP15N1" />
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-11 row">
@@ -624,12 +632,14 @@ import listaIndex from "./listaIndex";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
+import inputCEnriquecido from "./inputCEnriquecido";
 export default {
   components: {
     listaIndex,
     tablaTraduccionCodigos,
     opcionMultiple,
     inputChecked,
+    inputCEnriquecido,
   },
   data() {
     return {
@@ -784,6 +794,20 @@ export default {
           items: ["Is", "Am", "Are", "Was", "Were"],
         },
       ],
+
+      inputCEP15N1:{
+
+        lista1: ["Regulares"],
+        lista2: ["Irregulares"],
+        name: "inputCEP15N1",
+        textoA: "Hay dos tipos de verbos ",
+        textoD: "e",
+        textoD2: "y ambos tienen 4 formas:",
+        tamano1: 30,
+        tamano2: 30,
+
+
+      },
       tablasTiempoP15: [
         {
           bordered: false,

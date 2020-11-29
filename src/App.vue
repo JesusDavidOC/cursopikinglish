@@ -4,6 +4,7 @@
         <div class="col-sm-12">
 
             <curso1Leccion1/>
+            <curso1Leccion2/>
 
         </div>
     </div>
@@ -13,12 +14,14 @@
 <script>
 import app from  "./assets/app.css";
 import curso1Leccion1 from "./components/curso1Leccion1.vue";
+import curso1Leccion2 from "./components/curso1Leccion2.vue";
 
 export default {
   name: "App",
   components: {
     
     curso1Leccion1,
+    curso1Leccion2,
   },
 };
 </script>
