@@ -7,29 +7,34 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="$data.tablaP102" />
-        <listaIndex :tabla="$data.tablaP102B" />
+        <b-card>
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP102" />
+            <listaIndex :tabla="$data.tablaP102B" />
+          </p>
+        </b-card>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3>FILL IN THE GAPS</h3>
+        <p class="parrafo">FILL IN THE GAPS</p>
       </div>
     </div>
 
     <div class="row" v-for="(item, index) in preguntasCompletarP103.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP103.nombre+index"
+            :name="preguntasCompletarP103.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
             :audio="item.audio"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -40,63 +45,68 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <h4 style="text-align: left">
-        <strong>Zero: 0</strong>
-      </h4>
-      <div class="col-sm-10 row">
-        <div class="col-3" style="text-align: left">
-          <h4>
-            <strong>From 1 to 9</strong>
-          </h4>
-          <h5>One: 1</h5>
-          <h5>Two: 2</h5>
-          <h5>Three: 3</h5>
-          <h5>Four: 4</h5>
-          <h5>Five: 5</h5>
-          <h5>Six: 6</h5>
-          <h5>Seven: 7</h5>
-          <h5>Eight: 8</h5>
-          <h5>Nine: 9</h5>
+      <div class="col-sm-16 row">
+        <div class="col-3">
+          <b-card>
+            <p class="parrafo">
+              <strong>From 0 to 9</strong>
+            </p>
+            <p class="parrafo">Zero: 0</p>
+            <p class="parrafo">One: 1</p>
+            <p class="parrafo">Two: 2</p>
+            <p class="parrafo">Three: 3</p>
+            <p class="parrafo">Four: 4</p>
+            <p class="parrafo">Five: 5</p>
+            <p class="parrafo">Six: 6</p>
+            <p class="parrafo">Seven: 7</p>
+            <p class="parrafo">Eight: 8</p>
+            <p class="parrafo">Nine: 9</p>
+          </b-card>
         </div>
         <div class="col-3">
-          <h4>
-            <strong>From 10 to 12</strong>
-          </h4>
-          <h5>Ten: 10</h5>
-          <h5>Eleven: 11</h5>
-          <h5>Twelve: 12</h5>
+          <b-card>
+            <p class="parrafo">
+              <strong>From 10 to 12</strong>
+            </p>
+            <p class="parrafo">Ten: 10</p>
+            <p class="parrafo">Eleven: 11</p>
+            <p class="parrafo">Twelve: 12</p>
+          </b-card>
         </div>
         <div class="col-3">
-          <h4>
-            <strong>
-              From 13 to 19 (
-              <span class="colorLetraRojo">teen</span>)
-            </strong>
-          </h4>
-          <h5>Thirteen: 13</h5>
-          <h5>Fourteen: 14</h5>
-          <h5>Fifteen: 15</h5>
-          <h5>Sixteen: 16</h5>
-          <h5>Seventeen: 17</h5>
-          <h5>Eighteen: 18</h5>
-          <h5>Nineteen: 19</h5>
+          <b-card>
+            <p class="parrafo">
+              <strong>
+                From 13 to 19 (
+                <span class="colorLetraRojo">teen</span>)
+              </strong>
+            </p>
+            <p class="parrafo">Thirteen: 13</p>
+            <p class="parrafo">Fourteen: 14</p>
+            <p class="parrafo">Fifteen: 15</p>
+            <p class="parrafo">Sixteen: 16</p>
+            <p class="parrafo">Seventeen: 17</p>
+            <p class="parrafo">Eighteen: 18</p>
+            <p class="parrafo">Nineteen: 19</p>
+          </b-card>
         </div>
         <div class="col-3">
-          <h4>
-            <strong>
-              From 20 to 90 (
-              <span class="colorLetraRojo">ty</span>)
-            </strong>
-          </h4>
-          <h5>Twenty: 20</h5>
-          <h5>Thirty: 30</h5>
-          <h5>Forty: 40</h5>
-          <h5>Fifty: 50</h5>
-          <h5>Sixty:60</h5>
-          <h5>Seventy: 70</h5>
-          <h5>Eighty: 80</h5>
-          <h5>Ninety: 90</h5>
+          <b-card>
+            <p class="parrafo">
+              <strong>
+                From 20 to 90 (
+                <span class="colorLetraRojo">ty</span>)
+              </strong>
+            </p>
+            <p class="parrafo">Twenty: 20</p>
+            <p class="parrafo">Thirty: 30</p>
+            <p class="parrafo">Forty: 40</p>
+            <p class="parrafo">Fifty: 50</p>
+            <p class="parrafo">Sixty:60</p>
+            <p class="parrafo">Seventy: 70</p>
+            <p class="parrafo">Eighty: 80</p>
+            <p class="parrafo">Ninety: 90</p>
+          </b-card>
         </div>
       </div>
     </div>
@@ -104,9 +114,12 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3>El último numero después de cien, mil o un millón se separa con la palabra AND</h3>
+        <p class="parrafo">
+          El último numero después de cien, mil o un millón se separa con la
+          palabra AND
+        </p>
         <ul>
-          <h3 style="text-align: left">
+          <h3 class="parrafo">
             <li>
               $109 ( one hundred
               <span class="colorLetraRojo">and</span> nine dollars)
@@ -121,8 +134,10 @@
             </li>
           </h3>
         </ul>
-        <h3>Los números de dos dígitos se separan con un guión.</h3>
-        <h1 class="colorLetraAzul">30 + 3 = thirty-three (33)</h1>
+        <p class="parrafo">
+          Los números de dos dígitos se separan con un guión.
+        </p>
+        <p class="parrafo colorLetraAzul">30 + 3 = thirty-three (33)</p>
       </div>
     </div>
 
@@ -132,52 +147,61 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <listaIndex :tabla="$data.tablaP94" />
+      <p class="parrafoTabla">
+        <listaIndex :tabla="$data.tablaP94" />
+      </p>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 class="colorLetraAzul">MIL → THOUSAND</h3>
+        <p class="parrafo colorLetraAzul">MIL → THOUSAND</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <listaIndex :tabla="$data.tablaP104" />
+      <p class="parrafoTabla">
+        <listaIndex :tabla="$data.tablaP104" />
+      </p>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h3 class="colorLetraAzul">MILLÓN → MILLION</h3>
+        <p class="parrafo colorLetraAzul">MILLÓN → MILLION</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-11">
-        <h5>Million nunca se usa en plural: <span class="colorLetraRojo">MILLIONS</span></h5>
-        <h5>1,000,000 one million - 2,000,000 two million - 3,000,000 three million</h5> 
+        <p class="parrafo">
+          Million nunca se usa en plural:
+          <span class="colorLetraRojo">MILLIONS</span>
+        </p>
+        <p class="parrafo">
+          1,000,000 one million - 2,000,000 two million - 3,000,000 three
+          million
+        </p>
       </div>
     </div>
 
     <div class="row">
-      <h3 id="subTitulo">
-        PRACTICE
-      </h3>
+      <h3 id="subTitulo">PRACTICE</h3>
     </div>
 
     <div class="row" v-for="(item, index) in preguntasCompletarP105.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP105.nombre+index"
+            :name="preguntasCompletarP105.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -189,13 +213,14 @@
     <div class="row" v-for="(item, index) in preguntasCompletarP105A.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP105.nombre+index"
+            :name="preguntasCompletarP105.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -207,18 +232,18 @@
     <div class="row" v-for="(item, index) in preguntasCompletarP105B.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-'+item.tamaño">
+        <div class="col-sm-">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP105B.nombre+index"
+            :name="preguntasCompletarP105B.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
+            :tamano="item.tamano"
           />
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -255,13 +280,13 @@ export default {
             1: "100",
             2: "One hundred",
             html:
-              "<h3 class='colorLetraRojo'><span style='font-style: italic' >+1 = one hundred and one(101)</span></h3>",
+              "<p class= 'parrafoTabla colorLetraRojo'><span style='font-style: italic' >+1 = one hundred and one(101)</span></p>",
           },
           {
             1: "200",
             2: "Two hundred",
             html:
-              "<h3 class='colorLetraRojo'><span style='font-style: italic' >+10 = two hundred and ten(210)</span></h3>",
+              "<p class= 'parrafoTabla colorLetraRojo'><span style='font-style: italic' >+10 = two hundred and ten(210)</span></p>",
           },
           {
             1: "300",
@@ -272,7 +297,7 @@ export default {
             1: "400",
             2: "Four hundred",
             html:
-              "<h3 class='colorLetraRojo'><span style='font-style: italic' >+16 = four hundred and sixteen(416)</span></h3>",
+              "<p class= 'parrafoTabla colorLetraRojo'><span style='font-style: italic' >+16 = four hundred and sixteen(416)</span></p>",
           },
           {
             1: "500",
@@ -283,7 +308,7 @@ export default {
             1: "600",
             2: "Six hundred",
             html:
-              "<h3 class='colorLetraRojo' ><span style='font-style: italic' >+21 = six hundred and twenty-one(621)</span></h3>",
+              "<p class= 'parrafoTabla colorLetraRojo'><span style='font-style: italic' >+21 = six hundred and twenty-one(621)</span></p>",
           },
           {
             1: "700",
@@ -299,7 +324,7 @@ export default {
             1: "900",
             2: "Nine hundred",
             html:
-              "<h3 class='colorLetraRojo'><span style='font-style: italic'>+99 = nine hundred and ninety-nine(999)</span></h3>",
+              "<p class= 'parrafoTabla colorLetraRojo'><span style='font-style: italic'>+99 = nine hundred and ninety-nine(999)</span></p>",
           },
         ],
       },
@@ -360,72 +385,72 @@ export default {
             esperado: ["12"],
             textoA: "1. There are",
             textoD: "months in a year.",
-            tamaño: 5,
-            audio: 'aaa'
+            tamano: 26,
+            audio: "aaa",
           },
           {
             esperado: ["december"],
             textoA: "2. Christmas is celebrated in ",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 30,
+            audio: "",
           },
           {
             esperado: ["january"],
             textoA: "3. The first month of the year is",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 30,
+            audio: "",
           },
           {
             esperado: ["november"],
             textoA: "4. The month before December is",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 33,
+            audio: "",
           },
           {
             esperado: ["july"],
             textoA:
               "5. Colombian Declaration of Independence was on the 20 th of",
             textoD: "in 1810.",
-            tamaño: 9,
-            audio: ''
+            tamano: 50,
+            audio: "",
           },
           {
             esperado: ["october"],
             textoA: "6. Halloween is on the 31 st of",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 30,
+            audio: "",
           },
           {
             esperado: ["february"],
             textoA: "7. The only month with only 28 days is",
             textoD: ".",
-            tamaño: 7,
-            audio: ''
+            tamano: 35,
+            audio: "",
           },
           {
             esperado: ["march"],
             textoA: "8. What month begins with the M and ends with the h?",
             textoD: ".",
-            tamaño: 8,
-            audio: ''
+            tamano: 43,
+            audio: "",
           },
           {
             esperado: ["april"],
             textoA: "9. What is the fourth month of the year?",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 33,
+            audio: "",
           },
           {
             esperado: ["June"],
             textoA: "10. What is the month after may?",
             textoD: ".",
-            tamaño: 6,
-            audio: ''
+            tamano: 30,
+            audio: "",
           },
         ],
       },
@@ -436,56 +461,55 @@ export default {
             esperado: ["916"],
             textoA: "1. Nine hundred sixteen",
             textoD: "",
-            tamaño: 5,
+            tamano: 24,
           },
           {
             esperado: ["1001"],
             textoA: "2. one thousand one ",
             textoD: ".",
-            tamaño: 5,
+            tamano: 23,
           },
           {
             esperado: ["21"],
             textoA: "3. twenty-one",
             textoD: ".",
-            tamaño: 4,
+            tamano: 17,
           },
           {
             esperado: ["1101"],
             textoA: "4. One thousand one hundred one",
             textoD: ".",
-            tamaño: 6,
+            tamano: 31,
           },
           {
             esperado: ["66666"],
-            textoA:
-              "5. sixty-six thousand six hundred sixty-six",
+            textoA: "5. sixty-six thousand six hundred sixty-six",
             textoD: ".",
-            tamaño: 7,
+            tamano: 36,
           },
           {
             esperado: ["999"],
             textoA: "6. Nine hundred ninety-nine",
             textoD: ".",
-            tamaño: 5,
+            tamano: 26,
           },
           {
             esperado: ["1555"],
             textoA: "7. one thousand five hundred fifty-five",
             textoD: ".",
-            tamaño: 6,
+            tamano: 33,
           },
           {
             esperado: ["1100101"],
             textoA: "8. One million one hundred thousand one hundred one",
             textoD: ".",
-            tamaño: 8,
+            tamano: 44,
           },
           {
             esperado: ["33"],
             textoA: "9. thirty-three",
             textoD: ".",
-            tamaño: 4,
+            tamano: 17,
           },
         ],
       },
@@ -496,62 +520,61 @@ export default {
             esperado: ["one hundred"],
             textoA: "1. One century is",
             textoD: "years",
-            tamaño: 5,
+            tamano: 28,
           },
           {
             esperado: ["ten"],
             textoA: "2. ",
             textoD: "decades is one century.",
-            tamaño: 5,
+            tamano: 24,
           },
           {
             esperado: ["ten"],
             textoA: "3. one decade is",
             textoD: "years.",
-            tamaño: 5,
+            tamano: 23,
           },
           {
             esperado: ["twelve"],
             textoA: "4. one year is",
             textoD: "months.",
-            tamaño: 5,
+            tamano: 24,
           },
           {
             esperado: ["Three hundred sixty four"],
-            textoA:
-              "5. one year is",
+            textoA: "5. one year is",
             textoD: "days.",
-            tamaño: 4,
+            tamano: 33,
           },
           {
             esperado: ["twenty four"],
             textoA: "6. one day is",
             textoD: "hours.",
-            tamaño: 5,
+            tamano: 25,
           },
           {
             esperado: ["one thousand four hundred forty"],
             textoA: "7. one day is",
             textoD: "minutes.",
-            tamaño: 6,
+            tamano: 39,
           },
           {
             esperado: ["sixty"],
             textoA: "8. one hour is",
             textoD: "minutes.",
-            tamaño: 6,
+            tamano: 23,
           },
           {
             esperado: ["three thousand six hundred"],
             textoA: "9. one hour is",
             textoD: "seconds.",
-            tamaño: 6,
+            tamano: 37,
           },
           {
             esperado: ["one thousand six hundred nine"],
             textoA: "10. one mile is",
             textoD: "meters.",
-            tamaño: 7,
+            tamano: 38,
           },
         ],
       },
@@ -562,80 +585,81 @@ export default {
             esperado: ["sixteen"],
             textoA: "16",
             textoD: "",
-            tamaño: 3,
+            tamano: 13,
           },
           {
             esperado: ["two"],
             textoA: "2",
             textoD: ".",
-            tamaño: 3,
+            tamano: 11,
           },
           {
             esperado: ["ninety nine"],
             textoA: "99",
             textoD: ".",
-            tamaño: 3,
+            tamano: 16,
           },
           {
             esperado: ["one hundred"],
             textoA: "100",
             textoD: ".",
-            tamaño: 4,
+            tamano: 18,
           },
           {
             esperado: ["one hundred one"],
-            textoA:
-              "101",
+            textoA: "101",
             textoD: "",
-            tamaño: 4,
+            tamano: 20,
           },
           {
             esperado: ["nine hundred and ninety-nine"],
             textoA: "999",
             textoD: ".",
-            tamaño: 4,
+            tamano: 27,
           },
           {
             esperado: ["one thousand"],
             textoA: "1000",
             textoD: ".",
-            tamaño: 4,
+            tamano: 19,
           },
           {
             esperado: ["ten thousand"],
             textoA: "10,000",
             textoD: ".",
-            tamaño: 4,
+            tamano: 20,
           },
           {
             esperado: ["nine thousand"],
             textoA: "90,000",
             textoD: ".",
-            tamaño: 4,
+            tamano: 20,
           },
           {
             esperado: ["ninety-nine thousand nine hundred ninety-nine"],
             textoA: "99,999",
             textoD: ".",
-            tamaño: 7,
+            tamano: 39,
           },
           {
             esperado: ["hundred thousand"],
             textoA: "100,000",
             textoD: ".",
-            tamaño: 4,
+            tamano: 23,
           },
           {
             esperado: ["twelve"],
             textoA: "12",
             textoD: ".",
-            tamaño: 3,
+            tamano: 13,
           },
           {
-            esperado: ["one million nine hundred ninety-nine thousand nine hundred seventy-six"],
+            esperado: [
+              "one million nine hundred ninety-nine thousand nine hundred seventy-six",
+            ],
             textoA: "1,999,976",
             textoD: ".",
-            tamaño: 9,
+            tamano: 55,
           },
         ],
       },

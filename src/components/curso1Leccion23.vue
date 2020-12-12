@@ -19,7 +19,9 @@
       <div class="col-sm-10 row">
         <div class="col-sm-12">
           <b-card>
-            <tablaTC :cuestionario="tablaP91" />
+            <p class="parrafoTabla">
+              <tablaTC :cuestionario="tablaP91" />
+            </p>
           </b-card>
         </div>
       </div>
@@ -107,7 +109,9 @@
       <div class="col-sm-10 row">
         <div class="col-sm-4">
           <b-card>
-            <tablaTC :cuestionario="tablaP93" />
+            <p class="parrafoTabla">
+              <tablaTC :cuestionario="tablaP93" />
+            </p>
           </b-card>
         </div>
         <div class="col-sm-4">
@@ -115,7 +119,9 @@
         </div>
         <div class="col-sm-4">
           <b-card>
-            <tablaTC :cuestionario="tablaP93P2" />
+            <p class="parrafoTabla">
+              <tablaTC :cuestionario="tablaP93P2" />
+            </p>
           </b-card>
         </div>
       </div>
@@ -132,7 +138,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="tablaP93B" />
+          <p class= "parrafoTabla">
+            <listaIndex :tabla="tablaP93B" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -600,21 +608,21 @@ export default {
         bordered: true,
         items: [
           {
-            html: "<h5>YO <span class='colorLetraRojo'>LA</span> AMO</h5>",
-            html2: "I LOVE SHE",
-            html3: "I LOVE HER",
+            html: "<p class= parrafoTabla>YO <span class='colorLetraRojo'>LA</span> AMO</h5>",
+            html2: "<p class= parrafoTabla>I LOVE SHE</p>",
+            html3: "<p class= parrafoTabla>I LOVE HER</p>",
           },
           {
             html:
-              "<h5> NOSOTROS <span class='colorLetraRojo'>LOS</span> AMAMOS </h5>",
-            html2: "WE LOVE THEY",
-            html3: "WE LOVE THEM",
+              "<p class= parrafoTabla> NOSOTROS <span class='colorLetraRojo'>LOS</span> AMAMOS </p>",
+            html2: "<p class= parrafoTabla>WE LOVE THEY</p>",
+            html3: "<p class= parrafoTabla>WE LOVE THEM</p>",
           },
           {
             html:
-              "<h5>ESTO ES PARA <span class='colorLetraRojo'>ÉL</span></h5>",
-            html2: "THIS IS FOR HER",
-            html3: "THIS IS FOR HIM",
+              "<p class= parrafoTabla>ESTO ES PARA <span class='colorLetraRojo'>ÉL</span></p>",
+            html2: "<p class= parrafoTabla>THIS IS FOR HER</p>",
+            html3: "<p class= parrafoTabla>THIS IS FOR HIM</p>",
           },
         ],
       },

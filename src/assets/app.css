@@ -34,6 +34,13 @@
   text-align: justify;
   font-size: 1.7em;
 }
+.parrafoTabla{
+  /*margin-bottom: 1em;*/
+  line-height: 1.2em; 
+  text-align: left;
+  /*justificacion de parrafo*/
+  font-size: 1.3em;
+}
 .parrafoIC {
   margin-bottom: 0em;
   padding-top: 0em;

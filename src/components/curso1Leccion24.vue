@@ -17,10 +17,12 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-"></div>
+      <div class="col-sm-12">
         <b-card>
-          <listaIndex :tabla="$data.tablaP94" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -29,7 +31,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="$data.tablaP94P2" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94P2" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -54,16 +58,18 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <h5 style="text-align: justify">
+        <p class="parrafo">
           Completa las siguientes oraciones con alguno de estos nombres:
-        </h5>
+        </p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <listaIndex :tabla="$data.tablaP95" />
+      <div class="col-sm-"></div>
+      <div class="col-sm-12">
+        <p class="parrafoTabla">
+          <listaIndex :tabla="$data.tablaP95" />
+        </p>
       </div>
     </div>
 
@@ -330,6 +336,7 @@ export default {
               text: "C) That one",
               value: "C",
               disabled: false,
+
             },
           ],
         },
@@ -542,91 +549,91 @@ export default {
             A: 4,
             B: 3,
             C: 2,
-            complejo1: { lista: ["Somebody needs you"] },
+            complejo1: { lista: ["Somebody needs you"],tamano:20},
             español: "Alguien te necesita",
           },
           {
             A: 1,
             B: 5,
             C: 1,
-            complejo1: { lista: ["Nothing is going to happen"] },
+            complejo1: { lista: ["Nothing is going to happen"],tamano:23 },
             español: "Nada va a pasar",
           },
           {
             A: 7,
             B: 5,
             C: 1,
-            complejo1: { lista: ["Something good is going to happen"] },
+            complejo1: { lista: ["Something good is going to happen"],tamano:28 },
             español: "Algo bueno va a pasar",
           },
           {
             A: 6,
             B: 1,
             C: 6,
-            complejo1: { lista: ["Nobody is going to come"] },
+            complejo1: { lista: ["Nobody is going to come"],tamano:22 },
             español: "Nadie va a venir",
           },
           {
             A: 3,
             B: 1,
             C: 5,
-            complejo1: { lista: ["This one is mine"] },
+            complejo1: { lista: ["This one is mine"],tamano:17 },
             español: "Este es mío",
           },
           {
             A: 5,
             B: 1,
             C: 6,
-            complejo1: { lista: ["A friend of mine is going to come"] },
+            complejo1: { lista: ["A friend of mine is going to come"],tamano:27 },
             español: "Un amigo mío va a venir",
           },
           {
             A: 1,
             B: 7,
             C: 7,
-            complejo1: { lista: ["Nothing impresses me more than that"] },
+            complejo1: { lista: ["Nothing impresses me more than that"],tamano:30 },
             español: "Nada me impresiona más que eso",
           },
           {
             A: 2,
             B: 2,
             C: 4,
-            complejo1: { lista: ["Everyone knows me"] },
+            complejo1: { lista: ["Everyone knows me"],tamano:20 },
             español: "Todo el mundo me conoce",
           },
           {
             A: 4,
             B: 6,
             C: 4,
-            complejo1: { lista: ["Somebody saw me"] },
+            complejo1: { lista: ["Somebody saw me"] ,tamano:19},
             español: "Alguien me vio",
           },
           {
             A: 4,
             B: 1,
             C: 6,
-            complejo1: { lista: ["Somebody is going to come"] },
+            complejo1: { lista: ["Somebody is going to come"],tamano:24 },
             español: "Alguien va a venir",
           },
           {
             A: 8,
             B: 1,
             C: 5,
-            complejo1: { lista: ["That one is mine"] },
+            complejo1: { lista: ["That one is mine"] ,tamano:17},
             español: "Aquel es mío",
           },
           {
             A: 2,
             B: 8,
             C: 2,
-            complejo1: { lista: ["Everybody thinks of you"] },
+            complejo1: { lista: ["Everybody thinks of you"],tamano:22 },
             español: "Todo el mundo te piensa",
           },
           {
             A: 4,
             B: 4,
             C: 8,
-            complejo1: { lista: ["Somebody has to do it"] },
+            complejo1: { lista: ["Somebody has to do it"],tamano:21},
             español: "Alguien tiene que hacerlo",
           },
         ],
@@ -636,7 +643,7 @@ export default {
         camposInput: false,
         fields: [
           { key: "ingles", label: "Inglés" },
-          { key: "trad1", label: "Traducción" },
+          { key: "trad1", label: " Traducción"},
           { key: "html", label: "Inglés" },
           { key: "trad2", label: "Traducción" },
         ],
@@ -645,59 +652,59 @@ export default {
             ingles: "Nobody",
             trad1: "Nadie",
             html:
-              "<h5>Nobody know<span class='colorLetraRojo2'>s</span> me</h5>",
+              "<p class= parrafoTabla>Nobody know<span class='colorLetraRojo2'>s</span> me</p>",
             trad2: "Nadie me conoce",
           },
           {
             ingles: "Somebody",
             trad1: "Alguien",
             html:
-              "<h5>Somebody need<span class='colorLetraRojo2'>s</span> you</h5>",
+              "<p class= parrafoTabla>Somebody need<span class='colorLetraRojo2'>s</span> you</p>",
             trad2: "Alguien te necesita",
           },
           {
             ingles: "Something",
             trad1: "Algo",
-            html: "<h5>Something good is going to happen</h5>",
+            html: "<p class= parrafoTabla>Something good is going to happen</p>",
             trad2: "Algo bueno va a pasar",
           },
           {
             ingles: "Everyone",
             trad1: "Todo el mundo",
             html:
-              "<h5>Everyone speak<span class='colorLetraRojo2'>s</span> English</h5>",
+              "<p class= parrafoTabla>Everyone speak<span class='colorLetraRojo2'>s</span> English</p>",
             trad2: "Todo el mundo habla ingles",
           },
           {
             ingles: "Nothing",
             trad1: "Nada",
             html:
-              "<h5>Nothing impress<span class='colorLetraRojo2'>es</span> me more than that</h5>",
+              "<p class= parrafoTabla>Nothing impress<span class='colorLetraRojo2'>es</span> me more than that</p>",
             trad2: "Nada me impresiona más que eso",
           },
           {
             ingles: "Nobody",
             trad1: "Nadie",
-            html: "<h5>Nobody knows me</h5>",
+            html: "<p class= parrafoTabla>Nobody knows me</p>",
             trad2: "Nadie me conoce",
           },
           {
             ingles: "That one",
             trad1: "Aquel, aquella",
-            html: "<h5>That one is mine</h5>",
+            html: "<p class= parrafoTabla>That one is mine</p>",
             trad2: "Aquel es mío",
           },
           {
             ingles: "This one",
             trad1: "Este",
             html:
-              "<h5>This one look<span class='colorLetraRojo2'>s</span> better</h5>",
+              "<p class= parrafoTabla>This one look<span class='colorLetraRojo2'>s</span> better</p>",
             trad2: "Este luce mejor",
           },
           {
             ingles: "A friend of mine",
             trad1: "Un amigo mío",
-            html: "<h5>A friend of mine gave me this</h5>",
+            html: "<p class= parrafoTabla>A friend of mine gave me this</p>",
             trad2: "Un amigo mío me dio esto",
           },
         ],

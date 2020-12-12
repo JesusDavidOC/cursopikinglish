@@ -7,7 +7,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="tablaP79" />
+            <p class="parrafoTabla">
+              <listaIndex :tabla="tablaP79" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -19,7 +21,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="tablaP79P2" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="tablaP79P2" />
+          </p>
         </b-card>
         <p class="parrafo">
           Has completado la primera parte de la lógica del inglés,
@@ -631,37 +635,37 @@ export default {
         items: [
           {
             html:
-              "<p style='font-size:18px' class='text-left'>Oraciones en presente</p>",
+              "<p class=parrafoTabla>Oraciones en presente</p>",
             present: "Go",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left'>Oraciones en presente afirmativo con <strong>she, he, it</strong></p>",
+              "<p class=parrafoTabla>Oraciones en presente afirmativo con <strong>she, he, it</strong></p>",
             presentsE: "Goes",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' >Oraciones con modificadores <strong> Do-Does-Did-Will-Would </strong> </p>",
+              "<p class=parrafoTabla>Oraciones con modificadores <strong> Do-Does-Did-Will-Would </strong> </p>",
             present: "Go",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' >Oraciones con S.P.V <strong> Can-Could-Should-Must</strong> </p>",
+              "<p class=parrafoTabla>Oraciones con S.P.V <strong> Can-Could-Should-Must</strong> </p>",
             present: "Go",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' >Oraciones en pasado afirmativo</p>",
+              "<<p class=parrafoTabla>Oraciones en pasado afirmativo</p>",
             past: "Went",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' >Oraciones con S.P.V <strong> Have-Has-Had </strong></p>",
+              "<p class=parrafoTabla>Oraciones con S.P.V <strong> Have-Has-Had </strong></p>",
             participle: "Gone",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' >Oraciones con S.P.V <strong> Is-Am-Are-Was-Were </strong></p>",
+              "<p class=parrafoTabla>Oraciones con S.P.V <strong> Is-Am-Are-Was-Were </strong></p>",
             progresive: "Going",
           },
         ],
@@ -679,27 +683,27 @@ export default {
         items: [
           {
             html:
-              "<p style='font-size:18px' class='text-left'> <strong> Do </strong> you work</p>",
+              "<p class = parrafoTabla> Do </strong> you work</p>",
             present: "¿Trabajas?",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left'><strong>Does</strong> she work?</p>",
+              "<p class = parrafoTabla><strong>Does</strong> she work?</p>",
             present2: "¿Ella trabaja?",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left'><strong> Did </strong> you work? </p>",
+              "<p class = parrafoTabla><strong> Did </strong> you work? </p>",
             past: "¿Trabajaste?",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' ><strong> Will </strong> you work? </p>",
+              "<p class = parrafoTabla><strong> Will </strong> you work? </p>",
             futuro: "¿Trabajarás?",
           },
           {
             html:
-              "<p style='font-size:18px' class='text-left' > <strong> Would </strong> you work? </p>",
+              "<p class = parrafoTabla> <strong> Would </strong> you work? </p>",
             ria: "¿Trabajarías?",
           },
         ],

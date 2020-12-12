@@ -1,9 +1,9 @@
 <template>
 <div id="app">
     <div class="row" id="curso">
-        <div class="col-sm-12">
+        <div class="col-sm-120">
 
-            <curso1Leccion25/> 
+            <curso1Leccion20/> 
 
         </div>
     </div>
@@ -12,13 +12,13 @@
 
 <script>
 import app from  "./assets/app.css";
-import curso1Leccion25 from "./components/curso1Leccion25.vue";
+import curso1Leccion20 from "./components/curso1Leccion20.vue";
 
 export default {
   name: "App",
   components: {
     
-    curso1Leccion25,
+    curso1Leccion20,
   },
 };
 </script>
@@ -29,7 +29,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: #20c3e50;
     margin-top: 60px;
 }
 
@@ -105,7 +105,7 @@ img {
 }
 
 /deep/ #textRequired {
-    width: 250px;
+    width: 200px;
 }
 
 /deep/ #inputText {
@@ -141,7 +141,7 @@ img {
     border-style: solid;
     border-radius: 1em;
     border-color: black;
-    font-size: 2em;
+    font-size: 20em;
     color: black;
     font-family: "PT Sans";
     font-weight: bold;

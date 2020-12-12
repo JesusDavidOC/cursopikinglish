@@ -91,7 +91,9 @@
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">ROLES</h3>
         <b-card>
-          <listaIndex :tabla="$data.tablaP94" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -101,7 +103,9 @@
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">IN-LAW</h3>
         <b-card>
-          <listaIndex :tabla="$data.tablaP94A" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94A" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -111,7 +115,9 @@
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">STEP</h3>
         <b-card>
-        <listaIndex :tabla="$data.tablaP94B" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94B" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -121,7 +127,9 @@
       <div class="col-sm-10">
         <h3 class="colorLetraAzul">GRAND</h3>
         <b-card>
-        <listaIndex :tabla="$data.tablaP94C" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94C" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -131,7 +139,9 @@
       <div class="col-sm-10">
         <h5 class="colorLetraAzul">GOD</h5>
         <b-card>
-        <listaIndex :tabla="$data.tablaP94D" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP94D" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -140,7 +150,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <p class="parrafo">MY FAMILY TREE</p>
-       <p class="parrafo">
+        <p class="parrafo">
           My name is Victor Hugo Sierra, I have two brothers, one daughter and
           one godson; my brothers are Oscar and Julian and my daughter´s name is
           Karen, she is 14 and Elkin is my godson. My parents’ names are Alba
@@ -155,7 +165,7 @@
           siblings all have children. My aunt Mirian and Hermes have three sons
           and one daughter; Diego, Harol, Anderson and Lorena.
         </p>
-        <p class="colorLetraAzul parrafo" >
+        <p class="colorLetraAzul parrafo">
           Complete the following sentences according to the information above.
         </p>
       </div>
@@ -209,7 +219,6 @@
         <p class="colorLetraAzul parrafo">
           Complete the following sentences according to the information above.
         </p>
-        </h5>
       </div>
     </div>
 

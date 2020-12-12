@@ -23,7 +23,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="$data.tablaP84" />
+          <p class= "parrafoTabla">
+            <listaIndex :tabla="$data.tablaP84" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -71,7 +73,7 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6 parrafo">
+      <div class="col-sm-6 ">
         <opcionMultiple
           :options="$data.cuestionarioP85"
           :rEsperadas="$data.respuestasCuestionarioP85"
@@ -576,73 +578,73 @@ with the 40 kg dog at the neighbor's house."`,
         ],
         items: [
           {
-            html: "<h6><strong>How old</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How old</strong></p>",
             como: "De qué edad",
             areyou: "How old are you?",
             comoestas: "¿De qué edad eres tú?",
           },
           {
-            html: "<h6><strong>How many</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How many</strong></p>",
             como: "Cuántos (as)",
             areyou: "How many people fit in a taxi?",
             comoestas: "¿Cuántas personas caben en un taxi?",
           },
           {
-            html: "<h6><strong>How fast</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How fast</strong></p>",
             como: "Qué tan rápido, a qué velocidad",
             areyou: "How fast does this car go?",
             comoestas: "¿Qué tan rápido anda este carro?",
           },
           {
-            html: "<h6><strong>How long</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How long</strong></p>",
             como: "Cuánto tiempo",
             areyou: "How long does it take?",
             comoestas: "¿Cuánto tiempo tarda?",
           },
           {
-            html: "<h6><strong>How come</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How come</strong></p>",
             como: "Por qué",
             areyou: "How come you are crying?",
             comoestas: "¿Por qué estás llorando?",
           },
           {
-            html: "<h6><strong>How much</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How much</strong></p>",
             como: "Cuánto (o)",
             areyou: "How much is this?",
             comoestas: "¿Cuánto cuesta esto?",
           },
           {
-            html: "<h6><strong>How often</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How often</strong></p>",
             como: "Con qué frecuencia",
             areyou: "How often do you visit the doctor?",
             comoestas: "¿Con que frecuencia visitas al doctor?",
           },
           {
-            html: "<h6><strong>How far</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How far</strong></p>",
             como: "Qué tan lejos",
             areyou: "How far is it?",
             comoestas: "¿Qué tan lejos está?",
           },
           {
-            html: "<h6><strong>How about</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How about</strong></p>",
             como: "Qué tal si",
             areyou: "How about watching a movie?",
             comoestas: "¿Qué tal ver una película?",
           },
           {
-            html: "<h6><strong>How late</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How late</strong></p>",
             como: "Qué tan tarde",
             areyou: "How late can you be here?",
             comoestas: "¿Qué tan tarde puedes estar aquí?",
           },
           {
-            html: "<h6><strong>How well</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How well</strong></p>",
             como: "Qué tan bien",
             areyou: "How well do you play?",
             comoestas: "¿Qué tan bien juegas?",
           },
           {
-            html: "<h6><strong>How easy</strong></h6>",
+            html: "<p class=parrafoTabla><strong>How easy</strong></p>",
             como: "Qué tan fácil",
             areyou: "How easy is that?",
             comoestas: "¿Qué tan fácil es eso?",

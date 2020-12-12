@@ -5,15 +5,17 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
+      <div class="col-sm-2"></div>
       <div class="col-sm-10 row">
         <div
-          class="col-sm-3"
+          class="col-sm-2,5"
           v-for="item in $data.tablasTiempoP87"
           style="margin: 0; padding: 0; text-align: left"
         >
           <b-card>
-            <listaIndex :tabla="item" />
+            <p class="parrafoTabla">
+              <listaIndex :tabla="item" />
+            </p>
           </b-card>
         </div>
       </div>
@@ -52,7 +54,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <b-card>
-          <listaIndex :tabla="tablaP79P2" />
+          <p class="parrafoTabla">
+            <listaIndex :tabla="tablaP79P2" />
+          </p>
         </b-card>
       </div>
     </div>
@@ -70,7 +74,9 @@
           style="margin: 0; padding: 0; text-align: left"
         >
           <b-card>
-            <listaIndex :tabla="item" />
+            <p class="parrafoTabla">
+              <listaIndex :tabla="item" />
+            </p>
           </b-card>
         </div>
       </div>
@@ -126,11 +132,15 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <b-card>
-        <listaIndex :tabla="$data.tablaA" />
+        <p class="parrafoTabla">
+          <listaIndex :tabla="$data.tablaA" />
+        </p>
       </b-card>
       <div class="col-sm-1"></div>
       <b-card>
-        <listaIndex :tabla="$data.tablaB" />
+        <p class="parrafoTabla">
+          <listaIndex :tabla="$data.tablaB" />
+        </p>
       </b-card>
     </div>
 
@@ -140,15 +150,13 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <p class="parrafo">
-          Completar la oración con la preposición correcta
-        </p>
+        <p class="parrafo">Completar la oración con la preposición correcta</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-1 "></div>
-      <div class="col-sm-6" style="text-align: justify;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6" style="text-align: justify">
         <opcionMultiple
           :options="$data.cuestionarioP90"
           :rEsperadas="$data.respuestasCuestionarioP90"
@@ -694,46 +702,47 @@ export default {
         items: [
           {
             html:
-              "<h6> <span style='color: red;'>¿DE</span> donde está viniendo ese humo? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿DE</span> donde está viniendo ese humo? </p>",
             english: "Where is that smoke coming FROM?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿SOBRE/ ACERCA DE/ DE</span> que estás hablando? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿SOBRE/ ACERCA DE/ DE</span> que estás hablando? </p>",
             english: "What are you talking ABOUT?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿PARA</span> quién trabajas?</h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿PARA</span> quién trabajas?</p>",
             english: "Who do you work FOR?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿Con</span> quién saliste anoche? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿Con</span> quién saliste anoche? </p>",
             english: "Who did you go out WITH last night?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿De</span> qué está hecho eso?</h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿De</span> qué está hecho eso?</p>",
             english: "What is that made OF?",
           },
           {
-            html: "<h6> <span style='color: red;'>¿De</span> dónde eres? </h6>",
+            html:
+              "<p class=parrafoTabla> <span style='color: red;'>¿De</span> dónde eres? </p>",
             english: "Where are you FROM?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿En qué</span> estás interesado? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿En qué</span> estás interesado? </p>",
             english: "What are you interested IN?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿Hacia</span> dónde va este bus? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿Hacia</span> dónde va este bus? </p>",
             english: "Where does this bus go TO?",
           },
           {
             html:
-              "<h6> <span style='color: red;'>¿Con</span> quién está hablando? </h6>",
+              "<p class=parrafoTabla> <span style='color: red;'>¿Con</span> quién está hablando? </p>",
             english: "Who are you talking TO?",
           },
         ],

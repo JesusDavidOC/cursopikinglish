@@ -8,18 +8,21 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <p class="parrafo">
-          The abbreviation for ordinal numbers from the fourth is formed with the addition of "th" to the number. The dozens and units are separated by a hyphen from 20, e.g. 21
-          st = twenty-first.
+          The abbreviation for ordinal numbers from the fourth is formed with
+          the addition of "th" to the number. The dozens and units are separated
+          by a hyphen from 20, e.g. 21 st = twenty-first.
         </p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-      <b-card>
-        <listaIndex :tabla="$data.tablaP106" />
-      </b-card>
+      <div class="col-sm-"></div>
+      <div class="col-sm-12">
+        <b-card>
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP106" />
+          </p>
+        </b-card>
       </div>
     </div>
 
@@ -27,9 +30,11 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <p class="parrafo">
-          Dates are expressed differently between America and other English-speaking countries. In America, they say
-          the month first then the date (May 24 th). In the other English-speaking countries, they say the date first then the month (24
-          th of May). Notice all other countries say “of”. The 24 th of May
+          Dates are expressed differently between America and other
+          English-speaking countries. In America, they say the month first then
+          the date (May 24 th). In the other English-speaking countries, they
+          say the date first then the month (24 th of May). Notice all other
+          countries say “of”. The 24 th of May
         </p>
       </div>
     </div>
@@ -37,9 +42,11 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-      <b-card>
-        <listaIndex :tabla="$data.tablaP106A" />
-      </b-card>
+        <b-card>
+          <p class="parrafoTabla">
+            <listaIndex :tabla="$data.tablaP106A" />
+          </p>
+        </b-card>
       </div>
     </div>
 
@@ -57,33 +64,31 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-      <b-card>
-        <tablaTC
-
-          class="overflow-auto"
-          :cuestionario="$data.cuestionario1"
-          :inglesR="false"
-          :espanolR="false"
-        />
+        <b-card>
+          <tablaTC
+            class="overflow-auto"
+            :cuestionario="$data.cuestionario1"
+            :inglesR="false"
+            :espanolR="false"
+          />
         </b-card>
       </div>
     </div>
 
     <div class="row">
-        <h3 id="subTitulo">Listening section. write the month and the day.</h3>
+      <h3 id="subTitulo">Listening section. write the month and the day.</h3>
     </div>
     <div class="row" v-for="(item, index) in preguntasCompletarP107.items">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-       
-          <inputChecked
-            :esperado="item.esperado"
-            :name="preguntasCompletarP107.nombre+index"
-            :conTexto="true"
-            :textoA="item.textoA"
-            :textoD="item.textoD"
-            :tamano="item.tamano"
-          />
+        <inputChecked
+          :esperado="item.esperado"
+          :name="preguntasCompletarP107.nombre + index"
+          :conTexto="true"
+          :textoA="item.textoA"
+          :textoD="item.textoD"
+          :tamano="item.tamano"
+        />
       </div>
     </div>
 
@@ -99,7 +104,9 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <listaIndex :tabla="$data.tablaP107" />
+        <p class="parrafoTabla">
+          <listaIndex :tabla="$data.tablaP107" />
+        </p>
       </div>
     </div>
 
@@ -107,24 +114,30 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <p class="parrafo">
-          Today I had to go to the supermarket, to buy some things for my family. My mum had given me $15 to buy
-          the weeks groceries. Included in the list was a half dozen apples, a dozen bananas, 750g of carrots, 500g of
-          rice, six eggs, 3 litres of milk and a kilogram of chicken. I also had to buy a few other things to keep the
-          kitchen cupboards full, like olive oil and a few more vegetables. Unfortunately, once I arrived in the supermarket, I realized the $15 was not going to be enough! The
-          kilogram of chicken alone cost $6.95, the eggs cost 20 cents each and the milk cost $1.50 per litre. The most
-          Logic of english Step 1
-          VICTOR SIERRA ©
-          expensive of all was the olive oil. My mum likes this expensive Spanish brand, and one litre cost another
-          $6.49!
-          Then, to make matters worse, as I was walking around the electronics section I slipped over and ended up
-          breaking a $1,200 television!! When the store manager came over I tried to apologize, but he wanted me to
-          pay for it. I told him I didn’t have the money, and he said I could pay for my groceries and come back later to
-          pay for the television. However, when I told him I also didn’t have enough money for the groceries he
-          looked absolutely furious!
-          Now I’m walking home, and trying to figure out how to tell my mum that I need $1,200 to pay for a broken
-          tv… I think she’s going to ground me for the next three years! Hopefully we can pay the money back in $50
-          weekly payments over the next few months, but she will still be very angry either way.
-          I need to go back to the supermarket, find the angry manager and pay for the groceries too… What a day!
+          Today I had to go to the supermarket, to buy some things for my
+          family. My mum had given me $15 to buy the weeks groceries. Included
+          in the list was a half dozen apples, a dozen bananas, 750g of carrots,
+          500g of rice, six eggs, 3 litres of milk and a kilogram of chicken. I
+          also had to buy a few other things to keep the kitchen cupboards full,
+          like olive oil and a few more vegetables. Unfortunately, once I
+          arrived in the supermarket, I realized the $15 was not going to be
+          enough! The kilogram of chicken alone cost $6.95, the eggs cost 20
+          cents each and the milk cost $1.50 per litre. The most Logic of
+          english Step 1 VICTOR SIERRA © expensive of all was the olive oil. My
+          mum likes this expensive Spanish brand, and one litre cost another
+          $6.49! Then, to make matters worse, as I was walking around the
+          electronics section I slipped over and ended up breaking a $1,200
+          television!! When the store manager came over I tried to apologize,
+          but he wanted me to pay for it. I told him I didn’t have the money,
+          and he said I could pay for my groceries and come back later to pay
+          for the television. However, when I told him I also didn’t have enough
+          money for the groceries he looked absolutely furious! Now I’m walking
+          home, and trying to figure out how to tell my mum that I need $1,200
+          to pay for a broken tv… I think she’s going to ground me for the next
+          three years! Hopefully we can pay the money back in $50 weekly
+          payments over the next few months, but she will still be very angry
+          either way. I need to go back to the supermarket, find the angry
+          manager and pay for the groceries too… What a day!
         </p>
       </div>
     </div>
@@ -141,24 +154,35 @@
           @respuestas="$data.mensajeRespuestasP109 = $event"
         />
       </div>
-      <b-modal ref="my-modal109" hide-footer title="RESULTADO">{{mensajeRespuestasP109 }}</b-modal>
+      <b-modal ref="my-modal109" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP109
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP109')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP109')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
-    <div class= "row">
-      <div class= "col-sm-1"></div>
+    <div class="row">
+      <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <b-card> 
-        <p class="parrafo">
-          Has terminado todas las lecciones del primer nivel, ahora estás en las capacidades de presentar el examen, has click en el botón para resolverlo.
-        </p>
+        <b-card>
+          <p class="parrafo">
+            Has terminado todas las lecciones del primer nivel, ahora estás en
+            las capacidades de presentar el examen, has click en el botón para
+            resolverlo.
+          </p>
           <div>
-            <b-button  size="lg" href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin=" variant="danger">HACER EXAMEN</b-button>
+            <b-button
+              size="lg"
+              href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin="
+              variant="danger"
+              >HACER EXAMEN</b-button
+            >
           </div>
         </b-card>
       </div>
@@ -223,8 +247,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "2. The author bought ___ eggs ___ apples",
+          pregunta: "2. The author bought ___ eggs ___ apples",
           options: [
             {
               text: "A) The same amount of, as",
@@ -287,8 +310,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "5. What was the most expensive item the author bought?",
+          pregunta: "5. What was the most expensive item the author bought?",
           options: [
             {
               text: "A) The olive oil.",
@@ -330,8 +352,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "7. Why was the store manager so angry?",
+          pregunta: "7. Why was the store manager so angry?",
           options: [
             {
               text: "A) Because the author couldn’t pay for the television",
@@ -344,7 +365,8 @@ export default {
               disabled: false,
             },
             {
-              text: "C) Because the author couldn´t pay for the television or the groceries",
+              text:
+                "C) Because the author couldn´t pay for the television or the groceries",
               value: "C",
               disabled: false,
             },
@@ -366,7 +388,8 @@ export default {
               disabled: false,
             },
             {
-              text: "C) He will have to work in the store to pay for the television",
+              text:
+                "C) He will have to work in the store to pay for the television",
               value: "C",
               disabled: false,
             },
@@ -374,7 +397,8 @@ export default {
         },
         {
           respuesta: "",
-          pregunta: "9. If the author can pay for the television by paying $50 a week, how many weeks will he need to pay back the $1,200?",
+          pregunta:
+            "9. If the author can pay for the television by paying $50 a week, how many weeks will he need to pay back the $1,200?",
           options: [
             {
               text: "A) Twelve weeks",
@@ -395,8 +419,7 @@ export default {
         },
         {
           respuesta: "",
-          pregunta:
-            "10. What word best describes the author’s day?",
+          pregunta: "10. What word best describes the author’s day?",
           options: [
             {
               text: "A) Fun",
@@ -493,11 +516,11 @@ export default {
         items: [
           {
             english: "On December 21 st 2012",
-            complejo1:{lista:["On the 21st of December, 2012"],tamano:26},
+            complejo1: { lista: ["On the 21st of December, 2012"], tamano: 26 },
           },
           {
             english: "On July ninth 1984",
-            complejo1: {lista:["On the ninth of July 1984"],tamano:22},
+            complejo1: { lista: ["On the ninth of July 1984"], tamano: 22 },
           },
         ],
       },
