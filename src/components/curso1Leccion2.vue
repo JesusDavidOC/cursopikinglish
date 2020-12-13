@@ -9,23 +9,23 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-2">
           <div class="col-sm-7" id="numeroMagico2">2</div>
-          <h3 style="margin-top:0.4em;">Types Of Verbs</h3>
+          <h3 style="margin-top: 0.4em">Types Of Verbs</h3>
           <listaIndex :tabla="$data.tablasNumeroMagicoP14[0]" />
         </div>
         <div class="col-sm-2">
           <div class="col-sm-7" id="numeroMagico4">4</div>
-          <h3 style="margin-top:0.4em;">Spelling Forms</h3>
+          <h3 style="margin-top: 0.4em">Spelling Forms</h3>
           <listaIndex :tabla="$data.tablasNumeroMagicoP14[1]" />
         </div>
         <div class="col-sm-2">
           <div class="col-sm-7" id="numeroMagico5">5</div>
-          <h3 style="margin-top:0.4em;">Tense Modifiers</h3>
+          <h3 style="margin-top: 0.4em">Tense Modifiers</h3>
           <listaIndex :tabla="$data.tablasNumeroMagicoP14[2]" />
         </div>
         <div class="col-sm-2">
           <div class="col-sm-7" id="numeroMagico12">12</div>
-          <h4 style="margin-top:0.4em;">Super Power Verbs</h4>
-          <div class="overflow-auto" style="max-height: 350px;">
+          <h4 style="margin-top: 0.4em">Super Power Verbs</h4>
+          <div class="overflow-auto" style="max-height: 350px">
             <listaIndex :tabla="$data.tablasNumeroMagicoP14[3]" />
           </div>
         </div>
@@ -33,10 +33,17 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-2"></div>
-          <div class="col-sm-8">
-            <iframe width="100%" height="440" src="https://www.youtube.com/embed/YvkfIwFzXVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <iframe
+          width="100%"
+          height="440"
+          src="https://www.youtube.com/embed/YvkfIwFzXVU"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <div class="row">
@@ -47,7 +54,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-4" id="text">
-        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <i class="fa fa-diamond" style="font-size: 1.5em"></i>
         <a id="textPractice">Elige la respuesta correcta</a>
       </div>
     </div>
@@ -60,13 +67,17 @@
           @respuestas="mensajeRespuestasP13 = $event"
         />
       </div>
-      <b-modal ref="my-modal1" hide-footer title="RESULTADO">{{ mensajeRespuestasP13 }}</b-modal>
+      <b-modal ref="my-modal1" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP13
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modal1')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modal1')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
 
@@ -83,7 +94,7 @@
           <dt v-for="(item, index) in $data.listadoP14" id="textoCompromiso">
             <i class="fa fa-diamond"></i>
             <a v-html="item">{{ item }}</a>
-            <div class="row" v-if="index== 3">
+            <div class="row" v-if="index == 3">
               <div class="col-sm-1"></div>
               <div class="col-sm-10">
                 <ul>
@@ -101,7 +112,11 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-3" v-for="item in $data.tablasTiempoP15" style="margin:0; padding:0;">
+        <div
+          class="col-sm-3"
+          v-for="item in $data.tablasTiempoP15"
+          style="margin: 0; padding: 0"
+        >
           <listaIndex :tabla="item" />
         </div>
       </div>
@@ -110,18 +125,47 @@
       <div class="col-sm-8" id="subTitulo">
         <h3>PRACTICE</h3>
       </div>
-      <div class="row">
-        <div id="i" class="col-sm-1">
-              <i class="fa fa-diamond"></i>
-        </div>
-        <div >
-              <inputCEnriquecido :object="inputCEP15N1" />
-        </div>
-      </div>
+    </div>
+
+    <div class="row">
+      <b-col md="1">
+         
+      </b-col>
+      <b-col md="auto">
+
+        <i class="fa fa-diamond"></i>
+        <inputCEnriquecido :object="inputCEP15N1"/>
+      
+        
+       <div class="row">
+         <div>
+           <inputChecked
+            :resuelto="false"
+            :esperado="['Presente']"
+            :conTexto="true"
+            textoD=","
+            :tamano="14"
+          />
+         </div>
+         <b-col md="auto" style="padding: 0px">
+           <inputCEnriquecido :object="inputCEP15N2" />
+         </b-col>
+         <b-col md="auto" style="padding:0px">
+           <inputChecked
+            :resuelto="false"
+            :esperado="['Progresivo']"
+            :conTexto="true"
+            textoD="."
+            :tamano="14"
+          />
+         </b-col>
+        
+       </div>
+      </b-col>
     </div>
     <div class="row">
       <div class="col-sm-11 row">
-        <ul id="textoCompromiso" style="width:100%;">
+        <ul id="textoCompromiso" style="width: 100%">
           <dt>
             <div class="col-sm-12 row"></div>
             <div class="col-sm-12">
@@ -130,38 +174,13 @@
                   <div id="i" class="col-sm-1">
                     <i class="fa fa-diamond"></i>
                   </div>
-                  <div class="col-sm-11 row" id="inputText">
-                    Hay dos tipos de verbos
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado="['Regulares']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />e
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado="['Irregulares']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />, ambos tienen cuatro formas
+                  <div class="col-sm-11 row" id="inputText" style="display: inline-flex">
+                    <inputCEnriquecido :object="inputCEP15N1" />
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Presente']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />,
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado="['Pasado']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />,
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado="['Participio']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />y
-                    <inputChecked
-                      :resuelto="false"
-                      :esperado="['Progresivo']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
-                    />.
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
+                    />
                   </div>
                 </div>
               </a>
@@ -176,26 +195,27 @@
                     <i class="fa fa-diamond"></i>
                   </div>
                   <div class="col-sm-11 row" id="inputText">
-                    Los verbos en Presente se usan después de los verbos con poder
+                    Los verbos en Presente se usan después de los verbos con
+                    poder
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Can']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Could']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Should']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />o
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Must']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />.
                   </div>
                 </div>
@@ -215,27 +235,27 @@
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Do']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Does']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Did']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Will']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />o
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Would']"
-                      style="width: 18%; margin-left:10px; margin-right:10px;"
+                      style="width: 18%; margin-left: 10px; margin-right: 10px"
                     />.
                   </div>
                 </div>
@@ -265,17 +285,24 @@
                                 El
                                 <span
                                   class="colorLetraRojo"
-                                  style="margin-left:4px; margin-right:4px;"
-                                >Do</span> es para preguntar en
+                                  style="margin-left: 4px; margin-right: 4px"
+                                  >Do</span
+                                >
+                                es para preguntar en
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['Presente']"
-                                  style="width: 20%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 20%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />, y su negación es
                                 <span
                                   class="colorLetraRojo"
-                                  style="margin-left:4px; margin-right:4px;"
-                                >don't.</span>
+                                  style="margin-left: 4px; margin-right: 4px"
+                                  >don't.</span
+                                >
                               </div>
                             </div>
                           </a>
@@ -294,16 +321,20 @@
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['Does']"
-                                  style="width: 20%; margin-left:10px; margin-right:10px;"
-                                />para preguntar en presente, pero con she, he, it,
-                                <a
-                                  style="width:100%; margin:0px;"
-                                >
+                                  style="
+                                    width: 20%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
+                                />para preguntar en presente, pero con she, he,
+                                it,
+                                <a style="width: 100%; margin: 0px">
                                   y su negación es
                                   <span
                                     class="colorLetraRojo"
-                                    style="margin-left:4px; margin-right:4px;"
-                                  >doesn't.</span>
+                                    style="margin-left: 4px; margin-right: 4px"
+                                    >doesn't.</span
+                                  >
                                 </a>
                               </div>
                             </div>
@@ -322,17 +353,27 @@
                                 El
                                 <span
                                   class="colorLetraRojo"
-                                  style="margin-left:4px; margin-right:4px;"
-                                >Did</span> es para preguntar en
+                                  style="margin-left: 4px; margin-right: 4px"
+                                  >Did</span
+                                >
+                                es para preguntar en
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['pasado']"
-                                  style="width: 16%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 16%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />y su negación es
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['didn´t']"
-                                  style="width: 16%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 16%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />.
                               </div>
                             </div>
@@ -352,12 +393,20 @@
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['Will']"
-                                  style="width: 16%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 16%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />para preguntar en futuro y el
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['Won´t']"
-                                  style="width: 15%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 15%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />para negar.
                               </div>
                             </div>
@@ -376,18 +425,32 @@
                                 El
                                 <span
                                   class="colorLetraRojo"
-                                  style="margin-left:4px; margin-right:4px;"
-                                >Would</span> se usa para preguntarcon un verbo que termina en “
+                                  style="margin-left: 4px; margin-right: 4px"
+                                  >Would</span
+                                >
+                                se usa para preguntarcon un verbo que termina en
+                                “
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['ría']"
-                                  style="width: 16%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 16%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />”
-                                <span>Ejemplo: comería, haría, dormiría, jugaría etc y su negación es</span>
+                                <span
+                                  >Ejemplo: comería, haría, dormiría, jugaría
+                                  etc y su negación es</span
+                                >
                                 <inputChecked
                                   :resuelto="false"
                                   :esperado="['wouldn´t']"
-                                  style="width: 16%; margin-left:10px; margin-right:10px;"
+                                  style="
+                                    width: 16%;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                  "
                                 />.
                               </div>
                             </div>
@@ -412,20 +475,20 @@
                     Un verbo se usa en forma
                     <span
                       class="colorLetraRojo"
-                      style="margin-left:4px; margin-right:4px;"
-                    >Pasado</span> solo en una
+                      style="margin-left: 4px; margin-right: 4px"
+                      >Pasado</span
+                    >
+                    solo en una
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Afirmación']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />; si es regular se agrega
-                    “
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
+                    />; si es regular se agrega “
                     <inputChecked
                       :resuelto="false"
                       :esperado="['ed']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />” y si es
-                    irregular se aprende.
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
+                    />” y si es irregular se aprende.
                   </div>
                 </div>
               </a>
@@ -440,20 +503,19 @@
                     <i class="fa fa-diamond"></i>
                   </div>
                   <div class="col-sm-11 row" id="inputText">
-                    Un verbo se usa en su forma participio únicamente después de los verbos con poder
-                    '
+                    Un verbo se usa en su forma participio únicamente después de
+                    los verbos con poder '
                     <inputChecked
                       :resuelto="false"
                       :esperado="['have']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />,
-                    <span class="colorLetraRojo">has</span>,
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
+                    />, <span class="colorLetraRojo">has</span>,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['had']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
-                    />'
-                    Si es regular se le agrega 'ed' y si es irregular se aprende.
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
+                    />' Si es regular se le agrega 'ed' y si es irregular se
+                    aprende.
                   </div>
                 </div>
               </a>
@@ -472,9 +534,11 @@
                     <inputChecked
                       :resuelto="false"
                       :esperado="['auxiliares']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
                     />
-                    <span>en una pregunta, afirmación ni negación y</span> son los únicos que se niegan al poner la palabra “NOT” delante de ellos y existen doce.
+                    <span>en una pregunta, afirmación ni negación y</span> son
+                    los únicos que se niegan al poner la palabra “NOT” delante
+                    de ellos y existen doce.
                   </div>
                 </div>
               </a>
@@ -489,34 +553,33 @@
                     <i class="fa fa-diamond"></i>
                   </div>
                   <div class="col-sm-11 row" id="inputText">
-                    "Un verbo se usa en su forma progresiva después de los verbos con poder
-                    <span
-                      class="colorLetraRojo"
-                    >IS,</span>
+                    "Un verbo se usa en su forma progresiva después de los
+                    verbos con poder
+                    <span class="colorLetraRojo">IS,</span>
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Am']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Are']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
                     />,
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Was']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
                     />o
                     <inputChecked
                       :resuelto="false"
                       :esperado="['Were']"
-                      style="width: 15%; margin-left:10px; margin-right:10px;"
+                      style="width: 15%; margin-left: 10px; margin-right: 10px"
                     />y al verbo se le agrega “
                     <inputChecked
                       :resuelto="false"
                       :esperado="['ING']"
-                      style="width: 14%; margin-left:10px; margin-right:10px;"
+                      style="width: 14%; margin-left: 10px; margin-right: 10px"
                     />”
                     <span>al final.</span>
                   </div>
@@ -531,11 +594,12 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div
-          class="col-sm-3"
+          class="col-sm-3 "
           v-for="item in $data.tablasTiempoPreguntaP15"
-          style="margin:0; padding:0;"
+          style="margin: 0; padding: 0;"
+
         >
-          <listaIndex :tabla="item" />
+          <listaIndex :tabla="item" class="fuenteComponentes"/>
         </div>
       </div>
     </div>
@@ -547,7 +611,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-4" id="text">
-        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
+        <i class="fa fa-diamond" style="font-size: 1.5em"></i>
         <a id="textPractice">Elige la respuesta correcta</a>
       </div>
     </div>
@@ -562,24 +626,30 @@
         />
       </div>
       <div class="col-sm-1"></div>
-      <b-modal ref="my-modal1" hide-footer title="RESULTADO">{{mensajeRespuestasP17 }}</b-modal>
+      <b-modal ref="my-modal1" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP17
+      }}</b-modal>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modal1')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modal1')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >7. Escriba los verbos con súper poder</legend>
+        >
+          7. Escriba los verbos con súper poder
+        </legend>
       </div>
-    </div>    
+    </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
@@ -588,12 +658,14 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >8. Escriba las cuatro formas del verbo</legend>
+        >
+          8. Escriba las cuatro formas del verbo
+        </legend>
       </div>
     </div>
     <div class="row">
@@ -604,12 +676,14 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >9. Escribe los 5 auxiliares del inglés para preguntar y negar</legend>
+        >
+          9. Escribe los 5 auxiliares del inglés para preguntar y negar
+        </legend>
       </div>
     </div>
     <div class="row">
@@ -617,7 +691,7 @@
       <div class="col-sm-11 row">
         <div
           class="col-sm-2"
-          style="margin:0; padding:0;"
+          style="margin: 0; padding: 0"
           v-for="(item, index) in tablaPregunta8P17"
         >
           <listaIndex :tabla="item" />
@@ -643,7 +717,6 @@ export default {
   },
   data() {
     return {
-      
       tablaPregunta8P17: [
         {
           bordered: false,
@@ -795,8 +868,7 @@ export default {
         },
       ],
 
-      inputCEP15N1:{
-
+      inputCEP15N1: {
         lista1: ["Regulares"],
         lista2: ["Irregulares"],
         name: "inputCEP15N1",
@@ -805,8 +877,17 @@ export default {
         textoD2: "y ambos tienen 4 formas:",
         tamano1: 30,
         tamano2: 30,
+      },
 
-
+      inputCEP15N2:{
+        lista1: ["Pasado"],
+        lista2: ["Participio"],
+        name: "inputCEP15N2",
+        textoA: "",
+        textoD: ",",
+        textoD2: "y",
+        tamano1: 15,
+        tamano2: 15,
       },
       tablasTiempoP15: [
         {
@@ -1335,6 +1416,7 @@ img {
   font-family: "PT Sans";
   font-weight: bold;
   margin-bottom: auto;
+  text-align: center;
 }
 #numeroMagico2 {
   background: yellow;
