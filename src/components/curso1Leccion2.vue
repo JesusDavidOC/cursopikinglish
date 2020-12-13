@@ -127,42 +127,50 @@
       </div>
     </div>
 
-    <div class="row">
-      <b-col md="1">
-         
-      </b-col>
-      <b-col md="auto">
+    <b-row>
+      <b-col md="1"> </b-col>
 
-        <i class="fa fa-diamond"></i>
-        <inputCEnriquecido :object="inputCEP15N1"/>
-      
-        
-       <div class="row">
-         <div>
-           <inputChecked
-            :resuelto="false"
-            :esperado="['Presente']"
-            :conTexto="true"
-            textoD=","
-            :tamano="14"
-          />
-         </div>
-         <b-col md="auto" style="padding: 0px">
-           <inputCEnriquecido :object="inputCEP15N2" />
-         </b-col>
-         <b-col md="auto" style="padding:0px">
-           <inputChecked
-            :resuelto="false"
-            :esperado="['Progresivo']"
-            :conTexto="true"
-            textoD="."
-            :tamano="14"
-          />
-         </b-col>
-        
-       </div>
+      <b-col md="11">
+        <div class="row">
+          
+          
+            <b-row style="margin: 0">
+              <b-col md="auto" style="padding: 0">
+                <i class="fa fa-diamond" style="padding-top: 0.8em"></i>
+              </b-col>
+              <b-col md="auto">
+                <inputCEnriquecido :object="inputCEP15N1" />
+              </b-col>
+            </b-row>
+
+            <div class="row">
+              <div>
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Presente']"
+                  :conTexto="true"
+                  textoD=","
+                  :tamano="14"
+                />
+              </div>
+              <b-col md="auto" style="padding: 0px">
+                <inputCEnriquecido :object="inputCEP15N2" />
+              </b-col>
+              <b-col md="auto" style="padding: 0px">
+                <inputChecked
+                  :resuelto="false"
+                  :esperado="['Progresivo']"
+                  :conTexto="true"
+                  textoD="."
+                  :tamano="14"
+                />
+              </b-col>
+            </div>
+         
+        </div>
       </b-col>
-    </div>
+    </b-row>
+
     <div class="row">
       <div class="col-sm-11 row">
         <ul id="textoCompromiso" style="width: 100%">
@@ -174,7 +182,11 @@
                   <div id="i" class="col-sm-1">
                     <i class="fa fa-diamond"></i>
                   </div>
-                  <div class="col-sm-11 row" id="inputText" style="display: inline-flex">
+                  <div
+                    class="col-sm-11 row"
+                    id="inputText"
+                    style="display: inline-flex"
+                  >
                     <inputCEnriquecido :object="inputCEP15N1" />
                     <inputChecked
                       :resuelto="false"
@@ -594,12 +606,11 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div
-          class="col-sm-3 "
+          class="col-sm-3"
           v-for="item in $data.tablasTiempoPreguntaP15"
-          style="margin: 0; padding: 0;"
-
+          style="margin: 0; padding: 0"
         >
-          <listaIndex :tabla="item" class="fuenteComponentes"/>
+          <listaIndex :tabla="item" class="fuenteComponentes" />
         </div>
       </div>
     </div>
@@ -879,7 +890,7 @@ export default {
         tamano2: 30,
       },
 
-      inputCEP15N2:{
+      inputCEP15N2: {
         lista1: ["Pasado"],
         lista2: ["Participio"],
         name: "inputCEP15N2",
