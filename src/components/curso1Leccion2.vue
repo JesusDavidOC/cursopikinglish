@@ -516,11 +516,7 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-11">
-        <b-row style="margin: 0; padding: 0">
-          <b-col md="3" v-for="(item, index) in tablaPregunta8P17">
-            <listaIndex :tabla="item"  />
-          </b-col>
-        </b-row>
+        <tablaTC :cuestionario ="tablaPregunta8P17"/>
       </div>
     </div>
   </div>
@@ -528,7 +524,7 @@
 
 <script>
 import listaIndex from "./listaIndex";
-import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
+import tablaTC from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
 import inputCEnriquecido from "./inputCEnriquecido";
@@ -536,15 +532,80 @@ import InputCEnriquecido from "./inputCEnriquecido.vue";
 export default {
   components: {
     listaIndex,
-    tablaTraduccionCodigos,
+    tablaTC,
     opcionMultiple,
     inputChecked,
     inputCEnriquecido,
   },
   data() {
     return {
-      tablaPregunta8P17: [
-        {
+      tablaPregunta8P17: {
+        fields: [
+
+          {
+            key: "complejo1",
+            label: "En presente."
+          },
+          { 
+             key: "complejo2",
+             label: "En presente con she, he e it."
+          },
+          { 
+             key: "complejo3",
+             label: "En pasado."
+          },
+          { 
+             key: "complejo4",
+             label: "En futuro."
+          },
+           { 
+             key: "complejo5",
+             label: "Un verbo termina en ría."
+          },
+          
+        ],
+        items:[
+          {
+            complejo1:{
+              
+              lista: [
+                "Do"
+              ],
+              tamano:10
+            },
+             complejo2:{
+              
+              lista: [
+                "Does"
+              ],
+              tamano:12
+            },
+             complejo3:{
+              
+              lista: [
+                "Did"
+              ],
+              tamano:10
+            },
+             complejo4:{
+              
+              lista: [
+                "Will"
+              ],
+              tamano:10
+            },
+             complejo5:{
+              
+              lista: [
+                "Would"
+              ],
+              tamano:12
+            },
+            
+          }
+        ]
+      },
+      /**{
           bordered: false,
           camposInput: true,
           fields: [
@@ -593,8 +654,8 @@ export default {
             { key: "Z", label: "Un verbo termina en ría." },
           ],
           items: ["Would"],
-        },
-      ],
+        },**/
+
       tablaEsperadosP17a: {
         items: ["presente", "pasado", "participio", "progresivo"],
         refs: "tablaEsperadosP17a",

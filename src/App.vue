@@ -5,6 +5,7 @@
 
             <curso1Leccion1/>
             <curso1Leccion2/>
+            <curso1Leccion4/>
 
         </div>
     </div>
@@ -15,6 +16,7 @@
 import app from  "./assets/app.css";
 import curso1Leccion1 from "./components/curso1Leccion1.vue";
 import curso1Leccion2 from "./components/curso1Leccion2.vue";
+import curso1Leccion4 from "./components/curso1Leccion4.vue";
 
 export default {
   name: "App",
@@ -22,6 +24,7 @@ export default {
     
     curso1Leccion1,
     curso1Leccion2,
+    curso1Leccion4,
   },
 };
 </script>
