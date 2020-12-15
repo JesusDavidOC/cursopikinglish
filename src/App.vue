@@ -3,6 +3,7 @@
     <div class="row" id="curso">
         <div class="col-sm-12">
 
+            <curso1Leccion6 />
             <curso1Leccion7 />
 
         </div>
@@ -20,6 +21,7 @@ export default {
     name: "App",
     components: {
 
+        curso1Leccion6,
         curso1Leccion7,
     },
 };

@@ -1,13 +1,15 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <h3 class="titulo">FORMA PRESENTE DEL VERBO</h3>
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>FORMA PRESENTE DEL VERBO</h3>
+      </b-col>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
-        <img src="/cursos/curso1/leccion6/imagenes/tablaPag32.png" />
+        <img src="https://classroom.pikinglish.com/cursos/curso1/leccion6/imagenes/tablaPag32.png" />
       </div>
     </div>
 
@@ -27,84 +29,74 @@
 
     <div class="row">
       <p class="subTitulo marginn-left">
-        
-          REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO
-        
-      </p>
-    </div>
-
-    <div class="row ">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2" v-for="item in $data.tablaDosPag32">
-        <listaIndex :tabla="item"
-        class="botTabla"
-         />
-
-        
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-sm-1"></div>
-      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
-
-      <p class="fuenteDiamond">
-        Escribe la forma presente para terceras personas.
-        
+        REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO
       </p>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-7">
+      <div class="col-sm-2" v-for="item in $data.tablaDosPag32">
+        <listaIndex :tabla="item" class="botTabla" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+
+      <p class="fuenteDiamond">
+        Escribe la forma presente para terceras personas.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
         <tablaTC
           class="overflow-auto botTabla"
           :cuestionario="tablaTresPag32"
-          :inglesR="false"
-          :espanolR="false"
+          
         />
       </div>
       <div class="col-sm-1"></div>
     </div>
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
-      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
+      <i class="fa fa-diamond" style="font-size: 1.5em"></i>
 
       <p class="fuenteDiamond">
-        
-        
-          Reemplaza los números por letras y utiliza el verbo en su forma
-          correcta.
+        Reemplaza los números por letras y utiliza el verbo en su forma
+        correcta.
       </p>
     </div>
 
     <div class="row botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaAPag33" class="botTabla"/>
+        <div class="col-sm-2">
+          <listaIndex :tabla="$data.tablaAPag33" class="botTabla" />
         </div>
-        <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaBPag33" class="botTabla"/>
-        </div>
-
-        <div class="col-sm-2 " >
-          <listaIndex :tabla="$data.tablaCPag33" class="botTabla"/>
+        <div class="col-sm-2">
+          <listaIndex :tabla="$data.tablaBPag33" class="botTabla" />
         </div>
 
-        <div class="col-sm-3 " >
-          <listaIndex :tabla="$data.tablaDPag33" class="botTabla"/>
+        <div class="col-sm-2">
+          <listaIndex :tabla="$data.tablaCPag33" class="botTabla" />
+        </div>
+
+        <div class="col-sm-3">
+          <listaIndex :tabla="$data.tablaDPag33" class="botTabla" />
         </div>
       </div>
     </div>
 
-    <div class="row  botTabla ">
+    <div class="row botTabla">
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag33"
           :inglesR="false"
           :espanolR="true"
-          style="padding: 0%;"
+          style="padding: 0%"
           class=""
         />
       </div>
@@ -112,57 +104,43 @@
     <br />
     <br />
     <br />
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
-            <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
+      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="fuenteDiamond ">
-        
+      <p class="fuenteDiamond">
         Add the S, ES or IES to the verb if necessary.
-       
       </p>
     </div>
 
     <div class="row">
-      
-
-      <h3 class="subTitulo">
-        DICTIONARY
-        
-      </h3>
+      <h3 class="subTitulo">DICTIONARY</h3>
     </div>
 
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-0.9" v-for="item in $data.tablaUnoPag34">
-        <listaIndex :tabla="item" class="botTabla"/>
-
-        
+        <listaIndex :tabla="item" class="botTabla" />
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <FONT class="">
-        <div class="col-sm-11 " id>
-          
-          <inputChecked 
-            
+        <div class="col-sm-11" id>
+          <inputChecked
             :resuelto="false"
             :esperado="['works']"
-            :tamano="48" 
+            :tamano="48"
             :conTexto="true"
-            textoA= "1. Ella trabaja muy duro todos los días: She"
-            textoD= "very hard every day."
+            textoA="1. Ella trabaja muy duro todos los días: She"
+            textoD="very hard every day."
           />
           <br />
           <br />
-          
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
-            
             :resuelto="false"
             :esperado="['live']"
             :tamano="39"
@@ -173,8 +151,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
@@ -186,8 +163,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :resuelto="false"
@@ -199,8 +175,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-         
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :resuelto="false"
@@ -212,8 +187,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :tamano="38"
@@ -225,22 +199,19 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
-             :conTexto="true"
-             :tamano="39"
-              textoA="7. Llueve mucho en New York: It"
-              textoD="a lot in New York."
+            :conTexto="true"
+            :tamano="39"
+            textoA="7. Llueve mucho en New York: It"
+            textoD="a lot in New York."
             :resuelto="false"
-            
             :esperado="['rains']"
           />
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :tamano="32"
@@ -252,8 +223,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :tamano="41"
             :conTexto="true"
@@ -265,12 +235,11 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
-          textoA="10. Mi novia mira televisión los sábados: My girlfriend"
-          textoD="tv on Saturdays."
-          :tamano="53"
+            textoA="10. Mi novia mira televisión los sábados: My girlfriend"
+            textoD="tv on Saturdays."
+            :tamano="53"
             :resuelto="false"
             :conTexto="true"
             :esperado="['watches']"
@@ -278,8 +247,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :resuelto="false"
@@ -291,8 +259,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :conTexto="true"
             :resuelto="false"
@@ -304,8 +271,7 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
@@ -318,10 +284,9 @@
           <br />
         </div>
         <div class="col-sm-11">
-          
           <inputChecked
-          :conTexto="true"
-          textoA="14. El gato tiene cuatro patas: The cat"
+            :conTexto="true"
+            textoA="14. El gato tiene cuatro patas: The cat"
             :resuelto="false"
             textoD="four paws."
             :esperado="['has']"
@@ -330,21 +295,19 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
             textoA="15. Mi mamá me ama: My mother"
             textoD="me."
-           :tamano="32"
+            :tamano="32"
             :esperado="['loves']"
           />
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
@@ -356,36 +319,31 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
             textoA="17. Eso huele mal: That"
             textoD="bad."
             :tamano="28"
-            
             :esperado="['smells']"
           />
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-          
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
             textoA="18. Ese niño estudia inglés: That boy"
             textoD="English."
             :tamano="38"
-            
             :esperado="['studies']"
           />
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-         
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
             :conTexto="true"
@@ -397,14 +355,13 @@
           <br />
           <br />
         </div>
-        <div class="col-sm-11 ">
-         
+        <div class="col-sm-11">
           <inputChecked
             :resuelto="false"
-           :conTexto="true"
-           textoA=" 20. Él tiene que madrugar: He"
-           textoD="to wake up early."
-           :tamano="37"
+            :conTexto="true"
+            textoA=" 20. Él tiene que madrugar: He"
+            textoD="to wake up early."
+            :tamano="37"
             :esperado="['has']"
           />
           <br />
@@ -415,8 +372,6 @@
     <br />
     <br />
     <br />
- 
-
   </div>
 </template>
 <script>
@@ -790,7 +745,7 @@ export default {
           { key: "B", thClass: "Red parrafo" },
           { key: "C", thClass: "Yelow parrafo" },
           { key: "D", thClass: "Green parrafo" },
-          { key: "complejo1", label: "ENGLISH", thClass:"" },
+          { key: "complejo1", label: "ENGLISH", thClass: "" },
           { key: "E", label: "SPANISH" },
         ],
         items: [
@@ -1147,7 +1102,6 @@ export default {
           ],
         },
       ],
-      
     };
   },
 };
