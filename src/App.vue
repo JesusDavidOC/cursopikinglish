@@ -5,7 +5,9 @@
 
             <curso1Leccion1/>
             <curso1Leccion2/>
+            <curso1Leccion3/>
             <curso1Leccion4/>
+            <curso1Leccion5/>
 
         </div>
     </div>
@@ -16,7 +18,9 @@
 import app from  "./assets/app.css";
 import curso1Leccion1 from "./components/curso1Leccion1.vue";
 import curso1Leccion2 from "./components/curso1Leccion2.vue";
+import curso1Leccion3 from "./components/curso1Leccion3.vue";
 import curso1Leccion4 from "./components/curso1Leccion4.vue";
+import curso1Leccion5 from "./components/curso1Leccion5.vue";
 
 export default {
   name: "App",
@@ -24,7 +28,9 @@ export default {
     
     curso1Leccion1,
     curso1Leccion2,
+    curso1Leccion3,
     curso1Leccion4,
+    curso1Leccion5,
   },
 };
 </script>
