@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="margin-top:-3em;">
+    <div class="row" style="margin-top: -3em">
       <div class="col-sm-1"></div>
       <div class="col-sm-12" id="subTitulo">
         <h3>EXAMEN DE COMPRENSIÓN</h3>
@@ -15,28 +15,35 @@
           @respuestas="$data.mensajeRespuestasP18 = $event"
         />
       </div>
-      <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP18 }}</b-modal>
+      <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{
+        mensajeRespuestasP18
+      }}</b-modal>
       <div class="col-sm-1"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-3">
-        <b-button variant="primary" @click="showModal('my-modalP18')">VERIFICAR PREGUNTAS</b-button>
+        <b-button variant="primary" @click="showModal('my-modalP18')"
+          >VERIFICAR PREGUNTAS</b-button
+        >
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >16. Escribe la forma del verbo que se usa con los siguientes verbos con poder.</legend>
+        >
+          16. Escribe la forma del verbo que se usa con los siguientes verbos
+          con poder.
+        </legend>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row" id="titulo" style="margin:0;">
+      <div class="col-sm-10 row" id="titulo" style="margin: 0">
         <div class="col-sm-3">
           <h3>PRESENTE</h3>
         </div>
@@ -51,73 +58,85 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin:0em;">
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">
+        <tablaTC :cuestionario ="tablaP17"/>
+      </div>
+    </div>
+
+    <div class="row" style="margin: 0em">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
         <div
           class="col-sm-1"
           v-for="(item, index) in palabrasListaP18.fields"
-          style="margin:0; padding:0;"
+          style="margin: 0; padding: 0"
         >
-          <listaIndex :tabla="{bordered:true, fields: [item]}" />
+          <listaIndex :tabla="{ bordered: true, fields: [item] }" />
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top:-1.5em;">
+    <div class="row" style="margin-top: -1.5em">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-3" style="padding:0;">
+        <div class="col-sm-3" style="padding: 0">
           <inputChecked :esperado="['participio']" :resuelto="false" />
         </div>
-        <div class="col-sm-5" style="padding:0;">
+        <div class="col-sm-5" style="padding: 0">
           <inputChecked :esperado="['progresivo']" :resuelto="false" />
         </div>
-        <div class="col-sm-4" style="padding:0;">
+        <div class="col-sm-4" style="padding: 0">
           <inputChecked :esperado="['presente']" :resuelto="false" />
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >17. Completa el número mágico.</legend>
+        >
+          17. Completa el número mágico.
+        </legend>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-2">
         <div class="col-sm-7" id="numeroMagico2">2</div>
-        <h3 style="margin-top:0.4em;">Types Of Verbs</h3>
+        <h3 style="margin-top: 0.4em">Types Of Verbs</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[0]" />
       </div>
       <div class="col-sm-2">
         <div class="col-sm-7" id="numeroMagico4">4</div>
-        <h3 style="margin-top:0.4em;">Spelling Forms</h3>
+        <h3 style="margin-top: 0.4em">Spelling Forms</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[1]" />
       </div>
       <div class="col-sm-2">
         <div class="col-sm-7" id="numeroMagico5">5</div>
-        <h3 style="margin-top:0.4em;">Auxiliares</h3>
+        <h3 style="margin-top: 0.4em">Auxiliares</h3>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[2]" />
       </div>
       <div class="col-sm-2">
         <div class="col-sm-7" id="numeroMagico12">12</div>
-        <h4 style="margin-top:0.4em;">Super Power Verbs</h4>
+        <h4 style="margin-top: 0.4em">Super Power Verbs</h4>
         <listaIndex :tabla="$data.tablasNumeroMagicoP19[3]" />
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-6" style="text-align:left;">
+      <div class="col-sm-6" style="text-align: left">
         <legend
           id="5__BV_label_"
           tabindex="-1"
           class="bv-no-focus-ring col-form-label pt-0 col-form-label-lg labelPregunta"
-        >18. Escribe los auxiliares y verbos con poder debajo de cada forma.</legend>
+        >
+          18. Escribe los auxiliares y verbos con poder debajo de cada forma.
+        </legend>
       </div>
     </div>
     <div class="row">
@@ -126,7 +145,7 @@
         <div
           class="col-sm-3"
           v-for="item in $data.tablasTiempoPreguntaP19"
-          style="margin:0; padding:0;"
+          style="margin: 0; padding: 0"
         >
           <listaIndex :tabla="item" />
         </div>
@@ -155,7 +174,9 @@
     </div>
 
     <div class="row">
-      <h3 id="subTitulo">MEMORIZAR LA TRADUCCIÓN DE LOS VERBOS CON SUPER PODER</h3>
+      <h3 id="subTitulo">
+        MEMORIZAR LA TRADUCCIÓN DE LOS VERBOS CON SUPER PODER
+      </h3>
     </div>
 
     <div class="row">
@@ -171,24 +192,26 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-4" id="text">
-        <i class="fa fa-diamond" style="font-size: 1.5em;"></i>
-        <a id="textPractice">Escribe la traducción</a>
+        <i class="fa fa-diamond" style="font-size: 1.5em"></i>
+        <a id="textPractice"><strong>Escribe la traducción</strong></a>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10 row">
-        <div class="col-sm-12 row" v-for="n in 3">
-          <div v-for="(item, index) in practiceP21" :class="'col-sm-'+item.tamaño" style="margin-bottom:0.5em;">
-            <inputChecked
-              :esperado="item.esperado"
-              :resuelto="false"
-              :name="'P21-'+index"
-              :textoA="item.textoA"
-              :conTexto="true"
-            />
-          </div>
-        </div>
+        <b-col
+          v-for="(item, index) in practiceP21"
+          md="auto"
+        >
+          <inputChecked
+            :esperado="item.esperado"
+            :resuelto="false"
+            :name="'P21-' + index"
+            :textoA="item.textoA"
+            :conTexto="true"
+            :tamano="item.tamano"
+          />
+        </b-col>
       </div>
     </div>
   </div>
@@ -200,6 +223,7 @@ import posiblesRespuestasTabla from "./posiblesRespuestasTabla";
 import opcionMultiple from "./opcionMultiple";
 import listaIndex from "./listaIndex";
 import inputChecked from "./inputChecked";
+import tablaTC from "./tablaTraduccionCodigos";
 export default {
   methods: {
     showModal(text) {
@@ -211,23 +235,80 @@ export default {
     listaIndex,
     inputChecked,
     posiblesRespuestasTabla,
+    tablaTC,
   },
   data() {
     return {
-      practiceP21: [
-        { esperado: ["have"], textoA: "He-has-hemos-han", tamaño: 5, textoD:"" },
-        { esperado: ["am"], textoA: "Soy-estoy", tamaño: 4 },
-        { esperado: ["can"], textoA: "Poder", tamaño: 3 },
-        { esperado: ["should"], textoA: "Debería", tamaño: 4 },
-        { esperado: ["was"], textoA: "Estaba-era ", tamaño: 4 },
-        { esperado: ["must"], textoA: "Deber", tamaño: 3 },
-        { esperado: ["could"], textoA: "Pude-podría", tamaño: 4 },
-        { esperado: ["has"], textoA: "Ha", tamaño: 3 },
-        { esperado: ["is"], textoA: "Es-está", tamaño: 3 },
-        { esperado: ["had"], textoA: "Había", tamaño: 3 },
-        { esperado: ["are"], textoA: "Eres-estás-somos-estamos-son-están", tamaño: 8 },
-        { esperado: ["were"], textoA: "Eras-estabas-éramos-estábamos-eran-estaban", tamaño: 9 },   
+      tablaP17: {
+        fields: [
 
+          {
+            key: "complejo1",
+            label: "Have - Has - Had"
+          },
+          { 
+             key: "complejo2",
+             label: "Is - Are - Am - Was -Were"
+          },
+          { 
+             key: "complejo3",
+             label: "Can - Could - Should - Must"
+          },
+          
+        ],
+        items:[
+          {
+            complejo1:{
+              
+              lista: [
+                "Participio"
+              ],
+              tamano:14
+            },
+             complejo2:{
+              
+              lista: [
+                "Progresivo"
+              ],
+              tamano:14
+            },
+             complejo3:{
+              
+              lista: [
+                "Presente"
+              ],
+              tamano:14
+            },
+            
+          }
+        ]
+      },
+      practiceP21: [
+        {
+          esperado: ["have"],
+          textoA: "He-has-hemos-han",
+          tamano: 22,
+          textoD: "",
+        },
+        { esperado: ["am"], textoA: "Soy-estoy", tamano: 15 },
+        { esperado: ["can"], textoA: "Poder", tamano: 13 },
+        { esperado: ["should"], textoA: "Debería", tamano: 16 },
+        { esperado: ["was"], textoA: "Estaba-era ", tamano: 16 },
+        { esperado: ["must"], textoA: "Deber", tamano: 14 },
+        { esperado: ["could"], textoA: "Pude-podría", tamano: 18 },
+        { esperado: ["has"], textoA: "Ha", tamano: 12 },
+        { esperado: ["is"], textoA: "Es-está", tamano: 13 },
+        { esperado: ["had"], textoA: "Había", tamano: 13 },
+        {
+          esperado: ["are"],
+          textoA: "Eres-estás-somos-estamos-son-están",
+          tamano: 32,
+        },
+        {
+          esperado: ["were"],
+          textoA: "Eras-estabas-éramos-estábamos-eran-estaban",
+          tamano: 38,
+        },
       ],
       tablaP21: {
         bordered: true,
@@ -840,6 +921,7 @@ img {
   font-family: "PT Sans";
   font-weight: bold;
   margin-bottom: auto;
+  text-align: center;
 }
 #numeroMagico2 {
   background: yellow;
