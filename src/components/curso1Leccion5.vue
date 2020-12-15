@@ -95,32 +95,13 @@
         >
       </div>
     </div>
-    <div class="row" style="margin: 0em">
+    <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
-        <div
-          class="col-sm-1"
-          v-for="(item, index) in palabrasListaP28.fields"
-          style="margin: 0; padding: 0"
-        >
-          <listaIndex :tabla="{ bordered: true, fields: [item] }" />
-        </div>
+      <div class="col-sm-11">
+        <tablaTC :cuestionario="tabla2P28" />
       </div>
     </div>
-    <div class="row" style="margin-top: -1.5em">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
-        <div class="col-sm-3" style="padding: 0">
-          <inputChecked :esperado="['participio']" :resuelto="false" />
-        </div>
-        <div class="col-sm-5" style="padding: 0">
-          <inputChecked :esperado="['progresivo']" :resuelto="false" />
-        </div>
-        <div class="col-sm-4" style="padding: 0">
-          <inputChecked :esperado="['presente']" :resuelto="false" />
-        </div>
-      </div>
-    </div>
+    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -292,7 +273,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>
+        <p class="parrafo">
           Después de cumplir el sueño de ser traductor del batallón Colombia No
           3 en la península del Sinaí en Egipto, me di cuenta sobre la
           importancia de hablar inglés y al mismo tiempo analicé que el
@@ -303,20 +284,24 @@
           esfuerzo, he puesto este método del número mágico a tu disposición
           para que logres en corto tiempo un dominio del inglés efectivo con
           solo aplicar el conocimiento de los números mágicos.
-        </h3>
+        </p>
       </div>
       <div class="col-sm-2"></div>
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3 class="colorLetraRojo">
+        <p class="parrafo">
+        <span class="colorLetraRojo">
           TU PRIMER RETO DE APRENDER CON LOGICA HA SIDO APROBADO.
-        </h3>
-        <h3 class="colorLetraRojo">
+        </span>
+        </p>
+        <p class="parrafo">
+        <span class="colorLetraRojo">
           VEAMOS EN DETALLE CADA FORMA DEL VERBO, LOS MODIFICADORES Y LOS VERBOS
           CON PODERES.
-        </h3>
+        </span>
+        </p>
       </div>
       <div class="col-sm-2"></div>
     </div>
@@ -333,6 +318,38 @@ import tablaTC from "./tablaTraduccionCodigos";
 export default {
   data() {
     return {
+      tabla2P28: {
+        fields: [
+          {
+            key: "complejo1",
+            label: "Have - Has - Had",
+          },
+          {
+            key: "complejo2",
+            label: "Is - Are - Am - Was - Were",
+          },
+          {
+            key: "complejo3",
+            label: "Can - Could - Should - Must",
+          },
+        ],
+        items: [
+          {
+            complejo1: {
+              lista: ["Participio"],
+              tamano: 13,
+            },
+            complejo2: {
+              lista: ["Progresivo"],
+              tamano: 14,
+            },
+            complejo3: {
+              lista: ["Presente"],
+              tamano: 13,
+            },
+          },
+        ],
+      },
       tabla2P31: {
         fields: [
           {
@@ -631,7 +648,7 @@ export default {
             esperado: ["go"],
             textoA: "a.    Where did you",
             textoD: "? - " + "<strong> ¿Donde fuiste? </strong> ",
-            tamano: 28,
+            tamano: 30,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R1.mp3",
           },
           {
@@ -639,7 +656,7 @@ export default {
             textoA: "b.    Nobody",
             textoD:
               "to the party last night.- <strong> Nadie fue a la fiesta anoche.</strong> ",
-            tamano: 44,
+            tamano: 47,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R2.mp3",
           },
           {
@@ -647,22 +664,22 @@ export default {
             textoA: "c.    I always",
             textoD:
               "to school on foot. - <strong> Yo siempre voy hasta el colegio a pie.</strong> ",
-            tamano: 50,
+            tamano: 49,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R3.mp3",
           },
           {
             esperado: ["gone"],
-            textoA: "d.    have you ",
+            textoA: "d.    Have you ",
             textoD:
               "to the gym recently?. - <strong> ¿Has ido al gymnasio recientemente?.</strong> ",
-            tamano: 20,
+            tamano: 54,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R4.mp3",
           },
           {
             esperado: ["go"],
             textoA: "e.    She didn’t",
             textoD: "to work . - <strong> Ella no fue a trabajar.</strong> ",
-            tamano: 27,
+            tamano: 35,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R5.mp3",
           },
           {
@@ -670,7 +687,7 @@ export default {
             textoA: "f.     He",
             textoD:
               "to visit his friend. - <strong> Él fue a visitar a su amigo.</strong> ",
-            tamano: 28,
+            tamano: 40,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R6.mp3",
           },
           {
@@ -678,14 +695,14 @@ export default {
             textoA: " g.    He has",
             textoD:
               "to school three times this morning. - <strong> Él ha ido al colegio tres veces esta mañana.</strong> ",
-            tamano: 22,
+            tamano: 64,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R7.mp3",
           },
           {
             esperado: ["going"],
             textoA: " h.    Where are you",
             textoD: "? . - <strong> ¿Donde estás yendo?.</strong> ",
-            tamano: 28,
+            tamano: 37,
             audio: "cursos/curso1/leccion5/audios/page30/AC1P29R8.mp3",
           },
         ],

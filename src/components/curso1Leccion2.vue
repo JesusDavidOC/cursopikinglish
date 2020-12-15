@@ -605,56 +605,6 @@ export default {
           }
         ]
       },
-      /**{
-          bordered: false,
-          camposInput: true,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "Z", label: "En presente" },
-          ],
-          items: ["Do"],
-        },
-        {
-          bordered: false,
-          camposInput: true,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "Z", label: "En presente con she, he e it" },
-          ],
-          items: ["Does"],
-        },
-        {
-          bordered: false,
-          camposInput: true,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "Z", label: "En pasado" },
-          ],
-          items: ["Did"],
-        },
-        {
-          bordered: false,
-          camposInput: true,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "Z", label: "En futuro" },
-          ],
-          items: ["will"],
-        },
-        {
-          bordered: false,
-          camposInput: true,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            { key: "Z", label: "Un verbo termina en ría." },
-          ],
-          items: ["Would"],
-        },**/
 
       tablaEsperadosP17a: {
         items: ["presente", "pasado", "participio", "progresivo"],
