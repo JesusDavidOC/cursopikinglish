@@ -1,33 +1,34 @@
 <template>
   <div>
-
-       <div class="row ">
-         <div class="col-sm-1"></div>
-      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <i class="fa fa-diamond" style="font-size: 1.5em"></i>
 
       <p class="fuenteDiamond">
-        
         Escriba la traducción en ingles y completa las oraciones
-        
       </p>
     </div>
-    <div class="row"  style="padding: 0%;">
+    <div class="row" style="padding: 0%">
       <div class="col-sm-1"></div>
-      <div class="col-sm-3"  style="padding: 0%;" v-for="item in $data.tablaUnoPag35">
-        <listaIndex :tabla="item" 
-         style="padding: 0%;"
-        class=""/>
+      <div
+        class="col-sm-3"
+        style="padding: 0%"
+        v-for="item in $data.tablaUnoPag35"
+      >
+        <listaIndex :tabla="item" style="padding: 0%"/>
       </div>
     </div>
 
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-3" style="padding: 0%;">
-        <listaIndex :tabla="tablaDosAPag35" 
-         style="padding: 0%;"
-        class=""/>
-        </div>
-      <div class="col-sm-3 " style="padding:0%;" v-for="item in $data.tablaDosPag35">
+      <div class="col-sm-3" style="padding: 0%">
+        <listaIndex :tabla="tablaDosAPag35" style="padding: 0%"/>
+      </div>
+      <div
+        class="col-sm-3"
+        style="padding: 0%"
+        v-for="item in $data.tablaDosPag35"
+      >
         <tablaTC
           :cuestionario="item"
           class="botTabla"
@@ -36,15 +37,13 @@
         />
       </div>
     </div>
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
-      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
+      <i class="fa fa-diamond" style="font-size: 1.5em"></i>
 
       <p class="fuenteDiamond">
-       
-        Aquí hay una lista de los verbos más fáciles del inglés. Reescribe
-          las oraciones con “she”
-       
+        Aquí hay una lista de los verbos más fáciles del inglés. Reescribe las
+        oraciones con “she”
       </p>
     </div>
     <div class="row">
@@ -58,7 +57,7 @@
       </font>
     </div>
 
-    <div class="row overflow-auto ">
+    <div class="row overflow-auto">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <tablaTC
@@ -74,19 +73,19 @@
       <div class="col-sm-1"></div>
       <h3 class="titulo">LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
     </div>
-    
-    <div class="row ">
-      <div class="col-sm-1 "></div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
       <ul>
         <div class="botTabla">
-        <li v-for="item in frasesPag37" class="parrafo ">
-          {{ item }}
-        </li>
+          <li v-for="item in frasesPag37" class="parrafo">
+            {{ item }}
+          </li>
         </div>
-      </ul >
+      </ul>
     </div>
 
-    <div class="row ">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
         <h3 class="col-sm-12 bg-warning">Verbs</h3>
@@ -110,7 +109,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3 " id="tabla">
+      <div class="col-sm-3" id="tabla">
         <h3 class="col-sm-12 bg-danger">AUXILIARES</h3>
         <div class="row">
           <div class="col-sm-6">
@@ -132,7 +131,7 @@
         </div>
       </div>
 
-      <div class="col-sm-3 " id="tabla">
+      <div class="col-sm-3" id="tabla">
         <h3 class="col-sm-12 bg-primary">S.P.V</h3>
         <div class="col-sm-12">
           <h5 class="text-center BigCeldaDos show-grid">
@@ -153,43 +152,46 @@
         </div>
       </div>
     </div>
-   
-    <div class="row ">
+
+    <div class="row">
       <div class="col-sm-1"></div>
-      <i class="fa fa-diamond " style="font-size: 1.5em"></i>
-      <p class=" fuenteDiamond">
-        
+      <i class="fa fa-diamond" style="font-size: 1.5em"></i>
+      <p class="fuenteDiamond">
         Practica llenado la tabla de los verbos gemelos.
       </p>
-      
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
         <p class="col-sm-12 bg-warning">
           <inputChecked
-            style="width: 100%; padding: 0%;"
+            style="width: 100%; padding: 0%"
             :resuelto="false"
             :esperado="['Verbs']"
           />
         </p>
         <div class="row col-sm-12 parrafoBlack" id="tabla">
-          <div class="col-sm-4"  style="padding: 0%;">
-            <p class="text-center" style="padding: 0%;">
+          <div class="col-sm-4" style="padding: 0%">
+            <p class="text-center" style="padding: 0%">
               <inputChecked
-                style="width: 100%; margin-left: 10px; margin-right: 10px; padding: 0%;"
+                style="
+                  width: 100%;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  padding: 0%;
+                "
                 :resuelto="false"
                 :esperado="['Present']"
               />
             </p>
-            <p class="text-center  "  style="padding: 0%;">
+            <p class="text-center" style="padding: 0%">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
                 :esperado="['Do-Does']"
               />
             </p>
-            <p class="text-center ">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
@@ -197,7 +199,7 @@
               />
             </p>
           </div>
-          <div class="col-sm-4"  style="padding: 0%;">
+          <div class="col-sm-4" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -206,7 +208,7 @@
               />
             </p>
 
-            <p class="text-center ">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
@@ -214,7 +216,7 @@
               />
             </p>
 
-            <p class="text-center ">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
@@ -222,7 +224,7 @@
               />
             </p>
           </div>
-          <div class="col-sm-4"  style="padding: 0%;">
+          <div class="col-sm-4" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -230,7 +232,7 @@
                 :esperado="['participle']"
               />
             </p>
-            <p class="text-center ">
+            <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
                 :resuelto="false"
@@ -256,7 +258,7 @@
           />
         </p>
         <div class="row">
-          <div class="col-sm-6"  style="padding: 0%;">
+          <div class="col-sm-6" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -286,7 +288,7 @@
               />
             </p>
           </div>
-          <div class="col-sm-6"  style="padding: 0%;">
+          <div class="col-sm-6" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -328,7 +330,7 @@
         </div>
       </div>
 
-      <div class="col-sm-3 parrafoBlack " id="tabla" style="padding: 0%;">
+      <div class="col-sm-3 parrafoBlack" id="tabla" style="padding: 0%">
         <p class="col-sm-12 bg-primary">
           <inputChecked
             style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -336,8 +338,8 @@
             :esperado="['S.P.V']"
           />
         </p>
-        <div class="col-sm-12 " >
-          <p class="text-center ">
+        <div class="col-sm-12">
+          <p class="text-center">
             <inputChecked
               style="width: 100%; margin-left: 10px; margin-right: 10px"
               :resuelto="false"
@@ -346,7 +348,7 @@
           </p>
         </div>
         <div class="row" style="items-aling: center">
-          <div class="col-sm-6" style="padding: 0%;">
+          <div class="col-sm-6" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -369,7 +371,7 @@
               />
             </p>
           </div>
-          <div class="col-sm-6" style="padding: 0%;">
+          <div class="col-sm-6" style="padding: 0%">
             <p class="text-center">
               <inputChecked
                 style="width: 100%; margin-left: 10px; margin-right: 10px"
@@ -396,20 +398,17 @@
       </div>
     </div>
 
-    <div class="row  ">
+    <div class="row">
       <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"> </i>
 
       <p class="fuenteDiamond">
-       Completa las siguientes oraciones con el verbo, auxiliar o verbo con
-          super poder.
-        
+        Completa las siguientes oraciones con el verbo, auxiliar o verbo con
+        super poder.
       </p>
-     
     </div>
 
-    
-    <div class="row">
+    <!--<div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <div
@@ -432,12 +431,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        
+        <div v-for="(item, index) in frases2Pag37" v-if="item.name == 'ice'">
+          <inputCE :object="item" />
+        </div>
       </div>
     </div>
   </div>
@@ -464,8 +465,7 @@ export default {
   },
   data() {
     return {
-
-          tablaUnoPag35: [
+      tablaUnoPag35: [
         {
           camposInput: false,
           fields: [
@@ -473,13 +473,14 @@ export default {
             // A column that needs custom formatting
             {
               key: "html",
-              
+
               thClass: "noHead",
             },
           ],
           items: [
             {
-               html: '<FONT class=""><strong>ORACIÓN EN PRESENTE  AFIRMATIVO <br> (INGLÉS)</strong></FONT>',
+              html:
+                '<FONT class=""><strong>ORACIÓN EN PRESENTE  AFIRMATIVO <br> (INGLÉS)</strong></FONT>',
             },
             {
               html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
@@ -529,7 +530,8 @@ export default {
           ],
           items: [
             {
-                html: '<FONT class=""><strong>ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)</strong></FONT>',
+              html:
+                '<FONT class=""><strong>ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)</strong></FONT>',
             },
             {
               html:
@@ -574,14 +576,15 @@ export default {
             // A column that needs custom formatting
             {
               key: "html",
-              label:"",
-              
+              label: "",
+
               thClass: "noHead",
             },
           ],
           items: [
             {
-              html :'<FONT ><strong>Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies</strong></FONT>', 
+              html:
+                "<FONT ><strong>Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies</strong></FONT>",
             },
             {
               html:
@@ -623,237 +626,213 @@ export default {
           ],
         },
       ],
-        tablaDosAPag35: 
-        {
-          camposInput: false,
-          fields: [
-            // A virtual column that doesn't exist in items
-            // A column that needs custom formatting
-            {
-              key: "html",
-              
-              thClass: "noHead fuenteComponentes",
-            },
-          ],
-          items: [
-            
-             {
-               html: '<FONT class=""><strong>I walk everyday </strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>You cry very much </strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>They eat here </strong></FONT>',
-            },
-            {
-               html: '<FONT class=""><strong>You cough every now and then </strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>I watch TV once in a blue moon</strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>We take the kids to the school</strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>We dance in the rain</strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>I brush my teeth twice a day</strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>They speak english very slowly</strong></FONT>',
-            },
-             {
-               html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
-            },
-             {
-               html: '<FONT ><strong>I love you</strong></FONT>',
-            },
-            
-              ],
-        },
-      
+      tablaDosAPag35: {
+        camposInput: false,
+        fields: [
+          // A virtual column that doesn't exist in items
+          // A column that needs custom formatting
+          {
+            key: "html",
+
+            thClass: "noHead fuenteComponentes",
+          },
+        ],
+        items: [
+          {
+            html: '<FONT class=""><strong>I walk everyday </strong></FONT>',
+          },
+          {
+            html: '<FONT class=""><strong>You cry very much </strong></FONT>',
+          },
+          {
+            html: '<FONT class=""><strong>They eat here </strong></FONT>',
+          },
+          {
+            html:
+              '<FONT class=""><strong>You cough every now and then </strong></FONT>',
+          },
+          {
+            html:
+              '<FONT class=""><strong>I watch TV once in a blue moon</strong></FONT>',
+          },
+          {
+            html:
+              '<FONT class=""><strong>We take the kids to the school</strong></FONT>',
+          },
+          {
+            html: '<FONT class=""><strong>We dance in the rain</strong></FONT>',
+          },
+          {
+            html:
+              '<FONT class=""><strong>I brush my teeth twice a day</strong></FONT>',
+          },
+          {
+            html:
+              '<FONT class=""><strong>They speak english very slowly</strong></FONT>',
+          },
+          {
+            html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
+          },
+          {
+            html: "<FONT ><strong>I love you</strong></FONT>",
+          },
+        ],
+      },
 
       tablaDosPag35: [
         {
-        fields: [
-          
-
-          { key: "complejo1", label: "Z", thClass: "noHead" },
-         
-        ],
-        items: [
-          {
-           
-            complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
-          
-          },
-          {
-            complejo1: { lista: ["Tu lloras mucho"], tamano: 23 },
-          },
-          {
-            complejo1: { lista: ["Ellos come aquí"], tamano: 23 },
-          },{
-            complejo1: { lista: ["Tú toses de vez en cuando"], tamano: 23 },
-          },{
-            complejo1: { lista: ["Yo veo TV rara vez"], tamano: 23 },
-          },{
-            complejo1: {
-              lista: ["Nosotros llevamos los niños a la escuela"],
-              tamano: 23,
+          fields: [{ key: "complejo1", label: "Z", thClass: "noHead" }],
+          items: [
+            {
+              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
             },
-            
-          },
-          {
-            complejo1: {
-              lista: ["Nosotros bailamos en la lluvia"],
-              tamano: 23,
+            {
+              complejo1: { lista: ["Tu lloras mucho"], tamano: 23 },
             },
-          },{
+            {
+              complejo1: { lista: ["Ellos come aquí"], tamano: 23 },
+            },
+            {
+              complejo1: { lista: ["Tú toses de vez en cuando"], tamano: 23 },
+            },
+            {
+              complejo1: { lista: ["Yo veo TV rara vez"], tamano: 23 },
+            },
+            {
               complejo1: {
-              lista: ["Me cepillo mis dientes dos veces al día"],
-              tamano: 23,
+                lista: ["Nosotros llevamos los niños a la escuela"],
+                tamano: 23,
+              },
             },
-          },{
-            complejo1: { lista: ["Ellos hablan inglés muy lento"], tamano: 23 },
-          },{
-            complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
-          },{
-            complejo1: { lista: ["Te amo"], tamano: 23 },
-          }
-        ]
+            {
+              complejo1: {
+                lista: ["Nosotros bailamos en la lluvia"],
+                tamano: 23,
+              },
+            },
+            {
+              complejo1: {
+                lista: ["Me cepillo mis dientes dos veces al día"],
+                tamano: 23,
+              },
+            },
+            {
+              complejo1: {
+                lista: ["Ellos hablan inglés muy lento"],
+                tamano: 23,
+              },
+            },
+            {
+              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
+            },
+            {
+              complejo1: { lista: ["Te amo"], tamano: 23 },
+            },
+          ],
+        },
+        {
+          fields: [{ key: "complejo2", lable: "Z", thClass: "noHead" }],
+          items: [
+            {
+              complejo2: {
+                lista: ["walks"],
+                tamano: 17,
+                textoA: "He",
+                textoD: "everyday",
+              },
+            },
 
-      },{
-        fields: [
-          
+            {
+              complejo2: {
+                lista: ["cries"],
+                tamano: 18,
+                textoA: "She",
+                textoD: "very much",
+              },
+            },
 
-          
-          { key: "complejo2", lable: "Z", thClass: "noHead" },
-        ],
-        items: [
-          {
-           
-            
-            complejo2: {
-              lista: ["walks"],
-              tamano: 17,
-              textoA: "He",
-              textoD: "everyday",
+            {
+              complejo2: {
+                lista: ["chiken"],
+                tamano: 18,
+                textoA: "The",
+                textoD: "eats here",
+              },
             },
-          },
 
-          {
-            
-            
-            complejo2: {
-              lista: ["cries"],
-              tamano: 18,
-              textoA: "She",
-              textoD: "very much",
+            {
+              complejo2: {
+                lista: ["coughs"],
+                tamano: 27,
+                textoA: "The baby",
+                textoD: "every now and then",
+              },
             },
-          },
-          
-          {
-            
-            
-            complejo2: {
-              lista: ["chiken"],
-              tamano: 18,
-              textoA: "The",
-              textoD: "eats here",
+
+            {
+              complejo2: {
+                lista: ["watches"],
+                tamano: 25,
+                textoA: "She",
+                textoD: "TV once in a blue moon",
+              },
             },
-          },
-         
-          {
-            
-            
-            complejo2: {
-              lista: ["coughs"],
-              tamano: 27,
-              textoA: "The baby",
-              textoD: "every now and then",
+
+            {
+              complejo2: {
+                lista: ["takes"],
+                tamano: 23,
+                textoA: "He",
+                textoD: "the kids to the school",
+              },
             },
-          },
-           
-          {
-            
-            
-            complejo2: {
-              lista: ["watches"],
-              tamano: 25,
-              textoA: "She",
-              textoD: "TV once in a blue moon",
+
+            {
+              complejo2: {
+                lista: ["dances"],
+                tamano: 17,
+                textoA: "It",
+                textoD: "in the rain",
+              },
             },
-          },
-          
-          {
-            
-            
-            complejo2: {
-              lista: ["takes"],
-              tamano: 23,
-              textoA: "He",
-              textoD: "the kids to the school",
+
+            {
+              complejo2: {
+                lista: ["brushes"],
+                tamano: 25,
+                textoA: "She",
+                textoD: "her teeth twice a day",
+              },
             },
-          },
-          
-          {
-           
-            
-            complejo2: {
-              lista: ["dances"],
-              tamano: 17,
-              textoA: "It",
-              textoD: "in the rain",
+
+            {
+              complejo2: {
+                lista: ["speaks"],
+                tamano: 23,
+                textoA: "He",
+                textoD: "English very slowly",
+              },
             },
-          },
-          
-          {
-           
-          
-            complejo2: {
-              lista: ["brushes"],
-              tamano: 25,
-              textoA: "She",
-              textoD: "her teeth twice a day",
+
+            {
+              complejo2: {
+                lista: ["walks"],
+                tamano: 19,
+                textoA: "The dog",
+                textoD: "everyday",
+              },
             },
-          },
-         
-          {
-            
-            
-            complejo2: {
-              lista: ["speaks"],
-              tamano: 23,
-              textoA: "He",
-              textoD: "English very slowly",
+
+            {
+              complejo2: {
+                lista: ["loves"],
+                tamano: 13,
+                textoA: "She",
+                textoD: "me",
+              },
             },
-          },
-           
-          {
-            
-            
-            complejo2: {
-              lista: ["walks"],
-              tamano: 19,
-              textoA: "The dog",
-              textoD: "everyday",
-            },
-          },
-          
-          {
-            
-            
-            complejo2: {
-              lista: ["loves"],
-              tamano: 13,
-              textoA: "She",
-              textoD: "me",
-            },
-          },
-        ],
-        }
+          ],
+        },
       ],
       frasesPag37: [
         " La palabra DO es un verbo que traduce Hacer, pero también es un auxiliar",
@@ -864,18 +843,16 @@ export default {
         "El pasado del verbo HAVE es HAD, pero HAD también es un ",
       ],
 
-   
-
       frases2Pag37: [
         {
           lista1: ["has"],
           lista2: ["done"],
           textoA: "He ",
           textoD: "never",
-          textoD2: "that. Él nunca ha hecho eso",
-          tamano1:15,
-          tamano2:27,
-          
+          textoD2: "that. <strong>Él nunca ha hecho eso.</strong>",
+          tamano1: 15,
+          tamano2: 28,
+
           name: "ice",
         },
         {
@@ -883,7 +860,7 @@ export default {
 
           textoA: "She",
           textoD: "anything. Ella no hace nada.",
-          tamano:29,
+          tamano: 29,
           name: "ic",
         },
         {
@@ -892,8 +869,8 @@ export default {
           textoA: "I",
           textoD: "already",
           textoD2: "that. Yo ya había hecho eso.",
-          tamano1:15,
-          tamano2:27,
+          tamano1: 15,
+          tamano2: 27,
           name: "ice",
         },
         {
@@ -902,20 +879,20 @@ export default {
           textoA: "I",
 
           textoD: "that. Yo no hice eso.",
-          tamano:25,
+          tamano: 25,
           name: "ic",
         },
         {
           lista1: ["did"],
 
           textoA: "I",
-          tamano:20,
+          tamano: 20,
           textoD: "that. Yo hice eso.",
           name: "ic",
         },
         {
           lista1: ["does"],
-          tamano:28,
+          tamano: 28,
           textoA: "She",
 
           textoD: "sports. Ella hace deporte.",
@@ -923,7 +900,7 @@ export default {
         },
         {
           lista1: ["didn't"],
-          tamano:39,
+          tamano: 39,
           textoA: "I",
 
           textoD: "have to work today. Yo no tuve que trabajar hoy.",
@@ -1107,7 +1084,6 @@ export default {
           },
         ],
       },
-      
     };
   },
 };
