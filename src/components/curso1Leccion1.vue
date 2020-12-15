@@ -128,9 +128,9 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Tipos de verbos</h2>
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico2">2</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        
+        <div class="col-sm-1" id="numeroMagico2" >2</div>
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked :resuelto="false" :esperado="['Tipos de verbos']" />
         </div>
       </div>
@@ -140,9 +140,8 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h3>Formas de escribir un verbo</h3>
         </div>
-        <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico4">4</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="[
@@ -152,15 +151,14 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-1"></div>
+      <div class="row">   
+      <div class="col-sm-1"></div>     
         <div class="col-sm-1" id="numeroMagico5">5</div>
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Modificadores del tiempo</h2>
-        </div>
-        <div class="col-sm-1"></div>
+        </div>         
         <div class="col-sm-1" id="numeroMagico5">5</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="['Modificadores del tiempo', 'Modificadores de tiempo']"
@@ -173,9 +171,8 @@
         <div class="col-sm-3" id="campoTextoP11">
           <h2>Verbos con super poder</h2>
         </div>
-        <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico12">12</div>
-        <div class="col-sm-3" id="campoTextoP11">
+        <div class="col-sm-4" id="campoTextoP11">
           <inputChecked
             :resuelto="false"
             :esperado="['Verbos con super poder', 'Verbos con super poderes']"
@@ -244,7 +241,7 @@
           <inputChecked
             :resuelto="false"
             :esperado="['Irregulares']"
-            style="margin-left: 10px"
+            style="margin-left: 0px"
             :conTexto="true"
             textoA="Regulares e "
             :tamano="23"
@@ -255,155 +252,92 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico4">4</div>
         <div class="col-sm-3" id="campoTextoP11">
-          <h2 id="inputText">
-            <inputChecked
-              :resuelto="false"
-              :esperado="[
-                'Formas de escribir un verbo',
-                'Formas de escribir verbos',
-              ]"
-            />:
-          </h2>
+          <inputChecked
+            :resuelto="false"
+            :esperado="[
+              'Formas de escribir un verbo',
+              'Formas de escribir verbos',
+            ]"
+            :conTexto="true"
+            textoD=":"
+            :tamano="24"
+          />
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <h3 id="inputText">
-            Presente,
-            <inputChecked
-              :resuelto="false"
-              :esperado="['Pasado']"
-              style="width: 25%; margin-left: 10px"
-            />,
-            <inputChecked
-              :resuelto="false"
-              :esperado="['Participio']"
-              style="width: 25%; margin-left: 10px; margin-right: 10px"
-            />y Progresivo
-          </h3>
+
+        <div class="col-sm-6" id="campoTextoP11" style="padding-left: 55px">
+          <inputCEnriquecido :object="inputCEP11" />
         </div>
       </div>
+
       <div class="row" style="margin-top: 2em">
         <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico5">5</div>
         <div class="col-sm-3" id="campoTextoP11">
-          <h2 id="inputText">
-            <inputChecked
-              :resuelto="false"
-              :esperado="[
-                'Modificadores del tiempo',
-                'Modificadores de tiempo',
-              ]"
-            />:
-          </h2>
+          <inputChecked
+            :resuelto="false"
+            :esperado="['Modificadores del tiempo', 'Modificadores de tiempo']"
+            :conTexto="true"
+            textoD=":"
+            :tamano="23"
+          />
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <div>
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Do']"
-                style="width: 25%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Does']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Did']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Will']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />
-            </h3>
+        <div class="col-sm-6" id="campoTextoP11" style="padding-left:1em;">
+          <div class="row">
+            <div class="col-sm-8">
+              <inputCEnriquecido :object="inputCEP11N2" />
+            </div>
+            <div class="col-sm-4" style="margin-left: -6em;">
+              <inputChecked :resulto="false" :esperado="inputCEP11N3.lista1" :tamano="inputCEP11N3.tamano1" :conTexto="true" textoD="," />
+            </div>
           </div>
-          <div id="text">
-            <h3>y Would</h3>
+          <div class="row">
+            <div class="col-sm-8" style="margin-top: -30px;">
+              <inputChecked :resulto="false" :esperado="['Will']" :tamano="15" :conTexto="true" textoD="y would." />
+            </div>
           </div>
         </div>
       </div>
-      <div class="row" style="margin-top: 2em">
+      <div class="row" style="margin-top: -25px">
         <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico12">12</div>
         <div class="col-sm-3" id="campoTextoP11">
-          <h2 id="inputText">
-            <inputChecked
-              :resuelto="false"
-              :esperado="['Verbos con super poder', 'Verbos con super poderes']"
-            />:
-          </h2>
+          <inputChecked
+            :resuelto="false"
+            :esperado="['Verbos con super poder', 'Verbos con super poderes']"
+            :conTexto="true"
+            textoD=":"
+            :tamano="22"
+          />
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <div>
-            <h3 id="inputText">
-              Have,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Has']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Had']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Is,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Am']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-            </h3>
+        <div class="col-sm-6" id="campoTextoP11" >
+          <div class="row">
+            <div class="col-sm-8" >
+              <inputCEnriquecido :object="inputCEP11N4" />
+            </div>
+            <div class="col-sm-4" style="margin-left: -2em;">
+              <inputChecked :resulto="false" :esperado="['Am']" :tamano="10" :conTexto="true" textoD="," />
+            </div>
           </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Are']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Was']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Were']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Can,
-            </h3>
+          <div class="row">
+            <div class="col-sm-8" style="margin-top: -30px;">
+              <inputCEnriquecido :object="inputCEP11N5" />
+            </div>
+            <div class="col-sm-4" style="margin-top: -30px; margin-left: -7em;">
+              <inputChecked :resulto="false" :esperado="['Were']" :tamano="14" :conTexto="true" textoD="/Can," />
+            </div>
           </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Could']"
-                style="width: 30%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Should']"
-                style="width: 28%; margin-left: 10px; margin-right: 10px"
-              />
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Must']"
-                style="
-                  width: 28%;
-                  margin-left: 10px;
-                  margin-right: 10px;
-                  max-height: 4em;
-                "
-                class="overflow-auto"
-              />
-            </h3>
+          <div class="row">
+            <div class="col-sm-8" style="margin-top: -30px;">
+              <inputCEnriquecido :object="inputCEP11N6" />
+            </div>
+            <div class="col-sm-4" style="margin-top: -30px; margin-left: -4em;">
+              <inputChecked :resulto="false" :esperado="['Must']" :tamano="11" :conTexto="true" textoD="." />
+            </div>
           </div>
         </div>
+       </div>
+
       </div>
-    </div>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-2">
@@ -475,10 +409,12 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <h5 id="text">
-        <strong>Verbos regulares:</strong> Son aquellos que su escritura no
-        cambia en pasado ni participio y solo se le agrega “ed”
-      </h5>
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Verbos regulares:</strong> Son aquellos que su escritura no
+          cambia en pasado ni participio y solo se le agrega “ed”.
+        </p>
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
@@ -496,11 +432,14 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <h5 id="text">
-        <strong>Verbos irregulares:</strong> Son aquellos que se escriben
-        diferente en pasado y participio y debes aprenderlos.
-      </h5>
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Verbos irregulares:</strong> Son aquellos que se escriben
+          diferente en pasado y participio y debes aprenderlos.
+        </p>
+      </div>
     </div>
+
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8">
@@ -515,59 +454,47 @@
         </b-table>
       </div>
     </div>
-    <div class="row" id="text">
+
+    <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <h4>
-          <strong>Participio:</strong>
-        </h4>
-      </div>
-
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son aquellos verbos que en español terminan en “ADO” o “IDO”. Yo he
-          camin<span style="color: red">ado</span>, Yo he jug<span
-            style="color: red"
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Participio:</strong> Son aquellos verbos que en español
+          terminan en “ADO” o “IDO”. Yo he camin<span style="color: red"
             >ado</span
-          >, Yo he comido, Ella ha llev<span style="color: red">ado</span> etc.
-        </h5>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <iframe
-            width="100%"
-            height="440"
-            src="https://www.youtube.com/embed/fdmGdVGuqxc"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+          >, Yo he jug<span style="color: red">ado</span>, Yo he comido, Ella ha
+          llev<span style="color: red">ado</span> etc.
+        </p>
       </div>
     </div>
 
-    <div class="row" id="text">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <h4>
-          <strong>Progresivo:</strong>
-        </h4>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <iframe
+          width="100%"
+          height="440"
+          src="https://www.youtube.com/embed/fdmGdVGuqxc"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son aquellos verbos que terminan en “ANDO” o “ENDO”. Jug<span
+    </div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Progresivo:</strong> Son aquellos verbos que terminan en
+          “ANDO” o “ENDO”. Jug<span style="color: red">ando</span>, camin<span
             style="color: red"
             >ando</span
-          >, camin<span style="color: red">ando</span>, comi<span
-            style="color: red"
-            >endo</span
-          >
-          etc. En inglés se debe agregar al verbo normal la palabra “ING”.
-          Ejemplo: Work (trabajar) Work<span style="color: red">ing</span>
-          (trabajando)
-        </h5>
+          >, comi<span style="color: red">endo</span> etc. En inglés se debe
+          agregar al verbo normal la palabra “ING”. Ejemplo: Work (trabajar)
+          Work<span style="color: red">ing</span>
+          (trabajando).
+        </p>
       </div>
     </div>
 
@@ -585,21 +512,15 @@
       </div>
     </div>
 
-    <div class="row" id="text">
+    <div class="row">
       <div class="col-sm-1"></div>
-
-      <div class="col-sm-2">
-        <h4>
-          <strong>Modificadores:</strong>
-        </h4>
-      </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son palabras usadas en una pregunta o negación, pero no tienen
-          traducción solo modifican el tiempo del verbo y son más conocidos como
-          auxiliares
-          <span style="color: red">DO-DOES-DID-WILL-WOULD</span>
-        </h5>
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Modificadores:</strong>Son palabras usadas en una pregunta o
+          negación, pero no tienen traducción solo modifican el tiempo del verbo
+          y son más conocidos como auxiliares
+          <span style="color: red">DO-DOES-DID-WILL-WOULD</span>.
+        </p>
       </div>
     </div>
 
@@ -617,19 +538,14 @@
       </div>
     </div>
 
-    <div class="row" id="text">
+    <div class="row">
       <div class="col-sm-1"></div>
-
-      <div class="col-sm-2">
-        <h4>
-          <strong>Verbos con súper poderes:</strong>
-        </h4>
-      </div>
-      <div class="col-sm-8" id="text">
-        <h5>
-          Son los únicos verbos que pueden negarse solos, con solo poner la
-          palabra “not” después de ellos y no necesitan modificadores.
-        </h5>
+      <div class="col-sm-10">
+        <p class="parrafo">
+          <strong>Verbos con súper poderes:</strong>Son los únicos verbos que
+          pueden negarse solos, con solo poner la palabra “not” después de ellos
+          y no necesitan modificadores.
+        </p>
       </div>
     </div>
 
@@ -684,12 +600,14 @@ import listaIndex from "./listaIndex";
 import tablaTraduccionCodigos from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple";
 import inputChecked from "./inputChecked";
+import inputCEnriquecido from "./inputCEnriquecido";
 export default {
   components: {
     listaIndex,
     tablaTraduccionCodigos,
     opcionMultiple,
     inputChecked,
+    inputCEnriquecido,
   },
   data() {
     return {
@@ -910,6 +828,69 @@ export default {
           ],
         },
       ],
+
+      inputCEP11: {
+        lista1: ["pasado"],
+        lista2: ["participio"],
+        name: "inputCEP11",
+        textoA: "Presente, ",
+        textoD: ",",
+        textoD2: "y progresivo.",
+        tamano1: 18,
+        tamano2: 20,
+      },
+
+      inputCEP11N2: {
+        lista1: ["Do"],
+        lista2: ["Does"],
+        name: "inputCEP11N2",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 10,
+        tamano2: 11,
+      },
+      inputCEP11N3: {
+        lista1: ["Did"],
+        lista2: ["Will"],
+        name: "inputCEP11N3",
+        textoA: "",
+        textoD: ",",
+        textoD2: "y would",
+        tamano1: 10,
+        tamano2: 11,
+      },
+
+    inputCEP11N4: {
+        lista1: ["Has"],
+        lista2: ["Had"],
+        name: "inputCEP11N4",
+        textoA: "Have, ",
+        textoD: ",",
+        textoD2: "/Is, ",
+        tamano1: 14,
+        tamano2: 12,
+      },
+      inputCEP11N5: {
+        lista1: ["Are"],
+        lista2: ["Was"],
+        name: "inputCEP11N5",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 10,
+        tamano2: 11,
+      },
+      inputCEP11N6: {
+        lista1: ["Could"],
+        lista2: ["Should"],
+        name: "inputCEP11N6",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 12,
+        tamano2: 12,
+      },
       listadoCompromiso: [
         "Ver el video de la lógica dos veces.",
         "Enfocarse en el número mágico y seguir las instrucciones.",
@@ -919,6 +900,7 @@ export default {
         "Aprenderse el vocabulario del número mágico.",
         "Recuerda siempre que no existe otra manera de aprender la gramática del inglés que no sea a través del número mágico.",
       ],
+
       cuestionario1: {
         fields: [
           {
@@ -1399,6 +1381,7 @@ img {
   font-family: "PT Sans";
   font-weight: bold;
   margin-bottom: auto;
+  text-align: center;
 }
 
 #numeroMagico2 {

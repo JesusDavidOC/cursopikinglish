@@ -171,7 +171,7 @@
     <br />
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-11"> <p class="parrafoBlack">
+      <div class="col-sm-11"> <p class="parrafo">
         Los auxiliares se usan para preguntar y negar, así que lo más importante
         es usar el correcto y recuerde que Does se usa para preguntar con she,
         he, it en presente y doesn´t para negar.
@@ -180,11 +180,12 @@
     </div>
     <br /><br /><br />
     <div class="row">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
-        &nbsp;
-        <b>Escribe el auxiliar negativo</b>
+      <p class="fuenteDiamond">
+       
+        Escribe el auxiliar negativo
       </p>
       <br />
     </div>
@@ -213,8 +214,8 @@
     <div class="row">
       <div class="col-sm-1"></div>
 
-      <p class="parrafoBlack">
-        <b>DICTIONARY</b>
+      <p class="subTitulo">
+        DICTIONARY
         <br />
       </p>
     </div>
@@ -787,20 +788,20 @@ export default {
         {
           esperado: ["c"],
           textoA: "1. yo no entiendo nada ",
-          tamano: 7,
+          tamano: 8,
           textoD: "",
         },
 
         {
           esperado: ["d"],
           textoA: "2. Ella no entendio nada",
-          tamano: 7,
+          tamano: 8,
           textoD: "",
         },
         {
           esperado: ["b"],
           textoA: "3. Yo no entendí nada",
-          tamano: 7,
+          tamano: 8,
           textoD: "",
         },
         {
@@ -812,13 +813,13 @@ export default {
         {
           esperado: ["a"],
           textoA: "5. Yo no entenderé nada",
-          tamano:7,
+          tamano:8,
           textoD: "",
         },
         {
           esperado: ["g"],
           textoA: "6. No tiene sentido",
-          tamano: 6,
+          tamano: 7,
           textoD: "",
         },
         {
@@ -830,7 +831,7 @@ export default {
         {
           esperado: ["o"],
           textoA: "8. El niño no lloró",
-          tamano: 6,
+          tamano: 7,
           textoD: "",
         },
         {
@@ -854,7 +855,7 @@ export default {
         {
           esperado: ["k"],
           textoA: "12. Él no fue a ninguna parte",
-          tamano: 8,
+          tamano: 9,
           textoD: "",
         },
         {
@@ -866,13 +867,13 @@ export default {
         {
           esperado: ["i"],
           textoA: "14. Ella no vive acá",
-          tamano: 6,
+          tamano: 8,
           textoD: "",
         },
         {
           esperado: ["f"],
           textoA: "15. Yo no sé nada",
-          tamano: 6,
+          tamano: 7,
           textoD: "",
         },
       ],
