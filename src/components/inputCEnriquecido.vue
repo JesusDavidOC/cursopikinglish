@@ -1,30 +1,28 @@
 <template>
-  <b-container fluid>
-    <b-row class="justify-content-md-center">
-      <b-col md="auto">
-        <inputChecked
-          :esperado="object.lista1"
-          :resuelto="false"
-          :name="object.name"
-          :conTexto="true"
-          :textoA="object.textoA"
-          :textoD="object.textoD"
-          :tamano="object.tamano1"
-        />
-      </b-col>
-      <b-col>
-        <inputChecked
-          :esperado="object.lista2"
-          :resuelto="false"
-          :name="object.name + '2'"
-          :conTexto="true"
-          textoA=""
-          :textoD="object.textoD2"
-          :tamano="object.tamano2"
-        />
-      </b-col>
-    </b-row>
-  </b-container>
+  <b-row>
+    <b-col md="auto" style="padding: 0">
+      <inputChecked
+        :esperado="object.lista1"
+        :resuelto="false"
+        :name="object.name"
+        :conTexto="true"
+        :textoA="object.textoA"
+        :textoD="object.textoD"
+        :tamano="object.tamano1"
+      />
+    </b-col>
+    <b-col md="auto" style="padding: 0">
+      <inputChecked
+        :esperado="object.lista2"
+        :resuelto="false"
+        :name="object.name + '2'"
+        :conTexto="true"
+        textoA=""
+        :textoD="object.textoD2"
+        :tamano="object.tamano2"
+      />
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -42,13 +40,9 @@ export default {
   components: {
     inputChecked,
   },
-  methods:{    
-  }
+  methods: {},
 };
 </script>>
 
 <style scoped>
-#here {
-  padding: 0;
-}
 </style>
