@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-sm-2"></div>
-      <div class="col-sm-8" id="cuadroTexto">
+      <div class="col-sm-8 parrafo">
         <h3>
           Las tablas lógicas están diseñadas para crear oraciones en ingles de
           forma automática sin margen de error gramatical con solo reemplazar y
@@ -924,7 +924,7 @@ export default {
             label: "ENGLISH",
           },
           {
-            key: "TRADUCCION_ESPAÑOL",
+            key: "complejo2",
             label: "SPANISH",
           },
         ],
@@ -937,10 +937,10 @@ export default {
             complejo1: {
               lista: ["we want to work everyday"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "queremos trabajar todos los días",
               "nosotros queremos trabajar todos los días",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -950,10 +950,10 @@ export default {
             complejo1: {
               lista: ["I have to eat something"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer algo",
               "yo tengo que comer algo",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -963,10 +963,10 @@ export default {
             complejo1: {
               lista: ["I have to eat very much"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer mucho",
               "yo tengo que comer mucho",
-            ],
+            ]}
           },
         ],
       },
