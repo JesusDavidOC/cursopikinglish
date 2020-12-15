@@ -66,32 +66,7 @@
       </div>
     </div>
 
-    <div class="row" style="margin: 0em">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
-        <div
-          class="col-sm-1"
-          v-for="(item, index) in palabrasListaP18.fields"
-          style="margin: 0; padding: 0"
-        >
-          <listaIndex :tabla="{ bordered: true, fields: [item] }" />
-        </div>
-      </div>
-    </div>
-    <div class="row" style="margin-top: -1.5em">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
-        <div class="col-sm-3" style="padding: 0">
-          <inputChecked :esperado="['participio']" :resuelto="false" />
-        </div>
-        <div class="col-sm-5" style="padding: 0">
-          <inputChecked :esperado="['progresivo']" :resuelto="false" />
-        </div>
-        <div class="col-sm-4" style="padding: 0">
-          <inputChecked :esperado="['presente']" :resuelto="false" />
-        </div>
-      </div>
-    </div>
+   
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-6" style="text-align: left">
@@ -263,7 +238,7 @@ export default {
               lista: [
                 "Participio"
               ],
-              tamano:14
+              tamano:13
             },
              complejo2:{
               
@@ -277,7 +252,7 @@ export default {
               lista: [
                 "Presente"
               ],
-              tamano:14
+              tamano:13
             },
             
           }

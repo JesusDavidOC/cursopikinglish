@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>
+        <p class="parrafo">
           Las tablas lógicas están diseñadas para crear oraciones en ingles de
           forma automática sin margen de error gramatical con solo reemplazar y
           combinar los números. Tal como una tabla de multiplicar estos
@@ -13,7 +13,7 @@
           reemplazarse por palabras según la información de arriba y que
           corresponda a la columna. Debes entonces construir una oración y luego
           traducirla.
-        </h3>
+        </p>
         <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
       </div>
       <div class="col-sm-2"></div>
