@@ -1,0 +1,67 @@
+.titulo {
+  margin-top: 1.5em;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.botTabla {
+  margin-bottom: 3em;
+}
+
+.subTitulo {
+  /* sangria*/
+  text-indent: 1em;
+  color: darkcyan;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.fuenteDiamond {
+  margin-bottom: 1em;
+  text-align: left;
+  /*justificacion de parrafo*/
+  font-size: 1.5em
+}
+
+.parrafo {
+  /*margin-bottom: 1em;*/
+  line-height: 1.2em; 
+  text-align: left;
+  /*justificacion de parrafo*/
+  text-align: justify;
+  font-size: 1.7em;
+}
+.parrafoIC {
+  margin-bottom: 0em;
+  padding-top: 0em;
+  line-height: 1.2em; 
+  text-align: left;
+  /*justificacion de parrafo*/
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+/deep/ .fuenteComponentes {
+  text-align: left;
+  /*justificacion de parrafo*/
+  text-align: justify;
+  font-size: 5em;
+}
+
+.parrafoWhite {
+  text-align: justify;
+  color: white;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+.maxh {
+  max-height: 30em;
+  overflow: auto;
+}
+.row{
+  text-align: start;
+}
