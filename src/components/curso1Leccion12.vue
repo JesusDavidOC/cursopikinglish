@@ -1,24 +1,30 @@
 <template>
     <div>
-
-             <div class="">
-      <p class="parrafoBlack">Key word:</p>
-      <h4 class="subTitulo">YESTERDAY (ayer)</h4>
-    </div>
+        <b-row>
+   
+      <b-col md="10" >
+        <p class="parrafo ">Key word:</p>
+        <p class="subTitulo marginn-left">
+          YESTERDAY (ayer)
+        </p>
+         
+        </b-col>
+</b-row>
+       
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-8">
         <p
           v-for="item in frases1Pag50"
           v-html="item"
-          class="text-left parrafoBlack"
+          class="text-left parrafo"
         ></p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 parrafoBlack">
+      <div class="col-md-auto parrafoBlack">
         <tablaTC
           class="overflow-auto"
           :cuestionario="tabla1P50"
@@ -28,17 +34,20 @@
       </div>
       <br /><br /><br />
     </div>
-
-    <div class="row">
-      <p class="subTitulo marginn-left">
-        <i>
-          <b>WORDSEARCH</b>
-        </i>
-      </p>
-    </div>
+     <b-row>
+   
+      <b-col md="10" >
+        
+        <p class="subTitulo marginn-left">
+         WORDSEARCH
+        </p>
+         
+        </b-col>
+</b-row>
+    
     <div class="row">
       <div class="col-sm-1"></div>
-      <p class="parrafoBlack">No hay una palabra en la sopa de letras</p>
+      <p class="parrafo">No hay una palabra en la sopa de letras</p>
     </div>
     <img src="/cursos/curso1/leccion12/imagenes/tablaPag51.png" />
 
@@ -47,7 +56,7 @@
       <div class="col-sm-10 row">
         <div
           v-for="(item, index) in frases1Pag51"
-          :class="'  col-sm-'+item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -59,35 +68,41 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
       </div>
     </div>
     <br /><br /><br />
+      <b-row>
+   
+      <b-col md="10" >
+        
+        <p class="subTitulo marginn-left">
+         PRACTICE
+        </p>
+         
+        </b-col>
+</b-row>
 
-
-            <p class="subTitulo marginn-left">
-      <i>
-        <b>PRACTICE</b>
-      </i>
-    </p>
+        
 
     <div class="row">
+      <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
-        &nbsp;
-        <b>Elegir el verbo correcto</b>
+      <p class="fuenteDiamond marginn-left">
+      Elegir el verbo correcto
       </p>
-      <br />
+      
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 row">
+      <div class="col-sm-10 ">
         <div
           v-for="(item, index) in frases1Pag52"
-          :class="' row col-sm-'+item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -99,6 +114,7 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
@@ -136,176 +152,176 @@ export default {
         {
           lista1: ["saw"],
 
-          textoA: "1. Te vi: I  ",
+          textoA: "1. <strong>Te vi:</strong> I  ",
           textoD: "you(see/saw)",
 
           name: "ic",
-          tamano:5
+          tamano:23
         },
         {
           lista1: ["bought"],
 
-          textoA: "2. Compré un nuevo celular: I ",
+          textoA: "2.<strong> Compré un nuevo celular:</strong> I ",
           textoD: "a new phone (Buy/bought)",
 
           name: "ic",
-          tamano:9
+          tamano:45
         },
         {
           lista1: ["understood"],
 
-          textoA: "3. Entendí un poco más: I",
+          textoA: "3.<strong> Entendí un poco más:</strong> I",
           textoD: "a little bit more (Understand/understood)",
 
           name: "ic",
-          tamano:11
+          tamano:53
         },
         {
           lista1: ["sat"],
 
-          textoA: "4. Nos sentamos y hablamos: We ",
+          textoA: "4. <strong>Nos sentamos y hablamos:</strong> We ",
           textoD: "and talked (Sit/sat)",
 
           name: "ic",
-          tamano:9
+          tamano:40
         },
         {
           lista1: ["brought"],
 
-          textoA: "5. Te traje algo para comer: I ",
+          textoA: "5.<strong> Te traje algo para comer:</strong> I ",
           textoD: " you something to eat (bring/brought)",
 
           name: "ic",
-          tamano:10
+          tamano:50
         },
         {
           lista1: ["lit"],
 
-          textoA: "6. Encendí una vela: I ",
+          textoA: "6.<strong> Encendí una vela: </strong>I ",
           textoD: "a candle (light/lit)",
 
           name: "ic",
-          tamano:7
+          tamano:32
         },
         {
           lista1: ["thought"],
 
-          textoA: "7. Yo pensé en mi madre: I ",
+          textoA: "7. <strong>Yo pensé en mi madre:</strong> I ",
           textoD: "of my mother (think/thought)",
 
           name: "ic",
-          tamano:9
+          tamano:44
 
         },
         {
           lista1: ["had"],
 
-          textoA: "8. Tuvimos un buen día: We",
+          textoA: "8. <strong>Tuvimos un buen día:</strong> We",
           textoD: "a good day (have/had)",
 
           name: "ic",
-          tamano:8
+          tamano:40
 
         },
         {
           lista1: ["gave"],
 
-          textoA: "9. Mi mamá me dio esto: My mother",
+          textoA: "9. <strong>Mi mamá me dio esto:</strong> My mother",
           textoD: "me this (give/gave)",
 
           name: "ic",
-          tamano:9
+          tamano:43
         },
         {
           lista1: ["taught"],
 
-          textoA: "10.Mi padre me enseñó a conducir: The teacher  ",
+          textoA: "10.<strong>Mi padre me enseñó a conducir:</strong> The teacher  ",
           textoD: "me how to drive (teach/taught)",
 
           name: "ic",
-          tamano:12
+          tamano:57
         },
         {
           lista1: ["drove"],
 
-          textoA: "11.El me trajo en carro a la casa: He  ",
+          textoA: "11.<strong>El me trajo en carro a la casa:</strong> He  ",
           textoD: "me home (drive/drove)",
 
           name: "ic",
-          tamano:9
+          tamano:45
         },
         {
           lista1: ["bit"],
 
-          textoA: "12.El perro mordió a mi amigo: The dog",
+          textoA: "12.<strong>El perro mordió a mi amigo:</strong> The dog",
           textoD: " my friend (bite/bit)",
 
           name: "ic",
-          tamano:9
+          tamano:42
         },
         {
           lista1: ["took"],
 
-          textoA: "13.Yo tomé una siesta: I",
+          textoA: "13.<strong>Yo tomé una siesta:</strong> I",
           textoD: "a nap (take/took)",
 
           name: "ic",
-          tamano:7
+          tamano:35
         },
         {
           lista1: ["sold"],
 
-          textoA: "14.Mi papá vendió su carro: My dad ",
+          textoA: "14.<strong>Mi papá vendió su carro:</strong> My dad ",
           textoD: " his car (sell/sold)",
 
           name: "ic",
-          tamano:9
+          tamano:41
         },
         {
           lista1: ["brought"],
 
-          textoA: "15.Te traje esto: I ",
+          textoA: "15.<strong>Te traje esto: </strong>I ",
           textoD: "you this (bring/brought)",
 
           name: "ic",
-          tamano:8
+          tamano:36
         },
         {
           lista1: ["forgot"],
 
-          textoA: "16.Olvidé cerrar la puerta: I  ",
+          textoA: "16.<strong>Olvidé cerrar la puerta: </strong>I  ",
           textoD: "to close the door (forget/forgot)",
 
           name: "ic",
-          tamano:9
+          tamano:45
         },
         {
           lista1: ["spoke"],
 
-          textoA: "17.Hablé con ella en inglés: I ",
+          textoA: "17.<strong>Hablé con ella en inglés: </strong>I ",
           textoD: "to her in english (speak/spoke)",
 
           name: "ic",
-          tamano:10
+          tamano:47
         },
 
         {
           lista1: ["caught"],
 
-          textoA: "18.Ella atrapó un pez: She ",
+          textoA: "18.<strong>Ella atrapó un pez:</strong> She ",
           textoD: "a fish (catch/caught)",
 
           name: "ic",
-          tamano:8
+          tamano:38
         },
         {
           lista1: ["woke"],
 
-          textoA: "19.Me desperté un poco tarde: I  ",
+          textoA: "19.<strong>Me desperté un poco tarde:</strong> I  ",
           textoD: "up a little late (wake/woke)",
 
           name: "ic",
-          tamano:9
+          tamano:45
         },
       ],
        frases1Pag50: [
@@ -337,6 +353,7 @@ export default {
             complejo1: {
               lista: ["We understood everything yesterday"],
               textoA: "8 -",
+              tamano:30
             },
           },
           {
@@ -344,77 +361,78 @@ export default {
             complejo1: {
               lista: ["I had breakfast late yesterday"],
               textoA: "15-",
+              tamano:30
             },
           },
           {
             A: "3. Fui con ella ayer ",
-            complejo1: { lista: ["That dog bit me yesterday"], textoA: "5 -" },
+            complejo1: { lista: ["That dog bit me yesterday"], textoA: "5 -" , tamano:30},
           },
           {
             A: "4. Ese perro me mordió ayer ",
-            complejo1: { lista: ["That dog bit me yesterday"], textoA: "11 -" },
+            complejo1: { lista: ["That dog bit me yesterday"], textoA: "11 -",tamano:30 },
           },
           {
             A: "5. ese niño me robó mi juguete ayer ",
             complejo1: {
               lista: ["That kid stole my toy yesterday"],
-              textoA: "3 -",
+              textoA: "3 -", tamano:30
             },
           },
           {
             A: "6. Vine a despedirme ayer",
             complejo1: {
               lista: ["I came to say good-bye yesterday"],
-              textoA: "6 -",
+              textoA: "6 -", tamano:30
             },
           },
           {
             A: "7. Hable con él ayer",
-            complejo1: { lista: ["I spoke to him yesterday"], textoA: "7 -" },
+            complejo1: { lista: ["I spoke to him yesterday"], textoA: "7 -" , tamano:30},
           },
           {
             A: "8. Yo te vi ayer ",
-            complejo1: { lista: ["I saw you yesterday"], textoA: "1 -" },
+            complejo1: { lista: ["I saw you yesterday"], textoA: "1 -",tamano:30 },
           },
           {
             A: "9. Te traje estás flores ayer ",
             complejo1: {
               lista: ["I brought these flowers to you yesterday"],
-              textoA: "9 -",
+              textoA: "9 -",tamano:30
             },
           },
           {
             A: "10.Mi padre compró un buen carro ",
             complejo1: {
               lista: ["My father bought a nice car yesterday"],
-              textoA: "10 -",
+              textoA: "10 -",tamano:30
             },
           },
           {
             A: "11.Me sentí muy bien ayer",
-            complejo1: { lista: ["I felt good yesterday"], textoA: "4 -" },
+            complejo1: { lista: ["I felt good yesterday"], textoA: "4 -",tamano:30 },
           },
           {
             A: "12.Me senté al lado tuyo ayer ",
             complejo1: {
               lista: ["I sat next to you yesterday"],
-              textoA: "12 -",
+              textoA: "12 -",tamano:30
             },
           },
           {
             A: "13.Pensé que estabas trabajando ",
             complejo1: {
               lista: ["I thought you were working"],
-              textoA: "13 -",
+              textoA: "13 -",tamano:30
             },
           },
           {
             A: "14.El niño se cayó de la bicicleta ",
-            complejo1: { lista: ["The kid fell off the bike"], textoA: "14 -" },
+            complejo1: { lista: ["The kid fell off the bike"], textoA: "14 -" ,tamano:30},
           },
           {
             A: "15.Bebí demasiado ayer ",
-            complejo1: { lista: ["I drank too much yesterday"], textoA: "2 -" },
+            complejo1: { lista: ["I drank too much yesterday"], textoA: "2 -" , tamano:30},
           },
         ],
       },
@@ -426,7 +444,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:13
         },
         {
           lista1: ["Compré"],
@@ -435,7 +453,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:19
         },
         {
           lista1: ["Entendí"],
@@ -444,7 +462,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:5
+          tamano:22
         },
         {
           lista1: ["Me senté"],
@@ -453,7 +471,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Yo compré"],
@@ -462,7 +480,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:5
+          tamano:21
         },
         {
           lista1: ["Encendí"],
@@ -471,7 +489,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Lancé"],
@@ -480,7 +498,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:17
         },
         {
           lista1: ["Comí"],
@@ -489,7 +507,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:14
         },
         {
           lista1: ["Me caí"],
@@ -498,7 +516,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Pensé"],
@@ -507,7 +525,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:19
         },
         {
           lista1: ["Envié"],
@@ -516,7 +534,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Nadé"],
@@ -525,7 +543,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Escribí"],
@@ -534,7 +552,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:17
         },
         {
           lista1: ["Encontré"],
@@ -543,7 +561,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:19
         },
         {
           lista1: ["Tuve"],
@@ -552,7 +570,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:14
         },
         {
           lista1: ["Hice"],
@@ -561,7 +579,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:14
         },
 
         {
@@ -571,7 +589,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Dí"],
@@ -580,7 +598,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:14
         },
         {
           lista1: ["Perdoné"],
@@ -589,7 +607,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:5
+          tamano:20
         },
         {
           lista1: ["Rompí"],
@@ -598,7 +616,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:17
         },
         {
           lista1: ["Sentí"],
@@ -607,7 +625,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Atrapé"],
@@ -616,7 +634,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:18
         },
         {
           lista1: ["Enseñé"],
@@ -625,7 +643,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:18
         },
         {
           lista1: ["Hablé"],
@@ -634,7 +652,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["vine"],
@@ -643,7 +661,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Sostuve"],
@@ -652,7 +670,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:17
         },
         {
           lista1: ["Robé"],
@@ -661,7 +679,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Llevé"],
@@ -670,7 +688,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Dije"],
@@ -679,7 +697,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:14
         },
         {
           lista1: ["Me desperté"],
@@ -688,7 +706,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:20
         },
         {
           lista1: ["Conté"],
@@ -697,7 +715,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:15
         },
         {
           lista1: ["Bebí"],
@@ -706,7 +724,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:4
+          tamano:16
         },
         {
           lista1: ["Fui"],
@@ -715,7 +733,7 @@ export default {
           textoD: "",
 
           name: "ic",
-          tamano:3
+          tamano:15
         },
       ],
 

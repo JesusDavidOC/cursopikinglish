@@ -2,11 +2,12 @@
   <div>
    
      <div class="row">
+       <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
+      <p class="fuenteDiamond marginn-left">
         &nbsp;
-        <b>Ejercicios lógicos con auxiliares negativos.</b>
+        Ejercicios lógicos con auxiliares negativos.
       </p>
       <br />
     </div>
@@ -37,7 +38,7 @@
         </div>
       </div>
     </div>
-    
+    <br><br>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
@@ -51,35 +52,38 @@
     <br />
     <br />
     <br />
-     <h3 class="titulo">EL USO DE LA PALABRA “TO”</h3>
+     <div class="row container">
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>EL USO DE LA PALABRA “TO”</h3>
+      </b-col>
+    </div>
+     <br>
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-11 row">
-        <div class="col-sm-3 parrafoBlack" id="tabla">
+        <div class="col-sm-10 parrafoBlack" id="tabla">
           <listaIndex :tabla="$data.tablaAPag42" />
         </div>
-        <div class="col-sm-4 parrafoBlack" id="tabla">
-          <listaIndex :tabla="$data.tablaBPag42" />
-        </div>
-        <div class="col-sm-4 parrafoBlack" id="tabla">
-          <listaIndex :tabla="$data.tablaCPag42" />
-        </div>
+        
       </div>
     </div>
-
-    <div class="row">
-      <p class="subTitulo marginn-left">
-        <i>
-          <b>PRACTICE</b>
-        </i>
-      </p>
-    </div>
+      <b-row>
+   
+      <b-col md="10" >
+        <p class="subTitulo marginn-left">
+          PRACTICE
+        </p>
+         
+        </b-col>
+</b-row>
+    
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10 ">
+      <div class="col-sm-11 ">
         <div
           v-for="(item, index) in frases1Pag42"
-          :class="' row col-sm-' + item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -91,6 +95,7 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
@@ -472,112 +477,82 @@ export default {
 
           // A column that needs custom formatting
           { key: "A", thClass: "", label: "Para separar dos verbos" },
+           { key: "B", thClass: "", label: "Want/ go" },
+           { key: "C", thClass: "", label: "I want to go" },
         ],
 
         items: [
-          { A: "Significa “a”" },
-          { A: "Significa “para”" },
-          { A: "Significa “que”" },
-          { A: "Hacen parte de algunos verbos simplemente." },
-          { A: "Significa “hasta”" },
-          { A: "" },
-          { A: "" },
-          { A: "" },
-          { A: "" },
-          { A: "Significa “por”" },
-          { A: "Significa “para las" },
-          { A: "Después de palabras de información" },
+          { A: "Significa “a”",
+             B: "Hacia un lugar, desde un punto a otro.",
+             C:"I will go to Spain I work from Monday to Friday"
+           },
+          { A: "Significa “para”",
+           B: "para qué algo sirve",
+            C: "The money is to buy a house." },
+          { A: "Significa “que”",
+          B: "Únicamente con el verbo “HAVE”",
+          C: "I have to eat more fruits"
+          },
+          { A: "Hacen parte de algunos verbos simplemente.", B: "Listen to, talk to, lie to, belong to Say to, look forward to. Etc",
+          C: "I like to listen to music." },
+          { A: "Significa “hasta”",
+           B: "Con verbos de movimientos Walk, go, run, drive, swim, fly. Etc",
+           C: "I walk to school every day" 
+           },
+        
+          { A: "Significa “por”" ,
+          B: "Cuando hay un deseo o un brindis",
+          C:
+              "I make this toast to Simon who has inspired us to be better human beings.",},
+          { A: "Significa “para las" ,
+          B: "Si se trata de la hora",
+          C: "It is twenty to five"
+          },
+          { A: "Después de palabras de información",
+           B: "What to, where to, how to",
+           C: "I don’t know what to do"  },
         ],
       },
 
-      tablaBPag42: {
-        bordered: true,
-
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "B", thClass: "", label: "Want/ go" },
-        ],
-        items: [
-          { B: "Hacia un lugar, desde un punto a otro." },
-          { B: "para qué algo sirve" },
-          { B: "Únicamente con el verbo “HAVE”" },
-          {
-            B:
-              "Listen to, talk to, lie to, belong to Say to, look forward to. Etc",
-          },
-          {
-            B: "Con verbos de movimientos Walk, go, run, drive, swim, fly. Etc",
-          },
-          { B: "Cuando hay un deseo o un brindis" },
-          { B: "Si se trata de la hora" },
-
-          { B: "What to, where to, how to" },
-        ],
-      },
-
-      tablaCPag42: {
-        bordered: true,
-
-        fields: [
-          // A virtual column that doesn't exist in items
-
-          // A column that needs custom formatting
-          { key: "C", thClass: "", label: "I want to go" },
-        ],
-        items: [
-          { C: "I will go to Spain I work from Monday to Friday" },
-
-          { C: "The money is to buy a house." },
-
-          { C: "I have to eat more fruits" },
-          { C: "I like to listen to music." },
-          { C: "I walk to school every day" },
-          {
-            C:
-              "I make this toast to Simon who has inspired us to be better human beings.",
-          },
-          { C: "It is twenty to five" },
-          { C: "I don’t know what to do" },
-        ],
-      },
+      
       frases1Pag42: [
         {
           lista1: ["to"],
           lista2: ["to"],
           textoA: "1. I don’t want",
           textoD: "talk",
-          textoD2: "you. (No quiero hablar contigo)",
+          textoD2: "you. <strong>(No quiero hablar contigo)</strong>",
           name: "ice",
-          tamano:7
+          tamano1:19,
+          tamano2:27
         },
         {
           lista1: ["to"],
 
           textoA: "2. It is a quarter",
-          textoD: "one. (Falta un cuarto para la una)",
+          textoD: "one. <strong>(Falta un cuarto para la una)</strong>",
 
           name: "ic",
-           tamano:6
+           tamano:37
         },
         {
           lista1: ["to"],
 
           textoA: "3. What are you going",
 
-          textoD: "do? (Qué vas a hacer?)",
+          textoD: "do? <strong>(Qué vas a hacer?)</strong>",
           name: "ic",
-           tamano:6
+           tamano:35
         },
         {
           lista1: ["to"],
           lista2: ["to"],
           textoA: "4. Go ",
           textoD: "the traffic light and give this",
-          textoD2: "Victor. (Ve hasta el semáforo y dale esto a Víctor)",
+          textoD2: "Victor. <strong>(Ve hasta el semáforo y dale esto a Víctor)</strong>",
           name: "ice",
-           tamano:10
+           tamano1:28,
+           tamano2:39
         },
         {
           lista1: ["to"],
@@ -585,36 +560,36 @@ export default {
           textoA: "5. I want to run",
 
           textoD:
-            "the top of the hill. (Quiero correr hasta la cima de la colina)",
+            "the top of the hill. <strong>(Quiero correr hasta la cima de la colina)</strong>",
           name: "ic",
-           tamano:8
+           tamano:53
         },
         {
           lista1: ["to"],
 
           textoA: "6. Please, don’t tell me what",
 
-          textoD: "do! (Por favor, no me digas qué hacer)",
+          textoD: "do!<strong> (Por favor, no me digas qué hacer)</strong>",
           name: "ic",
-           tamano:7
+           tamano:49
         },
         {
           lista1: ["to"],
 
           textoA: "7. I have bought this present to give it",
 
-          textoD: "her. (He comprador este regalo para dárselo a ella)",
+          textoD: "her. <strong>(He comprador este regalo para dárselo a ella)</strong>",
           name: "ic",
-           tamano:9
+           tamano:62
         },
         {
           lista1: ["to"],
 
           textoA: "8. I would love to drive",
 
-          textoD: "the desert. (Me encantaría conducir hasta el ",
+          textoD: "the desert. <strong>(Me encantaría conducir hasta el) </strong> ",
           name: "ic",
-           tamano:7
+           tamano:49
         },
         {
           lista1: ["to"],
@@ -622,9 +597,9 @@ export default {
           textoA: "9. I am doing this",
 
           textoD:
-            "help people in need. (Estoy haciendo esto para ayudar a las personas en necesidad)",
+            "help people in need.<strong> (Estoy haciendo esto para ayudar a las personas en necesidad)</strong>",
           name: "ic",
-           tamano:10
+           tamano:70
         },
       ],
 

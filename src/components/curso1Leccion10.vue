@@ -1,11 +1,12 @@
 <template>
   <div>
      <div class="row">
+       <div class="col-sm-1"></div>
       <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
 
-      <p class="parrafoBlack marginn-left">
+      <p class="fuenteDiamond marginn-left">
         &nbsp;
-        <b>CHOOSE, ORGANICE AND ADD THE RIGHT AUX.</b>
+        CHOOSE, ORGANICE AND ADD THE RIGHT AUX.
       </p>
       <br />
     </div>
@@ -23,7 +24,7 @@
       <div class="col-sm-9 ">
         <div
           v-for="(item, index) in frases1Pag44"
-          :class="' row col-sm-'+item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -35,13 +36,20 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
       </div>
     </div>
     <br /><br /><br />
-    <h3 class="titulo">DICTIONARY OF VERBS</h3>
+    <div class="row container">
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>DICTIONARY OF VERBS</h3>
+      </b-col>
+    </div>
+    
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-11">
@@ -54,15 +62,19 @@
       </div>
     </div>
     <br /><br />
+     <b-row>
+   
+      <b-col md="10" >
+        <p class="subTitulo marginn-left">
+          PRACTICE
+        </p>
+         
+        </b-col>
+</b-row>
+    
     <div class="row">
-      <p class="subTitulo marginn-left">
-        <i>
-          <b>PRACTICE</b>
-        </i>
-      </p>
-    </div>
-    <div class="row">
-      <p class="parrafoBlack marginn-left text-center">
+      <div class="col-sm-1"></div>
+      <p class="parrafo marginn-left ">
         <b>Vocabulary:</b>
       </p>
       <br />
@@ -72,13 +84,14 @@
       <ul>
         <li
           v-for="item in frasesPag46"
-          class="text-left parrafoBlack"
+          class="text-left parrafo"
           v-html="item"
         ></li>
       </ul>
     </div>
     <div class="row">
-      <p class="parrafoBlack marginn-left text-center">
+      <div class="col-sm-1"></div>
+      <p class="parrafo marginn-left text-center">
         <b>Meet – Sell -Throw – Break – Realize</b>
       </p>
       <br />
@@ -88,7 +101,7 @@
       <div class="col-sm-10">
         <div
           v-for="(item, index) in frases1Pag46"
-          :class="'row col-sm-'+item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -100,6 +113,7 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
@@ -107,7 +121,8 @@
     </div>
 
     <div class="row">
-      <p class="parrafoBlack marginn-left text-center">
+      <div class="col-sm-1"></div>
+      <p class="parrafo marginn-left text-center">
         <b>Say – Think – Buy – Keep – Drink</b>
       </p>
       <br />
@@ -117,7 +132,7 @@
       <div class="col-sm-10">
         <div
           v-for="(item, index) in frases2Pag46"
-          :class="'row col-sm-' + item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <div v-if="item.name == 'ice'"><inputCE :object="item" /></div>
@@ -129,6 +144,7 @@
               :conTexto="true"
               :textoA="item.textoA"
               :textoD="item.textoD"
+              :tamano="item.tamano"
             />
           </div>
         </div>
@@ -300,7 +316,7 @@ export default {
           textoD: "?",
 
           name: "ic",
-          tamano:10
+          tamano:32
         },
         {
           lista1: ["where would she go"],
@@ -309,7 +325,7 @@ export default {
           textoD: "?",
 
           name: "ic",
-          tamano:10
+          tamano:37
         },
         {
           lista1: ["How do you feel"],
@@ -318,125 +334,125 @@ export default {
 
           textoD: "?",
           name: "ic",
-          tamano:10
+          tamano:32
         },
         {
           lista1: ["did"],
 
-          textoA: "1. ¿Cómo te fue? How Go ",
+          textoA: "1. <strong>¿Cómo te fue?</strong> How Go ",
           textoD: "it go?",
 
           name: "ic",
-          tamano:5
+          tamano:28
         },
         {
           lista1: ["does"],
 
-          textoA: "2. ¿Dónde vive ella? Where  ",
+          textoA: "2. <strong>¿Dónde vive ella?</strong> Where  ",
 
           textoD: "she live?",
           name: "ic",
-          tamano:6
+          tamano:32
         },
         {
           lista1: ["will "],
 
-          textoA: "3. ¿Cuándo me devolverás mi carro? When ",
+          textoA: "3.<strong> ¿Cuándo me devolverás mi carro?</strong> When ",
 
           textoD: "you bring my car back?",
           name: "ic",
-          tamano:8
+          tamano:48
         },
         {
           lista1: ["do"],
 
-          textoA: "4. ¿Qué quieres de mi? What  ",
+          textoA: "4. <strong>¿Qué quieres de mi?</strong> What  ",
 
           textoD: "you want from me?",
           name: "ic",
-          tamano:7
+          tamano:37
         },
         {
           lista1: ["would"],
 
-          textoA: "5. ¿Qué te gustaría cambiar de tu vida? What ",
+          textoA: "5. <strong>¿Qué te gustaría cambiar de tu vida?</strong> What ",
 
           textoD: " you like to change of your life?",
           name: "ic",
-          tamano:9
+          tamano:55
         },
         {
           lista1: [" did"],
 
-          textoA: "6. ¿Cuándo llegaste a Grecia? When ",
+          textoA: "6. <strong>¿Cuándo llegaste a Grecia?</strong> When ",
 
           textoD: "you arrive in Greece?",
           name: "ic",
-          tamano:8
+          tamano:44
         },
         {
           lista1: [" will "],
 
-          textoA: "7. ¿A dónde iras de vacaciones en verano? Where ",
+          textoA: "7. <strong>¿A dónde iras de vacaciones en verano? </strong>Where ",
 
           textoD: " you go away to this summer?",
           name: "ic",
-          tamano:10
+          tamano:56
         },
         {
           lista1: [" did"],
 
-          textoA: "8. ¿Cómo lo hiciste? How   ",
+          textoA: "8.<strong> ¿Cómo lo hiciste?</strong> How   ",
 
           textoD: "you do it?",
           name: "ic",
-          tamano:6
+          tamano:30
         },
         {
           lista1: [" would "],
 
           textoA:
-            "9. ¿Cuánto tiempo te gustaría quedarte con nosotros? How long ",
+            "9. <strong>¿Cuánto tiempo te gustaría quedarte con nosotros?</strong> How long ",
 
           textoD: "you like to stay with us?",
           name: "ic",
-          tamano:11
+          tamano:62
         },
         {
           lista1: ["does"],
 
-          textoA: "10. ¿Por qué ella te odia? Why   ",
+          textoA: "10.<strong> ¿Por qué ella te odia? </strong>Why   ",
 
           textoD: "she hate you?",
           name: "ic",
-          tamano:7
+          tamano:37
         },
         {
           lista1: [" did"],
 
-          textoA: "11. ¿Dónde la conociste? Where ",
+          textoA: "11.<strong> ¿Dónde la conociste? </strong>Where ",
 
           textoD: "you meet her?",
           name: "ic",
-          tamano:7
+          tamano:37
         },
         {
           lista1: [" do"],
 
-          textoA: "12. ¿Qué opinas? What   ",
+          textoA: "12. <strong>¿Qué opinas?</strong> What   ",
 
           textoD: "you think?",
           name: "ic",
-          tamano:5
+          tamano:30
         },
         {
           lista1: ["When"],
 
-          textoA: "13. ¿Cuándo será?  ",
+          textoA: "13. <strong>¿Cuándo será? </strong> ",
 
           textoD: " will it be?",
           name: "ic",
-          tamano:5
+          tamano:28
         },
       ],
       tablaUnoPag45: {
@@ -458,7 +474,7 @@ export default {
             C: "Pensar, creer, opinar, considerar ",
             complejo2: {
               lista: ["think"],
-              tamano: 20,
+              tamano: 22,
               textoA: " I  ",
               textoD: "of you as my friend ",
             },
@@ -469,7 +485,7 @@ export default {
             C: "  Comprar",
             complejo2: {
               lista: ["bought "],
-              tamano: 20,
+              tamano: 23,
               textoA: "I have ",
               textoD: " a car recently",
             },
@@ -480,7 +496,7 @@ export default {
             C: " dejar",
             complejo2: {
               lista: [" let"],
-              tamano: 20,
+              tamano: 19,
               textoA: "She didn´t   ",
               textoD: "me go ",
             },
@@ -491,7 +507,7 @@ export default {
             C: " Negar, rechazar, desmentir",
             complejo2: {
               lista: ["denied "],
-              tamano: 22,
+              tamano: 23,
               textoA: "He ",
               textoD: "damaging the car ",
             },
@@ -513,7 +529,7 @@ export default {
             C: "Soñar ",
             complejo2: {
               lista: ["dream "],
-              tamano: 21,
+              tamano: 23,
               textoA: "What did you  ",
               textoD: "  about?",
             },
@@ -524,7 +540,7 @@ export default {
             C: "Evitar, evadir ",
             complejo2: {
               lista: [" avoid"],
-              tamano: 23,
+              tamano: 25,
               textoA: " I ",
               textoD: "eating fast food at night ",
             },
@@ -557,7 +573,7 @@ export default {
             C: "  Ayudar-socorrer",
             complejo2: {
               lista: ["help "],
-              tamano: 23,
+              tamano: 25,
               textoA: "I am sorry, I can’t  ",
               textoD: "  you now ",
             },
@@ -568,7 +584,7 @@ export default {
             C: "Saber-conocer ",
             complejo2: {
               lista: ["know "],
-              tamano: 26,
+              tamano: 28,
               textoA: "She doesn’t ",
               textoD: "anything about me ",
             },
@@ -579,7 +595,7 @@ export default {
             C: " Encontrarse con, conocer, presentar",
             complejo2: {
               lista: ["met "],
-              tamano: 26,
+              tamano: 27,
               textoA: "I  ",
               textoD: "a nice girl a couple days ago ",
             },
@@ -590,7 +606,7 @@ export default {
             C: "Lograr, obtener, conseguir ",
             complejo2: {
               lista: [" achieved"],
-              tamano: 22,
+              tamano: 25,
               textoA: " I",
               textoD: "a pay rise last year ",
             },
@@ -601,7 +617,7 @@ export default {
             C: " Decir",
             complejo2: {
               lista: ["said "],
-              tamano: 20,
+              tamano: 21,
               textoA: "I haven´t ",
               textoD: "anything ",
             },
@@ -612,7 +628,7 @@ export default {
             C: " Guardar, conservar, mantener, continuar, cumplir",
             complejo2: {
               lista: ["kept  "],
-              tamano: 18,
+              tamano: 20,
               textoA: " I always",
               textoD: "  my word",
             },
@@ -623,7 +639,7 @@ export default {
             C: "Intentar, probar, hacer el esfuerzo ",
             complejo2: {
               lista: [" tried"],
-              tamano: 26,
+              tamano: 28,
               textoA: " She",
               textoD: "to fix the car this morning ",
             },
@@ -634,7 +650,7 @@ export default {
             C: "Querer, desear ",
             complejo2: {
               lista: ["wanted "],
-              tamano: 22,
+              tamano: 23,
               textoA: "She ",
               textoD: "to be an actress ",
             },
@@ -645,7 +661,7 @@ export default {
             C: " Necesitar",
             complejo2: {
               lista: ["needed "],
-              tamano: 18,
+              tamano: 19,
               textoA: " I",
               textoD: "it yesterday ",
             },
@@ -656,7 +672,7 @@ export default {
             C: "  Beber-tomar",
             complejo2: {
               lista: [" drunk"],
-              tamano: 23,
+              tamano: 25,
               textoA: "I had never",
               textoD: "vodka before  ",
             },
@@ -667,7 +683,7 @@ export default {
             C: "Perder, extrañar, fallar ",
             complejo2: {
               lista: [" miss"],
-              tamano: 23,
+              tamano: 25,
               textoA: " I",
               textoD: " you every night and day",
             },
@@ -678,7 +694,7 @@ export default {
             C: "Venir ",
             complejo2: {
               lista: [" come"],
-              tamano: 22,
+              tamano: 24,
               textoA: " I have",
               textoD: "  to say good bye ",
             },
@@ -689,7 +705,7 @@ export default {
             C: " Agarrar, coger",
             complejo2: {
               lista: [" grab"],
-              tamano: 22,
+              tamano: 24,
               textoA: "Could you ",
               textoD: "this for me? ",
             },
@@ -710,7 +726,7 @@ export default {
           textoD: "that I was under this mask?",
 
           name: "ic",
-          tamano:6
+          tamano:36
         },
         {
           lista1: ["sell"],
@@ -720,12 +736,13 @@ export default {
           textoD: "my car to pay bills",
 
           name: "ic",
-          tamano:9
+          tamano:58
         },
         {
           lista1: ["threw"],
           lista2: ["to"],
-          tamano:11,
+          tamano1:57,
+          tamano2:25,
           textoA:
             "3. I was driving my car along the street very slowly when a boy   ",
           textoD2: "broke my back-left window.",
@@ -737,8 +754,8 @@ export default {
 
           textoA: "4. It has been 5 years now since we ",
           textoD: ".– Happy anniversary.",
-          tamano:7,
-          name: "ice",
+          tamano:43,
+          name: "ic",
         },
       ],
       frasesPag46: [
@@ -754,7 +771,7 @@ export default {
           textoA:
             "1. I worked for about 16 hours in a row to finish my project and the next day I ",
           textoD: "on working for another 2 hours. ",
-          tamano:11,
+          tamano:72,
           name: "ic",
         },
         {
@@ -763,16 +780,16 @@ export default {
           textoA:
             "2. Look at that nice blue car over there! It is for sale. Let´s go and ask for the price and if it is not expensive I will",
           textoD: "it.",
-          tamano:11,
+          tamano:75,
           name: "ic",
         },
         {
           lista1: ["say"],
 
           textoA: "3. I am so sorry! I wasn’t listening. What did you ?",
-          tamano:6,
+          tamano:38,
           textoD: "",
-          name: "ice",
+          name: "ic",
         },
         {
           lista1: ["thought"],
@@ -780,16 +797,16 @@ export default {
           textoA:
             "4. Where are you Matt? – I am outside of your house! – oh no! I ",
           textoD: " you were home. I am outside of your house too. ",
-          tamano:11,
-          name: "ice",
+          tamano:76,
+          name: "ic",
         },
         {
           lista1: ["drunk"],
 
           textoA: "5. Have you ever  ",
           textoD: " whisky? – no, I have never tried it and I don’t want to  ",
-          tamano:8,
-          name: "ice",
+          tamano:51,
+          name: "ic",
         },
       ],
      

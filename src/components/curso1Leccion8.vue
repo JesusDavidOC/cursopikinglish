@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="row">
-      <div class="col-sm-1"> </div>
-        <h3 class="titulo">FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
-     
+    <div class="row container">
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
+      </b-col>
     </div>
+   
     
 
     <div class="row">
@@ -74,12 +76,12 @@
      
     </div>
 
-    <div class="row">
+    <div class="row ">
       <div class="col-sm-1"></div>
-      <div class="col-sm-8 ">
+      <div class="col-sm-10 ">
         <div
           v-for="(item, index) in frases1Pag38"
-          :class="' row col-sm-' + item.tamano "
+          
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -89,15 +91,20 @@
             :textoA="item.textoA"
             :textoD="item.textoD"
             :conTexto="true"
+            :tamano="item.tamano"
           />
         </div>
       </div>
     </div>
       <br><br><br>
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <h3 class="titulo">AUXILIARES NEGATIVOS</h3>
+
+       <div class="row container">
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>AUXILIARES NEGATIVOS</h3>
+      </b-col>
     </div>
+   
     <div class="row">
       <div class="col-sm-1"></div>
       <p class="parrafo">
@@ -210,15 +217,16 @@
       </div>
     </div>
     <br /><br /><br />
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-
-      <p class="subTitulo">
-        DICTIONARY
-        <br />
-      </p>
-    </div>
+<b-row>
+   
+      <b-col md="10" >
+        <p class="subTitulo marginn-left">
+          DICTIONARY
+        </p>
+         
+        </b-col>
+</b-row>
+    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -240,7 +248,7 @@
       <div :class="'col-sm-5'">
         <div
           v-for="(item, index) in frases1Pag40"
-          :class="'col-sm-'+item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -250,6 +258,7 @@
             :textoA="item.textoA"
             :textoD="item.textoD"
             :conTexto="true"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -388,33 +397,33 @@ export default {
         {
           esperado: ["didn't"],
           textoA: "1. I ",
-          tamano: 6,
-          textoD: "understand. (Yo no entendí)",
+          tamano: 29,
+          textoD: "understand. <strong>(Yo no entendí) </strong>",
         },
 
         {
           esperado: ["doesn't "],
           textoA: "2. She",
-          tamano: 6,
-          textoD: "live here. (Ella no vive aquí)",
+          tamano: 30,
+          textoD: "live here. <strong>(Ella no vive aquí)</strong>",
         },
         {
-          esperado: ["wont't"],
+          esperado: ["won't"],
           textoA: "3. You",
-          tamano: 7,
-          textoD: "understand. (Tú no entenderías)",
+          tamano: 33,
+          textoD: "understand. <strong>(Tú no entenderías)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
-          tamano: 5,
-          textoD: " care. (No me importa)",
+          tamano: 25,
+          textoD: " care. <strong>(No me importa)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
-          tamano: 7,
-          textoD: "say anything. (Ellos no dirán nada)",
+          tamano: 35,
+          textoD: "say anything.<strong> (Ellos no dirán nada)</strong>",
         },
       ],
       tablaAPag39: {
@@ -571,62 +580,62 @@ export default {
           esperado: ["didn't"],
           textoA: "1. I ",
           tamano: 6,
-          textoD: "understand. (Yo no entendí)",
+          textoD: "understand. <strong>(Yo no entendí)</strong>",
         },
 
         {
           esperado: ["doesn't "],
           textoA: "2. She",
           tamano: 6,
-          textoD: "live here. (Ella no vive aquí)",
+          textoD: "live here. <strong>(Ella no vive aquí)</strong>",
         },
         {
           esperado: ["wouldn't"],
           textoA: "3. You",
           tamano: 7,
-          textoD: "understand. (Tú no entenderías)",
+          textoD: "understand. <strong>(Tú no entenderías)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
           tamano: 5,
-          textoD: " care. (No me importa)",
+          textoD: " care. <strong>(No me importa)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
           tamano: 7,
-          textoD: "say anything. (Ellos no dirán nada)",
+          textoD: "say anything. <strong>(Ellos no dirán nada)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "6. I",
           tamano: 7,
-          textoD: "have any time. (No tengo nada de tiempo)",
+          textoD: "have any time. <strong>(No tengo nada de tiempo)</strong>",
         },
         {
           esperado: ["wouldn't"],
           textoA: "7. He",
           tamano: 6,
-          textoD: "do that. (El no haría eso)",
+          textoD: "do that. <strong>(El no haría eso)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "8. We",
           tamano: 8,
-          textoD: "say anything. (Nosotros no diremos nada)",
+          textoD: "say anything. <strong>(Nosotros no diremos nada)</strong>",
         },
         {
           esperado: ["doesn't"],
           textoA: "9. my father",
           tamano: 8,
-          textoD: "speak english. (Mi padre no habla inglés)",
+          textoD: "speak english. <strong>(Mi padre no habla inglés)</strong>",
         },
         {
           esperado: ["didn't"],
           textoA: "10. I",
           tamano: 9,
-          textoD: "understand what he said. (Yo no entendí lo que él dijo)",
+          textoD: "understand what he said.<strong> (Yo no entendí lo que él dijo)</strong>",
         },
       ],
 
@@ -788,92 +797,92 @@ export default {
         {
           esperado: ["c"],
           textoA: "1. yo no entiendo nada ",
-          tamano: 8,
+          tamano: 22,
           textoD: "",
         },
 
         {
           esperado: ["d"],
           textoA: "2. Ella no entendio nada",
-          tamano: 8,
+          tamano: 23,
           textoD: "",
         },
         {
           esperado: ["b"],
           textoA: "3. Yo no entendí nada",
-          tamano: 8,
+          tamano: 22,
           textoD: "",
         },
         {
           esperado: ["e"],
           textoA: "4. Yo no entendería nada",
-          tamano: 8,
+          tamano: 23,
           textoD: " ",
         },
         {
           esperado: ["a"],
           textoA: "5. Yo no entenderé nada",
-          tamano:8,
+          tamano:23,
           textoD: "",
         },
         {
           esperado: ["g"],
           textoA: "6. No tiene sentido",
-          tamano: 7,
+          tamano: 20,
           textoD: "",
         },
         {
           esperado: ["n"],
           textoA: "7. Él no trabajó hoy",
-          tamano: 7,
+          tamano: 20,
           textoD: "",
         },
         {
           esperado: ["o"],
           textoA: "8. El niño no lloró",
-          tamano: 7,
+          tamano: 19,
           textoD: "",
         },
         {
           esperado: ["m"],
           textoA: "9. yo no lo haré",
-          tamano: 6,
+          tamano: 18,
           textoD: "",
         },
         {
           esperado: ["j"],
           textoA: "10. Nosotros no tendríamos ningún problema",
-          tamano: 11,
+          tamano: 34,
           textoD: "",
         },
         {
           esperado: ["h"],
           textoA: "11. Yo no dije nada",
-          tamano: 7,
+          tamano: 20,
           textoD: "",
         },
         {
           esperado: ["k"],
           textoA: "12. Él no fue a ninguna parte",
-          tamano: 9,
+          tamano: 25,
           textoD: "",
         },
         {
           esperado: ["l"],
           textoA: "13. Yo no haría nada",
-          tamano: 7,
+          tamano: 20,
           textoD: "",
         },
         {
           esperado: ["i"],
           textoA: "14. Ella no vive acá",
-          tamano: 8,
+          tamano: 20,
           textoD: "",
         },
         {
           esperado: ["f"],
           textoA: "15. Yo no sé nada",
-          tamano: 7,
+          tamano: 19,
           textoD: "",
         },
       ],

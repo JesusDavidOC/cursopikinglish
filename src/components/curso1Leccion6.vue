@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row container">
       <div class="col-md-1"></div>
       <b-col md="10" class="titulo">
         <h3>FORMA PRESENTE DEL VERBO</h3>
@@ -26,12 +26,16 @@
         </p>
       </div>
     </div>
-
-    <div class="row">
-      <p class="subTitulo marginn-left">
-        REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO
-      </p>
-    </div>
+<b-row>
+   
+      <b-col md="10" >
+        <p class="subTitulo marginn-left">
+          REGLAS DEL LOS VERBOS EN PRESENTE AFIRMATIVO
+        </p>
+         
+        </b-col>
+</b-row>
+    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -57,7 +61,7 @@
           
         />
       </div>
-      <div class="col-sm-1"></div>
+      
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
@@ -91,7 +95,7 @@
 
     <div class="row botTabla">
       <div class="col-sm-1"></div>
-      <div class="col-sm-7">
+      <div class="col-md-auto">
         <tablaTC
           :cuestionario="$data.cuestionario1Pag33"
           :inglesR="false"
@@ -112,10 +116,17 @@
         Add the S, ES or IES to the verb if necessary.
       </p>
     </div>
-
-    <div class="row">
-      <h3 class="subTitulo">DICTIONARY</h3>
-    </div>
+  <b-row>
+   
+      <b-col md="10" >
+        <p class="subTitulo marginn-left">
+          DICTIONARY
+        </p>
+         
+        </b-col>
+</b-row>
+    
+    
 
     <div class="row">
       <div class="col-sm-1"></div>

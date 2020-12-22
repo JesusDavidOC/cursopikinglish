@@ -18,19 +18,22 @@
         <listaIndex :tabla="item" style="padding: 0%"/>
       </div>
     </div>
-
+      <b-row>
+   
+       <b-col md=1></b-col>
+        <i class="fa fa-diamond" style="font-size: 1.5em"></i>
+        <p class="fuenteDiamond">
+          Completa la siguiente tabla:
+        </p>
+         
+       
+</b-row>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-3" style="padding: 0%">
-        <listaIndex :tabla="tablaDosAPag35" style="padding: 0%"/>
-      </div>
-      <div
-        class="col-sm-3"
-        style="padding: 0%"
-        v-for="item in $data.tablaDosPag35"
-      >
+      
+      <div class="col-md-9" >
         <tablaTC
-          :cuestionario="item"
+          :cuestionario="tablaDosPag35"
           class="botTabla"
           :inglesR="false"
           :espanolR="false"
@@ -68,11 +71,14 @@
         />
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <h3 class="titulo">LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
+    <div class="row container">
+      <div class="col-md-1"></div>
+      <b-col md="10" class="titulo">
+        <h3>LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
+      </b-col>
     </div>
+
+    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -408,7 +414,7 @@
       </p>
     </div>
 
-    <!--<div class="row">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <div
@@ -431,16 +437,9 @@
           </div>
         </div>
       </div>
-    </div>-->
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div v-for="(item, index) in frases2Pag37" v-if="item.name == 'ice'">
-          <inputCE :object="item" />
-        </div>
-      </div>
     </div>
+
+    
   </div>
 </template>
 
@@ -480,40 +479,40 @@ export default {
           items: [
             {
               html:
-                '<FONT class=""><strong>ORACIÓN EN PRESENTE  AFIRMATIVO <br> (INGLÉS)</strong></FONT>',
+                '<FONT class="">ORACIÓN EN PRESENTE  AFIRMATIVO <br> (INGLÉS)</FONT>',
             },
             {
-              html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
+              html: '<FONT class="">I walk everyday</FONT>',
             },
             {
-              html: '<FONT class=""><strong> You cry a lot</strong></FONT>',
+              html: '<FONT class=""> You cry a lot</FONT>',
             },
             {
-              html: '<FONT class=""><strong>They eat here </strong></FONT>',
-            },
-            {
-              html:
-                '<FONT class=""><strong>I cough every now and then</strong></FONT>',
+              html: '<FONT class="">They eat here </FONT>',
             },
             {
               html:
-                '<FONT class="" ><strong>I watch TV once in a blue moon</strong></FONT>',
+                '<FONT class="">I cough every now and then</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>I go for a run every morning</strong></FONT>',
+                '<FONT class="" >I watch TV once in a blue moon</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>We dance in the rain</strong></FONT>',
+                '<FONT class="">I go for a run every morning</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>I brush my teeth twice a day </strong></FONT> ',
+                '<FONT class="">We dance in the rain</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>They speak English very slowly</strong></FONT>',
+                '<FONT class="">I brush my teeth twice a day </FONT> ',
+            },
+            {
+              html:
+                '<FONT class="">They speak English very slowly</FONT>',
             },
           ],
         },
@@ -531,41 +530,41 @@ export default {
           items: [
             {
               html:
-                '<FONT class=""><strong>ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)</strong></FONT>',
+                '<FONT class="">ORACIÓN AFIRMATIVA EN PRESENTE (ESPAÑOL)</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>Yo camino todos los días</strong></FONT>',
+                '<FONT class="">Yo camino todos los días</FONT>',
             },
             {
-              html: '<FONT class=""><strong> Tu lloras muchot</strong></FONT>',
+              html: '<FONT class=""> Tu lloras mucho</FONT>',
             },
             {
-              html: '<FONT class=""><strong>Ellos comen aquí </strong></FONT>',
-            },
-            {
-              html:
-                '<FONT class=""><strong>Yo toso de vez en cuando</strong></FONT>',
+              html: '<FONT class="">Ellos comen aquí </FONT>',
             },
             {
               html:
-                '<FONT class="" ><strong>Yo veo televisión muy rara vez</strong></FONT>',
+                '<FONT class="">Yo toso de vez en cuando</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>Yo voy a correr en la mañana</strong></FONT>',
+                '<FONT class="" >Yo veo televisión muy rara vez</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>Nosotros bailamos bajo la lluvia</strong></FONT>',
+                '<FONT class="">Yo voy a correr en la mañana</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>Me cepillo mis dientes dos veces al día </strong></FONT>',
+                '<FONT class="">Nosotros bailamos bajo la lluvia</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>Ellos hablan inglés muy despacio</strong></FONT>',
+                '<FONT class="">Me cepillo mis dientes dos veces al día </FONT>',
+            },
+            {
+              html:
+                '<FONT class="">Ellos hablan inglés muy despacio</FONT>',
             },
           ],
         },
@@ -584,156 +583,63 @@ export default {
           items: [
             {
               html:
-                "<FONT ><strong>Si el sujeto es HE, SHE o IT elverbo lleva la s, es o ies</strong></FONT>",
+                "<FONT >Si el sujeto es HE, SHE o IT el verbo lleva la s, es o ies</FONT>",
             },
             {
               html:
-                '<FONT class=""><strong>She walk<font class="text-danger">s </font>every day</strong></FONT>',
+                '<FONT class="">She walk<font class="text-danger">s </font>every day</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong> He cr<font class="text-danger">ies</font> a lot</strong></FONT>',
+                '<FONT class=""> He cr<font class="text-danger">ies</font> a lot</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>The dog eat<font class="text-danger">s</font> here </strong></FONT>',
+                '<FONT class="">The dog eat<font class="text-danger">s</font> here </FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>My mother cough<font class="text-danger">s</font> </strong></FONT>',
+                '<FONT class="">My mother cough<font class="text-danger">s</font> </FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>She watch<font class="text-danger">es</font> tv</strong></FONT>',
+                '<FONT class="">She watch<font class="text-danger">es</font> tv</FONT>',
             },
 
             {
               html:
-                '<FONT class=""><strong>Nobody go<font class="text-danger">es</font> for a run every morning</strong></FONT>',
+                '<FONT class="">Nobody go<font class="text-danger">es</font> for a run every morning</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>She danc<font class="text-danger">es</font> in the rain</strong></FONT>',
+                '<FONT class="">She danc<font class="text-danger">es</font> in the rain</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>He brush<font class="text-danger">es</font> his teeth twice a day</strong></FONT>',
+                '<FONT class="">He brush<font class="text-danger">es</font> his teeth twice a day</FONT>',
             },
             {
               html:
-                '<FONT class=""><strong>My teacher speak<font class="text-danger">s</font> </strong></FONT>',
+                '<FONT class="">My teacher speak<font class="text-danger">s</font> </FONT>',
             },
           ],
         },
       ],
-      tablaDosAPag35: {
-        camposInput: false,
-        fields: [
-          // A virtual column that doesn't exist in items
-          // A column that needs custom formatting
-          {
-            key: "html",
+     
 
-            thClass: "noHead fuenteComponentes",
-          },
-        ],
-        items: [
-          {
-            html: '<FONT class=""><strong>I walk everyday </strong></FONT>',
-          },
-          {
-            html: '<FONT class=""><strong>You cry very much </strong></FONT>',
-          },
-          {
-            html: '<FONT class=""><strong>They eat here </strong></FONT>',
-          },
-          {
-            html:
-              '<FONT class=""><strong>You cough every now and then </strong></FONT>',
-          },
-          {
-            html:
-              '<FONT class=""><strong>I watch TV once in a blue moon</strong></FONT>',
-          },
-          {
-            html:
-              '<FONT class=""><strong>We take the kids to the school</strong></FONT>',
-          },
-          {
-            html: '<FONT class=""><strong>We dance in the rain</strong></FONT>',
-          },
-          {
-            html:
-              '<FONT class=""><strong>I brush my teeth twice a day</strong></FONT>',
-          },
-          {
-            html:
-              '<FONT class=""><strong>They speak english very slowly</strong></FONT>',
-          },
-          {
-            html: '<FONT class=""><strong>I walk everyday</strong></FONT>',
-          },
-          {
-            html: "<FONT ><strong>I love you</strong></FONT>",
-          },
-        ],
-      },
-
-      tablaDosPag35: [
+      tablaDosPag35: 
         {
-          fields: [{ key: "complejo1", label: "Z", thClass: "noHead" }],
-          items: [
-            {
-              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
-            },
-            {
-              complejo1: { lista: ["Tu lloras mucho"], tamano: 23 },
-            },
-            {
-              complejo1: { lista: ["Ellos come aquí"], tamano: 23 },
-            },
-            {
-              complejo1: { lista: ["Tú toses de vez en cuando"], tamano: 23 },
-            },
-            {
-              complejo1: { lista: ["Yo veo TV rara vez"], tamano: 23 },
-            },
-            {
-              complejo1: {
-                lista: ["Nosotros llevamos los niños a la escuela"],
-                tamano: 23,
-              },
-            },
-            {
-              complejo1: {
-                lista: ["Nosotros bailamos en la lluvia"],
-                tamano: 23,
-              },
-            },
-            {
-              complejo1: {
-                lista: ["Me cepillo mis dientes dos veces al día"],
-                tamano: 23,
-              },
-            },
-            {
-              complejo1: {
-                lista: ["Ellos hablan inglés muy lento"],
-                tamano: 23,
-              },
-            },
-            {
-              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
-            },
-            {
-              complejo1: { lista: ["Te amo"], tamano: 23 },
-            },
+          fields: [
+                     { key: "html", thClass: "noHead" },
+                    { key: "complejo1", label: "Z", thClass: "noHead" },
+                    { key: "complejo2", lable: "Z", thClass: "noHead" }
+          
           ],
-        },
-        {
-          fields: [{ key: "complejo2", lable: "Z", thClass: "noHead" }],
           items: [
             {
+              html:"  I walk everyday ",
+              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
+           
               complejo2: {
                 lista: ["walks"],
                 tamano: 17,
@@ -741,8 +647,10 @@ export default {
                 textoD: "everyday",
               },
             },
-
             {
+              html:"You cry very much  ",
+               complejo1: { lista: ["Tu lloras mucho"], tamano: 23 },
+           
               complejo2: {
                 lista: ["cries"],
                 tamano: 18,
@@ -750,90 +658,126 @@ export default {
                 textoD: "very much",
               },
             },
-
             {
+              html:"They eat here ",
+              complejo1: { lista: ["Ellos come aquí"], tamano: 23 },
+           
+              
               complejo2: {
                 lista: ["chiken"],
                 tamano: 18,
                 textoA: "The",
                 textoD: "eats here",
               },
+            
             },
-
             {
-              complejo2: {
+              html:"You cough every now and then ",
+              complejo1: { lista: ["Tú toses de vez en cuando"], tamano: 23 },
+           
+             complejo2: {
                 lista: ["coughs"],
                 tamano: 27,
                 textoA: "The baby",
                 textoD: "every now and then",
               },
             },
-
-            {
-              complejo2: {
+              {
+              html:"I watch TV once in a blue moon",
+              complejo1: { lista: ["Yo veo TV rara vez"], tamano: 23 },
+           
+               complejo2: {
                 lista: ["watches"],
                 tamano: 25,
                 textoA: "She",
                 textoD: "TV once in a blue moon",
               },
             },
-
-            {
-              complejo2: {
+              {
+              html:"We take the kids to the school",
+             complejo1: {
+                lista: ["Nosotros llevamos los niños a la escuela"],
+                tamano: 23,
+              },
+           
+             complejo2: {
                 lista: ["takes"],
                 tamano: 23,
                 textoA: "He",
                 textoD: "the kids to the school",
               },
             },
-
-            {
-              complejo2: {
+              {
+              html:"We dance in the rain",
+              complejo1: {
+                lista: ["Nosotros bailamos en la lluvia"],
+                tamano: 23,
+              },
+           
+               complejo2: {
                 lista: ["dances"],
                 tamano: 17,
                 textoA: "It",
                 textoD: "in the rain",
               },
             },
-
-            {
+              {
+              html:"I brush my teeth twice a day",
+               complejo1: {
+                lista: ["Me cepillo mis dientes dos veces al día"],
+                tamano: 23,
+              },
+           
               complejo2: {
                 lista: ["brushes"],
                 tamano: 25,
                 textoA: "She",
                 textoD: "her teeth twice a day",
               },
+              
             },
-
             {
+              html:"They speak english very slowly",
+                complejo1: {
+                lista: ["Ellos hablan inglés muy lento"],
+                tamano: 23,
+              },
+           
               complejo2: {
                 lista: ["speaks"],
                 tamano: 23,
                 textoA: "He",
                 textoD: "English very slowly",
               },
+              
             },
-
             {
-              complejo2: {
+              html:"I walk everyday",
+              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
+           
+                complejo2: {
                 lista: ["walks"],
                 tamano: 19,
                 textoA: "The dog",
                 textoD: "everyday",
               },
             },
-
             {
+              html:"I love you",
+              complejo1: { lista: ["Te amo"], tamano: 23 },
+           
               complejo2: {
                 lista: ["loves"],
                 tamano: 13,
                 textoA: "She",
                 textoD: "me",
               },
+              
             },
+           
           ],
         },
-      ],
+     
       frasesPag37: [
         " La palabra DO es un verbo que traduce Hacer, pero también es un auxiliar",
         "La tercera persona de DO es DOES, pero DOES también es un auxiliar.",
@@ -849,7 +793,7 @@ export default {
           lista2: ["done"],
           textoA: "He ",
           textoD: "never",
-          textoD2: "that. <strong>Él nunca ha hecho eso.</strong>",
+          textoD2: "that.<strong> Él nunca ha hecho eso.</strong>",
           tamano1: 15,
           tamano2: 28,
 
@@ -859,7 +803,7 @@ export default {
           lista1: ["doesn't do"],
 
           textoA: "She",
-          textoD: "anything. Ella no hace nada.",
+          textoD: "anything. <strong>Ella no hace nada.</strong>",
           tamano: 29,
           name: "ic",
         },
@@ -868,7 +812,7 @@ export default {
           lista2: ["done"],
           textoA: "I",
           textoD: "already",
-          textoD2: "that. Yo ya había hecho eso.",
+          textoD2: "that. <strong> Yo ya había hecho eso.</strong>",
           tamano1: 15,
           tamano2: 27,
           name: "ice",
@@ -878,7 +822,7 @@ export default {
 
           textoA: "I",
 
-          textoD: "that. Yo no hice eso.",
+          textoD: "that. <strong> Yo no hice eso.</strong>",
           tamano: 25,
           name: "ic",
         },
@@ -887,7 +831,7 @@ export default {
 
           textoA: "I",
           tamano: 20,
-          textoD: "that. Yo hice eso.",
+          textoD: "that. <strong> Yo hice eso.</strong>",
           name: "ic",
         },
         {
@@ -895,7 +839,7 @@ export default {
           tamano: 28,
           textoA: "She",
 
-          textoD: "sports. Ella hace deporte.",
+          textoD: "sports. <strong> Ella hace deporte.</strong>",
           name: "ic",
         },
         {
@@ -903,7 +847,7 @@ export default {
           tamano: 39,
           textoA: "I",
 
-          textoD: "have to work today. Yo no tuve que trabajar hoy.",
+          textoD: "have to work today.  <strong>Yo no tuve que trabajar hoy.</strong>",
           name: "ic",
         },
       ],

@@ -36,13 +36,20 @@
     <br />
     <br />
     <br />
-
-    <p class="subTitulo marginn-left Subrayado">
-      <i>
-        <b>WHAT DID YOU DO YESTERDAY?</b><br />
-        <b>DIALOGUE 1</b>
-      </i>
-    </p>
+       <b-row>
+   
+      <b-col md="10" >
+        
+        <p class="subTitulo marginn-left">
+        WHAT DID YOU DO YESTERDAY?
+        </p>
+        <p class="subTitulo marginn-left">
+        DIALOGUE 1
+        </p>
+         
+        </b-col>
+</b-row>
+   
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -50,7 +57,7 @@
         <p
           v-for="item in dialogoPag55"
           v-html="item"
-          class=" parrafoBlack"
+          class=" parrafo"
         ></p>
       </div>
     </div>
