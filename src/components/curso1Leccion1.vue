@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>
+        <p class="parrafo">
           Las tablas lógicas están diseñadas para crear oraciones en ingles de
           forma automática sin margen de error gramatical con solo reemplazar y
           combinar los números. Tal como una tabla de multiplicar estos
@@ -13,7 +13,7 @@
           reemplazarse por palabras según la información de arriba y que
           corresponda a la columna. Debes entonces construir una oración y luego
           traducirla.
-        </h3>
+        </p>
         <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
       </div>
       <div class="col-sm-2"></div>
@@ -311,28 +311,28 @@
         </div>
         <div class="col-sm-6" id="campoTextoP11" >
           <div class="row">
-            <div class="col-sm-8" >
+            <b-col md="auto" style="padding-right:0px;" >
               <inputCEnriquecido :object="inputCEP11N4" />
-            </div>
-            <div class="col-sm-4" style="margin-left: -2em;">
+            </b-col>
+            <b-col md="auto" style="padding: 0px;">
               <inputChecked :resulto="false" :esperado="['Am']" :tamano="10" :conTexto="true" textoD="," />
-            </div>
+            </b-col>
           </div>
           <div class="row">
-            <div class="col-sm-8" style="margin-top: -30px;">
+            <b-col md="auto" style="margin-top: -30px; padding-right:0px;">
               <inputCEnriquecido :object="inputCEP11N5" />
-            </div>
-            <div class="col-sm-4" style="margin-top: -30px; margin-left: -7em;">
+            </b-col>
+            <b-col md="auto" style="margin-top: -30px; padding: 0px;">
               <inputChecked :resulto="false" :esperado="['Were']" :tamano="14" :conTexto="true" textoD="/Can," />
-            </div>
+            </b-col>
           </div>
           <div class="row">
-            <div class="col-sm-8" style="margin-top: -30px;">
+            <b-col md="auto" style="margin-top: -30px; padding-right:0px;">
               <inputCEnriquecido :object="inputCEP11N6" />
-            </div>
-            <div class="col-sm-4" style="margin-top: -30px; margin-left: -4em;">
+            </b-col>
+            <b-col md="auto" style="margin-top: -30px; padding: 0px;">
               <inputChecked :resulto="false" :esperado="['Must']" :tamano="11" :conTexto="true" textoD="." />
-            </div>
+            </b-col>
           </div>
         </div>
        </div>
@@ -924,7 +924,7 @@ export default {
             label: "ENGLISH",
           },
           {
-            key: "TRADUCCION_ESPAÑOL",
+            key: "complejo2",
             label: "SPANISH",
           },
         ],
@@ -937,10 +937,10 @@ export default {
             complejo1: {
               lista: ["we want to work everyday"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "queremos trabajar todos los días",
               "nosotros queremos trabajar todos los días",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -950,10 +950,10 @@ export default {
             complejo1: {
               lista: ["I have to eat something"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer algo",
               "yo tengo que comer algo",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -963,10 +963,10 @@ export default {
             complejo1: {
               lista: ["I have to eat very much"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer mucho",
               "yo tengo que comer mucho",
-            ],
+            ]}
           },
         ],
       },
