@@ -764,7 +764,7 @@ export default {
             C: 2,
             D: 8,
             E: "",
-            complejo1: { lista: ["What are you doing?"] },
+            complejo1: { lista: ["What are you doing?"],tamano:20 },
             español: "¿Qué estás haciendo?",
           },
           {
@@ -773,7 +773,7 @@ export default {
             C: 2,
             D: 9,
             E: 8,
-            complejo1: { lista: ["Where would you like to go?"] },
+            complejo1: { lista: ["Where would you like to go?"],tamano:24 },
             español: "¿Dónde te gustaría ir?",
           },
           {
@@ -782,7 +782,7 @@ export default {
             C: 5,
             D: "",
             E: 6,
-            complejo1: { lista: ["What can I do for you?"] },
+            complejo1: { lista: ["What can I do for you?"],tamano:21 },
             español: "¿Qué puedo hacer por ti?",
           },
           {
@@ -791,7 +791,7 @@ export default {
             C: 7,
             D: "",
             E: 4,
-            complejo1: { lista: ["How was your day?"] },
+            complejo1: { lista: ["How was your day?"],tamano:19 },
             español: "¿Cómo estuvo tu día?",
           },
           {
@@ -800,7 +800,7 @@ export default {
             C: 4,
             D: 12,
             E: 1,
-            complejo1: { lista: ["What are we going to do now?"] },
+            complejo1: { lista: ["What are we going to do now?"],tamano:25 },
             español: "¿Qué vamos a hacer ahora?",
           },
           {
@@ -809,7 +809,7 @@ export default {
             C: 2,
             D: 7,
             E: "",
-            complejo1: { lista: ["When are you coming?"] },
+            complejo1: { lista: ["When are you coming?"],tamano:21 },
             español: "¿Cuándo vas a venir?",
           },
           {
@@ -818,7 +818,7 @@ export default {
             C: 2,
             D: 8,
             E: "",
-            complejo1: { lista: ["How are you doing?"] },
+            complejo1: { lista: ["How are you doing?"] ,tamano:19},
             español: "¿Cómo te va?",
           },
           {
@@ -827,7 +827,7 @@ export default {
             C: 2,
             D: 11,
             E: "",
-            complejo1: { lista: ["What do you mean?"] },
+            complejo1: { lista: ["What do you mean?"],tamano:19 },
             español: "¿Qué quieres decir?",
           },
           {
@@ -836,7 +836,7 @@ export default {
             C: 2,
             D: 6,
             E: "",
-            complejo1: { lista: ["Are you going?"] },
+            complejo1: { lista: ["Are you going?"],tamano:17 },
             español: "¿Vas a ir?",
           },
           {
@@ -845,7 +845,7 @@ export default {
             C: 2,
             D: 9,
             E: 7,
-            complejo1: { lista: ["How do you like it?"] },
+            complejo1: { lista: ["How do you like it?"],tamano:19 },
             español: "¿Cómo te gusta?",
           },
           {
@@ -855,8 +855,7 @@ export default {
             D: 9,
             E: 3,
             complejo1: {
-              lista: ["What time would you like something to drink?"],
-            },
+              lista: ["What time would you like something to drink?"],tamano:34},
             español: "¿A qué horas te gustaría algo de beber?",
           },
           {
@@ -865,7 +864,7 @@ export default {
             C: 3,
             D: 3,
             E: 7,
-            complejo1: { lista: ["What time will she have it?"] },
+            complejo1: { lista: ["What time will she have it?"],tamano:23 },
             español: "¿A qué horas ella lo tendrá?",
           },
           {
@@ -874,7 +873,7 @@ export default {
             C: 3,
             D: 8,
             E: "",
-            complejo1: { lista: ["What is she doing?"] },
+            complejo1: { lista: ["What is she doing?"] ,tamano:19},
             español: "¿Qué está ella haciendo?",
           },
           {
@@ -883,7 +882,7 @@ export default {
             C: 2,
             D: 6,
             E: "",
-            complejo1: { lista: ["Where are you going?"] },
+            complejo1: { lista: ["Where are you going?"] ,tamano:21},
             español: "¿Para dónde vas?",
           },
           {
@@ -892,7 +891,7 @@ export default {
             C: 2,
             D: 3,
             E: 5,
-            complejo1: { lista: ["Do you have any money?"] },
+            complejo1: { lista: ["Do you have any money?"],tamano:23 },
             español: "¿Tú tienes algo de dinero?",
           },
           {
@@ -901,7 +900,7 @@ export default {
             C: 7,
             D: 1,
             E: "",
-            complejo1: { lista: ["What is your name?"] },
+            complejo1: { lista: ["What is your name?"],tamano:19 },
             español: "¿Cuál es tu nombre?",
           },
           {
@@ -910,7 +909,7 @@ export default {
             C: 2,
             D: 2,
             E: "",
-            complejo1: { lista: ["Where are you from?"] },
+            complejo1: { lista: ["Where are you from?"],tamano:20 },
             español: "¿De dónde eres?",
           },
           {
@@ -919,7 +918,7 @@ export default {
             C: 2,
             D: 12,
             E: 1,
-            complejo1: { lista: ["What are you going to do now?"] },
+            complejo1: { lista: ["What are you going to do now?"],tamano:26 },
             español: "¿Qué vas a hacer ahora?",
           },
           {
@@ -928,7 +927,7 @@ export default {
             C: 2,
             D: 9,
             E: 3,
-            complejo1: { lista: ["Would you like something to drink?"] },
+            complejo1: { lista: ["Would you like something to drink?"],tamano:28 },
             español: "¿Te gustaría algo de beber?",
           },
           {
@@ -937,7 +936,7 @@ export default {
             C: 7,
             D: "",
             E: 4,
-            complejo1: { lista: ["How was your day?"] },
+            complejo1: { lista: ["How was your day?"],tamano:19 },
             español: "¿Cómo estuvo tu día?",
           },
           {
@@ -946,7 +945,7 @@ export default {
             C: 2,
             D: 11,
             E: "",
-            complejo1: { lista: ["What do you mean?"] },
+            complejo1: { lista: ["What do you mean?"],tamano:19 },
             español: "¿Qué quieres decir?",
           },
           {
@@ -955,7 +954,7 @@ export default {
             C: 2,
             D: 3,
             E: 5,
-            complejo1: { lista: ["When will you have any money?"] },
+            complejo1: { lista: ["When will you have any money?"],tamano:26 },
             español: "¿Cuándo tendrás algo de dinero?",
           },
         ],
@@ -977,7 +976,7 @@ export default {
             C: 2,
             D: 2,
             E: 6,
-            complejo1: { lista: ["who should I go out with?"] },
+            complejo1: { lista: ["who should I go out with?"],tamano:22 },
             español: "¿Con quién debería salir?",
           },
           {
@@ -986,7 +985,7 @@ export default {
             C: 4,
             D: 10,
             E: 5,
-            complejo1: { lista: ["Who will she work for?"] },
+            complejo1: { lista: ["Who will she work for?"],tamano:21 },
             español: "¿Para quién ella trabajará?",
           },
           {
@@ -995,7 +994,7 @@ export default {
             C: 1,
             D: 4,
             E: "",
-            complejo1: { lista: ["Why did you come?"] },
+            complejo1: { lista: ["Why did you come?"] ,tamano:19},
             español: "¿Por qué viniste?",
           },
           {
@@ -1004,7 +1003,7 @@ export default {
             C: 1,
             D: 9,
             E: 4,
-            complejo1: { lista: ["Who are you thinking about?"] },
+            complejo1: { lista: ["Who are you thinking about?"],tamano:24 },
             español: "¿En quién estás pensando?",
           },
           {
@@ -1013,7 +1012,7 @@ export default {
             C: 5,
             D: "",
             E: 5,
-            complejo1: { lista: ["What is it for?"] },
+            complejo1: { lista: ["What is it for?"],tamano:16},
             español: "¿Para qué es?",
           },
           {
@@ -1022,7 +1021,7 @@ export default {
             C: 4,
             D: 9,
             E: 4,
-            complejo1: { lista: ["What is she thinking about?"] },
+            complejo1: { lista: ["What is she thinking about?"],tamano:24 },
             español: "¿En qué esta ella pensando?",
           },
           {
@@ -1031,7 +1030,7 @@ export default {
             C: 1,
             D: 4,
             E: 1,
-            complejo1: { lista: ["Where do you come from?"] },
+            complejo1: { lista: ["Where do you come from?"],tamano:23 },
             español: "¿De dónde vienes?",
           },
           {
@@ -1040,7 +1039,7 @@ export default {
             C: 1,
             D: 6,
             E: 2,
-            complejo1: { lista: ["Who would you live with?"] },
+            complejo1: { lista: ["Who would you live with?"],tamano:22 },
             español: "¿Con quién vivirías?",
           },
           {
@@ -1049,7 +1048,7 @@ export default {
             C: 1,
             D: 10,
             E: 5,
-            complejo1: { lista: ["Who do you work for?"] },
+            complejo1: { lista: ["Who do you work for?"],tamano:20},
             español: "¿Para quién trabajas?",
           },
           {
@@ -1058,7 +1057,7 @@ export default {
             C: 3,
             D: 1,
             E: 2,
-            complejo1: { lista: ["Who did he eat with?"] },
+            complejo1: { lista: ["Who did he eat with?"] ,tamano:20},
             español: "¿Con quién comió él?",
           },
           {
@@ -1067,7 +1066,7 @@ export default {
             C: 1,
             D: 9,
             E: 4,
-            complejo1: { lista: ["What are you thinking about?"] },
+            complejo1: { lista: ["What are you thinking about?"],tamano:25 },
             español: "¿En qué estás pensando?",
           },
         ],

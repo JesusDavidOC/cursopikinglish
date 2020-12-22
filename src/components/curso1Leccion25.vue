@@ -19,7 +19,7 @@
 
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-1" id="numeroMagico2">2</div>
+      <div class="col-sm-1 " id="numeroMagico2">2</div>
       <div class="col-sm-3" id="campoTextoP11">
         <h2>Tipos de verbos:</h2>
       </div>
@@ -966,15 +966,19 @@ img {
 }
 #numeroMagico2 {
   background: greenyellow;
+  text-align: center;
 }
 
 #numeroMagico4 {
   background: red;
+  text-align: center;
 }
 #numeroMagico5 {
   background: royalblue;
+  text-align: center;
 }
 #numeroMagico12 {
   background: cadetblue;
+  text-align: center;
 }
 </style>
