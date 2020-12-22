@@ -252,6 +252,7 @@ export default {
         {
           respuesta: "",
           pregunta: "1. How old are the twins?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R2n1.mp3",
           options: [
             {
               text: "A) 25 seconds",
@@ -273,6 +274,7 @@ export default {
         {
           respuesta: "",
           pregunta: "2. How many brothers do the twins have?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R3n2.mp3",
           options: [
             {
               text: "A) 1",
@@ -294,6 +296,7 @@ export default {
         {
           respuesta: "",
           pregunta: "3. How fast can Henry run to the corner of the block? ",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R4n3.mp3",
           options: [
             {
               text: "A) 25 seconds",
@@ -315,6 +318,7 @@ export default {
         {
           respuesta: "",
           pregunta: "4. How long does it take for the twins to walk to school?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R5n4.mp3",
           options: [
             {
               text: "A) 25 seconds",
@@ -336,6 +340,7 @@ export default {
         {
           respuesta: "",
           pregunta: "5. How often do the twins go to school?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R6n5.mp3",
           options: [
             {
               text: "A) every day",
@@ -357,6 +362,7 @@ export default {
         {
           respuesta: "",
           pregunta: "6. How far is the school from home?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R7n6.mp3",
           options: [
             {
               text: "A)  1km away",
@@ -378,6 +384,7 @@ export default {
         {
           respuesta: "",
           pregunta: "7. How long does Mary wait before she gets worried?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R8n7.mp3",
           options: [
             {
               text: "A) 25 seconds",
@@ -399,6 +406,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. How much does the dog weight?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion21/audio/page85/AC1P85R9n8.mp3",
           options: [
             {
               text: "A) 25 kg",

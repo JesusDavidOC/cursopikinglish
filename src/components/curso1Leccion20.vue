@@ -9,7 +9,7 @@
         <b-card>
             <p class="parrafoTabla">
               <listaIndex :tabla="tablaP79" />
-          </p>
+            </p>
         </b-card>
       </div>
     </div>

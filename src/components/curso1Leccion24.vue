@@ -321,6 +321,7 @@ export default {
           respuesta: "",
           pregunta:
             "1. I didn’t go to the meeting because ____________ told me",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R1.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -344,6 +345,7 @@ export default {
           respuesta: "",
           pregunta:
             "2. Police think I am crazy but I swear I saw _________ walking into the room.",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R2.mp3",
           options: [
             {
               text: "A) Very much",
@@ -366,6 +368,7 @@ export default {
           respuesta: "",
           pregunta:
             "3. I can’t help you now but I´ll call _____________who can help you for sure.",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R3.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -388,6 +391,7 @@ export default {
           respuesta: "",
           pregunta:
             "4. What did you buy at the store? _______ because I didn’t have money with me.",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R4.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -409,6 +413,7 @@ export default {
         {
           respuesta: "",
           pregunta: "5. There is _________ I have to talk to you about",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R5.mp3",
           options: [
             {
               text: "A) Something",
@@ -431,6 +436,7 @@ export default {
           respuesta: "",
           pregunta:
             "6. He is a very famous Hollywood actor. ________ knows him.",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R6.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -453,6 +459,7 @@ export default {
           respuesta: "",
           pregunta:
             "7. Excuse me, can you pass me my book on the table? - _______ ",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R7.mp3",
           options: [
             {
               text: "A) This one",
@@ -474,6 +481,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. Which one is your car? -________ over there",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R8.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -495,6 +503,7 @@ export default {
         {
           respuesta: "",
           pregunta: "9. He is a nice guy. _______ loves him.",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R9.mp3",
           options: [
             {
               text: "A) Nobody",
@@ -516,6 +525,7 @@ export default {
         {
           respuesta: "",
           pregunta: "10. He is still lost. _______ has seen him for a week.",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion24/audio/pag95/AC1P95R10.mp3",
           options: [
             {
               text: "A) Nobody",

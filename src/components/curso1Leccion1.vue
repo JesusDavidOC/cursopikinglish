@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8" id="cuadroTexto">
-        <h3>
+        <p class="parrafo">
           Las tablas lógicas están diseñadas para crear oraciones en ingles de
           forma automática sin margen de error gramatical con solo reemplazar y
           combinar los números. Tal como una tabla de multiplicar estos
@@ -13,7 +13,7 @@
           reemplazarse por palabras según la información de arriba y que
           corresponda a la columna. Debes entonces construir una oración y luego
           traducirla.
-        </h3>
+        </p>
         <img src="/cursos/curso1/leccion1/imagenes/ejemplo1.PNG" />
       </div>
       <div class="col-sm-2"></div>
@@ -286,13 +286,18 @@
             <div class="col-sm-8">
               <inputCEnriquecido :object="inputCEP11N2" />
             </div>
-            <div class="col-sm-4" style="margin-left: -5em;">
-              <inputChecked :resulto="false" :esperado="inputCEP11N3.lista1" :tamano="inputCEP11N3.tamano1" :conTexto="true" />
+            <div class="col-sm-4" style="margin-left: -6em;">
+              <inputChecked :resulto="false" :esperado="inputCEP11N3.lista1" :tamano="inputCEP11N3.tamano1" :conTexto="true" textoD="," />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8" style="margin-top: -30px;">
+              <inputChecked :resulto="false" :esperado="['Will']" :tamano="15" :conTexto="true" textoD="y would." />
             </div>
           </div>
         </div>
       </div>
-      <div class="row" style="margin-top: 2em">
+      <div class="row" style="margin-top: -25px">
         <div class="col-sm-1"></div>
         <div class="col-sm-1" id="numeroMagico12">12</div>
         <div class="col-sm-3" id="campoTextoP11">
@@ -302,198 +307,37 @@
             :conTexto="true"
             textoD=":"
             :tamano="22"
-          />:
+          />
         </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <div>
-            <h3 id="inputText">
-              Have,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Has']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Had']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Is,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Am']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-            </h3>
+        <div class="col-sm-6" id="campoTextoP11" >
+          <div class="row">
+            <b-col md="auto" style="padding-right:0px;" >
+              <inputCEnriquecido :object="inputCEP11N4" />
+            </b-col>
+            <b-col md="auto" style="padding: 0px;">
+              <inputChecked :resulto="false" :esperado="['Am']" :tamano="10" :conTexto="true" textoD="," />
+            </b-col>
           </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Are']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Was']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Were']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Can,
-            </h3>
+          <div class="row">
+            <b-col md="auto" style="margin-top: -30px; padding-right:0px;">
+              <inputCEnriquecido :object="inputCEP11N5" />
+            </b-col>
+            <b-col md="auto" style="margin-top: -30px; padding: 0px;">
+              <inputChecked :resulto="false" :esperado="['Were']" :tamano="14" :conTexto="true" textoD="/Can," />
+            </b-col>
           </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Could']"
-                style="width: 30%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Should']"
-                style="width: 28%; margin-left: 10px; margin-right: 10px"
-              />
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Must']"
-                style="
-                  width: 28%;
-                  margin-left: 10px;
-                  margin-right: 10px;
-                  max-height: 4em;
-                "
-                class="overflow-auto"
-              />
-            </h3>
+          <div class="row">
+            <b-col md="auto" style="margin-top: -30px; padding-right:0px;">
+              <inputCEnriquecido :object="inputCEP11N6" />
+            </b-col>
+            <b-col md="auto" style="margin-top: -30px; padding: 0px;">
+              <inputChecked :resulto="false" :esperado="['Must']" :tamano="11" :conTexto="true" textoD="." />
+            </b-col>
           </div>
         </div>
+       </div>
+
       </div>
-      <div class="row" style="margin-top: 2em">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico5">5</div>
-        <div class="col-sm-3" id="campoTextoP11">
-          <h2 id="inputText">
-            <inputChecked
-              :resuelto="false"
-              :esperado="[
-                'Modificadores del tiempo',
-                'Modificadores de tiempo',
-              ]"
-            />:
-          </h2>
-        </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <div>
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Do']"
-                style="width: 25%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Does']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Did']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Will']"
-                style="width: 25%; margin-left: 10px; margin-right: 10px"
-              />
-            </h3>
-          </div>
-          <div id="text">
-            <h3>y Would</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 2em">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1" id="numeroMagico12">12</div>
-        <div class="col-sm-3" id="campoTextoP11">
-          <h2 id="inputText">
-            <inputChecked
-              :resuelto="false"
-              :esperado="['Verbos con super poder', 'Verbos con super poderes']"
-            />:
-          </h2>
-        </div>
-        <div class="col-sm-6" id="campoTextoP11">
-          <div>
-            <h3 id="inputText">
-              Have,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Has']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Had']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Is,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Am']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-            </h3>
-          </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Are']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Was']"
-                style="width: 100%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Were']"
-                style="width: 100%; margin-left: 10px; margin-right: 10px"
-              />/Can,
-            </h3>
-          </div>
-          <div id="text" style="margin-bottom: 5px">
-            <h3 id="inputText">
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Could']"
-                style="width: 30%; margin-left: 10px"
-              />,
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Should']"
-                style="width: 28%; margin-left: 10px; margin-right: 10px"
-              />
-              <inputChecked
-                :resuelto="false"
-                :esperado="['Must']"
-                style="
-                  width: 28%;
-                  margin-left: 10px;
-                  margin-right: 10px;
-                  max-height: 4em;
-                "
-                class="overflow-auto"
-              />
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-2">
@@ -993,7 +837,7 @@ export default {
         textoD: ",",
         textoD2: "y progresivo.",
         tamano1: 18,
-        tamano2: 19,
+        tamano2: 20,
       },
 
       inputCEP11N2: {
@@ -1015,6 +859,37 @@ export default {
         textoD2: "y would",
         tamano1: 10,
         tamano2: 11,
+      },
+
+    inputCEP11N4: {
+        lista1: ["Has"],
+        lista2: ["Had"],
+        name: "inputCEP11N4",
+        textoA: "Have, ",
+        textoD: ",",
+        textoD2: "/Is, ",
+        tamano1: 14,
+        tamano2: 12,
+      },
+      inputCEP11N5: {
+        lista1: ["Are"],
+        lista2: ["Was"],
+        name: "inputCEP11N5",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 10,
+        tamano2: 11,
+      },
+      inputCEP11N6: {
+        lista1: ["Could"],
+        lista2: ["Should"],
+        name: "inputCEP11N6",
+        textoA: "",
+        textoD: ",",
+        textoD2: ",",
+        tamano1: 12,
+        tamano2: 12,
       },
       listadoCompromiso: [
         "Ver el video de la lógica dos veces.",
@@ -1049,7 +924,7 @@ export default {
             label: "ENGLISH",
           },
           {
-            key: "TRADUCCION_ESPAÑOL",
+            key: "complejo2",
             label: "SPANISH",
           },
         ],
@@ -1062,10 +937,10 @@ export default {
             complejo1: {
               lista: ["we want to work everyday"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "queremos trabajar todos los días",
               "nosotros queremos trabajar todos los días",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -1075,10 +950,10 @@ export default {
             complejo1: {
               lista: ["I have to eat something"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer algo",
               "yo tengo que comer algo",
-            ],
+            ]}
           },
           {
             A: 2,
@@ -1088,10 +963,10 @@ export default {
             complejo1: {
               lista: ["I have to eat very much"],
             },
-            TRADUCCION_ESPAÑOL: [
+            complejo2:{ lista:[
               "tengo que comer mucho",
               "yo tengo que comer mucho",
-            ],
+            ]}
           },
         ],
       },

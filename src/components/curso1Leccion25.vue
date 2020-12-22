@@ -286,6 +286,7 @@ export default {
         {
           respuesta: "",
           pregunta: "1. How old was Stephen when he was adopted?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R2Q1.mp3",
           options: [
             {
               text: "A) Baby",
@@ -307,6 +308,7 @@ export default {
         {
           respuesta: "",
           pregunta: "2. What was Stephen´s relationship to Mr and Mrs Smith?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R3Q2.mp3",
           options: [
             {
               text: "A) Biological parents",
@@ -329,6 +331,7 @@ export default {
           respuesta: "",
           pregunta:
             "3. How old was Stephen when he met the curvaceous, red-headed woman?",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R4Q3.mp3",
           options: [
             {
               text: "A) 23",
@@ -350,6 +353,7 @@ export default {
         {
           respuesta: "",
           pregunta: "4. How was she related to him?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R5Q4.mp3",
           options: [
             {
               text: "A) Wife",
@@ -371,6 +375,7 @@ export default {
         {
           respuesta: "",
           pregunta: "5. Where did they meet?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R6Q5.mp3",
           options: [
             {
               text: "A) In his kitchen",
@@ -393,6 +398,7 @@ export default {
           respuesta: "",
           pregunta:
             "6. How many sisters does Stephen have (adoptive and biological)?",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R7Q6.mp3",
           options: [
             {
               text: "A) 3",
@@ -415,6 +421,7 @@ export default {
           respuesta: "",
           pregunta:
             "7. How many brothers does Stephen have (adoptive and biological)? ",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R8Q7.mp3",
           options: [
             {
               text: "A) 3",
@@ -436,6 +443,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. What is Sara´s relationship to Todd?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R9Q8.mp3",
           options: [
             {
               text: "A) Sister-in-law",
@@ -457,6 +465,7 @@ export default {
         {
           respuesta: "",
           pregunta: "9. What is Meredith´s relationship to Mrs Smith?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R10Q9.mp3",
           options: [
             {
               text: "A) Sisters",
@@ -478,6 +487,7 @@ export default {
         {
           respuesta: "",
           pregunta: "10. How many children do Mr and Mrs Smith have?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R11Q10.mp3",
           options: [
             {
               text: "A) 3",
@@ -499,6 +509,7 @@ export default {
         {
           respuesta: "",
           pregunta: "11. What is Laura´s relationship to Meredith?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion25/audios/pag101/AC1P101R12Q11.mp3",
           options: [
             {
               text: "A) Adoptive Aunt",

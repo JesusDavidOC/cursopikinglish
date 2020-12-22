@@ -265,6 +265,7 @@ export default {
           respuesta: "",
           pregunta:
             "1. I am interested ____ studying English (Estoy interesado en estudiar)",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R15n1.mp3",
           options: [
             {
               text: "A) On",
@@ -287,6 +288,7 @@ export default {
           respuesta: "",
           pregunta:
             "2. I don’t want to talk ____ you (Yo no quiero hablar contigo)",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R16n2.mp3",
           options: [
             {
               text: "A) To",
@@ -308,7 +310,8 @@ export default {
         {
           respuesta: "",
           pregunta:
-            "He yelled ____ the dog for peeing on the carpet (Él gritó al perro por orinarse en la alfombra ",
+            "3. He yelled ____ the dog for peeing on the carpet (Él gritó al perro por orinarse en la alfombra ",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R17n3.mp3",
           options: [
             {
               text: "A) at",
@@ -329,7 +332,8 @@ export default {
         },
         {
           respuesta: "",
-          pregunta: "Who did you fall in love ____? (¿De quién te enamoraste?)",
+          pregunta: "4. Who did you fall in love ____? (¿De quién te enamoraste?)",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R18n4.mp3",
           options: [
             {
               text: "A) Of",
@@ -352,6 +356,7 @@ export default {
           respuesta: "",
           pregunta:
             "5. I have come to say good bye ___ you (He venido a despedirme de ti)",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R19n5.mp3",
           options: [
             {
               text: "A) Of",
@@ -374,6 +379,7 @@ export default {
           respuesta: "",
           pregunta:
             "6. How much do you think ____her? (¿Cuánto piensas en ella?)",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R20n6.mp3",
           options: [
             {
               text: "A) Of",
@@ -396,6 +402,7 @@ export default {
           respuesta: "",
           pregunta:
             "7. I have realized I depend _____ my parents for emotional support",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R21n7.mp3",
           options: [
             {
               text: "A) On",
@@ -417,6 +424,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. You have to stop lying ____ me",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R22n8.mp3",
           options: [
             {
               text: "A) Of",
@@ -438,6 +446,7 @@ export default {
         {
           respuesta: "",
           pregunta: "9. I am calling to congratulate you ______ your wedding",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R23n9.mp3",
           options: [
             {
               text: "A) Of",
@@ -459,6 +468,7 @@ export default {
         {
           respuesta: "",
           pregunta: "10. We arrived _____ Chicago last night",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R24n10.mp3",
           options: [
             {
               text: "A) In",
@@ -480,6 +490,7 @@ export default {
         {
           respuesta: "",
           pregunta: "11. Have you ever been ____ Niagara Falls?",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R25n11.mp3",
           options: [
             {
               text: "A) Of",
@@ -501,6 +512,7 @@ export default {
         {
           respuesta: "",
           pregunta: "12. Can you wait _____ Matt? -he will be here soon",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R26n12.mp3",
           options: [
             {
               text: "A) Of",
@@ -523,6 +535,7 @@ export default {
           respuesta: "",
           pregunta:
             "13. Have you ever listened ____ the lyrics of 'Stairway to Heaven'?",
+            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R27n13.mp3",
           options: [
             {
               text: "A) Of",
@@ -544,6 +557,7 @@ export default {
         {
           respuesta: "",
           pregunta: "14. We will arrive ____ your house in twenty (20) minutes",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion23/audio/pag92/AC1P91R28n14.mp3",
           options: [
             {
               text: "A) Of",

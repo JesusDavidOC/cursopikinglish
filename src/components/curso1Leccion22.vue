@@ -223,6 +223,7 @@ export default {
         {
           respuesta: "",
           pregunta: "1. This house is made ____ wood",
+           audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R10n1.mp3",
           options: [
             {
               text: "A) in",
@@ -244,6 +245,7 @@ export default {
         {
           respuesta: "",
           pregunta: "2. I live ____ my parents",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R11n2.mp3",
           options: [
             {
               text: "A) in",
@@ -265,6 +267,7 @@ export default {
         {
           respuesta: "",
           pregunta: "3. The bank is _______ the casino and the pharmacy ",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R12n3.mp3",
           options: [
             {
               text: "A) between",
@@ -286,6 +289,7 @@ export default {
         {
           respuesta: "",
           pregunta: "4. Thank you _____ helping me",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R13n4.mp3",
           options: [
             {
               text: "A) in",
@@ -307,6 +311,7 @@ export default {
         {
           respuesta: "",
           pregunta: "5. I swam ____ the river yesterday",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R14n5.mp3",
           options: [
             {
               text: "A) in",
@@ -328,6 +333,7 @@ export default {
         {
           respuesta: "",
           pregunta: "6. I always go home _____ classes",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R15n6.mp3",
           options: [
             {
               text: "A) up",
@@ -349,6 +355,7 @@ export default {
         {
           respuesta: "",
           pregunta: "7. I put the broom ______ the door",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R16n7.mp3",
           options: [
             {
               text: "A) in",
@@ -370,6 +377,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. I wrote a book _______ learning English",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R17n8.mp3",
           options: [
             {
               text: "A) about",
@@ -391,6 +399,7 @@ export default {
         {
           respuesta: "",
           pregunta: "9. The dog is ______ the table",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R18n9.mp3",
           options: [
             {
               text: "A) under",
@@ -412,6 +421,7 @@ export default {
         {
           respuesta: "",
           pregunta: "10. Show me what you are made _____",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R19n10.mp3",
           options: [
             {
               text: "A) In",
@@ -433,6 +443,7 @@ export default {
         {
           respuesta: "",
           pregunta: "11. . Please go ______ stairs to answer the door",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R20n11.mp3",
           options: [
             {
               text: "A) down",
@@ -454,6 +465,7 @@ export default {
         {
           respuesta: "",
           pregunta: "12. The sun comes ____ in the morning",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R21n12.mp3",
           options: [
             {
               text: "A) along",
@@ -475,6 +487,7 @@ export default {
         {
           respuesta: "",
           pregunta: "13. Get _____ of the car",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R22n13.mp3",
           options: [
             {
               text: "A) for",
@@ -496,7 +509,9 @@ export default {
         {
           respuesta: "",
           pregunta: "14. I work 5 days a week, ______ Monday to Friday",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R23n14.mp3",
           options: [
+
             {
               text: "A) from",
               value: "A",
@@ -517,6 +532,7 @@ export default {
         {
           respuesta: "",
           pregunta: "15. She kicked the ball ______ the field",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R24n15.mp3",
           options: [
             {
               text: "A) of",
@@ -537,7 +553,8 @@ export default {
         },
         {
           respuesta: "",
-          pregunta: "I called her ______ she arrived",
+          pregunta: "16. I called her ______ she arrived",
+          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion22/audio/page89/AC1P89R25n16.mp3",
           options: [
             {
               text: "A) before",
