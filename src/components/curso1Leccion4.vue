@@ -39,9 +39,7 @@
       <div class="col-sm-10" id="text">
         <i class="fa fa-diamond" style="font-size: 1.5em"></i>
         <a id="textPractice">
-        <strong>
-          Escribe el modificador correspondiente
-        </strong>
+          <strong> Escribe el modificador correspondiente </strong>
           <a class="colorLetraRojo">DO-DOES-DID-WILL-WOULD</a>
         </a>
       </div>
@@ -50,16 +48,14 @@
     <div class="row" v-for="(item, index) in preguntasCompletarP24.items">
       <b-col md="1"></b-col>
       <div class="col-md-11">
-        
-          <inputChecked
-            :esperado="item.esperado"
-            :name="preguntasCompletarP24.nombre + index"
-            :conTexto="true"
-            :textoA="item.textoA"
-            :textoD="item.textoD"
-            :tamano="item.tamano"
-          />
-        
+        <inputChecked
+          :esperado="item.esperado"
+          :name="preguntasCompletarP24.nombre + index"
+          :conTexto="true"
+          :textoA="item.textoA"
+          :textoD="item.textoD"
+          :tamano="item.tamano"
+        />
       </div>
     </div>
 
@@ -103,7 +99,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <ul>
-          <dt v-for="item in listaConclusionP25" id="textoCompromiso">
+          <dt v-for="item in listaConclusionP25" class="fuenteDiamond">
             <i class="fa fa-diamond"></i>
             <a>{{ item }}</a>
           </dt>
@@ -148,10 +144,10 @@
       </div>
     </div>
 
-    <div class="row" v-for="(item, index) in preguntasCompletarP26.items">
+    <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
-        <div :class="'col-sm-' + item.tamano">
+        <b-row v-for="(item, index) in preguntasCompletarP26.items">
           <inputChecked
             :esperado="item.esperado"
             :name="preguntasCompletarP26.nombre + index"
@@ -159,8 +155,9 @@
             :textoA="item.textoA"
             :textoD="item.textoD"
             :audio="item.audio"
+            :tamano="item.tamano"
           />
-        </div>
+        </b-row>
       </div>
     </div>
   </div>
@@ -193,177 +190,177 @@ export default {
           {
             esperado: ["working"],
             textoA: "1.   I am",
-            textoD: "(work-worked-worked-working) - Estoy trabajando.",
-            tamano: 8,
+            textoD: "<span class='colorLetraRojo'>(work-worked-worked-working)</span> - <strong>Estoy trabajando.</strong>",
+            tamano: 47,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R1.mp3",
           },
           {
             esperado: ["go"],
             textoA: "2.   I don’t",
             textoD:
-              "anywhere (go-went-gone-going) - Yo no voy a ninguna parte.",
-            tamano: 9,
+              "anywhere <span class='colorLetraRojo'>(go-went-gone-going)</span> - <strong>Yo no voy a ninguna parte.</strong>",
+            tamano: 51,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R2.mp3",
           },
           {
             esperado: ["have"],
             textoA: "3.   She can´t ",
             textoD:
-              "a boyfriend now (have-has-had-having) - Ella no puede tener un novio ahora.",
-            tamano: 11,
+              "a boyfriend now <span class='colorLetraRojo'>(have-has-had-having)</span> - <strong>Ella no puede tener un novio ahora.</strong>",
+            tamano: 64,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R3.mp3",
           },
           {
             esperado: ["seen"],
             textoA: "4.   I haven’t ",
             textoD:
-              "Victor today (see-saw-seen-seeing) - No he visto a Víctor hoy.",
-            tamano: 10,
+              "Victor today <span class='colorLetraRojo'>(see-saw-seen-seeing)</span> - <strong>No he visto a Víctor hoy.</strong>",
+            tamano: 54,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R4.mp3",
           },
           {
             esperado: ["saw"],
             textoA: "5.   She",
             textoD:
-              "Victor yesterday (see-saw-seen-seeing) - Ella vio a Víctor ayer.",
-            tamano: 9,
+              "Victor yesterday <span class='colorLetraRojo'>(see-saw-seen-seeing)</span> - <strong>Ella vio a Víctor ayer.</strong>",
+            tamano: 52,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R5.mp3",
           },
           {
             esperado: ["had"],
             textoA: "6.   We",
             textoD:
-              "an excellent class (have-has-had-having) - Tuvimos una excelente clase.?",
-            tamano: 10,
+              "an excellent class <span class='colorLetraRojo'>(have-has-had-having)</span> - <strong>Tuvimos una excelente clase.?</strong>",
+            tamano: 58,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R6.mp3",
           },
           {
             esperado: ["been"],
             textoA: "7.   How have you",
-            textoD: "? (be- was- been- being) - ¿Como has estado?",
-            tamano: 9,
+            textoD: "? <span class='colorLetraRojo'>(be- was- been- being)</span> - <strong>¿Como has estado?.</strong>",
+            tamano: 49,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R7.mp3",
           },
           {
             esperado: ["working"],
             textoA: "8.   She is",
-            textoD: "(work-worked-worked-working) - Ella está trabajando.",
-            tamano: 9,
+            textoD: "<span class='colorLetraRojo'>(work-worked-worked-working)</span> - <strong>Ella está trabajando.</strong>",
+            tamano: 50,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R8.mp3",
           },
           {
             esperado: ["do"],
             textoA: "9.   What did you",
-            textoD: "last night? (do-did-done-doing) - ¿Qué hiciste anoche?",
-            tamano: 9,
+            textoD: "last night? <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>¿Qué hiciste anoche?.</strong>",
+            tamano: 52,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R9.mp3",
           },
           {
             esperado: ["ate"],
             textoA: "10. I",
             textoD:
-              "breakfast early (eat-ate-eaten-eating) - Yo desayuné temprano.",
-            tamano: 9,
+              "breakfast early <span class='colorLetraRojo'>(eat-ate-eaten-eating)</span> - <strong>Yo desayuné temprano.</strong>",
+            tamano: 50,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R10.mp3",
           },
           {
             esperado: ["eat"],
             textoA: "11. I",
             textoD:
-              "breakfast early (eat-ate-eaten-eating) - Yo desayuno temprano.",
-            tamano: 9,
+              "breakfast early <span class='colorLetraRojo'>(eat-ate-eaten-eating)</span> - <strong>Yo desayuno temprano.</strong>",
+            tamano: 50,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R11.mp3",
           },
           {
             esperado: ["doing"],
             textoA: "12. What were you",
             textoD:
-              "last night? (do-did-done-doing) - ¿Qué estabas haciendo anoche?",
-            tamano: 11,
+              "last night? <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>¿Qué estabas haciendo anoche?.</strong>",
+            tamano: 62,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R12.mp3",
           },
           {
             esperado: ["done"],
             textoA: "13. Have you ever",
-            textoD: "that? (do-did-done-doing) - ¿Alguna vez has hecho eso?",
-            tamano: 10,
+            textoD: "that? <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>¿Alguna vez has hecho eso?.</strong>",
+            tamano: 56,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R13.mp3",
           },
           {
             esperado: ["do"],
             textoA: "14. We shouldn’t",
             textoD:
-              "that. (do-did-done-doing) - Nosotros no deberíamos hacer eso.",
-            tamano: 10,
+              "that. <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>Nosotros no deberíamos hacer eso.</strong>",
+            tamano: 57,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R14.mp3",
           },
           {
             esperado: ["study"],
             textoA: "15. You must",
             textoD:
-              "for the exam. (study-studied-studied-studying) - Tú debes estudiar para el examen.",
-            tamano: 12,
+              "for the exam. <span class='colorLetraRojo'>(study-studied-studied-studying)</span> - <strong>Tú debes estudiar para el examen.</strong>",
+            tamano: 68,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R15.mp3",
           },
           {
             esperado: ["raining"],
             textoA: "16. It is",
             textoD:
-              "a lot. (rain-rained-rained-raining) - Está lloviendo mucho.",
-            tamano: 9,
+              "a lot. <span class='colorLetraRojo'>(rain-rained-rained-raining)</span> - <strong>Está lloviendo mucho.</strong>",
+            tamano: 50,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R16.mp3",
           },
           {
             esperado: ["like"],
             textoA: "17. What would you",
             textoD:
-              "to do? (like-liked-liked-liking) - ¿Qué te gustaría hacer?",
-            tamano: 10,
+              "to do? <span class='colorLetraRojo'>(like-liked-liked-liking)</span> - <strong>¿Qué te gustaría hacer?.</strong>",
+            tamano: 55,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R17.mp3",
           },
           {
             esperado: ["do"],
             textoA: "18. I",
             textoD:
-              "sports once in a while. (do-did-done-doing) - Yo hago deportes de vez en cuando.",
-            tamano: 11,
+              "sports once in a while. <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>Yo hago deportes de vez en cuando.</strong>",
+            tamano: 61,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R18.mp3",
           },
           {
             esperado: ["do"],
             textoA: "19. What does your father",
-            textoD: "? (do-did-done-doing) - ¿Qué hace tu padre?",
-            tamano: 9,
+            textoD: "? <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>¿Qué hace tu padre?.</strong>",
+            tamano: 52,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R19.mp3",
           },
           {
             esperado: ["do"],
             textoA: "20. What can I",
-            textoD: "for you? (do-did-done-doing) - ¿Qué puedo hacer por ti?",
-            tamano: 9,
+            textoD: "for you? <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>¿Qué puedo hacer por ti?.</strong>",
+            tamano: 52,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R20.mp3",
           },
           {
             esperado: ["done"],
             textoA: "21. I haven’t ",
-            textoD: "anything yet. (do-did-done-doing) - No he hecho nada aún.",
-            tamano: 10,
+            textoD: "anything yet. <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>No he hecho nada aún.</strong>",
+            tamano: 53,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R21.mp3",
           },
           {
             esperado: ["did"],
             textoA: "22. You ",
             textoD:
-              "a good job. (do-did-done-doing) Tú hiciste un buen trabajo.",
-            tamano: 9,
+              "a good job. <span class='colorLetraRojo'>(do-did-done-doing)</span> - <strong>Tú hiciste un buen trabajo.</strong>",
+            tamano: 50,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R22.mp3",
           },
           {
             esperado: ["worked"],
             textoA: "23. My father",
             textoD:
-              "for a big company. (work-worked- working) Mi padre trabajó para una gran compañía. ",
-            tamano: 13,
+              "for a big company. <span class='colorLetraRojo'>(work-worked- working)</span> -  <strong>Mi padre trabajó para una gran compañía.</strong> ",
+            tamano: 72,
             audio: "/cursos/curso1/leccion4/audios/page26/AC1P25R23.mp3",
           },
         ],
@@ -398,7 +395,7 @@ export default {
                 lista: ["Go"],
                 textoA: "Do you",
                 textoD: "to school?",
-                tamano: 18,
+                tamano: 19,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R1.mp3",
               },
               A: "Go",
@@ -411,7 +408,7 @@ export default {
                 lista: ["Eat"],
                 textoA: "Did you",
                 textoD: "vegetables?",
-                tamano: 20,
+                tamano: 21,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R2.mp3",
               },
               A: "Eat",
@@ -424,7 +421,7 @@ export default {
                 lista: ["Like"],
                 textoA: "Would you",
                 textoD: "to live in Peru?",
-                tamano: 23,
+                tamano: 25,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R3.mp3",
               },
               A: "Like",
@@ -437,7 +434,7 @@ export default {
                 lista: ["do"],
                 textoA: "What will you",
                 textoD: "tomorrow?",
-                tamano: 22,
+                tamano: 23,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R4.mp3",
               },
               A: "Do",
@@ -450,7 +447,7 @@ export default {
                 lista: ["Live"],
                 textoA: "Where does she",
                 textoD: "?",
-                tamano: 19,
+                tamano: 20,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R5.mp3",
               },
               A: "Live",
@@ -489,7 +486,7 @@ export default {
                 lista: ["Had"],
                 textoA: "I",
                 textoD: "a sandwich for lunch",
-                tamano: 21,
+                tamano: 22,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R6.mp3",
               },
               A: "Have",
@@ -502,7 +499,7 @@ export default {
                 lista: ["Went"],
                 textoA: "We ",
                 textoD: "to see a movie last night",
-                tamano: 25,
+                tamano: 26,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R7.mp3",
               },
               A: "Go",
@@ -515,7 +512,7 @@ export default {
                 lista: ["Studied"],
                 textoA: "I",
                 textoD: "at this university.",
-                tamano: 20,
+                tamano: 22,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R8.mp3",
               },
               A: "Study",
@@ -554,7 +551,7 @@ export default {
                 lista: ["Been"],
                 textoA: "How have you ",
                 textoD: "?",
-                tamano: 18,
+                tamano: 20,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R9.mp3",
               },
               A: "Be",
@@ -567,7 +564,7 @@ export default {
                 lista: ["Left"],
                 textoA: "I had",
                 textoD: "the party before that happened",
-                tamano: 29,
+                tamano: 31,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R10.mp3",
               },
               A: "Leave",
@@ -580,7 +577,7 @@ export default {
                 lista: ["Eaten"],
                 textoA: "She hasn´t",
                 textoD: "yet",
-                tamano: 17,
+                tamano: 19,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R11.mp3",
               },
               A: "Eat",
@@ -619,7 +616,7 @@ export default {
                 lista: ["Thinking"],
                 textoA: "What are you",
                 textoD: "about?",
-                tamano: 22,
+                tamano: 24,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R12.mp3",
               },
               A: "Think",
@@ -632,7 +629,7 @@ export default {
                 lista: ["Going"],
                 textoA: "Where were you",
                 textoD: "?",
-                tamano: 20,
+                tamano: 21,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R13.mp3",
               },
               A: "Go",
@@ -645,7 +642,7 @@ export default {
                 lista: ["Making"],
                 textoA: "I am",
                 textoD: "my bed",
-                tamano: 17,
+                tamano: 18,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R14.mp3",
               },
               A: "Make",
@@ -658,7 +655,7 @@ export default {
                 lista: ["Paying"],
                 textoA: "Sorry! I was not",
                 textoD: "attention",
-                tamano: 24,
+                tamano: 25,
                 audio: "/cursos/curso1/leccion4/audios/page25/AC1P24R15.mp3",
               },
               A: "Pay",
@@ -670,13 +667,13 @@ export default {
         },
       ],
       listaConclusionP25: [
-        "Siempre recuerda para que sirven los modificadores (auxiliares). para preguntar o negar.",
+        "Siempre recuerda para que sirven los modificadores (auxiliares): Para preguntar o negar.",
         "Recuerda que un verbo se usa en pasado solo en afirmación.",
         "Los verbos con poderes se niegan solos, ellos no necesitan auxiliares.",
         "El participio de un verbo se usa después de los verbos con poderes HAVE, HAS Y HAD.",
         "Un verbo se usa en presente también después de un AUXILIAR, CAN, COULD, SHOULD o MUST.",
-        "Siempre que uses IS, AM, ARE, WAS Y WERE al verbo que sigue se le agrega ING (progresivo).",
-        "Los verbos regulares no cambian su raíz en pasado ni participio y solo se le agrega ed",
+        "Siempre que uses IS, AM, ARE, WAS Y WERE, al verbo que sigue se le agrega ING (progresivo).",
+        "Los verbos regulares no cambian su raíz en pasado, ni participio y solo se le agrega ed.",
       ],
       mensajeRespuestasP24: "Complete las preguntas",
       respuestasCuestionarioP24: ["B", "A", "A", "A"],
@@ -803,7 +800,8 @@ export default {
           },
           {
             esperado: ["would"],
-            textoA: "9.   <strong>¿Cuánto tiempo te gustaría quedarte?</strong> - How long",
+            textoA:
+              "9.   <strong>¿Cuánto tiempo te gustaría quedarte?</strong> - How long",
             textoD: "you like to stay??",
             tamano: 53,
           },
