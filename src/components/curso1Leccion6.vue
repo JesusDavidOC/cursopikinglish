@@ -2,7 +2,7 @@
   <div>
     <div class="row container">
       <div class="col-md-1"></div>
-      <b-col md="10" class="titulo">
+      <b-col md="10" class="titulo" style="margin-bottom:2em;">
         <h3>FORMA PRESENTE DEL VERBO</h3>
       </b-col>
     </div>
@@ -1155,5 +1155,9 @@ export default {
 
 inputChecked {
   display: inline-flex;
+}
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 </style>

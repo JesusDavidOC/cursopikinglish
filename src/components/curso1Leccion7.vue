@@ -23,7 +23,7 @@
        <b-col md=1></b-col>
         <i class="fa fa-diamond" style="font-size: 1.5em"></i>
         <p class="fuenteDiamond">
-          Completa la siguiente tabla:
+          Completa :
         </p>
          
        
@@ -73,7 +73,7 @@
     </div>
     <div class="row container">
       <div class="col-md-1"></div>
-      <b-col md="10" class="titulo">
+      <b-col md="10" class="titulo" style="margin-bottom:2em;">
         <h3>LOS VERBOS GEMELOS DE LA LÓGICA DEL INGLÉS</h3>
       </b-col>
     </div>
@@ -638,34 +638,34 @@ export default {
           items: [
             {
               html:"  I walk everyday ",
-              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
+              complejo1: { lista: ["Yo camino todos los días","camino todos los días"], tamano: 23 },
            
               complejo2: {
                 lista: ["walks"],
-                tamano: 17,
+                tamano: 18,
                 textoA: "He",
                 textoD: "everyday",
               },
             },
             {
               html:"You cry very much  ",
-               complejo1: { lista: ["Tu lloras mucho"], tamano: 23 },
+               complejo1: { lista: ["Tu lloras mucho","lloras mucho"], tamano: 23 },
            
               complejo2: {
                 lista: ["cries"],
-                tamano: 18,
+                tamano: 19,
                 textoA: "She",
                 textoD: "very much",
               },
             },
             {
               html:"They eat here ",
-              complejo1: { lista: ["Ellos come aquí"], tamano: 23 },
+              complejo1: { lista: ["Ellos comen aquí"], tamano: 23 },
            
               
               complejo2: {
                 lista: ["chiken"],
-                tamano: 18,
+                tamano: 19,
                 textoA: "The",
                 textoD: "eats here",
               },
@@ -673,22 +673,22 @@ export default {
             },
             {
               html:"You cough every now and then ",
-              complejo1: { lista: ["Tú toses de vez en cuando"], tamano: 23 },
+              complejo1: { lista: ["Tú toses de vez en cuando","toses de vez en cuando"], tamano: 23 },
            
              complejo2: {
                 lista: ["coughs"],
-                tamano: 27,
+                tamano: 29,
                 textoA: "The baby",
                 textoD: "every now and then",
               },
             },
               {
               html:"I watch TV once in a blue moon",
-              complejo1: { lista: ["Yo veo TV rara vez"], tamano: 23 },
+              complejo1: { lista: ["Yo veo TV rara vez","veo TV rara vez"], tamano: 23 },
            
                complejo2: {
                 lista: ["watches"],
-                tamano: 25,
+                tamano: 29,
                 textoA: "She",
                 textoD: "TV once in a blue moon",
               },
@@ -702,7 +702,7 @@ export default {
            
              complejo2: {
                 lista: ["takes"],
-                tamano: 23,
+                tamano: 25,
                 textoA: "He",
                 textoD: "the kids to the school",
               },
@@ -716,7 +716,7 @@ export default {
            
                complejo2: {
                 lista: ["dances"],
-                tamano: 17,
+                tamano: 18,
                 textoA: "It",
                 textoD: "in the rain",
               },
@@ -724,7 +724,7 @@ export default {
               {
               html:"I brush my teeth twice a day",
                complejo1: {
-                lista: ["Me cepillo mis dientes dos veces al día"],
+                lista: ["Me cepillo mis dientes dos veces al día","cepillo mis dientes dos veces al día"],
                 tamano: 23,
               },
            
@@ -745,7 +745,7 @@ export default {
            
               complejo2: {
                 lista: ["speaks"],
-                tamano: 23,
+                tamano: 25,
                 textoA: "He",
                 textoD: "English very slowly",
               },
@@ -753,11 +753,11 @@ export default {
             },
             {
               html:"I walk everyday",
-              complejo1: { lista: ["Yo camino todos los días"], tamano: 23 },
+              complejo1: { lista: ["Yo camino todos los días","camino todos los días"], tamano: 23 },
            
                 complejo2: {
                 lista: ["walks"],
-                tamano: 19,
+                tamano: 21,
                 textoA: "The dog",
                 textoD: "everyday",
               },
@@ -768,7 +768,7 @@ export default {
            
               complejo2: {
                 lista: ["loves"],
-                tamano: 13,
+                tamano: 15,
                 textoA: "She",
                 textoD: "me",
               },
@@ -804,7 +804,7 @@ export default {
 
           textoA: "She",
           textoD: "anything. <strong>Ella no hace nada.</strong>",
-          tamano: 29,
+          tamano: 33,
           name: "ic",
         },
         {
@@ -814,7 +814,7 @@ export default {
           textoD: "already",
           textoD2: "that. <strong> Yo ya había hecho eso.</strong>",
           tamano1: 15,
-          tamano2: 27,
+          tamano2: 28,
           name: "ice",
         },
         {
@@ -844,7 +844,7 @@ export default {
         },
         {
           lista1: ["didn't"],
-          tamano: 39,
+          tamano: 40,
           textoA: "I",
 
           textoD: "have to work today.  <strong>Yo no tuve que trabajar hoy.</strong>",
@@ -1073,5 +1073,9 @@ inputChecked {
 }
 .BigCeldaDos {
   height: 120px;
+}
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 </style>

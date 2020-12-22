@@ -904,4 +904,8 @@ export default {
 inputChecked {
   display: inline-flex;
 }
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
+}
 </style>

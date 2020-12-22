@@ -1,25 +1,25 @@
 <template>
   <div>
-     <div class="row">
-       <div class="col-sm-1"></div>
-      <i class="fa fa-diamond marginn-left" style="font-size: 1.5em"></i>
-
-      <p class="fuenteDiamond marginn-left">
-        &nbsp;
-        CHOOSE, ORGANICE AND ADD THE RIGHT AUX.
-      </p>
-      <br />
-    </div>
+   
+        
+        
+     
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-6">
             <opcionMultiple id="text" :options="$data.cuestionarioP44" :rEsperadas="$data.respuestasCuestionarioP44" @respuestas="$data.mensajeRespuestasP44 = $event" />
         </div>
-        <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP24 }}</b-modal>
+        <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP44 }}</b-modal>
         <div class="col-sm-1"></div>
     </div>
+     <div class="row" style="margin-bottom:2em;">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+            <b-button variant="primary" @click="showModal('my-modalP18')">VERIFICAR PREGUNTAS</b-button>
+        </div>
+    </div>
    
-    <div class="row">
+    <div class="row " style="margin-bottom: 2em">
       <div class="col-sm-1"></div>
       <div class="col-sm-9 ">
         <div
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <br /><br /><br />
+   
     <div class="row container">
       <div class="col-md-1"></div>
       <b-col md="10" class="titulo">
@@ -176,7 +176,7 @@ export default {
   data() {
     return {
 
-       
+       mensajeRespuestasP44:"CHOOSE, ORGANICE AND ADD THE RIGHT AUX.",
             respuestasCuestionarioP44: ["B", "A", "A","C","B", "A"],
             cuestionarioP44: [{
                     respuesta: "",
@@ -848,5 +848,9 @@ export default {
 
 inputChecked {
   display: inline-flex;
+}
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 </style>

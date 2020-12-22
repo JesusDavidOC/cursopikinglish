@@ -54,7 +54,7 @@
     <br />
      <div class="row container">
       <div class="col-md-1"></div>
-      <b-col md="10" class="titulo">
+      <b-col md="10" class="titulo" style="margin-bottom:2em;">
         <h3>EL USO DE LA PALABRA “TO”</h3>
       </b-col>
     </div>
@@ -524,7 +524,7 @@ export default {
           textoD2: "you. <strong>(No quiero hablar contigo)</strong>",
           name: "ice",
           tamano1:19,
-          tamano2:27
+          tamano2:28
         },
         {
           lista1: ["to"],
@@ -533,7 +533,7 @@ export default {
           textoD: "one. <strong>(Falta un cuarto para la una)</strong>",
 
           name: "ic",
-           tamano:37
+           tamano:38
         },
         {
           lista1: ["to"],
@@ -542,7 +542,7 @@ export default {
 
           textoD: "do? <strong>(Qué vas a hacer?)</strong>",
           name: "ic",
-           tamano:35
+           tamano:36
         },
         {
           lista1: ["to"],
@@ -820,5 +820,9 @@ export default {
 
 inputChecked {
   display: inline-flex;
+}
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 </style>

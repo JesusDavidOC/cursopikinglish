@@ -2,7 +2,7 @@
   <div>
     <div class="row container">
       <div class="col-md-1"></div>
-      <b-col md="10" class="titulo">
+      <b-col md="10" class="titulo" style="margin-bottom:2em;">
         <h3>FORMA PRESENTE CON AUXILIARES NEGATIVOS</h3>
       </b-col>
     </div>
@@ -100,7 +100,7 @@
 
        <div class="row container">
       <div class="col-md-1"></div>
-      <b-col md="10" class="titulo">
+      <b-col md="10" class="titulo" style="margin-bottom:2em;">
         <h3>AUXILIARES NEGATIVOS</h3>
       </b-col>
     </div>
@@ -178,7 +178,7 @@
     <br />
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-11"> <p class="parrafo">
+      <div class="col-sm-10"> <p class="parrafo ">
         Los auxiliares se usan para preguntar y negar, así que lo más importante
         es usar el correcto y recuerde que Does se usa para preguntar con she,
         he, it en presente y doesn´t para negar.
@@ -202,7 +202,7 @@
       <div class="col-sm-8 ">
         <div
           v-for="(item, index) in frases2Pag39"
-          :class="' row col-sm-' + item.tamano"
+          
           style="margin-bottom: 0.5em"
         >
           <inputChecked
@@ -212,6 +212,7 @@
             :textoA="item.textoA"
             :textoD="item.textoD"
             :conTexto="true"
+            :tamano="item.tamano"
           />
         </div>
       </div>
@@ -238,7 +239,7 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <p class="parrafoBlack Subrayado">
+      <p class="parrafo ">
         Write the corresponding letter in front of the Spanish phrase.
       </p>
     </div>
@@ -266,7 +267,7 @@
         <p
           v-for="item in frases2Pag40"
           v-html="item"
-          class="text-left parrafoBlack ' '"
+          class="text-left parrafo ' '"
         ></p>
       </div>
     </div>
@@ -358,30 +359,30 @@ export default {
           {
             Z: "1.",
             A: "Do you eat?",
-            complejo1: { lista: ["¿Tú comes?"], tamano: 18 },
+            complejo1: { lista: ["¿Tú comes?","¿comes?"], tamano: 18 },
             B: "I don't eat",
-            complejo2: { lista: ["Yo no como"], tamano: 18 },
+            complejo2: { lista: ["Yo no como","no como"], tamano: 18 },
           },
           {
             Z: "2.",
             A: "Did you eat?",
-            complejo1: { lista: ["¿Tú comiste?"], tamano: 18 },
+            complejo1: { lista: ["¿Tú comiste?","¿comiste?"], tamano: 18 },
             B: "I didn´t eat",
-            complejo2: { lista: ["Yo no comí"], tamano: 18 },
+            complejo2: { lista: ["Yo no comí","no comí"], tamano: 18 },
           },
           {
             Z: "3.",
             A: "Will you eat?",
-            complejo1: { lista: ["¿Tú comerás?"], tamano: 18 },
+            complejo1: { lista: ["¿Tú comerás?","¿comerás?"], tamano: 18 },
             B: "I won't eat",
-            complejo2: { lista: ["Yo no comeré"], tamano: 18 },
+            complejo2: { lista: ["Yo no comeré","no comeré"], tamano: 18 },
           },
           {
             Z: "4.",
             A: "Would you eat?",
-            complejo1: { lista: ["¿Tú comerías?"], tamano: 18 },
+            complejo1: { lista: ["¿Tú comerías?","¿comerías?"], tamano: 18 },
             B: "I wouldn't eat",
-            complejo2: { lista: ["Yon no comería"], tamano: 18 },
+            complejo2: { lista: ["Yon no comería","no comería"], tamano: 18 },
           },
           {
             Z: "5",
@@ -404,25 +405,25 @@ export default {
         {
           esperado: ["doesn't "],
           textoA: "2. She",
-          tamano: 30,
+          tamano: 33,
           textoD: "live here. <strong>(Ella no vive aquí)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "3. You",
-          tamano: 33,
+          tamano: 34,
           textoD: "understand. <strong>(Tú no entenderías)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
-          tamano: 25,
+          tamano: 26,
           textoD: " care. <strong>(No me importa)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
-          tamano: 35,
+          tamano: 36,
           textoD: "say anything.<strong> (Ellos no dirán nada)</strong>",
         },
       ],
@@ -579,62 +580,62 @@ export default {
         {
           esperado: ["didn't"],
           textoA: "1. I ",
-          tamano: 6,
+          tamano: 29,
           textoD: "understand. <strong>(Yo no entendí)</strong>",
         },
 
         {
           esperado: ["doesn't "],
           textoA: "2. She",
-          tamano: 6,
+          tamano: 32,
           textoD: "live here. <strong>(Ella no vive aquí)</strong>",
         },
         {
           esperado: ["wouldn't"],
           textoA: "3. You",
-          tamano: 7,
+          tamano: 35,
           textoD: "understand. <strong>(Tú no entenderías)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "4. I",
-          tamano: 5,
+          tamano: 26,
           textoD: " care. <strong>(No me importa)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "5. They",
-          tamano: 7,
+          tamano: 36,
           textoD: "say anything. <strong>(Ellos no dirán nada)</strong>",
         },
         {
           esperado: ["don't"],
           textoA: "6. I",
-          tamano: 7,
+          tamano: 38,
           textoD: "have any time. <strong>(No tengo nada de tiempo)</strong>",
         },
         {
           esperado: ["wouldn't"],
           textoA: "7. He",
-          tamano: 6,
+          tamano: 31,
           textoD: "do that. <strong>(El no haría eso)</strong>",
         },
         {
           esperado: ["won't"],
           textoA: "8. We",
-          tamano: 8,
+          tamano: 40,
           textoD: "say anything. <strong>(Nosotros no diremos nada)</strong>",
         },
         {
           esperado: ["doesn't"],
           textoA: "9. my father",
-          tamano: 8,
+          tamano: 44,
           textoD: "speak english. <strong>(Mi padre no habla inglés)</strong>",
         },
         {
           esperado: ["didn't"],
           textoA: "10. I",
-          tamano: 9,
+          tamano: 47,
           textoD: "understand what he said.<strong> (Yo no entendí lo que él dijo)</strong>",
         },
       ],
@@ -887,7 +888,7 @@ export default {
         },
       ],
       frases2Pag40: [
-        "a. I <FONT class='bg-warning'> won´t</FONT> understand anything",
+        "a. I <FONT class='bg-warning '> won´t</FONT> understand anything",
         "b. I <FONT class='bg-warning'>didn´t</FONT> understand anything",
         "c. I <FONT class='bg-warning'>don’t</FONT> understand anything",
         "d. She <FONT class='bg-warning'>doesn’t</FONT> understand anything",
@@ -941,5 +942,9 @@ export default {
 
 inputChecked {
   display: inline-flex;
+}
+/deep/ .row{
+  margin-left: 0%;
+  margin-right: 0%;
 }
 </style>
