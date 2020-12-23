@@ -1,7 +1,6 @@
 //<template>
   <div>
     <div>
-
       <div class="row">
         <div class="col-sm-12">
           <h3 id="subTitulo">READING COMPREHENSION</h3>
@@ -10,8 +9,9 @@
 
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-6" id="text">
+        <div class="col-sm-6">
           <opcionMultiple
+            id="text"
             :options="$data.cuestionarioP13"
             :rEsperadas="$data.respuestasCuestionarioP13"
             @respuestas="mensajeRespuestasP13 = $event"
@@ -32,13 +32,13 @@
         >
       </div>
     </div>
-    <br>
+    <br />
 
-<div class="row">
+    <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-7" style="text-align:left;">
+      <div class="col-sm-7" style="text-align: left">
         <a id="textPractice">
-          Escribe las oraciones del dialogo frente a cada verbo en presente.
+          Escribe las oraciones del diálogo frente a cada verbo en presente.
         </a>
       </div>
     </div>
@@ -54,10 +54,10 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm">
-          <h3 id="subTitulo">LIST OF IRREGULAR VERBS</h3>
+        <h3 id="subTitulo">LIST OF IRREGULAR VERBS</h3>
       </div>
     </div>
 
@@ -67,7 +67,6 @@
         <listaIndex :tabla="$data.tablaP21" />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -84,22 +83,21 @@ export default {
     opcionMultiple,
     inputChecked,
   },
-    methods: {
+  methods: {
     showModal(text) {
       this.$refs[text].show();
     },
   },
   data() {
     return {
-    
-    tablaP21: {
+      tablaP21: {
         bordered: true,
         camposInput: false,
         fields: [
           { key: "Nro", label: "Rank", thClass: "Red" },
           { key: "bForm", label: "Base Form", thClass: "Red" },
           { key: "ptForm", label: "Past Tense Form", thClass: "Red" },
-          { key: "pPartiple", label: "Past Participle",thClass: "Red"},
+          { key: "pPartiple", label: "Past Participle", thClass: "Red" },
         ],
         items: [
           {
@@ -402,7 +400,6 @@ export default {
             ptForm: "Chose",
             pPartiple: "Chosen",
           },
-
         ],
       },
 
@@ -410,6 +407,7 @@ export default {
         {
           respuesta: "",
           pregunta: "1. What did David buy for lunch?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R1.mp3",
           options: [
             {
               text: "A) A sandwish",
@@ -432,6 +430,7 @@ export default {
           respuesta: "",
           pregunta:
             "2. How long did it take Ariel to get to the school from his home?",
+            audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R2.mp3",
           options: [
             {
               text: "A) 20 minutes",
@@ -453,6 +452,7 @@ export default {
         {
           respuesta: "",
           pregunta: "3. What did David see at one side of the road?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R3.mp3",
           options: [
             {
               text: "A) His teacher",
@@ -474,6 +474,7 @@ export default {
         {
           respuesta: "",
           pregunta: "4. What time did Ariel have breakfast?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R4.mp3",
           options: [
             {
               text: "A) At 8:00",
@@ -495,6 +496,7 @@ export default {
         {
           respuesta: "",
           pregunta: "5. What did Ariel ́s mother forget to pay?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R5.mp3",
           options: [
             {
               text: "A) The milk",
@@ -516,6 +518,7 @@ export default {
         {
           respuesta: "",
           pregunta: "6 Who did David play basketball with?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R6.mp3",
           options: [
             {
               text: "A) His teacher",
@@ -537,6 +540,7 @@ export default {
         {
           respuesta: "",
           pregunta: "7. What time did Ariel get to school?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R7.mp3",
           options: [
             {
               text: "A) At 8:00",
@@ -558,6 +562,7 @@ export default {
         {
           respuesta: "",
           pregunta: "8. What did David do at night before going to bed?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R8.mp3",
           options: [
             {
               text: "A) He watched tv",
@@ -579,6 +584,7 @@ export default {
         {
           respuesta: "",
           pregunta: "9.Did David take a quick shower?",
+          audio: "/cursos/curso1/leccion14/audio/page56/AC1P56R9.mp3",
           options: [
             {
               text: "A) Yes, he did",
@@ -608,171 +614,281 @@ export default {
           {
             PRESENT: "Have",
             TRANSLATION: "Tener",
-            complejo1: { lista: ["I had a busy day"], audio: "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R1%20Ihadabusyday.mp3" },
+            complejo1: {
+              lista: ["I had a busy day"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R1%20Ihadabusyday.mp3",
+            },
             SPANISH: "Tuve un dia  ocupado",
           },
           {
             PRESENT: "Have",
             TRANSLATION: "Tener",
-            complejo1: { lista: ["I had a long day"] , audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R2%20ihadalongday.mp3"},
+            complejo1: {
+              lista: ["I had a long day"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R2%20ihadalongday.mp3",
+            },
             SPANISH: "Tuve un dia  muy largo",
           },
           {
             PRESENT: "Wake",
             TRANSLATION: "Despertar",
-            complejo1: { lista: ["I woke up very early"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R3%20iwokeupveryearly.mp3" },
+            complejo1: {
+              lista: ["I woke up very early"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R3%20iwokeupveryearly.mp3",
+            },
             SPANISH: "Me desperté muy temprano",
           },
           {
             PRESENT: "Make",
             TRANSLATION: "Hacer",
-            complejo1: { lista: ["My father made too much"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R4%20myfathermadetoomuch.mp3" },
+            complejo1: {
+              lista: ["My father made too much"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R4%20myfathermadetoomuch.mp3",
+            },
             SPANISH: "Mi padre hizo mucho ruido",
           },
           {
             PRESENT: "Have",
             TRANSLATION: "Tener",
-            complejo1: { lista: ["I had to take a shower with colder water"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R5%20ihadtotakeashower...mp3" },
+            complejo1: {
+              lista: ["I had to take a shower with colder water"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R5%20ihadtotakeashower...mp3",
+            },
             SPANISH: "Tuve que ducharme con agua fría",
           },
           {
             PRESENT: "Forget",
             TRANSLATION: "Olvidar",
             complejo1: {
-              lista: ["My mother forgot to pay the electricity bill"], audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R6mymotherforgottopay...mp3"
+              lista: ["My mother forgot to pay the electricity bill"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R6mymotherforgottopay...mp3",
             },
             SPANISH: "Mi madre olvido pagar la cuenta de electricidad",
           },
           {
             PRESENT: "Feel",
             TRANSLATION: "Sentir",
-            complejo1: { lista: ["I felt very good"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R7ifeltverygood.mp3" },
+            complejo1: {
+              lista: ["I felt very good"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R7ifeltverygood.mp3",
+            },
             SPANISH: "Me senti muy bien",
           },
           {
             PRESENT: "Sit",
             TRANSLATION: "Sentarse",
-            complejo1: { lista: ["Everyone including me sat at the table"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R8everyoneincludingme....mp3" },
+            complejo1: {
+              lista: ["Everyone including me sat at the table"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R8everyoneincludingme....mp3",
+            },
             SPANISH: "Todos incluyendome nos sentamos a la mesa",
           },
           {
             PRESENT: "Eat",
             TRANSLATION: "Comer",
-            complejo1: { lista: ["I ate faster than my sister"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R9iatefasterthanmysister.mp3" },
+            complejo1: {
+              lista: ["I ate faster than my sister"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R9iatefasterthanmysister.mp3",
+            },
             SPANISH: "Comi mas rapido que mi hermana",
           },
           {
             PRESENT: "Have",
             TRANSLATION: "Tener",
-            complejo1: { lista: ["I had to do the dishes"], audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R10ihadtodothedished.mp3" },
+            complejo1: {
+              lista: ["I had to do the dishes"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R10ihadtodothedished.mp3",
+            },
             SPANISH: "Tuve que lavar los platos",
           },
           {
             PRESENT: "Win",
             TRANSLATION: "Ganar",
-            complejo1: { lista: ["Because i won"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R11becauseiwon.mp3" },
+            complejo1: {
+              lista: ["Because i won"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R11becauseiwon.mp3",
+            },
             SPANISH: "Porque yo gané",
           },
           {
             PRESENT: "Leave",
             TRANSLATION: "Dejar/Salir",
-            complejo1: { lista: ["I left home "],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R12ilefthome.mp3" },
+            complejo1: {
+              lista: ["I left home "],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R12ilefthome.mp3",
+            },
             SPANISH: "Salí de casa",
           },
           {
             PRESENT: "Get",
             TRANSLATION: "Llegar",
-            complejo1: { lista: ["I got to school"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R13igottoschool.mp3" },
+            complejo1: {
+              lista: ["I got to school"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R13igottoschool.mp3",
+            },
             SPANISH: "Llegué al colegio",
           },
           {
             PRESENT: "Get up",
             TRANSLATION: "Levantarse",
-            complejo1: { lista: ["I woke up right away"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R14iwokeuprightaway.mp3" },
+            complejo1: {
+              lista: ["I woke up right away"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R14iwokeuprightaway.mp3",
+            },
             SPANISH: "Me levanté enseguida",
           },
           {
             PRESENT: "Speak",
             TRANSLATION: "Hablar",
-            complejo1: { lista: ["I spoke to the teacher"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R15ispoketotheteacher.mp3" },
+            complejo1: {
+              lista: ["I spoke to the teacher"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R15ispoketotheteacher.mp3",
+            },
             SPANISH: "Hablé con el profesor",
           },
           {
             PRESENT: "Wake",
             TRANSLATION: "Despertarse",
-            complejo1: { lista: ["I woke up late"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R16iwokeuplate.mp3" },
+            complejo1: {
+              lista: ["I woke up late"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R16iwokeuplate.mp3",
+            },
             SPANISH: "Me desperté tarde",
           },
           {
             PRESENT: "Teach",
             TRANSLATION: "Enseñar",
-            complejo1: { lista: ["I taught him"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R17itaughthim.mp3" },
+            complejo1: {
+              lista: ["I taught him"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R17itaughthim.mp3",
+            },
             SPANISH: "Le enseñé a el",
           },
           {
             PRESENT: "Go",
             TRANSLATION: "Ir",
-            complejo1: { lista: ["I went down the stairs"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R18iwentdownthestairs.mp3" },
+            complejo1: {
+              lista: ["I went down the stairs"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R18iwentdownthestairs.mp3",
+            },
             SPANISH: "Bajé las escaleras",
           },
           {
             PRESENT: "Tell",
             TRANSLATION: "Decir",
-            complejo1: { lista: ["I told my mother"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R19itoldmymother.mp3" },
+            complejo1: {
+              lista: ["I told my mother"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R19itoldmymother.mp3",
+            },
             SPANISH: "Le dije a mi madre",
           },
           {
             PRESENT: "Sit",
             TRANSLATION: "Sentarse",
-            complejo1: { lista: ["We sat at the table"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R20wesatatthetable.mp3" },
+            complejo1: {
+              lista: ["We sat at the table"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R20wesatatthetable.mp3",
+            },
             SPANISH: "Nos sentamos a la mesa",
           },
           {
             PRESENT: "Buy",
             TRANSLATION: "Comprar",
-            complejo1: { lista: ["I bought a hamburger"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R21iboughtahamburger.mp3" },
+            complejo1: {
+              lista: ["I bought a hamburger"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R21iboughtahamburger.mp3",
+            },
             SPANISH: "Compré una hamburguesa",
           },
           {
             PRESENT: "Do",
             TRANSLATION: "Hacer",
-            complejo1: { lista: ["I did the dishes"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R22ididthedishes.mp3" },
+            complejo1: {
+              lista: ["I did the dishes"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R22ididthedishes.mp3",
+            },
             SPANISH: "Hice los platos",
           },
           {
             PRESENT: "Could",
             TRANSLATION: "Pude",
-            complejo1: { lista: ["I could take the bus"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R23icouldtakethebus.mp3" },
+            complejo1: {
+              lista: ["I could take the bus"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R23icouldtakethebus.mp3",
+            },
             SPANISH: "Pude tomar el  bus",
           },
           {
             PRESENT: "Give",
             TRANSLATION: "Dar",
-            complejo1: { lista: ["I gave my mother a kiss"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R24igavemymotherakiss.mp3" },
+            complejo1: {
+              lista: ["I gave my mother a kiss"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R24igavemymotherakiss.mp3",
+            },
             SPANISH: "Le di a mi madre un beso",
           },
           {
             PRESENT: "Leave",
             TRANSLATION: "Salir/Dejar",
-            complejo1: { lista: ["I left home early"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R25ilefthomeearly.mp3" },
+            complejo1: {
+              lista: ["I left home early"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R25ilefthomeearly.mp3",
+            },
             SPANISH: "Salí de casa temprano",
           },
           {
             PRESENT: "See",
             TRANSLATION: "Ver",
-            complejo1: { lista: ["I saw an accident"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R26isawanaccident.mp3" },
+            complejo1: {
+              lista: ["I saw an accident"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R26isawanaccident.mp3",
+            },
             SPANISH: "Vi un accidente",
           },
           {
             PRESENT: "Hit",
             TRANSLATION: "Golpear",
-            complejo1: { lista: ["a car hit another car"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R27acarhitanothercar.mp3" },
+            complejo1: {
+              lista: ["A car hit another car"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R27acarhitanothercar.mp3",
+            },
             SPANISH: "Un carro golpeó otro carro",
           },
           {
             PRESENT: "Drink",
             TRANSLATION: "Beber",
-            complejo1: { lista: ["I drank orange juice"],audio:"https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page%2057/AC1P57R28idrankorangejuice.mp3" },
+            complejo1: {
+              lista: ["I drank orange juice"],
+              audio:
+                "https://classroom.pikinglish.com/cursos/curso1/leccion14/audio/page57/AC1P57R28idrankorangejuice.mp3",
+            },
             SPANISH: "Tomé jugo de naranja",
           },
         ],

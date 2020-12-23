@@ -155,11 +155,11 @@
     <div>
         <div class="col-sm-2"></div>
         <div class="mx-auto col-sm-8">
-            <a id="textPractice">  
+            <p class="parrafo">  
                 Nota: En otras palabras, la terminación de los verbos también se explica con la vibración de las cuerdas bucales, es decir
                 si al final del verbo el sonido nos hace vibrar las cuerdas bucales entonces en pasado se pronuncia con “d” y si no vibran
                 entonces se pronuncia con “t” y los terminados en D y T se pronuncian “id”. La e al final de una palabra es muda.
-            </a>
+            </p>
         </div>
         <div class="col-sm-2"></div>
     </div>

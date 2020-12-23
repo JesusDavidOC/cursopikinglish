@@ -71,21 +71,24 @@
       </div>
     </div>
 
-    <div class="row" v-for="(item, index) in preguntasCompletarP24.items" :key="index">
+
+<div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-11">
-        <div :class="'col-sm-'+item.tamaño">
+      <div class="col-sm-10">
+        <b-row v-for="(item, index) in preguntasCompletarP24.items">
           <inputChecked
             :esperado="item.esperado"
-            :name="preguntasCompletarP24.nombre+index"
+            :name="preguntasCompletarP24.nombre + index"
             :conTexto="true"
             :textoA="item.textoA"
             :textoD="item.textoD"
             :audio="item.audio"
+            :tamano="item.tamano"
           />
-        </div>
+        </b-row>
       </div>
     </div>
+    
 
     </div>
 </template>
@@ -113,128 +116,128 @@ export default {
         items: [
           {
             esperado: ["cooked"],
-            textoA: "1. Ella cocinó algo rápido: She",
-            textoD: "something fast. (Cook)",
-            tamaño: 7,
+            textoA: "1. <strong>Ella cocinó algo rápido:</strong> She",
+            textoD: "something fast. <span class='colorLetraRojo'>(Cook)</span>",
+            tamano: 45,
             audio: "https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R1.mp3"
           },
           {
             esperado: ["started"],
-            textoA: "2. Yo empecé a estudiar: I",
-            textoD: "to study. (Start)",
-            tamaño: 6,
+            textoA: "2. <strong>Yo empecé a estudiar:</strong> I",
+            textoD: "to study. <span class='colorLetraRojo'>(Start)</span>",
+            tamano: 37,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R2.mp3"
           },
           {
             esperado: ["played"],
-            textoA: "3. El niño jugó en el patio: The boy",
-            textoD: "in the backyard. (Play)",
-            tamaño: 8,
+            textoA: "3. <strong>El niño jugó en el patio:</strong> The boy",
+            textoD: "in the backyard. <span class='colorLetraRojo'>(Play)</span>",
+            tamano: 46,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R3.mp3"
           },
           {
             esperado: ["wanted"],
-            textoA: "4. Natalie quería ir: Natalie",
-            textoD: "to go. (Want)",
-            tamaño: 7,
+            textoA: "4. <strong>Natalie quería ir:</strong> Natalie",
+            textoD: "to go. <span class='colorLetraRojo'>(Want)</span>",
+            tamano: 36,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R4.mp3"
           },
           {
             esperado: ["finished"],
-            textoA: "5. Yo terminé temprano: I",
-            textoD: "early. (Finish)",
-            tamaño: 6,
+            textoA: "5. <strong>Yo terminé temprano:</strong> I",
+            textoD: "early. <span class='colorLetraRojo'>(Finish)</span>",
+            tamano: 36,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R5.mp3"
           },
           {
             esperado: ["pushed"],
-            textoA: "6. Ella empujó la puerta: She",
-            textoD: "the door. (Pushes)",
-            tamaño: 7,
+            textoA: "6. <strong>Ella empujó la puerta:</strong> She",
+            textoD: "the door. <span class='colorLetraRojo'>(Pushes)</span>",
+            tamano: 41,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R6.mp3"
           },
           {
             esperado: ["asked"],
-            textoA: "7. Yo le pregunté a Víctor: I",
-            textoD: "Víctor. (Ask)",
-            tamaño: 6,
+            textoA: "7. <strong>Yo le pregunté a Víctor:</strong> I",
+            textoD: "Víctor. <span class='colorLetraRojo'>(Ask)</span>",
+            tamano: 36,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R7.mp3"
           },
           {
             esperado: ["called"],
-            textoA: "8. Ellos llamarón una ambulancia: They",
-            textoD: "an ambulance. (Call)",
-            tamaño: 8,
+            textoA: "8. <strong>Ellos llamarón una ambulancia:</strong> They",
+            textoD: "an ambulance. <span class='colorLetraRojo'>(Call)</span>",
+            tamano: 48,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R8.mp3"
           },
           {
             esperado: ["worked"],
-            textoA: "9. Mi mamá trabajó hoy: My mother",
-            textoD: "today.(Work)",
-            tamaño: 7,
+            textoA: "9. <strong>Mi mamá trabajó hoy:</strong> My mother",
+            textoD: "today.<span class='colorLetraRojo'>(Work)</span>",
+            tamano: 42,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R9.mp3"
           },
           {
             esperado: ["suggested"],
-            textoA: "10. El profesor sugirió algo: The teacher",
-            textoD: "something. (Suggest)",
-            tamaño: 8,
+            textoA: "10. <strong>El profesor sugirió algo:</strong> The teacher",
+            textoD: "something. <span class='colorLetraRojo'>(Suggest)</span>",
+            tamano: 51,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R10.mp3"
           },
           {
             esperado: ["lived"],
-            textoA: "11. Él vivió acá hace un par de años: He",
-            textoD: "here a couple years ago (Live)",
-            tamaño: 9,
+            textoA: "11. <strong>Él vivió acá hace un par de años:</strong> He",
+            textoD: "here a couple years ago. <span class='colorLetraRojo'>(Live)</span>",
+            tamano: 54,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R11.mp3"
           },
           {
             esperado: ["barked"],
-            textoA: "12. El perro ladró toda la noche: The dog",
-            textoD: "all night long. (Bark)",
-            tamaño: 8,
+            textoA: "12. <strong>El perro ladró toda la noche:</strong> The dog",
+            textoD: "all night long. <span class='colorLetraRojo'>(Bark)</span>",
+            tamano: 49,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R12.mp3"
           },
           {
             esperado: ["rained"],
-            textoA: "13. Llovió mucho hace dos días: It ",
-            textoD: "very much two days ago. (Rain)",
-            tamaño:8,
+            textoA: "13. <strong>Llovió mucho hace dos días:</strong> It ",
+            textoD: "very much two days ago. <span class='colorLetraRojo'>(Rain)</span>",
+            tamano: 51,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R13.mp3"
           },
           {
             esperado: ["kicked"],
-            textoA: "14. El jugador pateó el balón The player ",
-            textoD: "the ball. (Kick)",
-            tamaño: 7,
+            textoA: "14. <strong>El jugador pateó el balón:</strong> The player ",
+            textoD: "the ball. <span class='colorLetraRojo'>(Kick)</span>",
+            tamano: 45,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R14.mp3"
           },
           {
             esperado: ["cried"],
-            textoA: "15. Yo lloré un poco: I ",
-            textoD: "a little. (Cry)",
-            tamaño: 5,
+            textoA: "15. <strong>Yo lloré un poco:</strong> I ",
+            textoD: "a little. <span class='colorLetraRojo'>(Cry)</span>",
+            tamano: 32,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R15.mp3"
           },
           {
             esperado: ["arrested"],
-            textoA: "16. El policía arrestó al criminal: The police ",
-            textoD: "the criminal. (Arrest)",
-            tamaño: 8,
+            textoA: "16. <strong>El policía arrestó al criminal:</strong> The police ",
+            textoD: "the criminal. <span class='colorLetraRojo'>(Arrest)</span>",
+            tamano: 51,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R16.mp3"
           },
           {
             esperado: ["needed"],
-            textoA: "17. Yo te necesitaba: I ",
-            textoD: "you (Need)",
-            tamaño: 5,
+            textoA: "17. <strong>Yo te necesitaba:</strong> I ",
+            textoD: "you. <span class='colorLetraRojo'>(Need)</span>",
+            tamano: 33,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R17.mp3"
           },
           {
             esperado: ["liked"],
-            textoA: "18.Me gustó: I ",
-            textoD: "it. (Like)",
-            tamaño: 4,
+            textoA: "18. <strong>Me gustó:</strong> I ",
+            textoD: "it. <span class='colorLetraRojo'>(Like)</span>",
+            tamano: 25,
             audio:"https://classroom.pikinglish.com/cursos/curso1/leccion16/audios/page%2067/AC1P67R18.mp3"
           },
         ],
