@@ -1,15 +1,12 @@
 .titulo {
   margin-top: 1.5em;
   color: red;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  text-align: center;  
 }
 
 .botTabla {
   margin-bottom: 3em;
 }
-
 .subTitulo {
   /* sangria*/
   text-indent: 1em;
@@ -22,7 +19,7 @@
 .fuenteDiamond {
   margin-bottom: 1em;
   text-align: left;
-  /*justificacion de parrafo*/
+  
   font-size: 1.5em
 }
 

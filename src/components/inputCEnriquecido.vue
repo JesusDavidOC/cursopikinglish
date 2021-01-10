@@ -9,6 +9,7 @@
         :textoA="object.textoA"
         :textoD="object.textoD"
         :tamano="object.tamano1"
+        :audio="object.audio"
       />
     </b-col>
     <b-col md="auto" style="padding: 0">

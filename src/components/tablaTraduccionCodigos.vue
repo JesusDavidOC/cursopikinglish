@@ -1,5 +1,5 @@
 <template>
-<div class="overflow-auto maxh">
+<div class="overflow-auto maxh ">
     <b-table id="cuestionario" small :fields="this.cuestionario.fields" :items="this.cuestionario.items" responsive="sm" :bordered="true">
         <template v-slot:cell(complejo1)="row" id="hola921">
             <inputChecked :resuelto="$props.inglesR" :esperado="row.item.complejo1.lista" :conTexto="true" :textoA="row.item.complejo1.textoA" :textoD="row.item.complejo1.textoD" :audio="row.item.complejo1.audio" :tamano="row.item.complejo1.tamano" />

@@ -2,8 +2,15 @@
 <div id="app">
     <div class="row" id="curso">
         <div class="col-sm-12">
-
-            <portada/>
+            <curso1Leccion4 />
+            <curso1Leccion6 />
+            <curso1Leccion7 />
+            <curso1Leccion8 />
+            <curso1Leccion9 />
+            <curso1Leccion10 />
+            <curso1Leccion11 />
+            <curso1Leccion12 />
+            <curso1Leccion13 />
 
         </div>
     </div>
@@ -12,15 +19,30 @@
 
 <script>
 import app from  "./assets/app.css";
-import portada from "./components/portadaCurso1.vue"
-
-
+import curso1Leccion4 from "./components/curso1Leccion4.vue";
+import curso1Leccion6 from "./components/curso1Leccion6.vue";
+import curso1Leccion7 from "./components/curso1Leccion7.vue";
+import curso1Leccion8 from "./components/curso1Leccion8.vue";
+import curso1Leccion9 from "./components/curso1Leccion9.vue";
+import curso1Leccion10 from "./components/curso1Leccion10.vue";
+import curso1Leccion11 from "./components/curso1Leccion11.vue";
+import curso1Leccion12 from "./components/curso1Leccion12.vue";
+import curso1Leccion13 from "./components/curso1Leccion13.vue";
 export default {
-  name: "App",
-  components: {
-    
-    portada
-  },
+    name: "App",
+    components: {
+        curso1Leccion4,
+        curso1Leccion6,
+        curso1Leccion7,
+        curso1Leccion8,
+        curso1Leccion9,
+        curso1Leccion10,
+        curso1Leccion11,
+        curso1Leccion12,
+        curso1Leccion13,
+
+
+    },
 };
 </script>
 
