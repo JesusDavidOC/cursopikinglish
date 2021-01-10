@@ -2,7 +2,7 @@
 <div id="app">
     <div class="row" id="curso">
         <div class="col-sm-12">
-
+            <curso1Leccion4 />
             <curso1Leccion6 />
             <curso1Leccion7 />
             <curso1Leccion8 />
@@ -19,6 +19,7 @@
 
 <script>
 import app from  "./assets/app.css";
+import curso1Leccion4 from "./components/curso1Leccion4.vue";
 import curso1Leccion6 from "./components/curso1Leccion6.vue";
 import curso1Leccion7 from "./components/curso1Leccion7.vue";
 import curso1Leccion8 from "./components/curso1Leccion8.vue";
@@ -30,7 +31,7 @@ import curso1Leccion13 from "./components/curso1Leccion13.vue";
 export default {
     name: "App",
     components: {
-
+        curso1Leccion4,
         curso1Leccion6,
         curso1Leccion7,
         curso1Leccion8,

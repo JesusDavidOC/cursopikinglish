@@ -779,7 +779,7 @@ export default {
 
           textoA: "1.<strong>  Ella vio a su madre:</strong>  She ",
           textoD: "her mother (see/saw)",
-          tamano:38,
+          tamano:39,
           name: "ic",
         },
         {
@@ -789,7 +789,7 @@ export default {
           textoD: "very much (eat/ate)",
 
           name: "ic",
-          tamano:32
+          tamano:33
         },
         {
           lista1: ["fell"],
@@ -798,7 +798,7 @@ export default {
 
           textoD: "off the bed (fall/fell)",
           name: "ic",
-          tamano:43
+          tamano:44
         },
         {
           lista1: ["did"],
@@ -807,7 +807,7 @@ export default {
           textoD: "sport yesterday (do/did) (UK)",
 
           name: "ic",
-          tamano:47
+          tamano:48
         },
         {
           lista1: ["went"],
@@ -816,7 +816,7 @@ export default {
 
           textoD: "to work this morning (go/ went)",
           name: "ic",
-          tamano:48
+          tamano:49
         },
         {
           lista1: ["bought "],
@@ -825,7 +825,7 @@ export default {
 
           textoD: "a car (buy/bought)",
           name: "ic",
-          tamano:39
+          tamano:40
         },
         {
           lista1: ["thought"],
@@ -834,7 +834,7 @@ export default {
 
           textoD: "of my mother (think/ thought)",
           name: "ic",
-          tamano:44
+          tamano:45
         },
         {
           lista1: ["had"],
@@ -843,7 +843,7 @@ export default {
 
           textoD: "a good day (have/ had)",
           name: "ic",
-          tamano:39
+          tamano:40
         },
         {
           lista1: ["gave"],
@@ -852,7 +852,7 @@ export default {
 
           textoD: "me this (give/gave)",
           name: "ic",
-          tamano:42
+          tamano:43
         },
         {
           lista1: [" taught "],
@@ -861,7 +861,7 @@ export default {
 
           textoD: " us very well (teach/taught)",
           name: "ic",
-          tamano:55
+          tamano:57
         },
       ],
       

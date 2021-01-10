@@ -2,12 +2,21 @@
   <div>
    
         
-        
+        <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10" id="text">
+        <i class="fa fa-diamond" style="font-size: 1.5em"></i>
+        <a id="textPractice">CHOOSE, ORGANICE AND ADD THE RIGHT AUX.</a>
+      </div>
+    </div>
      
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-6">
-            <opcionMultiple id="text" :options="$data.cuestionarioP44" :rEsperadas="$data.respuestasCuestionarioP44" @respuestas="$data.mensajeRespuestasP44 = $event" />
+            <opcionMultiple id="text" 
+            :options="$data.cuestionarioP44" 
+            :rEsperadas="$data.respuestasCuestionarioP44"
+             @respuestas="$data.mensajeRespuestasP44 = $event" />
         </div>
         <b-modal ref="my-modalP18" hide-footer title="RESULTADO">{{mensajeRespuestasP44 }}</b-modal>
         <div class="col-sm-1"></div>
@@ -165,6 +174,11 @@ import inputCE from "./inputCEnriquecido";
 import tablaTC from "./tablaTraduccionCodigos";
 import opcionMultiple from "./opcionMultiple"
 export default {
+  methods:{
+    showModal(text) {
+      this.$refs[text].show();
+    },
+  },
   components: {
     listaIndex,
     inputChecked,
@@ -361,7 +375,7 @@ export default {
 
           textoD: "you bring my car back?",
           name: "ic",
-          tamano:48
+          tamano:50
         },
         {
           lista1: ["do"],
@@ -370,7 +384,7 @@ export default {
 
           textoD: "you want from me?",
           name: "ic",
-          tamano:37
+          tamano:38
         },
         {
           lista1: ["would"],
@@ -379,7 +393,7 @@ export default {
 
           textoD: " you like to change of your life?",
           name: "ic",
-          tamano:55
+          tamano:57
         },
         {
           lista1: [" did"],
@@ -388,7 +402,7 @@ export default {
 
           textoD: "you arrive in Greece?",
           name: "ic",
-          tamano:44
+          tamano:45
         },
         {
           lista1: [" will "],
@@ -397,7 +411,7 @@ export default {
 
           textoD: " you go away to this summer?",
           name: "ic",
-          tamano:56
+          tamano:58
         },
         {
           lista1: [" did"],
@@ -406,7 +420,7 @@ export default {
 
           textoD: "you do it?",
           name: "ic",
-          tamano:30
+          tamano:31
         },
         {
           lista1: [" would "],
@@ -416,7 +430,7 @@ export default {
 
           textoD: "you like to stay with us?",
           name: "ic",
-          tamano:62
+          tamano:64
         },
         {
           lista1: ["does"],
@@ -434,7 +448,7 @@ export default {
 
           textoD: "you meet her?",
           name: "ic",
-          tamano:37
+          tamano:38
         },
         {
           lista1: [" do"],

@@ -183,7 +183,7 @@ export default {
           textoD: "and talked (Sit/sat)",
 
           name: "ic",
-          tamano:40
+          tamano:41
         },
         {
           lista1: ["brought"],
@@ -192,7 +192,7 @@ export default {
           textoD: " you something to eat (bring/brought)",
 
           name: "ic",
-          tamano:50
+          tamano:51
         },
         {
           lista1: ["lit"],
@@ -210,7 +210,7 @@ export default {
           textoD: "of my mother (think/thought)",
 
           name: "ic",
-          tamano:44
+          tamano:45
 
         },
         {
@@ -239,7 +239,7 @@ export default {
           textoD: "me how to drive (teach/taught)",
 
           name: "ic",
-          tamano:57
+          tamano:58
         },
         {
           lista1: ["drove"],
@@ -248,7 +248,7 @@ export default {
           textoD: "me home (drive/drove)",
 
           name: "ic",
-          tamano:45
+          tamano:46
         },
         {
           lista1: ["bit"],
@@ -257,7 +257,7 @@ export default {
           textoD: " my friend (bite/bit)",
 
           name: "ic",
-          tamano:42
+          tamano:44
         },
         {
           lista1: ["took"],
@@ -275,7 +275,7 @@ export default {
           textoD: " his car (sell/sold)",
 
           name: "ic",
-          tamano:41
+          tamano:42
         },
         {
           lista1: ["brought"],
@@ -293,7 +293,7 @@ export default {
           textoD: "to close the door (forget/forgot)",
 
           name: "ic",
-          tamano:45
+          tamano:46
         },
         {
           lista1: ["spoke"],
@@ -312,7 +312,7 @@ export default {
           textoD: "a fish (catch/caught)",
 
           name: "ic",
-          tamano:38
+          tamano:39
         },
         {
           lista1: ["woke"],
@@ -321,7 +321,7 @@ export default {
           textoD: "up a little late (wake/woke)",
 
           name: "ic",
-          tamano:45
+          tamano:46
         },
       ],
        frases1Pag50: [

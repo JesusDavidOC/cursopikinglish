@@ -146,6 +146,7 @@
             :conTexto="true"
             textoA="1. Ella trabaja muy duro todos los días: She"
             textoD="very hard every day."
+             audio="/cursos/curso1/leccion6/audios/page34/AC1P34R1.mp3"
           />
           <br />
           <br />
@@ -158,6 +159,7 @@
             :conTexto="true"
             textoA="2. Yo vivo con mi Madre acá: I"
             textoD="with my mother here."
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R2.mp3"
           />
           <br />
           <br />
@@ -170,6 +172,7 @@
             :esperado="['has']"
             textoA="3. Él tiene que trabajar mañana en la mañana: He"
             textoD="to work tomorrow morning."
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R3.mp3"
           />
           <br />
           <br />
@@ -182,6 +185,7 @@
             :esperado="['does']"
             textoA="4. Natalie hace deporte todos los días: Natalie"
             textoD="sports every day."
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R4.mp3"
           />
           <br />
           <br />
@@ -193,6 +197,7 @@
             :tamano="34"
             textoA=" 5. Yo voy a trabajar en bus: I"
             textoD="to work by bus."
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R5.mp3"
             :esperado="['go']"
           />
           <br />
@@ -206,6 +211,7 @@
             textoD="to school on foot."
             :resuelto="false"
             :esperado="['goes']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R6.mp3"
           />
           <br />
           <br />
@@ -218,6 +224,7 @@
             textoD="a lot in New York."
             :resuelto="false"
             :esperado="['rains']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R7.mp3"
           />
           <br />
           <br />
@@ -230,6 +237,7 @@
             textoD="sense."
             :resuelto="false"
             :esperado="['makes']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R8.mp3"
           />
           <br />
           <br />
@@ -242,6 +250,7 @@
             textoA="9. Él tiene que trabajar mañana: He"
             textoD="to work tomorrow."
             :esperado="['has']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R9.mp3"
           />
           <br />
           <br />
@@ -254,6 +263,7 @@
             :resuelto="false"
             :conTexto="true"
             :esperado="['watches']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R10.mp3"
           />
           <br />
           <br />
@@ -266,6 +276,7 @@
             textoA="11. Ella tiene un carro: She"
             :esperado="['has']"
             textoD="a car."
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R11.mp3"
           />
           <br />
           <br />
@@ -278,6 +289,7 @@
             textoA="12. Ella no tiene un carro: She doesn’t"
             textoD="a car."
             :esperado="['have']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R12.mp3"
           />
           <br />
           <br />
@@ -290,6 +302,7 @@
             textoA="13. Víctor llora todos los días: Victor"
             textoD="everyday."
             :esperado="['cries']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R13.mp3"
           />
           <br />
           <br />
@@ -302,6 +315,7 @@
             textoD="four paws."
             :esperado="['has']"
             :tamano="38"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R14.mp3"
           />
           <br />
           <br />
@@ -314,6 +328,7 @@
             textoD="me."
             :tamano="32"
             :esperado="['loves']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R15.mp3"
           />
           <br />
           <br />
@@ -326,6 +341,7 @@
             textoD="very well."
             :tamano="44"
             :esperado="['teaches']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R16.mp3"
           />
           <br />
           <br />
@@ -338,6 +354,7 @@
             textoD="bad."
             :tamano="28"
             :esperado="['smells']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R17.mp3"
           />
           <br />
           <br />
@@ -350,6 +367,7 @@
             textoD="English."
             :tamano="38"
             :esperado="['studies']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R18.mp3"
           />
           <br />
           <br />
@@ -362,6 +380,7 @@
             textoD="the magic number."
             :tamano="41"
             :esperado="['loves']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R19.mp3"
           />
           <br />
           <br />
@@ -374,6 +393,7 @@
             textoD="to wake up early."
             :tamano="37"
             :esperado="['has']"
+            audio="/cursos/curso1/leccion6/audios/page34/AC1P34R20.mp3"
           />
           <br />
           <br />
@@ -765,15 +785,18 @@ export default {
             B: 1,
             C: 1,
             D: 1,
-            complejo1: { lista: ["I go there on sundays"], tamano: 25 },
+            complejo1: { lista: ["I go there on sundays"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page23/AC1P33R1.mp3",
+            },
             E: "Voy allá los domingos",
+            
           },
           {
             A: 3,
             B: 2,
             C: 2,
             D: 2,
-            complejo1: { lista: ["She has to admit it"], tamano: 25 },
+            complejo1: { lista: ["She has to admit it"], tamano: 25, audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R2.mp3", },
             E: "Ella tiene que admitirlo",
           },
           {
@@ -781,7 +804,7 @@ export default {
             B: 7,
             C: 6,
             D: 4,
-            complejo1: { lista: ["We work here everyday"], tamano: 25 },
+            complejo1: { lista: ["We work here everyday"], tamano: 25,audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R3.mp3" },
             E: "Nosotros trabajamos aquí todos los días",
           },
           {
@@ -789,7 +812,7 @@ export default {
             B: 6,
             C: 8,
             D: 9,
-            complejo1: { lista: ["I do sport in the morning"], tamano: 25 },
+            complejo1: { lista: ["I do sport in the morning"], tamano: 25,audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R4.mp3" },
             E: "Yo hago deporte en la mañana",
           },
           {
@@ -797,7 +820,7 @@ export default {
             B: 4,
             C: 3,
             D: 6,
-            complejo1: { lista: ["He watches movies at night "], tamano: 25 },
+            complejo1: { lista: ["He watches movies at night "], tamano: 25,audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R5.mp3" },
             E: "Él ve películas en la noche",
           },
           {
@@ -807,7 +830,7 @@ export default {
             D: 8,
             complejo1: {
               lista: ["You stay there from Monday to Friday"],
-              tamano: 25,
+              tamano: 25,audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R6.mp3"
             },
             E: "Tú te quedas allá de lunes a viernes",
           },
@@ -816,7 +839,7 @@ export default {
             B: 8,
             C: 4,
             D: 4,
-            complejo1: { lista: ["I eat a lot everyday "], tamano: 25 },
+            complejo1: { lista: ["I eat a lot everyday "], tamano: 25, audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R7.mp3" },
             E: "Yo como mucho todos los días",
           },
           {
@@ -824,7 +847,7 @@ export default {
             B: 6,
             C: 5,
             D: 7,
-            complejo1: { lista: ["She does what I want"], tamano: 25 },
+            complejo1: { lista: ["She does what I want"], tamano: 25,audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R8.mp3" },
             E: "Ella hace lo que yo quiera",
           },
           {
@@ -835,6 +858,7 @@ export default {
             complejo1: {
               lista: ["They eat healthy in the morning"],
               tamano: 25,
+              audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R9.mp3"
             },
             E: "Ellos comen saludable en la mañana",
           },
@@ -846,6 +870,7 @@ export default {
             complejo1: {
               lista: ["She buys here from time to time"],
               tamano: 25,
+              audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R10.mp3"
             },
             E: "Ella compra aquí de vez en cuando",
           },
@@ -854,7 +879,9 @@ export default {
             B: 4,
             C: 3,
             D: 1,
-            complejo1: { lista: ["He watches movies on Sundays"], tamano: 25 },
+            complejo1: { lista: ["He watches movies on Sundays"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R11.mp3"
+            },
             E: "Él ve películas los domingos",
           },
           {
@@ -862,7 +889,8 @@ export default {
             B: 7,
             C: 4,
             D: 4,
-            complejo1: { lista: ["They work a lot everyday"], tamano: 25 },
+            complejo1: { lista: ["They work a lot everyday"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R12.mp3" },
             E: "Ellos trabajan mucho todos los días",
           },
           {
@@ -870,7 +898,9 @@ export default {
             B: 2,
             C: 2,
             D: 3,
-            complejo1: { lista: ["I have to admit that"], tamano: 25 },
+            complejo1: { lista: ["I have to admit that"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R13.mp3"
+            },
             E: "Yo tengo que admitir eso",
           },
           {
@@ -878,15 +908,20 @@ export default {
             B: 8,
             C: 5,
             D: 7,
-            complejo1: { lista: ["I eat what I want"], tamano: 25 },
+            complejo1: { lista: ["I eat what I want"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R14.mp3"
+            },
             E: "Yo como lo que yo quiero",
+
           },
           {
             A: 3,
             B: 3,
             C: 4,
             D: 6,
-            complejo1: { lista: ["She cries a lot at night"], tamano: 25 },
+            complejo1: { lista: ["She cries a lot at night"], tamano: 25,
+            audio:"/cursos/curso1/leccion6/audios/page33/AC1P33R15.mp3"
+            },
             E: "Ella llora mucho en la noche",
           },
         ],
