@@ -167,26 +167,85 @@
         >
       </div>
     </div>
+    <b-row>
+      <b-col></b-col>
+      <b-col>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSclyisKx_Z1tnIAXwvt00g9nIPlI10dmvpfJEi7AYkO-P2Jpg/viewform?embedded=true"
+          width="640"
+          height="1341"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Cargando…
+        </iframe>
+      </b-col>
+      <b-col></b-col>
+    </b-row>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <b-col></b-col>
+      <b-col sm="7">
         <b-card>
-          <p class="parrafo">
-            Has terminado todas las lecciones del primer nivel, ahora estás en
-            las capacidades de presentar el examen, has click en el botón para
-            resolverlo.
-          </p>
-          <div>
-            <b-button
-              size="lg"
-              href="https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin="
-              variant="danger"
-              >HACER EXAMEN</b-button
+          <b-row>
+            <h3 class="parrafo">
+              Hemos añadido algunas paginas imprimibles que puedes de resolver
+              en fisico, accede al reto si gustas.
+            </h3>
+          </b-row>
+          <b-row>
+            <b-col></b-col>
+            <b-col sm="auto">
+              <b-button
+                style="margin: 10px"
+                size="lg"
+                @click="
+                  irA(
+                    'https://classroom.pikinglish.com/main/document/document.php?id=320&cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin='
+                  )
+                "
+                variant="success"
+                >ACEPTAR RETO</b-button
+              ></b-col
             >
-          </div>
+            <b-col></b-col>
+          </b-row>
         </b-card>
-      </div>
+      </b-col>
+      <b-col></b-col>
     </div>
+    <b-row>
+      <b-col></b-col>
+      <b-col sm="7">
+        <b-card>
+          <b-row>
+            <h3 class="parrafo">
+              Has terminado todas las lecciones del primer nivel, ahora estás en
+              las capacidades de presentar el examen, has click en el botón para
+              resolverlo.
+            </h3>
+          </b-row>
+          <b-row>
+            <b-col></b-col>
+            <b-col sm="auto">
+              <b-button
+                style="margin: 10px"
+                size="lg"
+                @click="
+                  irA(
+                    'https://classroom.pikinglish.com/main/gradebook/index.php?cidReq=LOGIC1&id_session=0&gidReq=0&gradebook=0&origin='
+                  )
+                "
+                variant="success"
+                >HACER EXAMEN</b-button
+              ></b-col
+            >
+            <b-col></b-col>
+          </b-row>
+        </b-card>
+      </b-col>
+      <b-col></b-col>
+    </b-row>
   </div>
 </template>
 
@@ -200,6 +259,11 @@ export default {
   methods: {
     showModal(text) {
       this.$refs[text].show();
+    },
+  },
+  methods: {
+    irA(url) {
+      window.open(url);
     },
   },
   components: {
@@ -227,7 +291,8 @@ export default {
         {
           respuesta: "",
           pregunta: "1. How many pieces of fruit did the author need to buy?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R2q1.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R2q1.mp3",
           options: [
             {
               text: "A) Six",
@@ -249,7 +314,8 @@ export default {
         {
           respuesta: "",
           pregunta: "2. The author bought ___ eggs ___ apples",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R3q2.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R3q2.mp3",
           options: [
             {
               text: "A) The same amount of, as",
@@ -271,7 +337,8 @@ export default {
         {
           respuesta: "",
           pregunta: "3. How much did the author spend on eggs?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R4q3.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R4q3.mp3",
           options: [
             {
               text: "A) One dollar",
@@ -293,7 +360,8 @@ export default {
         {
           respuesta: "",
           pregunta: "4. How much did the author spend on milk?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R5q4.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R5q4.mp3",
           options: [
             {
               text: "A) One dollar and fifty cents",
@@ -315,7 +383,8 @@ export default {
         {
           respuesta: "",
           pregunta: "5. What was the most expensive item the author bought?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R6q5.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R6q5.mp3",
           options: [
             {
               text: "A) The olive oil.",
@@ -337,7 +406,8 @@ export default {
         {
           respuesta: "",
           pregunta: "6. How did the author break the television?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R7q6.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R7q6.mp3",
           options: [
             {
               text: "A) He hit it with his groceries",
@@ -359,7 +429,8 @@ export default {
         {
           respuesta: "",
           pregunta: "7. Why was the store manager so angry?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R8q7.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R8q7.mp3",
           options: [
             {
               text: "A) Because the author couldn’t pay for the television",
@@ -383,7 +454,8 @@ export default {
           respuesta: "",
           pregunta:
             "8. “The author is worried he might be grounded”. What does this mean?",
-            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R9q8.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R9q8.mp3",
           options: [
             {
               text: "A) He won’t be allowed to go out with his friends",
@@ -407,7 +479,8 @@ export default {
           respuesta: "",
           pregunta:
             "9. If the author can pay for the television by paying $50 a week, how many weeks will he need to pay back the $1,200?",
-            audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R10q9.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R10q9.mp3",
           options: [
             {
               text: "A) Twelve weeks",
@@ -429,7 +502,8 @@ export default {
         {
           respuesta: "",
           pregunta: "10. What word best describes the author’s day?",
-          audio:"https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R11q10.mp3",
+          audio:
+            "https://classroom.pikinglish.com/cursos/curso1/leccion27/audios/pag109/AC1P108R11q10.mp3",
           options: [
             {
               text: "A) Fun",
